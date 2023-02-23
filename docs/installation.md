@@ -15,8 +15,9 @@ wget -q https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt-get update
 sudo apt-get install -y powershell
-CentOS 7 and later, and Fedora 28 and later: Run the following commands in the terminal:
+
 ```
+CentOS 7 and later, and Fedora 28 and later: Run the following commands in the terminal:
 
 ``` csharp
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -101,19 +102,19 @@ Finally, it's worth noting that PowerShell ISE has been deprecated in favor of P
 
 The PowerShell extension for VSCode is a popular extension that provides a rich set of tools for working with PowerShell scripts and modules within the VSCode editor. Here are some of the key differences between the PowerShell 7 Integrated Console and the PowerShell extension for VSCode:
 
-## User Interface
+### User Interface
 The most obvious difference between the PowerShell 7 Integrated Console and the PowerShell extension for VSCode is the user interface. PowerShell 7 Integrated Console has a more traditional console-based interface, while the PowerShell extension for VSCode provides a modern and flexible editor-based interface. The VSCode interface includes features like syntax highlighting, IntelliSense, and code folding, as well as support for multiple tabs and split panes.
 
-## Cross-Platform Support
+### Cross-Platform Support
 Like PowerShell 7 Integrated Console, the PowerShell extension for VSCode is designed to work on Windows, Linux, and macOS. This means that you can use the extension to manage and automate tasks on a wide variety of systems, just like PowerShell 7 Integrated Console.
 
-## Debugging Support
+### Debugging Support
 The PowerShell extension for VSCode provides more advanced debugging support than PowerShell 7 Integrated Console. With the extension, you can set breakpoints, step through code, and inspect variables, just like you would in a traditional debugger. While PowerShell 7 Integrated Console does provide some debugging features, they are more limited than what's available in the VSCode extension.
 
-## Integrated Terminal
+### Integrated Terminal
 The PowerShell extension for VSCode includes an integrated terminal that you can use to run PowerShell commands and scripts. This terminal is similar to PowerShell 7 Integrated Console in that it provides a command-line interface, but it's integrated directly into the VSCode interface, making it easier to switch between editing and running code.
 
-## Additional Features
+### Additional Features
 The PowerShell extension for VSCode includes a number of additional features that aren't available in PowerShell 7 Integrated Console, such as:
 
 + **Code Snippets**: The extension provides a library of code snippets that you can use to quickly insert common PowerShell commands and structures into your code.
@@ -126,19 +127,24 @@ Overall, both PowerShell 7 Integrated Console and the PowerShell extension for V
 
 When it comes to setting up your environment for programming in PowerShell, there are a few key tools and configurations that can help make your workflow more efficient and effective. Here are some recommendations for the best setup for programming in PowerShell:
 
-1. Install PowerShell 7
-PowerShell 7 is the latest version of PowerShell and includes many new features and improvements over previous versions. It's recommended that you install PowerShell 7 to take advantage of these new features and to ensure compatibility with the latest PowerShell modules and scripts.
+1. **Install PowerShell 7**
 
-2. Install a Text Editor or Integrated Development Environment (IDE)
-While PowerShell 7 includes its own Integrated Console, using a dedicated text editor or IDE can help make your workflow more efficient and productive. Popular options for PowerShell development include Visual Studio Code, PowerShell ISE, and the PowerShell extension for Visual Studio.
+    PowerShell 7 is the latest version of PowerShell and includes many new features and improvements over previous versions. It's recommended that you install PowerShell 7 to take advantage of these new features and to ensure compatibility with the latest PowerShell modules and scripts.
 
-3. Install the PowerShell Extension for Your Text Editor or IDE
-If you're using a text editor or IDE, it's recommended that you install the PowerShell extension for that editor or IDE. This extension provides additional tools and features for working with PowerShell scripts and modules, such as syntax highlighting, IntelliSense, debugging, and code formatting.
+2. **Install a Text Editor or Integrated Development Environment (IDE)**
 
-4. Install PowerShell Modules
-PowerShell modules are collections of PowerShell commands and scripts that you can use to extend the functionality of PowerShell. Many modules are available through the PowerShell Gallery, which is a repository of PowerShell modules that you can download and install using the Install-Module command.
+    While PowerShell 7 includes its own Integrated Console, using a dedicated text editor or IDE can help make your workflow more efficient and productive. Popular options for PowerShell development include Visual Studio Code, PowerShell ISE, and the PowerShell extension for Visual Studio.
 
-5. Configure Your Profile
-PowerShell allows you to configure your profile to set up your environment with your preferred settings and modules every time you start a new session. You can use your profile to set environment variables, define aliases, and load modules automatically. Your profile is stored in a PowerShell script file named $PROFILE, which you can edit using a text editor or IDE.
+3. **Install the PowerShell Extension for Your Text Editor or IDE**
+
+    If you're using a text editor or IDE, it's recommended that you install the PowerShell extension for that editor or IDE. This extension provides additional tools and features for working with PowerShell scripts and modules, such as syntax highlighting, IntelliSense, debugging, and code formatting.
+
+4. **Install PowerShell Modules**
+
+    PowerShell modules are collections of PowerShell commands and scripts that you can use to extend the functionality of PowerShell. Many modules are available through the PowerShell Gallery, which is a repository of PowerShell modules that you can download and install using the Install-Module command.
+
+5. **Configure Your Profile**
+
+    PowerShell allows you to configure your profile to set up your environment with your preferred settings and modules every time you start a new session. You can use your profile to set environment variables, define aliases, and load modules automatically. Your profile is stored in a PowerShell script file named $PROFILE, which you can edit using a text editor or IDE.
 
 By following these recommendations, you can set up a powerful and efficient environment for programming in PowerShell. Whether you're a beginner or an experienced developer, having the right tools and configurations can help you write better PowerShell code and automate your tasks more effectively.
