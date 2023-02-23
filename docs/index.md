@@ -3,7 +3,7 @@
 This tutorial is designed to introduce you to PowerShell, a powerful command-line interface and scripting language built by Microsoft. Whether you are new to PowerShell or are looking to expand your skills, this guide will provide you with the necessary information to get started.
 
 ## Table of Contents
-- [Installation](#Installation)
+- [Installation](installation.md)
 - [Getting Started with PowerShell](#Getting-Started-with-PowerShell)
 - [PowerShell Basics](#PowerShell-Basics)
 - [Working with Files and Folders](#Working-with-Files-and-Folders)
