@@ -4,16 +4,16 @@ This tutorial is designed to introduce you to PowerShell, a powerful command-lin
 
 ## Table of Contents
 - [Installation](installation.md)
-- [Getting Started with PowerShell](#Getting-Started-with-PowerShell)
-- [PowerShell Basics](#PowerShell-Basics)
-- [Working with Files and Folders](#Working-with-Files-and-Folders)
-- [PowerShell Scripts](#PowerShell-Scripts)
-- [Advanced PowerShell](#Advanced-PowerShell)
+- [Getting Started with PowerShell](#getting-started-with-powershell)
+- [PowerShell Basics](#powershell-basics)
+- [Working with Files and Folders](#working-with-files-and-folders)
+- [PowerShell Scripts](#powershell-scripts)
+- [Advanced PowerShell](#advanced-powershell)
 
-## Installation
+## [Installation](installation.md)
 PowerShell is pre-installed on Windows 10 and Windows Server 2016 and later, but you may need to update it to the latest version. To install PowerShell on older versions of Windows, visit the [PowerShell GitHub repository](https://github.com/PowerShell/PowerShell) and follow the installation instructions.
 
-## Getting Started with PowerShell
+## [Getting Started with PowerShell](GetStart.md)
 Before we dive into the commands, let's first open PowerShell. There are a few ways to do this:
 
 + Click on the *Start* menu, search for *PowerShell*, and click on the *Windows PowerShell* option.

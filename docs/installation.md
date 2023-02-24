@@ -143,7 +143,7 @@ When it comes to setting up your environment for programming in PowerShell, ther
 
     PowerShell modules are collections of PowerShell commands and scripts that you can use to extend the functionality of PowerShell. Many modules are available through the PowerShell Gallery, which is a repository of PowerShell modules that you can download and install using the Install-Module command.
 
-5. **Configure Your Profile**
+5. [**Configure Your Profile**](config_profile.md)
 
     PowerShell allows you to configure your profile to set up your environment with your preferred settings and modules every time you start a new session. You can use your profile to set environment variables, define aliases, and load modules automatically. Your profile is stored in a PowerShell script file named $PROFILE, which you can edit using a text editor or IDE.
 

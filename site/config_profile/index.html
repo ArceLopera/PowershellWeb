@@ -12,19 +12,21 @@
         <meta name="author" content="ArceLopera">
       
       
-      <link rel="icon" href="/PowershellWeb/Images/pwsh_32512.ico">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/config_profile/">
+      
+      <link rel="icon" href="../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Powershell Refresher</title>
+        <title>Config profile - Powershell Refresher</title>
       
     
     
-      <link rel="stylesheet" href="/PowershellWeb/assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="/PowershellWeb/assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
         
       
     
@@ -39,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL("/PowershellWeb/",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,9 +78,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/PowershellWeb/." title="Powershell Refresher" class="md-header__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
+    <a href=".." title="Powershell Refresher" class="md-header__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
       
-  <img src="/PowershellWeb/Images/pwshHat1.png" alt="logo">
+  <img src="../Images/pwshHat1.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -94,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Config profile
             
           </span>
         </div>
@@ -191,7 +193,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/PowershellWeb/." class="md-tabs__link">
+    <a href=".." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -203,7 +205,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="/PowershellWeb/installation/" class="md-tabs__link">
+    <a href="../installation/" class="md-tabs__link">
       Installation
     </a>
   </li>
@@ -218,7 +220,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/PowershellWeb/GetStart/" class="md-tabs__link">
+      <a href="../GetStart/" class="md-tabs__link">
         Basics
       </a>
     </li>
@@ -246,9 +248,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/PowershellWeb/." title="Powershell Refresher" class="md-nav__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
+    <a href=".." title="Powershell Refresher" class="md-nav__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
       
-  <img src="/PowershellWeb/Images/pwshHat1.png" alt="logo">
+  <img src="../Images/pwshHat1.png" alt="logo">
 
     </a>
     Powershell Refresher
@@ -276,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/PowershellWeb/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Home
       </a>
     </li>
@@ -291,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/PowershellWeb/installation/" class="md-nav__link">
+      <a href="../installation/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -332,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/PowershellWeb/GetStart/" class="md-nav__link">
+      <a href="../GetStart/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -346,7 +348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/PowershellWeb/gethelp/" class="md-nav__link">
+      <a href="../gethelp/" class="md-nav__link">
         GetHelp
       </a>
     </li>
@@ -387,8 +389,78 @@
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
 
+
+  <h1>Config profile</h1>
+
+<p>Configuring your PowerShell profile is an essential step to personalize your PowerShell environment and make your work more efficient. Your profile is a PowerShell script file that executes every time you start a PowerShell session. You can use it to customize your environment by adding aliases, functions, variables, and modules.</p>
+<p>Here's an example of how to configure your profile in PowerShell:</p>
+<ol>
+<li>
+<p>Open PowerShell and run the following command to create a new profile file if it doesn't exist:</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="o">(</span>!<span class="o">(</span>Test-Path -Path <span class="nv">$PROFILE</span> <span class="o">))</span> <span class="o">{</span> New-Item -Type File -Path <span class="nv">$PROFILE</span> -Force <span class="o">}</span>
+</code></pre></div>
+</li>
+<li>
+<p>Open your profile file with your preferred text editor or IDE. You can find the location of your profile file by running the following command:
+    <div class="highlight"><pre><span></span><code>notepad <span class="nv">$PROFILE</span>
+</code></pre></div>
+    This will open your profile file in Notepad.</p>
+</li>
+<li>
+<p>Add any customizations you want to your profile file. For example, you can add an alias to simplify a frequently used command. To create an alias for the Get-ChildItem cmdlet, add the following line to your profile:
+    <div class="highlight"><pre><span></span><code>Set-Alias -Name ls -Value Get-ChildItem
+</code></pre></div>
+    This creates an alias named ls that runs the Get-ChildItem cmdlet.</p>
+</li>
+<li>
+<p>Save and close your profile file.</p>
+</li>
+<li>
+<p>Restart PowerShell to apply your changes. Your customizations should now be available in your PowerShell session.</p>
+</li>
+</ol>
+<p>In addition to aliases, you can also use your profile to configure your PowerShell prompt, set default parameters for cmdlets, load modules automatically, and define functions that you frequently use. By taking advantage of the customization options available in your profile, you can make your PowerShell experience more efficient and tailored to your needs.</p>
+<p>Here is an example of a common $profile script for PowerShell:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Add custom PowerShell functions</span>
+<span class="k">function</span> Get-Weather <span class="o">{</span>
+    param<span class="o">([</span>string<span class="o">]</span><span class="nv">$location</span> <span class="o">=</span> <span class="s2">&quot;New York&quot;</span><span class="o">)</span>
+    Invoke-RestMethod -Uri <span class="s2">&quot;https://wttr.in/</span><span class="nv">$location</span><span class="s2">?format=%C+%t&quot;</span> -UseBasicParsing
+<span class="o">}</span>
+
+<span class="c1"># Load useful PowerShell modules</span>
+Import-Module Pester
+Import-Module PSReadline
+Import-Module Microsoft.PowerShell.Management
+
+<span class="c1"># Set default parameters for cmdlets</span>
+<span class="nv">$PSDefaultParameterValues</span> <span class="o">=</span> @<span class="o">{</span>
+    <span class="s2">&quot;Get-ChildItem:Recurse&quot;</span> <span class="o">=</span> <span class="nv">$true</span>
+    <span class="s2">&quot;Out-File:Encoding&quot;</span> <span class="o">=</span> <span class="s2">&quot;utf8&quot;</span>
+<span class="o">}</span>
+
+<span class="c1"># Add custom aliases</span>
+Set-Alias -Name l -Value Get-ChildItem
+Set-Alias -Name gac -Value Get-ChildItem -ParameterName FullName -ArgumentList <span class="s2">&quot;C:\Windows\Microsoft.NET\assembly\GAC*&quot;</span>
+
+<span class="c1"># Configure PowerShell prompt</span>
+<span class="nv">$host</span>.UI.RawUI.WindowTitle <span class="o">=</span> <span class="s2">&quot;</span><span class="nv">$env</span><span class="s2">:USERNAME@</span><span class="nv">$env</span><span class="s2">:COMPUTERNAME&quot;</span>
+<span class="nv">$host</span>.UI.RawUI.ForegroundColor <span class="o">=</span> <span class="s2">&quot;Green&quot;</span>
+<span class="nv">$host</span>.UI.RawUI.BackgroundColor <span class="o">=</span> <span class="s2">&quot;Black&quot;</span>
+<span class="nv">$host</span>.UI.RawUI.WindowSize <span class="o">=</span> New-Object System.Management.Automation.Host.Size<span class="o">(</span><span class="m">120</span>,50<span class="o">)</span>
+</code></pre></div>
+<p>This $profile script defines several customizations for the PowerShell environment, including:</p>
+<ul>
+<li>A custom function named Get-Weather that uses the Invoke-RestMethod cmdlet to retrieve weather information for a specified location.</li>
+<li>The loading of several useful PowerShell modules, including Pester, PSReadline, and Microsoft.PowerShell.Management.</li>
+<li>Default parameter values for the Get-ChildItem and Out-File cmdlets.</li>
+<li>Custom aliases for the Get-ChildItem cmdlet and a common path for the Get-ChildItem cmdlet.</li>
+<li>Configuration of the PowerShell prompt, including the window title, foreground and background colors, and window size.</li>
+</ul>
+<p>By using a $profile script like this one, you can customize your PowerShell environment to suit your needs and make your work more efficient.</p>
+
+              
             </article>
           </div>
         </div>
@@ -467,10 +539,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "/PowershellWeb/", "features": ["navigation.tabs", "navigation.expand"], "search": "/PowershellWeb/assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.expand"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="/PowershellWeb/assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
