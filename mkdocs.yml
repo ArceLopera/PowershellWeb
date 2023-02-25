@@ -93,3 +93,4 @@ nav:
   - Basics:
     - Getting Started: GetStart.md
     - GetHelp: gethelp.md
+    - GetAlias: getalias.md
