@@ -9,7 +9,17 @@ In addition to the built-in aliases, you can create your own aliases or modify e
 ls Get-ChildItem -Force
 ```
 
-It's important to note that while aliases can be useful, they can also be confusing or misleading if used excessively or inconsistently. It's generally recommended to use aliases sparingly and to choose meaningful and intuitive names that are easy to remember and understand.
+While aliases can be useful in PowerShell for saving time and reducing typing, there are also some limitations and potential issues to be aware of:
+
+**Clarity:** Aliases can make code harder to understand, especially for other users who may not be familiar with the specific aliases you're using. It's generally recommended to use the full cmdlet names in scripts and functions to make the code more clear and self-explanatory.
+
+**Conflicts:** Multiple aliases can be defined for the same cmdlet, and aliases can also be defined for other aliases. This can lead to confusion and potential conflicts, especially when using modules or scripts that define their own aliases.
+
+**Portability:** Aliases are specific to the PowerShell session in which they are defined. If you use a script or module that relies on specific aliases, you may run into issues if those aliases are not defined on the system where the script is being run.
+
+**Autocomplete:** PowerShell's autocomplete feature may not work with aliases, depending on the specific environment and tools you're using.
+
+Overall, while aliases can be useful in certain situations, it's important to use them judiciously and be aware of their limitations and potential issues. It's generally best to use the full cmdlet names in scripts and functions to ensure clarity and portability, and to avoid potential conflicts with other aliases or scripts.
 
 ## Get-Alias
 
