@@ -509,33 +509,33 @@
 <p>Here are some common ways to use Get-Alias:</p>
 <ol>
 <li>
-<p><strong>List all aliases</strong> 
-    You can use the Get-Alias cmdlet without any parameters to list all the aliases available in your PowerShell session.    <br />
-    <div class="highlight"><pre><span></span><code><span class="nb">Get-Alias</span>
+<p><strong>List all aliases</strong> </p>
+<p>You can use the Get-Alias cmdlet without any parameters to list all the aliases available in your PowerShell session.    <br />
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Alias</span>
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>List aliases for a specific command</strong> 
-    You can use the -Definition parameter followed by the name of the command to list all the aliases for that command. 
-    <div class="highlight"><pre><span></span><code><span class="nb">Get-Alias</span> <span class="n">-Definition</span> <span class="nb">Get-ChildItem</span>
+<p><strong>List aliases for a specific command</strong> </p>
+<p>You can use the -Definition parameter followed by the name of the command to list all the aliases for that command. 
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Alias</span> <span class="n">-Definition</span> <span class="nb">Get-ChildItem</span>
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>Search for a specific alias</strong> 
-    You can use the -Name parameter followed by a search pattern to find a specific alias or a group of aliases that match the pattern. 
-    <div class="highlight"><pre><span></span><code><span class="nb">Get-Alias</span> <span class="n">-Name</span> <span class="p">*</span><span class="n">path</span><span class="p">*</span>
+<p><strong>Search for a specific alias</strong> </p>
+<p>You can use the -Name parameter followed by a search pattern to find a specific alias or a group of aliases that match the pattern. 
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Alias</span> <span class="n">-Name</span> <span class="p">*</span><span class="n">path</span><span class="p">*</span>
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>Export aliases to a file</strong> 
-    You can use the Export-Alias cmdlet with the -Path parameter followed by the name and location of the file to export the aliases to a file. 
-    <code>` pwsh 
-    Get-Alias | Export-Alias -Path C:\Aliases.txt</code></p>
+<p><strong>Export aliases to a file</strong> </p>
+<p>You can use the Export-Alias cmdlet with the -Path parameter followed by the name and location of the file to export the aliases to a file. 
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Alias</span> <span class="p">|</span> <span class="nb">Export-Alias</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Aliases</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div></p>
 </li>
 <li>
-<p><strong>Import aliases from a file</strong> 
-    You can use the Import-Alias cmdlet with the -Path parameter followed by the name and location of the file to import the aliases from a file. 
-    <div class="highlight"><pre><span></span><code><span class="nb">Import-Alias</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Aliases</span><span class="p">.</span><span class="n">txt</span>
+<p><strong>Import aliases from a file</strong> </p>
+<p>You can use the Import-Alias cmdlet with the -Path parameter followed by the name and location of the file to import the aliases from a file. 
+<div class="highlight"><pre><span></span><code><span class="nb">Import-Alias</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Aliases</span><span class="p">.</span><span class="n">txt</span>
 </code></pre></div></p>
 </li>
 </ol>
