@@ -22,10 +22,10 @@ Before we dive into the commands, let's first open PowerShell. There are a few w
 
 Once you have PowerShell open, you can start entering commands.
 
-## PowerShell Basics
+## [PowerShell Basics](GetStart.md)
 PowerShell commands are called cmdlets, and they follow a simple verb-noun syntax. For example, the command to get a list of files in a directory is Get-ChildItem. Here are some basic PowerShell commands to get you started:
 
-+ *Get-Help*: Get help for a cmdlet
++ [*Get-Help*](gethelp.md): Get help for a cmdlet
 + *Get-Process*: Get information about running processes
 + *Get-Service*: Get information about running services
 + *Get-ChildItem*: Get a list of files and folders in a directory

@@ -74,7 +74,7 @@ markdown_extensions:
   - pymdownx.highlight:
       use_pygments: true
   - toc:
-      toc_depth: 2
+      toc_depth: 3
 
 # Plugins
 plugins:
@@ -94,3 +94,4 @@ nav:
     - Getting Started: GetStart.md
     - GetHelp: gethelp.md
     - GetAlias: getalias.md
+    - Config Profile: config_profile.md
