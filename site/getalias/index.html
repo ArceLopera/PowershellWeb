@@ -478,6 +478,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files_folders/" class="md-nav__link">
+        Files & Folders
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -637,6 +651,9 @@
 <div class="highlight"><pre><span></span><code><span class="nb">ls </span><span class="n">C</span><span class="p">:\</span><span class="n">Windows</span>
 </code></pre></div>
 <p>This will list the contents of the C:\Windows directory using the Get-ChildItem cmdlet, but you can use the shorter ls alias instead.</p>
+<p>Another example:
+<div class="highlight"><pre><span></span><code><span class="nb">new-alias</span> <span class="n">-Name</span> <span class="n">np</span> <span class="n">-Value</span> <span class="n">Notepad</span>
+</code></pre></div></p>
 <p>Another common use case for New-Alias is to create an alias for a function or script that you use frequently. For example, if you have a script named MyScript.ps1 that you want to run frequently, you could create an alias like this:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">New-Alias</span> <span class="n">-Name</span> <span class="n">myscript</span> <span class="n">-Value</span> <span class="n">C</span><span class="p">:\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">MyScript</span><span class="p">.</span><span class="n">ps1</span>
 </code></pre></div>

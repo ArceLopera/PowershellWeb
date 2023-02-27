@@ -84,6 +84,11 @@ ls C:\Windows
 
 This will list the contents of the C:\Windows directory using the Get-ChildItem cmdlet, but you can use the shorter ls alias instead.
 
+Another example:
+``` pwsh
+new-alias -Name np -Value Notepad
+``` 
+
 Another common use case for New-Alias is to create an alias for a function or script that you use frequently. For example, if you have a script named MyScript.ps1 that you want to run frequently, you could create an alias like this:
 
 ``` pwsh
