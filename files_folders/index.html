@@ -19,7 +19,7 @@
     
     
       
-        <title>Files folders - Powershell Refresher</title>
+        <title>Files & Folders - Powershell Refresher</title>
       
     
     
@@ -68,6 +68,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#items" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -96,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Files folders
+              Files & Folders
             
           </span>
         </div>
@@ -214,13 +219,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../GetStart/" class="md-tabs__link">
+      <a href="../GetStart/" class="md-tabs__link md-tabs__link--active">
         Basics
       </a>
     </li>
@@ -306,12 +313,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -384,6 +393,126 @@
 
             
           
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Files & Folders
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Files & Folders
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#items" class="md-nav__link">
+    Items
+  </a>
+  
+    <nav class="md-nav" aria-label="Items">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-childitem" class="md-nav__link">
+    Get-ChildItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-location" class="md-nav__link">
+    Set-Location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-item" class="md-nav__link">
+    Copy-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-item" class="md-nav__link">
+    Move-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rename-item" class="md-nav__link">
+    Rename-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-item" class="md-nav__link">
+    New-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-item" class="md-nav__link">
+    Remove-Item
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paths" class="md-nav__link">
+    Paths
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -408,6 +537,90 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#items" class="md-nav__link">
+    Items
+  </a>
+  
+    <nav class="md-nav" aria-label="Items">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-childitem" class="md-nav__link">
+    Get-ChildItem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-location" class="md-nav__link">
+    Set-Location
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#copy-item" class="md-nav__link">
+    Copy-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-item" class="md-nav__link">
+    Move-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rename-item" class="md-nav__link">
+    Rename-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-item" class="md-nav__link">
+    New-Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-item" class="md-nav__link">
+    Remove-Item
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paths" class="md-nav__link">
+    Paths
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -420,9 +633,156 @@
                 
 
 
-  <h1>Files folders</h1>
+  <h1>Files & Folders</h1>
 
-
+<p>PowerShell provides a variety of cmdlets for working with files and folders. In PowerShell, an "item" is a generic term used to refer to a file, folder, registry key, or other object that can be manipulated by cmdlets in the PowerShell environment. The term "item" is used in cmdlet names such as Get-Item, Set-Item, and Remove-Item, which can be used to manipulate different types of items in PowerShell.</p>
+<h2 id="items">Items</h2>
+<p>Here are some examples of how to use these cmdlets:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Cmdlet</th>
+<th align="left">Description</th>
+<th align="left">Alias</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#get-childitem">Get-ChildItem</a></td>
+<td align="left">Gets the items and child items in one or more specified locations</td>
+<td align="left">gci, dir, ls</td>
+</tr>
+<tr>
+<td align="left"><a href="#set-location">Set-Location</a></td>
+<td align="left">Sets the working location to a specified location</td>
+<td align="left">cd, sl, chdir</td>
+</tr>
+<tr>
+<td align="left"><a href="#copy-item">Copy-Item</a></td>
+<td align="left">Copies an item from one location to another location</td>
+<td align="left">cp, copy</td>
+</tr>
+<tr>
+<td align="left"><a href="#move-item">Move-Item</a></td>
+<td align="left">Moves an item from one location to another location</td>
+<td align="left">mv, move</td>
+</tr>
+<tr>
+<td align="left"><a href="#remove-item">Remove-Item</a></td>
+<td align="left">Deletes the specified items</td>
+<td align="left">ri, rmdir, rd, del, erase</td>
+</tr>
+<tr>
+<td align="left"><a href="#new-item">New-Item</a></td>
+<td align="left">Creates a new item at the specified location</td>
+<td align="left">ni</td>
+</tr>
+<tr>
+<td align="left"><a href="#rename-item">Rename-Item</a></td>
+<td align="left">Renames an item at the specified location</td>
+<td align="left">rni</td>
+</tr>
+</tbody>
+</table>
+<p>Note that some of these cmdlets have additional parameters that can be used to control their behavior. For example, you can use the -Recurse parameter with Remove-Item to delete a directory and all its contents. You can also use wildcards with many of these cmdlets to perform operations on multiple files or directories at once.</p>
+<h3 id="get-childitem">Get-ChildItem</h3>
+<p>This cmdlet lists the contents of a directory. By default, it displays both files and directories.
+Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ChildItem</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span>
+</code></pre></div>
+<h3 id="set-location">Set-Location</h3>
+<p>This cmdlet changes the current working directory.
+Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Set-Location</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">UserName</span><span class="p">\</span><span class="n">Desktop</span>
+</code></pre></div>
+<h3 id="copy-item">Copy-Item</h3>
+<p>This cmdlet copies a file or directory to a new location.
+Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Copy-Item</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">UserName</span><span class="p">\</span><span class="n">Desktop</span><span class="p">\</span><span class="n">MyFile</span><span class="p">.</span><span class="n">txt</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span><span class="p">\</span>
+</code></pre></div>
+<h3 id="move-item">Move-Item</h3>
+<p>This cmdlet moves a file or directory to a new location.
+Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Move-Item</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">UserName</span><span class="p">\</span><span class="n">Desktop</span><span class="p">\</span><span class="n">MyFile</span><span class="p">.</span><span class="n">txt</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span><span class="p">\</span>
+</code></pre></div>
+<h3 id="rename-item">Rename-Item</h3>
+<p>This cmdlet renames a file or directory.
+Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Rename-Item</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span><span class="p">\</span><span class="n">MyFile</span><span class="p">.</span><span class="n">txt</span> <span class="n">MyNewFile</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div>
+<h3 id="new-item">New-Item</h3>
+<p>This cmdlet creates a new file or directory.
+Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">New-Item</span> <span class="n">-ItemType</span> <span class="n">File</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span><span class="p">\</span><span class="n">NewFile</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div>
+<h3 id="remove-item">Remove-Item</h3>
+<p>This cmdlet deletes a file or directory.
+Example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Remove-Item</span> <span class="n">C</span><span class="p">:\</span><span class="n">Temp</span><span class="p">\</span><span class="n">MyFile</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div>
+<h2 id="properties">Properties</h2>
+<p>In PowerShell, cmdlets whose names end with "Property" are used to retrieve or manipulate the properties of objects. Properties are attributes or characteristics of an object, such as its name, size, or creation date.</p>
+<p>The most common cmdlet that ends with "Property" is the Get-ItemProperty cmdlet, which is used to retrieve the properties of a file, folder, or registry key. For example, you can use the Get-ItemProperty cmdlet to retrieve the version number of a file or the registry key value for a particular setting.</p>
+<p>Other examples of cmdlets that end with "Property" include the Get-ServiceProperty cmdlet, which is used to retrieve the properties of a Windows service, and the Get-ADUserProperty cmdlet, which is used to retrieve the properties of an Active Directory user.</p>
+<p>In general, cmdlets that end with "Property" are useful for retrieving specific information about an object, which can be used in scripts or further manipulated using other PowerShell cmdlets.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Cmdlet</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">New-ItemProperty</td>
+<td align="left">Creates a new property for an item at the specified location</td>
+</tr>
+<tr>
+<td align="left">Get-ItemProperty</td>
+<td align="left">Gets the properties of the specified items</td>
+</tr>
+<tr>
+<td align="left">Set-ItemProperty</td>
+<td align="left">Sets the value of a property for the specified item</td>
+</tr>
+<tr>
+<td align="left">Remove-ItemProperty</td>
+<td align="left">Removes a property from an item at the specified location</td>
+</tr>
+</tbody>
+</table>
+<h2 id="paths">Paths</h2>
+<p>In PowerShell, cmdlets whose names end with "Path" are used to work with file and directory paths. These cmdlets are commonly used to manipulate or retrieve information about file and directory paths, such as their locations, names, or extensions.</p>
+<p>One of the most commonly used cmdlets that ends with "Path" is the Split-Path cmdlet, which is used to split a file or directory path into its individual components, such as the directory, filename, and extension. For example, the command "Split-Path C:\Temp\test.txt -Leaf" would return "test.txt", while "Split-Path C:\Temp\test.txt -Parent" would return "C:\Temp".</p>
+<p>Another example is the Join-Path cmdlet, which is used to combine two or more path strings into a single path. For example, the command "Join-Path C:\Temp test.txt" would return "C:\Temp\test.txt".</p>
+<p>Other examples of cmdlets that end with "Path" include the Resolve-Path cmdlet, which is used to resolve a path to its full, absolute form, and the Test-Path cmdlet, which is used to test whether a file or directory path exists.</p>
+<p>In general, cmdlets that end with "Path" are useful for manipulating file and directory paths, which can be useful for scripting or automating tasks that involve working with files and directories.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Cmdlet</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Test-Path</td>
+<td align="left">Determines whether all elements of a path exist</td>
+</tr>
+<tr>
+<td align="left">Join-Path</td>
+<td align="left">Joins two or more parts of a path into a single path</td>
+</tr>
+<tr>
+<td align="left">Split-Path</td>
+<td align="left">Returns specific parts of a path</td>
+</tr>
+<tr>
+<td align="left">Convert-Path</td>
+<td align="left">Converts a path from a relative path to a full path or from a full path to a relative path</td>
+</tr>
+</tbody>
+</table>
 
               
             </article>
@@ -432,6 +792,26 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../config_profile/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Config Profile" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Config Profile
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
