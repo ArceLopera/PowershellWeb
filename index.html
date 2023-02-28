@@ -337,26 +337,32 @@
     Getting Started with PowerShell
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Getting Started with PowerShell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#powershell-basics" class="md-nav__link">
     PowerShell Basics
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#working-with-files-and-folders" class="md-nav__link">
     Working with Files and Folders
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#powershell-scripts" class="md-nav__link">
     PowerShell Scripts
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -459,6 +465,20 @@
   
   
     <li class="md-nav__item">
+      <a href="get_member/" class="md-nav__link">
+        GetMember
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="getalias/" class="md-nav__link">
         GetAlias
       </a>
@@ -546,26 +566,32 @@
     Getting Started with PowerShell
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Getting Started with PowerShell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#powershell-basics" class="md-nav__link">
     PowerShell Basics
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#working-with-files-and-folders" class="md-nav__link">
     Working with Files and Folders
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#powershell-scripts" class="md-nav__link">
     PowerShell Scripts
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -602,10 +628,12 @@
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
 <li><a href="installation/">Installation</a></li>
-<li><a href="#getting-started-with-powershell">Getting Started with PowerShell</a></li>
+<li><a href="#getting-started-with-powershell">Getting Started with PowerShell</a><ul>
 <li><a href="#powershell-basics">PowerShell Basics</a></li>
 <li><a href="#working-with-files-and-folders">Working with Files and Folders</a></li>
 <li><a href="#powershell-scripts">PowerShell Scripts</a></li>
+</ul>
+</li>
 <li><a href="#advanced-powershell">Advanced PowerShell</a></li>
 </ul>
 <h2 id="installation"><a href="installation/">Installation</a></h2>
@@ -618,18 +646,19 @@
 <li>If you are using Windows 10, you can also right-click on the <em>Start</em> menu and select <em>Windows PowerShell</em> or <em>Windows PowerShell (Admin)</em>.</li>
 </ul>
 <p>Once you have PowerShell open, you can start entering commands.</p>
-<h2 id="powershell-basics"><a href="GetStart/">PowerShell Basics</a></h2>
+<h3 id="powershell-basics"><a href="GetStart/">PowerShell Basics</a></h3>
 <p>PowerShell commands are called cmdlets, and they follow a simple verb-noun syntax. For example, the command to get a list of files in a directory is Get-ChildItem. Here are some basic PowerShell commands to get you started:</p>
 <ul>
 <li><a href="gethelp/"><em>Get-Help</em></a>: Get help for a cmdlet</li>
+<li><a href="get_member/"><em>Get-Member</em></a>: Essential tool for exploring objects and their properties, methods, and events</li>
 <li><em>Get-Process</em>: Get information about running processes</li>
 <li><em>Get-Service</em>: Get information about running services</li>
-<li><em>Get-ChildItem</em>: Get a list of files and folders in a directory</li>
-<li><em>Set-Location</em>: Change the current working directory</li>
+<li><a href="files_folders/#get-childitem"><em>Get-ChildItem</em></a>: Get a list of files and folders in a directory</li>
+<li><a href="files_folders/#set-location"><em>Set-Location</em></a>: Change the current working directory</li>
 <li><em>Clear-Host</em>: Clear the PowerShell console screen</li>
 <li><em>Exit</em>: Exit PowerShell</li>
 </ul>
-<h2 id="working-with-files-and-folders">Working with Files and Folders</h2>
+<h3 id="working-with-files-and-folders"><a href="files_folders/">Working with Files and Folders</a></h3>
 <p>PowerShell is particularly useful for working with files and folders. Here are some useful commands:</p>
 <ul>
 <li><em>New-Item</em>: Create a new file or folder</li>
@@ -640,7 +669,7 @@
 <li><em>Get-Content</em>: Get the contents of a file</li>
 <li><em>Set-Content</em>: Set the contents of a file</li>
 </ul>
-<h2 id="powershell-scripts">PowerShell Scripts</h2>
+<h3 id="powershell-scripts">PowerShell Scripts</h3>
 <p>PowerShell scripts are saved as .ps1 files and can be run from the command line or by double-clicking on the file. Here are some tips for writing PowerShell scripts:</p>
 <ul>
 <li>Use comments to explain your code</li>
