@@ -371,6 +371,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../get_member/" class="md-nav__link">
+        GetMember
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../getalias/" class="md-nav__link">
         GetAlias
       </a>
@@ -504,6 +518,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#directories-or-folders" class="md-nav__link">
+    Directories or Folders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -615,6 +643,20 @@
         <li class="md-nav__item">
   <a href="#paths" class="md-nav__link">
     Paths
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directories-or-folders" class="md-nav__link">
+    Directories or Folders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
   </a>
   
 </li>
@@ -751,6 +793,17 @@ Example:</p>
 </tr>
 </tbody>
 </table>
+<p>Some interesting properties are: CreationTime, FullName, LastAccessTime, LastWriteTime, Attributes.
+For example, to check the creation time of a file:
+<div class="highlight"><pre><span></span><code><span class="nb">get-itemproperty</span> <span class="n">-path</span> <span class="n">filename</span> <span class="n">-name</span> <span class="n">CreationTime</span>
+</code></pre></div></p>
+<p>To check the attributes (permissions) of the file:
+<div class="highlight"><pre><span></span><code><span class="nb">get-itemproperty</span> <span class="n">-path</span> <span class="n">file</span> <span class="n">-name</span> <span class="n">Attributes</span>
+</code></pre></div></p>
+<p>To set the attributes, the Set-Itemproperty command is used, for example:
+<div class="highlight"><pre><span></span><code><span class="nb">set-itemproperty</span> <span class="n">-path</span> <span class="n">file</span> <span class="n">-name</span> <span class="n">Attributes</span> <span class="n">-value</span> <span class="s2">&quot;ReadOnly&quot;</span>
+</code></pre></div></p>
+<p>Some permission values are ReadOnly, Hidden, System. If you want to set multiple permissions at once, separate their names with commas, and enclose the entire set in quotation marks (as in the example).</p>
 <h2 id="paths">Paths</h2>
 <p>In PowerShell, cmdlets whose names end with "Path" are used to work with file and directory paths. These cmdlets are commonly used to manipulate or retrieve information about file and directory paths, such as their locations, names, or extensions.</p>
 <p>One of the most commonly used cmdlets that ends with "Path" is the Split-Path cmdlet, which is used to split a file or directory path into its individual components, such as the directory, filename, and extension. For example, the command "Split-Path C:\Temp\test.txt -Leaf" would return "test.txt", while "Split-Path C:\Temp\test.txt -Parent" would return "C:\Temp".</p>
@@ -783,6 +836,70 @@ Example:</p>
 </tr>
 </tbody>
 </table>
+<h2 id="directories-or-folders">Directories or Folders</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Operation</th>
+<th align="left">Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Creation</td>
+<td align="left">new-item -itemtype directory -name directory_name</td>
+</tr>
+<tr>
+<td align="left">Deletion</td>
+<td align="left">remove-item -path directory_name -Recurse</td>
+</tr>
+<tr>
+<td align="left">Rename</td>
+<td align="left">rename-item -path directory_name -newname new_directory_name -Recurse</td>
+</tr>
+<tr>
+<td align="left">Move</td>
+<td align="left">move-item -path directory_name -destination new_location</td>
+</tr>
+<tr>
+<td align="left">Enter</td>
+<td align="left">cd directory_name</td>
+</tr>
+<tr>
+<td align="left">Show current directory</td>
+<td align="left">Get-Location or pwd (same as Linux)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note .(dot) indicates the current directory and ..(dot dot) indicates the parent of the current directory.</em></p>
+<h2 id="files">Files</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Operation</th>
+<th align="left">Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Creation</td>
+<td align="left">new-item -itemtype file -name file_name [-value content]</td>
+</tr>
+<tr>
+<td align="left">Deletion</td>
+<td align="left">remove-item -path file_name</td>
+</tr>
+<tr>
+<td align="left">Renaming</td>
+<td align="left">rename-item -path file_name -newname new_name</td>
+</tr>
+<tr>
+<td align="left">Moving</td>
+<td align="left">move-item -path file_name -destination new_location</td>
+</tr>
+</tbody>
+</table>
+<p><em>Text files can be displayed on the console using the Get-Content command, which has the alias "type".</em></p>
 
               
             </article>

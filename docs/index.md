@@ -5,9 +5,9 @@ This tutorial is designed to introduce you to PowerShell, a powerful command-lin
 ## Table of Contents
 - [Installation](installation.md)
 - [Getting Started with PowerShell](#getting-started-with-powershell)
-- [PowerShell Basics](#powershell-basics)
-- [Working with Files and Folders](#working-with-files-and-folders)
-- [PowerShell Scripts](#powershell-scripts)
+    - [PowerShell Basics](#powershell-basics)
+    - [Working with Files and Folders](#working-with-files-and-folders)
+    - [PowerShell Scripts](#powershell-scripts)
 - [Advanced PowerShell](#advanced-powershell)
 
 ## [Installation](installation.md)
@@ -22,18 +22,19 @@ Before we dive into the commands, let's first open PowerShell. There are a few w
 
 Once you have PowerShell open, you can start entering commands.
 
-## [PowerShell Basics](GetStart.md)
+### [PowerShell Basics](GetStart.md)
 PowerShell commands are called cmdlets, and they follow a simple verb-noun syntax. For example, the command to get a list of files in a directory is Get-ChildItem. Here are some basic PowerShell commands to get you started:
 
 + [*Get-Help*](gethelp.md): Get help for a cmdlet
++ [*Get-Member*](get_member.md): Essential tool for exploring objects and their properties, methods, and events
 + *Get-Process*: Get information about running processes
 + *Get-Service*: Get information about running services
-+ *Get-ChildItem*: Get a list of files and folders in a directory
-+ *Set-Location*: Change the current working directory
++ [*Get-ChildItem*](files_folders.md#get-childitem): Get a list of files and folders in a directory
++ [*Set-Location*](files_folders.md#set-location): Change the current working directory
 + *Clear-Host*: Clear the PowerShell console screen
 + *Exit*: Exit PowerShell
 
-## Working with Files and Folders
+### [Working with Files and Folders](files_folders.md)
 PowerShell is particularly useful for working with files and folders. Here are some useful commands:
 
 + *New-Item*: Create a new file or folder
@@ -44,7 +45,7 @@ PowerShell is particularly useful for working with files and folders. Here are s
 + *Get-Content*: Get the contents of a file
 + *Set-Content*: Set the contents of a file
 
-## PowerShell Scripts
+### PowerShell Scripts
 
 PowerShell scripts are saved as .ps1 files and can be run from the command line or by double-clicking on the file. Here are some tips for writing PowerShell scripts:
 

@@ -95,6 +95,23 @@ In general, cmdlets that end with "Property" are useful for retrieving specific 
 |Set-ItemProperty	|Sets the value of a property for the specified item|
 |Remove-ItemProperty	|Removes a property from an item at the specified location|
 
+Some interesting properties are: CreationTime, FullName, LastAccessTime, LastWriteTime, Attributes.
+For example, to check the creation time of a file:
+``` pwsh
+get-itemproperty -path filename -name CreationTime
+```
+
+To check the attributes (permissions) of the file:
+``` pwsh
+get-itemproperty -path file -name Attributes
+```
+
+To set the attributes, the Set-Itemproperty command is used, for example:
+``` pwsh
+set-itemproperty -path file -name Attributes -value "ReadOnly"
+```
+
+Some permission values are ReadOnly, Hidden, System. If you want to set multiple permissions at once, separate their names with commas, and enclose the entire set in quotation marks (as in the example).
 
 ## Paths
 
@@ -115,3 +132,27 @@ In general, cmdlets that end with "Path" are useful for manipulating file and di
 |Join-Path	|Joins two or more parts of a path into a single path|
 |Split-Path	|Returns specific parts of a path|
 |Convert-Path	|Converts a path from a relative path to a full path or from a full path to a relative path|
+
+## Directories or Folders
+
+|Operation|	Command|
+| :--- | :--- |
+|Creation|	new-item -itemtype directory -name directory_name|
+|Deletion|	remove-item -path directory_name -Recurse |
+|Rename|	rename-item -path directory_name -newname new_directory_name -Recurse|
+|Move|	move-item -path directory_name -destination new_location|
+|Enter|	cd directory_name|
+|Show current directory|	Get-Location or pwd (same as Linux)|
+
+*Note .(dot) indicates the current directory and ..(dot dot) indicates the parent of the current directory.*
+
+## Files
+
+|Operation| Command|
+| :--- | :--- |
+|Creation| new-item -itemtype file -name file_name [-value content]|
+|Deletion| remove-item -path file_name|
+|Renaming| rename-item -path file_name -newname new_name|
+|Moving| move-item -path file_name -destination new_location|
+
+*Text files can be displayed on the console using the Get-Content command, which has the alias "type".*

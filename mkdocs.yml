@@ -93,6 +93,7 @@ nav:
   - Basics:
     - Getting Started: GetStart.md
     - GetHelp: gethelp.md
+    - GetMember: get_member.md
     - GetAlias: getalias.md
     - Config Profile: config_profile.md
     - Files & Folders: files_folders.md
