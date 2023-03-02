@@ -74,7 +74,7 @@ markdown_extensions:
   - pymdownx.highlight:
       use_pygments: true
   - toc:
-      toc_depth: 3
+      toc_depth: 4
 
 # Plugins
 plugins:
@@ -98,3 +98,4 @@ nav:
     - Config Profile: config_profile.md
     - Files & Folders: files_folders.md
     - Pipeline: pipeline.md
+    - Output Format: out_format.md

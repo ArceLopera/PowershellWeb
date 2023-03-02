@@ -42,8 +42,8 @@ PowerShell is particularly useful for working with files and folders. Here are s
 + *Copy-Item*: Copy a file or folder
 + *Move-Item*: Move a file or folder
 + *Rename-Item*: Rename a file or folder
-+ *Get-Content*: Get the contents of a file
-+ *Set-Content*: Set the contents of a file
++ [*Get-Content*](out_format.md#get-content): Get the contents of a file
++ [*Set-Content*](out_format.md#set-content): Set the contents of a file
 
 ### PowerShell Scripts
 
