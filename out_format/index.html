@@ -579,13 +579,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#excel" class="md-nav__link">
-    Excel
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#json" class="md-nav__link">
     JSON
   </a>
@@ -794,13 +787,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#excel" class="md-nav__link">
-    Excel
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#json" class="md-nav__link">
     JSON
   </a>
@@ -1005,7 +991,6 @@ This code imports a CSV file containing user data, and then outputs the Name pro
 <span class="nv">$csvData</span>
 </code></pre></div>
 <p>In this example, we first define a CSV string containing data about people, with each person represented as a row with columns for name, age, and occupation. We then pipe this CSV string to the ConvertFrom-CSV cmdlet to convert it into PowerShell objects and store the output in a variable called $csvData. Finally, we output the objects using the $csvData variable.</p>
-<h2 id="excel">Excel</h2>
 <h2 id="json">JSON</h2>
 <h3 id="reading-a-json-file">Reading a JSON file</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$json</span> <span class="p">=</span> <span class="nb">Get-Content</span> <span class="n">C</span><span class="p">:\</span><span class="n">example</span><span class="p">.</span><span class="n">json</span> <span class="p">|</span> <span class="nb">ConvertFrom-Json</span>
