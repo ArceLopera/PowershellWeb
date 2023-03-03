@@ -158,9 +158,6 @@ $csvData
 
 In this example, we first define a CSV string containing data about people, with each person represented as a row with columns for name, age, and occupation. We then pipe this CSV string to the ConvertFrom-CSV cmdlet to convert it into PowerShell objects and store the output in a variable called $csvData. Finally, we output the objects using the $csvData variable.
 
-
-## Excel
-
 ## JSON
 ### Reading a JSON file
 ``` pwsh

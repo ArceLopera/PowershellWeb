@@ -78,7 +78,7 @@ PowerShell 7 includes many new features and improvements over PowerShell 5. Some
 ### Compatibility
 Finally, it's worth noting that PowerShell 7 is not fully backwards-compatible with PowerShell 5. While most scripts and modules written for PowerShell 5 should work fine in PowerShell 7, there may be some compatibility issues with certain scripts or modules. It's always a good idea to test your scripts and modules in PowerShell 7 before deploying them to production systems.
 
-## PowerShell 7 Integrated Console
+## PowerShell 7 Integrated Console in VSCode
 
 PowerShell 7 Integrated Console is a new feature in PowerShell 7 that provides many of the same features as PowerShell ISE, but in a more modern and flexible interface that can be used on Windows, Linux, and macOS. Here are some of the key differences between the two:
 
@@ -98,30 +98,14 @@ PowerShell 7 Integrated Console includes many of the same features as PowerShell
 ### Deprecation
 Finally, it's worth noting that PowerShell ISE has been deprecated in favor of PowerShell 7 Integrated Console. Microsoft has stated that PowerShell ISE will not receive any new features or updates, and it will be removed in future versions of Windows. While PowerShell ISE will still be available in older versions of Windows that include PowerShell 5, it's recommended that you switch to PowerShell 7 Integrated Console for new development and management tasks.
 
-## PowerShell 7 Integrated Console vs the PowerShell extension for Visual Studio Code (VSCode)
-
-The PowerShell extension for VSCode is a popular extension that provides a rich set of tools for working with PowerShell scripts and modules within the VSCode editor. Here are some of the key differences between the PowerShell 7 Integrated Console and the PowerShell extension for VSCode:
-
-### User Interface
-The most obvious difference between the PowerShell 7 Integrated Console and the PowerShell extension for VSCode is the user interface. PowerShell 7 Integrated Console has a more traditional console-based interface, while the PowerShell extension for VSCode provides a modern and flexible editor-based interface. The VSCode interface includes features like syntax highlighting, IntelliSense, and code folding, as well as support for multiple tabs and split panes.
-
-### Cross-Platform Support
-Like PowerShell 7 Integrated Console, the PowerShell extension for VSCode is designed to work on Windows, Linux, and macOS. This means that you can use the extension to manage and automate tasks on a wide variety of systems, just like PowerShell 7 Integrated Console.
-
-### Debugging Support
-The PowerShell extension for VSCode provides more advanced debugging support than PowerShell 7 Integrated Console. With the extension, you can set breakpoints, step through code, and inspect variables, just like you would in a traditional debugger. While PowerShell 7 Integrated Console does provide some debugging features, they are more limited than what's available in the VSCode extension.
-
-### Integrated Terminal
-The PowerShell extension for VSCode includes an integrated terminal that you can use to run PowerShell commands and scripts. This terminal is similar to PowerShell 7 Integrated Console in that it provides a command-line interface, but it's integrated directly into the VSCode interface, making it easier to switch between editing and running code.
-
-### Additional Features
+### Additional Features of VSCode Powershell Extension
 The PowerShell extension for VSCode includes a number of additional features that aren't available in PowerShell 7 Integrated Console, such as:
 
 + **Code Snippets**: The extension provides a library of code snippets that you can use to quickly insert common PowerShell commands and structures into your code.
 + **Task Runner**: You can use the extension's Task Runner to automate repetitive tasks like running tests, building modules, or deploying scripts.
 + **Integrated Source Control**: The extension includes support for integrated source control, so you can use Git or another version control system directly from within the VSCode editor.
 
-Overall, both PowerShell 7 Integrated Console and the PowerShell extension for VSCode provide powerful tools for working with PowerShell scripts and modules, but they have different strengths and weaknesses. If you prefer a more traditional console-based interface, or you're working with systems that don't support VSCode, then PowerShell 7 Integrated Console may be the better choice. If you prefer a more modern and flexible editor-based interface, or you need more advanced debugging and task automation features, then the PowerShell extension for VSCode may be the better choice.
+Overall, the PowerShell extension for VSCode provide powerful tools for working with PowerShell scripts and modules. 
 
 ## Final Recommendations
 
@@ -133,7 +117,7 @@ When it comes to setting up your environment for programming in PowerShell, ther
 
 2. **Install a Text Editor or Integrated Development Environment (IDE)**
 
-    While PowerShell 7 includes its own Integrated Console, using a dedicated text editor or IDE can help make your workflow more efficient and productive. Popular options for PowerShell development include Visual Studio Code, PowerShell ISE, and the PowerShell extension for Visual Studio.
+    Using a dedicated text editor or IDE can help make your workflow more efficient and productive. Popular options for PowerShell development include Visual Studio Code, PowerShell ISE, and the PowerShell extension for Visual Studio.
 
 3. **Install the PowerShell Extension for Your Text Editor or IDE**
 
