@@ -77,4 +77,3 @@ With PowerShell, you can:
 In addition, PowerShell has a strong and supportive community of users and developers who are constantly creating new scripts, modules, and tools to extend its functionality.
 
 Whether you are a sysadmin, a developer, or just someone who wants to learn a powerful scripting language, PowerShell is a valuable tool to add to your skillset. With its robust features and wide range of applications, PowerShell can help you become more efficient and effective in your work. So why not give it a try and see what you can accomplish with PowerShell!
-
