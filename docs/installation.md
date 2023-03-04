@@ -11,31 +11,29 @@ On Linux, you can install PowerShell 7 using your distribution's package manager
 Ubuntu 18.04 and later, and Debian 10 and later: Run the following commands in the terminal:
 
 ``` csharp
-wget -q https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
+# Update the list of packages
 sudo apt-get update
+# Install pre-requisite packages.
+sudo apt-get install -y wget apt-transport-https software-properties-common
+# Download the Microsoft repository GPG keys
+wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb"
+# Register the Microsoft repository GPG keys
+sudo dpkg -i packages-microsoft-prod.deb
+# Update the list of packages after we added packages.microsoft.com
+sudo apt-get update
+# Install PowerShell
 sudo apt-get install -y powershell
+# Start PowerShell
+pwsh
 
 ```
-CentOS 7 and later, and Fedora 28 and later: Run the following commands in the terminal:
 
-``` csharp
-sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo curl -L -o /etc/yum.repos.d/microsoft.repo https://packages.microsoft.com/config/rhel/$(rpm -E %rhel)/prod.repo
-sudo yum install -y powershell
-openSUSE Leap 15.1 and later: Run the following commands in the terminal:
-``` 
-
-``` csharp
-sudo zypper addrepo -fc https://packages.microsoft.com/config/opensuse/15/prod.repo
-sudo zypper install powershell
-```
 
 ## macOS
 On macOS, you can install PowerShell 7 using Homebrew, a popular package manager for macOS. Run the following command in the terminal:
 
 ``` csharp
-brew cask install powershell
+brew install --cask powershell
 ```
 
 After installation is complete, you can open PowerShell 7 from the Launchpad or by typing pwsh in the terminal.

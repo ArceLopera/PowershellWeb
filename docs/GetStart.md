@@ -9,20 +9,27 @@ PowerShell is pre-installed on most modern Windows operating systems. To find it
 To check which version of PowerShell you have installed, open a PowerShell session and run the following command:
 
 ``` pwsh
-$PSVersionTable.PSVersion
+$PSVersionTable
 ```
 
 This will display the PowerShell version number and other version-related information, such as the CLR version, the .NET Framework version, and the OS version.
 
 ## Update PowerShell 
 
-If you have an older version of PowerShell, you can update it to the latest version. To do this, open a PowerShell session with administrator privileges and run the following command:
+If you have an older version of PowerShell, you can update it to the latest version. Winget, the Windows Package Manager, is a command-line tool enables users to discover, install, upgrade, remove, and configure applications on Windows client computers. This tool is the client interface to the Windows Package Manager service. The following commands can be used to install PowerShell using the published winget packages:
+
+Search for the latest version of PowerShell
+
 ``` pwsh
-Install-PackageProvider -Name NuGet -Force
-Install-Module PowerShellGet -Force
-Update-Module PowerShellGet
+winget search Microsoft.PowerShell
 ```
-This will update the PowerShell package provider and the PowerShellGet module, which you can then use to update PowerShell to the latest version.
+
+Then, install PowerShell or PowerShell Preview using the id parameter
+
+``` pwsh
+winget install --id Microsoft.Powershell --source winget
+winget install --id Microsoft.Powershell.Preview --source winget
+```
 
 ## Use PowerShell help 
 
@@ -32,9 +39,11 @@ Get-Help <cmdlet or topic>
 ```
 
 Replace <cmdlet or topic> with the name of the cmdlet or topic you want to learn about. For example, to learn about the Get-ChildItem cmdlet, you would run the following command:
+
 ``` pwsh
 Get-Help Get-ChildItem
 ```
+
 This will display the help information for the Get-ChildItem cmdlet, including a description, syntax, parameters, examples, and related topics.
 
 By following these steps, you can get started with PowerShell, check for its version, update it to the latest version, and use the built-in help system to learn more about PowerShell and its various features.
@@ -70,7 +79,7 @@ The Get-Help cmdlet is a powerful feature of PowerShell that provides help infor
     ``` pwsh
     Get-Help <topic>
     ```
-    Replace <topic> with the name of the topic you want to learn about. For example, to get help for operators, you would run the following command:
+    Replace [<topic>](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about?view=powershell-7.3) with the name of the topic you want to learn about. For example, to get help for operators, you would run the following command:
 
     ``` pwsh
     Get-Help about_operators
@@ -84,40 +93,4 @@ The Get-Help cmdlet is a powerful feature of PowerShell that provides help infor
     This will display help information for all cmdlets that start with "Get", including Get-ChildItem, Get-Item, Get-Process, and others.
 
 In summary, the Get-Help cmdlet is a valuable tool for learning about PowerShell and its various components. By using Get-Help with different parameters and wildcard characters, you can quickly find the information you need and improve your PowerShell skills.
-
-## Wildcard Use
-
-Wildcard characters are special characters that are used to search for text patterns in PowerShell commands. They are extremely useful for finding cmdlets, functions, files, or any other data that matches a specific pattern. Here are the most commonly used wildcard characters in PowerShell:
-
-+ *** (asterisk):** 
-    This is the most common wildcard character in PowerShell. It matches any number of characters, including none. For example, if you want to find all files with the extension ".txt" in a directory, you can use the following command:
-    ``` pwsh
-    Get-ChildItem C:\Users\username\Documents\*.txt
-    ```
-    This command will list all files with the ".txt" extension in the "Documents" folder of the user "username".
-
-+ **? (question mark):** 
-    This wildcard character matches any single character. For example, if you want to find all files that have a name consisting of a single character followed by "file.txt", you can use the following command:
-    ``` pwsh
-    Get-ChildItem C:\Users\username\Documents\?file.txt
-    ```
-    This command will list all files that have a name consisting of a single character followed by "file.txt" in the "Documents" folder of the user "username".
-
-+ **[ ] (brackets):** 
-    This wildcard character matches any single character that is included in the brackets. For example, if you want to find all files that have a name starting with the letters "a", "b", or "c", you can use the following command:
-    ``` pwsh
-    Get-ChildItem C:\Users\username\Documents\[abc]*.*
-    ```
-    This command will list all files that have a name starting with the letters "a", "b", or "c" in the "Documents" folder of the user "username".
-
-Wildcard characters can also be used with other PowerShell commands, such as Select-String, which searches for text patterns in files or other data. For example, if you want to search for all occurrences of the word "example" in a file, you can use the following command:
-
-``` pwsh
-Select-String C:\Users\username\Documents\example.txt -Pattern "ex*le"
-``` 
-This command will search for all occurrences of the word "example" in the "example.txt" file, using the asterisk as a wildcard character to match any characters between "ex" and "le".
-
-In summary, wildcard characters are powerful tools in PowerShell that allow you to find patterns in data quickly and easily. By using the right combination of wildcard characters and other PowerShell commands, you can automate many repetitive tasks and save yourself a lot of time and effort.
-
-
 
