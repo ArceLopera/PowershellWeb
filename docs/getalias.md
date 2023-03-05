@@ -45,7 +45,7 @@ Here are some common ways to use Get-Alias:
 
     You can use the -Name parameter followed by a search pattern to find a specific alias or a group of aliases that match the pattern. 
     ``` pwsh
-    Get-Alias -Name *path*
+    Get-Alias -Name *s*
     ```
 
 4. **Export aliases to a file** 

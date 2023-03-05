@@ -40,20 +40,12 @@ Here's an explanation of the parameters:
 3. Filter the results by name or type:
 
     ``` pwsh
-    Get-Process | Get-Member -Name "Name"
+    Get-Process | Get-Member -Name "<Name>"
     ```
 
-    This command retrieves only the properties with the name "Name" from the Get-Process cmdlet.
+    This command retrieves only the properties with the name "<Name>" from the Get-Process cmdlet.
 
-4. Retrieve the type of an object:
-
-    ``` pwsh
-    "Hello World" | Get-Member -MemberType Type
-    ```
-
-    This command retrieves the type of the object "Hello World".
-
-5. View the static properties of a .NET class:
+4. View the static properties of a .NET class:
 
     ``` pwsh
     [System.Math] | Get-Member -Static -MemberType Property
