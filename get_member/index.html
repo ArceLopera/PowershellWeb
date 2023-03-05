@@ -589,15 +589,9 @@
 </li>
 <li>
 <p>Filter the results by name or type:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Get-Member</span> <span class="n">-Name</span> <span class="s2">&quot;Name&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Get-Member</span> <span class="n">-Name</span> <span class="s2">&quot;&lt;Name&gt;&quot;</span>
 </code></pre></div>
-<p>This command retrieves only the properties with the name "Name" from the Get-Process cmdlet.</p>
-</li>
-<li>
-<p>Retrieve the type of an object:</p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;Hello World&quot;</span> <span class="p">|</span> <span class="nb">Get-Member</span> <span class="n">-MemberType</span> <span class="nb">Type</span>
-</code></pre></div>
-<p>This command retrieves the type of the object "Hello World".</p>
+<p>This command retrieves only the properties with the name "<Name>" from the Get-Process cmdlet.</p>
 </li>
 <li>
 <p>View the static properties of a .NET class:</p>
