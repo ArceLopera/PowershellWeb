@@ -161,13 +161,17 @@ In this example, we first define a CSV string containing data about people, with
 ## JSON
 ### Reading a JSON file
 ``` pwsh
-$json = Get-Content C:\example.json | ConvertFrom-Json
+$json = Get-Content .\example.json | ConvertFrom-Json
 ```
 
 ### Writing to a JSON file
 ``` pwsh
 $data = @{"Name"="John"; "Age"=30}
-$data | ConvertTo-Json | Out-File C:\example.json
+$data | ConvertTo-Json | Out-File .\example.json
+```
+### Testing a JSON file
+``` pwsh
+"{'name': 'Ashley', 'age': 25}" | Test-Json
 ```
 ## XML
 ### Reading an XML file
