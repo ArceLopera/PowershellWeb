@@ -99,3 +99,4 @@ nav:
     - Files & Folders: files_folders.md
     - Pipeline: pipeline.md
     - Output Format: out_format.md
+    - Object Comparison: comparison.md
