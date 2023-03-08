@@ -208,6 +208,7 @@ Here are some examples of how to use these cmdlets to manipulate HTML files in P
 
     ``` pwsh
     Get-Process | Select-Object Name, CPU, WorkingSet | ConvertTo-Html -Head "Process Report" -PreContent "<h1>Current Processes</h1>"
+    
     ```
 
 
