@@ -213,3 +213,26 @@ Here are some examples of how to use these cmdlets to manipulate HTML files in P
 
 
 These are just a few examples of how to manipulate HTML files in PowerShell. The possibilities are endless, and these cmdlets can be combined with other PowerShell commands to perform more complex tasks.
+
+## OUTPUT TO FILE OR PRINTER
+If you want to save the output of a command to an unformatted plain text file, you can use either of these methods (using the get-process command as an example):
+
++ get-process > processes.txt (using redirection)
++ get-process | out-file processes.txt (using the pipeline)
+
+Both versions are functionally equivalent, but the out-file command can receive parameters to change the line width and to avoid overwriting an existing file.
+To read a plain text file as text strings, you use the Get-Content cmdlet (with aliases cat or type):
+
+``` pwsh
+Get-Content processes.txt
+```
+
+If you want to send the output of a command to the printer, you use the out-printer cmdlet:
+
+``` pwsh
+get-process | out-printer
+```
+
+
+
+
