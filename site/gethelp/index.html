@@ -435,17 +435,24 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#exercises-on-get-help-usage" class="md-nav__link">
-    Exercises on Get-Help usage
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Exercises1/" class="md-nav__link">
+        Exercise 1
+      </a>
     </li>
   
 
@@ -628,13 +635,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#exercises-on-get-help-usage" class="md-nav__link">
-    Exercises on Get-Help usage
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -690,103 +690,6 @@ Get-Help -Name Get-ChildItem -Online
 This command will open the online version of the help file for the Get-ChildItem cmdlet.
 </code></pre></div>
 <p>In summary, the Get-Help cmdlet is a versatile tool that can provide a lot of information about commands, cmdlets, and modules in PowerShell. By using the appropriate parameters, you can customize the help output to suit your needs and become more proficient in PowerShell.</p>
-<h2 id="exercises-on-get-help-usage">Exercises on Get-Help usage</h2>
-<ol>
-<li>
-<p>Verify if there are cmdlets that allow converting the output of another cmdlet to HTML format.</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="n">help</span> <span class="p">*</span><span class="n">html</span><span class="p">*</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Verify which cmdlets allow directing output to a printer or a file.</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="nb">Out-Printer</span>
-<span class="nb">Out-File</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Verify how many cmdlets are used to manage processes.</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="n">help</span> <span class="p">*</span><span class="k">Process</span><span class="p">*</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Which cmdlet can be used to write an entry to an event log?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="nb">Write-EventLog</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Which cmdlets can be used to manage aliases?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="n">help</span> <span class="p">*</span><span class="k">alias</span><span class="p">*</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Is there a way to keep a transcript of a PowerShell session and save it to a file?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="nb">Start-Transcript</span> <span class="n">-Path</span> <span class="s2">&quot;C:\transcripts\transcript0.txt&quot;</span> <span class="n">-NoClobber</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>How can you get the 100 most recent records from the SECURITY event log on a system?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-EventLog</span> <span class="n">-LogName</span> <span class="n">SECURITY</span> <span class="n">-Newest</span> <span class="n">100</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Is there a way to obtain the list of services that are running on a remote computer?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-Answer: Yes, you can use the Get-Service cmdlet with the -ComputerName parameter followed by the name of the remote computer to obtain the list of services running on that computer. Example: 
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Service</span> <span class="n">-ComputerName</span> <span class="n">RemoteComputerName</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Is there a way to obtain the list of services that are running on a remote computer?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-Answer: Yes, you can use the Get-Process cmdlet with the -ComputerName parameter followed by the name of the remote computer to obtain the list of processes running on that computer. Example: 
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="n">-ComputerName</span> <span class="n">RemoteComputerName</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Review the help of the Out-File cmdlet. What is the line size used by this cmdlet by default? Is there a parameter that allows you to change this size?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-Answer: The line size used by default by the Out-File cmdlet is 80 characters. You can change this size using the -Width parameter followed by the desired width. Example: 
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">-FilePath</span> <span class="n">C</span><span class="p">:\</span><span class="n">Processes</span><span class="p">.</span><span class="n">txt</span> <span class="n">-Width</span> <span class="n">120</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>By default, Out-File overwrites the output file if it already exists. Is there a parameter that prevents the overwriting of an existing file?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-Answer: Yes, the -NoClobber parameter can be used to prevent the overwriting of an existing file. If this parameter is used and the output file already exists, Out-File will not overwrite the file and will instead display an error message. 
-Example: 
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">-FilePath</span> <span class="n">C</span><span class="p">:\</span><span class="n">Processes</span><span class="p">.</span><span class="n">txt</span> <span class="n">-NoClobber</span>
-</code></pre></div>
-</details></p>
-</li>
-</ol>
 
               
             </article>
@@ -816,13 +719,13 @@ Example:
       
       
         
-        <a href="../get_member/" class="md-footer__link md-footer__link--next" aria-label="Next: GetMember" rel="next">
+        <a href="../Exercises1/" class="md-footer__link md-footer__link--next" aria-label="Next: Exercise 1" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              GetMember
+              Exercise 1
             </div>
           </div>
           <div class="md-footer__button md-icon">
