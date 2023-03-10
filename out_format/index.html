@@ -646,6 +646,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#output-to-file-or-printer" class="md-nav__link">
+    OUTPUT TO FILE OR PRINTER
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -875,6 +882,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#output-to-file-or-printer" class="md-nav__link">
+    OUTPUT TO FILE OR PRINTER
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1060,6 +1074,19 @@ This code imports a CSV file containing user data, and then outputs the Name pro
 </li>
 </ol>
 <p>These are just a few examples of how to manipulate HTML files in PowerShell. The possibilities are endless, and these cmdlets can be combined with other PowerShell commands to perform more complex tasks.</p>
+<h2 id="output-to-file-or-printer">OUTPUT TO FILE OR PRINTER</h2>
+<p>If you want to save the output of a command to an unformatted plain text file, you can use either of these methods (using the get-process command as an example):</p>
+<ul>
+<li>get-process &gt; processes.txt (using redirection)</li>
+<li>get-process | out-file processes.txt (using the pipeline)</li>
+</ul>
+<p>Both versions are functionally equivalent, but the out-file command can receive parameters to change the line width and to avoid overwriting an existing file.
+To read a plain text file as text strings, you use the Get-Content cmdlet (with aliases cat or type):</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Content</span> <span class="n">processes</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div>
+<p>If you want to send the output of a command to the printer, you use the out-printer cmdlet:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">get-process</span> <span class="p">|</span> <span class="nb">out-printer</span>
+</code></pre></div>
 
               
             </article>
