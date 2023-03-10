@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Exercises1/</loc>
+         <lastmod>2023-03-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://arcelopera.github.io/PowershellWeb/GetStart/</loc>
          <lastmod>2023-03-10</lastmod>
          <changefreq>daily</changefreq>
