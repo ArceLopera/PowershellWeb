@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/gethelp/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Exercises2/">
       
       <link rel="icon" href="../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>GetHelp - Powershell Refresher</title>
+        <title>Exercise 2 - Powershell Refresher</title>
       
     
     
@@ -68,11 +68,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#1-name" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -101,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GetHelp
+              Exercise 2
             
           </span>
         </div>
@@ -355,90 +350,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          GetHelp
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../gethelp/" class="md-nav__link">
         GetHelp
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-name" class="md-nav__link">
-    1. -Name
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-category" class="md-nav__link">
-    2. -Category
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-detailed" class="md-nav__link">
-    3. -Detailed
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-examples" class="md-nav__link">
-    4. -Examples
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-full" class="md-nav__link">
-    5. -Full
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-parameter" class="md-nav__link">
-    6. -Parameter
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-online" class="md-nav__link">
-    7. -Online
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -560,11 +476,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Exercises2/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Exercise 2
       </a>
+      
     </li>
   
 
@@ -594,63 +518,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-name" class="md-nav__link">
-    1. -Name
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-category" class="md-nav__link">
-    2. -Category
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-detailed" class="md-nav__link">
-    3. -Detailed
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-examples" class="md-nav__link">
-    4. -Examples
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-full" class="md-nav__link">
-    5. -Full
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-parameter" class="md-nav__link">
-    6. -Parameter
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-online" class="md-nav__link">
-    7. -Online
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -663,47 +530,162 @@
                 
 
 
-  <h1>GetHelp</h1>
+  <h1>Exercise 2</h1>
 
-<p>The Get-Help cmdlet is a powerful tool in PowerShell that provides information about commands, cmdlets, and modules. It has several parameters that allow you to customize the help output to suit your needs. Here are some of the most common parameters for the Get-Help cmdlet with examples:</p>
-<h2 id="1-name">1. -Name</h2>
-<p>This parameter specifies the name of the command or cmdlet that you want help with. For example:
-    <div class="highlight"><pre><span></span><code><span class="nb">Get-Help</span> <span class="n">-Name</span> <span class="nb">Get-ChildItem</span>
+<ol>
+<li>
+<p>Create two similar text files (with one or two different lines). Compare them using diff.
+    <details>
+        <summary>Click me for proposed solution</summary>
+    <div class="highlight"><pre><span></span><code><span class="c">##Create 1st file</span>
+<span class="nb">New-Item</span> <span class="n">-Path</span> <span class="p">.</span> <span class="n">-Name</span> <span class="s2">&quot;file1.txt&quot;</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span> <span class="n">-Value</span> <span class="s2">&quot;Hello World.\nBonjour Monde!&quot;</span> <span class="n">-Force</span>
+<span class="c">##Create 2nd file</span>
+<span class="nb">New-Item</span> <span class="n">-Path</span> <span class="p">.</span> <span class="n">-Name</span> <span class="s2">&quot;file2.txt&quot;</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span> <span class="n">-Value</span> <span class="s2">&quot;Hello World!\nBonjour Monde.&quot;</span> <span class="n">-Force</span>
+<span class="c">##Find the difference between two files</span>
+<span class="nb">diff </span><span class="n">-ReferenceObject</span><span class="p">(</span><span class="nb">cat </span><span class="n">file1</span><span class="p">.</span><span class="n">txt</span><span class="p">)</span> <span class="n">-DifferenceObject</span><span class="p">(</span><span class="nb">cat </span><span class="n">file2</span><span class="p">.</span><span class="n">txt</span><span class="p">)</span>
+</code></pre></div></p>
+<p><div class="highlight"><pre><span></span><code>InputObject    SideIndicator
+-----------    -------------
+Hello World!   =&gt;           
+Bonjour Monde. =&gt;           
+Hello World.   &lt;=           
+Bonjour Monde! &lt;=           
 </code></pre></div>
-    This command will display help for the Get-ChildItem cmdlet, which is used to list the contents of a directory.</p>
-<h2 id="2-category">2. -Category</h2>
-<p>This parameter specifies the category of help that you want to display. For example:
-    <div class="highlight"><pre><span></span><code><span class="nb">Get-Help</span> <span class="n">-Category</span> <span class="n">Navigation</span>
+</details></p>
+</li>
+<li>
+<p>What happens if you run:
+<div class="highlight"><pre><span></span><code><span class="nb">get-service</span> <span class="p">|</span> <span class="nb">export-csv</span> <span class="n">servicios</span><span class="p">.</span><span class="n">csv</span> <span class="p">|</span> <span class="nb">out-file</span>
 </code></pre></div>
-    This command will display all cmdlets related to navigation.</p>
-<h2 id="3-detailed">3. -Detailed</h2>
-<p>This parameter displays detailed help information, including examples and parameter descriptions. For example:
-    <div class="highlight"><pre><span></span><code><span class="nb">Get-Help</span> <span class="n">-Name</span> <span class="nb">Get-ChildItem</span> <span class="n">-Detailed</span>
+Why?
+    <details>
+            <summary>Click me for proposed solution</summary>
+    The output of the above command is:
+    <div class="highlight"><pre><span></span><code>out-file: Cannot process argument because the value of the &quot;path&quot; argument is NULL. Change the value of the &quot;path&quot; argument to a non-null value.
+At line:1 char:42
++ get-service | export-csv servicios.csv | out-file
++                                          ~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Out-File], PSArgumentNullException
+    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.OutFileCommand
 </code></pre></div>
-    This command will display detailed help information for the Get-ChildItem cmdlet.</p>
-<h2 id="4-examples">4. -Examples</h2>
-<p>This parameter displays examples of how to use the command or cmdlet. For example:
-    <div class="highlight"><pre><span></span><code>Get-Help -Name Get-ChildItem -Examples
+    This is because export-csv servicios.csv creates the csv file and has null output, therefore out-file is not necessary.</p>
+</details>
+</li>
+<li>
+<p>How would you create a file delimited by semicolons (;)? 
+    HINT: Use export-csv, but with an additional parameter.</p>
+<p><details>
+    <summary>Click me for proposed solution</summary>
+    <div class="highlight"><pre><span></span><code><span class="nb">ps </span><span class="p">|</span> <span class="nb">epcsv </span><span class="n">-delimiter</span> <span class="s2">&quot;;&quot;</span> <span class="n">example</span><span class="p">.</span><span class="n">csv</span>
+<span class="c">##Same as</span>
+<span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Export-Csv</span> <span class="n">-delimiter</span> <span class="s2">&quot;;&quot;</span> <span class="n">example</span><span class="p">.</span><span class="n">csv</span>
 </code></pre></div>
-    This command will display examples of how to use the Get-ChildItem cmdlet.</p>
-<h2 id="5-full">5. -Full</h2>
-<p>This parameter displays the full help information, including syntax and parameter descriptions. For example:
-    <div class="highlight"><pre><span></span><code>Get-Help -Name Get-ChildItem -Full
+</details></p>
+</li>
+<li>
+<p>Export-cliXML and Export-CSV modify the system, because they can create and overwrite files. Is there a parameter that prevents overwriting an existing file? Is there a parameter that allows the command to ask before overwriting a file?</p>
+<p><details>
+    <summary>Click me for proposed solution</summary>
+To prevent overwriting the file if it already exists, the -NoClobber attribute can be used.</p>
+<p><strong>Example:</strong>
+The following command will not overwrite the result from point 3
+<div class="highlight"><pre><span></span><code><span class="nb">ps </span><span class="p">|</span> <span class="nb">epcsv </span><span class="n">example</span><span class="p">.</span><span class="n">csv</span> <span class="n">-NoClobber</span>
 </code></pre></div>
-    This command will display the full help information for the Get-ChildItem cmdlet.</p>
-<h2 id="6-parameter">6. -Parameter</h2>
-<p>This parameter displays help information for a specific parameter of a command or cmdlet. For example:
-    <div class="highlight"><pre><span></span><code>Get-Help -Name Get-ChildItem -Parameter Path
+To ask for confirmation, use the -Confirm parameter.
+<div class="highlight"><pre><span></span><code><span class="nb">ps </span><span class="p">|</span> <span class="nb">epcsv </span><span class="n">-delimiter</span> <span class="s2">&quot;;&quot;</span> <span class="n">example</span><span class="p">.</span><span class="n">csv</span> <span class="n">-Confirm</span>
 </code></pre></div>
-    This command will display help information for the Path parameter of the Get-ChildItem cmdlet.</p>
-<h2 id="7-online">7. -Online</h2>
-<p>This parameter opens the online version of the help file for the command or cmdlet. For example:</p>
-<div class="highlight"><pre><span></span><code>```
-Get-Help -Name Get-ChildItem -Online
-```
-This command will open the online version of the help file for the Get-ChildItem cmdlet.
+</details></p>
+</li>
+<li>
+<p>Windows uses regional settings, which includes the list separator. In English Windows, the list separator is a comma (,). How do you tell Export-CSV to use the system separator instead of the comma?</p>
+<p><details>
+    <summary>Click me for proposed solution</summary>
+The cmdlet get-culture obtains system configuration information, such as language and writing information.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">ps </span><span class="p">|</span> <span class="nb">epcsv </span><span class="n">test2</span><span class="p">.</span><span class="n">csv</span> <span class="n">-Delimiter</span> <span class="p">((</span><span class="nb">get-culture</span><span class="p">).</span><span class="n">textInfo</span><span class="p">.</span><span class="n">listSeparator</span><span class="p">)</span>
 </code></pre></div>
-<p>In summary, the Get-Help cmdlet is a versatile tool that can provide a lot of information about commands, cmdlets, and modules in PowerShell. By using the appropriate parameters, you can customize the help output to suit your needs and become more proficient in PowerShell.</p>
+<p>Using cat (alias of Get-Content), we can see that the output uses ';' as the Spanish list separator.</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">cat </span><span class="p">.\</span><span class="n">test2</span><span class="p">.</span><span class="n">csv</span>
+</code></pre></div>
+</details></p>
+</li>
+<li>
+<p>Identify a cmdlet that allows generating a random number.</p>
+<p><details>
+    <summary>Click me for proposed solution</summary>
+The cmdlet get-random returns a pseudo-random 32-bit integer.
+</details></p>
+</li>
+<li>
+<p>Identify a cmdlet that displays the current date and time.</p>
+<p><details>
+    <summary>Click me for proposed solution</summary>
+The cmdlet get-date returns an object that represents the current date and time, which can be represented in various formats such as Windows or UNIX.
+</details></p>
+</li>
+<li>
+<p>What type of object does the cmdlet in question 7 produce?</p>
+<p><details>
+    <summary>Click me for proposed solution</summary>
+Using the cmdlet gm, we can obtain the elements that make up the object and the type. As seen below, the object is part of the System package and its type is DateTime.
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Date</span> <span class="p">|</span> <span class="nb">gm</span>
+
+<span class="n">TypeName</span><span class="p">:</span> <span class="n">System</span><span class="p">.</span><span class="n">DateTime</span>
+</code></pre></div>
+</details></p>
+</li>
+<li>
+<p>Using the cmdlet in question 7 and select-object, display only the day of the week as follows:</p>
+<div class="highlight"><pre><span></span><code>DayOfWeek
+---------
+Thursday
+</code></pre></div>
+<p><details>
+    <summary>Click me for proposed solution</summary>
+    <div class="highlight"><pre><span></span><code><span class="nb">get-date</span> <span class="p">|</span> <span class="nb">select </span><span class="n">-property</span> <span class="s2">&quot;dayofweek&quot;</span>
+
+<span class="n">DayOfWeek</span>
+<span class="p">---------</span>
+<span class="n">Friday</span>
+</code></pre></div></p>
+</details>
+</li>
+<li>
+<p>Identify a cmdlet that displays information about patches (hotfixes) installed on the system.</p>
+<p><details>
+    <summary>Click me for proposed solution</summary>
+The cmdlet that returns a list of system patches is:
+<div class="highlight"><pre><span></span><code><span class="nb">get-hotfix</span>
+</code></pre></div>
+</details></p>
+</li>
+<li>
+<p>Using the cmdlet from question 10, display a list of installed patches. Then extend the expression to sort the list by installation date, and display on the screen only the installation date, the user who installed the patch, and the patch ID. Remember to examine the property names.</p>
+<p><details>
+    <summary>Click me for proposed solution</summary>
+The cmdlet that returns a list of system patches is:
+<div class="highlight"><pre><span></span><code><span class="nb">get-hotfix</span> <span class="p">|</span> <span class="nb">sort </span><span class="n">-property</span> <span class="n">installedon</span> <span class="p">|</span> <span class="nb">select </span><span class="n">-property</span> <span class="n">installedon</span><span class="p">,</span> <span class="n">installedby</span><span class="p">,</span> <span class="n">hotfixid</span>
+</code></pre></div>
+</details></p>
+</li>
+<li>
+<p>Complement the solution to question 11 so that the system sorts the results by the patch description, and includes the description, patch ID, and installation date in the listing. Write the results to an HTML file.</p>
+<p><details>
+    <summary>Click me for proposed solution</summary>
+The cmdlet that returns a list of system patches is:
+<div class="highlight"><pre><span></span><code><span class="nb">get-hotFix</span> <span class="p">|</span> <span class="nb">sort </span><span class="n">-property</span> <span class="n">description</span> <span class="p">|</span> <span class="nb">select </span><span class="n">-property</span> <span class="n">hotfixid</span><span class="p">,</span><span class="n">description</span><span class="p">,</span><span class="n">installedon</span>  <span class="p">|</span> <span class="nb">convertto-html</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">hotfix</span><span class="p">.</span><span class="n">html</span>
+</code></pre></div>
+</details></p>
+</li>
+<li>
+<p>Display a list of the 50 newest entries from the System event log. Sort the list so that the oldest entries appear first, and entries produced at the same time should be sorted by index number. Show the index number, time, and source for each entry. Write this information to a plain text file.</p>
+<p><details>
+    <summary>Click me for proposed solution</summary>
+The cmdlet that returns a list of system patches is:
+<div class="highlight"><pre><span></span><code><span class="nb">get-eventlog</span> <span class="n">-newest</span> <span class="n">50</span> <span class="n">-logname</span> <span class="n">system</span> <span class="p">|</span> <span class="nb">sort </span><span class="n">-property</span> <span class="n">index</span> <span class="p">|</span> <span class="nb">sort </span><span class="n">-property</span> <span class="n">timegenerated</span> <span class="n">-descending</span> <span class="p">|</span> <span class="nb">select </span><span class="n">-property</span> <span class="n">index</span><span class="p">,</span> <span class="n">timegenerated</span><span class="p">,</span> <span class="n">source</span> <span class="p">&gt;</span> <span class="n">exercise13</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div>
+</details></p>
+</li>
+</ol>
 
               
             </article>
@@ -717,7 +699,7 @@ This command will open the online version of the help file for the Get-ChildItem
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../GetStart/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Started" rel="prev">
+        <a href="../comparison/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Object Comparison" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -726,26 +708,11 @@ This command will open the online version of the help file for the Get-ChildItem
               <span class="md-footer__direction">
                 Previous
               </span>
-              Getting Started
+              Object Comparison
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../Exercises1/" class="md-footer__link md-footer__link--next" aria-label="Next: Exercise 1" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Exercise 1
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
