@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/out_format/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/tables_lists/">
       
       <link rel="icon" href="../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Output Format - Powershell Refresher</title>
+        <title>Formatting - Powershell Refresher</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#text" class="md-skip">
+        <a href="#output-format-tables-lists-wide-display" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Output Format
+              Formatting
             
           </span>
         </div>
@@ -453,224 +453,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Output Format
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../out_format/" class="md-nav__link">
         Output Format
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#text" class="md-nav__link">
-    Text
-  </a>
-  
-    <nav class="md-nav" aria-label="Text">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#get-content" class="md-nav__link">
-    Get-Content
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#set-content" class="md-nav__link">
-    Set-Content
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-content" class="md-nav__link">
-    Add-Content
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#clear-content" class="md-nav__link">
-    Clear-Content
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#csv" class="md-nav__link">
-    CSV
-  </a>
-  
-    <nav class="md-nav" aria-label="CSV">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#io" class="md-nav__link">
-    I/O
-  </a>
-  
-    <nav class="md-nav" aria-label="I/O">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#import-csv" class="md-nav__link">
-    Import-CSV
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#export-csv" class="md-nav__link">
-    Export-CSV
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversion-tofrom" class="md-nav__link">
-    Conversion To/From
-  </a>
-  
-    <nav class="md-nav" aria-label="Conversion To/From">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#convertto-csv" class="md-nav__link">
-    ConvertTo-CSV
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#convertfrom-csv" class="md-nav__link">
-    ConvertFrom-CSV
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#json" class="md-nav__link">
-    JSON
-  </a>
-  
-    <nav class="md-nav" aria-label="JSON">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#reading-a-json-file" class="md-nav__link">
-    Reading a JSON file
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#writing-to-a-json-file" class="md-nav__link">
-    Writing to a JSON file
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#testing-a-json-file" class="md-nav__link">
-    Testing a JSON file
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#xml" class="md-nav__link">
-    XML
-  </a>
-  
-    <nav class="md-nav" aria-label="XML">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#reading-an-xml-file" class="md-nav__link">
-    Reading an XML file
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#writing-to-an-xml-file" class="md-nav__link">
-    Writing to an XML file
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#html" class="md-nav__link">
-    HTML
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#output-to-file-or-printer" class="md-nav__link">
-    OUTPUT TO FILE OR PRINTER
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -708,11 +495,94 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../tables_lists/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Formatting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Formatting
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-format" class="md-nav__link">
+    TABLE FORMAT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-format" class="md-nav__link">
+    LIST FORMAT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wide-format" class="md-nav__link">
+    WIDE FORMAT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-of-names-of-attributes" class="md-nav__link">
+    CHANGE OF NAMES OF ATTRIBUTES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-format-commands" class="md-nav__link">
+    USING THE FORMAT COMMANDS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-filtering-strategies" class="md-nav__link">
+    MORE FILTERING STRATEGIES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-complete-example-of-complex-filtering" class="md-nav__link">
+    A COMPLETE EXAMPLE OF COMPLEX FILTERING
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -741,6 +611,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -749,184 +621,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#text" class="md-nav__link">
-    Text
-  </a>
-  
-    <nav class="md-nav" aria-label="Text">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#get-content" class="md-nav__link">
-    Get-Content
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#set-content" class="md-nav__link">
-    Set-Content
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-content" class="md-nav__link">
-    Add-Content
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#clear-content" class="md-nav__link">
-    Clear-Content
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#csv" class="md-nav__link">
-    CSV
-  </a>
-  
-    <nav class="md-nav" aria-label="CSV">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#io" class="md-nav__link">
-    I/O
-  </a>
-  
-    <nav class="md-nav" aria-label="I/O">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#import-csv" class="md-nav__link">
-    Import-CSV
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#export-csv" class="md-nav__link">
-    Export-CSV
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conversion-tofrom" class="md-nav__link">
-    Conversion To/From
-  </a>
-  
-    <nav class="md-nav" aria-label="Conversion To/From">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#convertto-csv" class="md-nav__link">
-    ConvertTo-CSV
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#convertfrom-csv" class="md-nav__link">
-    ConvertFrom-CSV
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#json" class="md-nav__link">
-    JSON
-  </a>
-  
-    <nav class="md-nav" aria-label="JSON">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#reading-a-json-file" class="md-nav__link">
-    Reading a JSON file
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#writing-to-a-json-file" class="md-nav__link">
-    Writing to a JSON file
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#testing-a-json-file" class="md-nav__link">
-    Testing a JSON file
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#xml" class="md-nav__link">
-    XML
-  </a>
-  
-    <nav class="md-nav" aria-label="XML">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#reading-an-xml-file" class="md-nav__link">
-    Reading an XML file
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#writing-to-an-xml-file" class="md-nav__link">
-    Writing to an XML file
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#html" class="md-nav__link">
-    HTML
+  <a href="#table-format" class="md-nav__link">
+    TABLE FORMAT
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#output-to-file-or-printer" class="md-nav__link">
-    OUTPUT TO FILE OR PRINTER
+  <a href="#list-format" class="md-nav__link">
+    LIST FORMAT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wide-format" class="md-nav__link">
+    WIDE FORMAT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-of-names-of-attributes" class="md-nav__link">
+    CHANGE OF NAMES OF ATTRIBUTES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-format-commands" class="md-nav__link">
+    USING THE FORMAT COMMANDS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-filtering-strategies" class="md-nav__link">
+    MORE FILTERING STRATEGIES
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-complete-example-of-complex-filtering" class="md-nav__link">
+    A COMPLETE EXAMPLE OF COMPLEX FILTERING
   </a>
   
 </li>
@@ -945,190 +683,193 @@
                 
 
 
-  <h1>Output Format</h1>
-
-<p>Here is a detailed table of the most common cmdlets available for reading and writing files in different formats in PowerShell:</p>
+<h1 id="output-format-tables-lists-wide-display">OUTPUT FORMAT: TABLES, LISTS, WIDE DISPLAY</h1>
+<p>Powershell commands present their output in tables or lists, depending on the command being used and the attributes it is asked to display.
+The Select-Object command (abbreviated as Select) can be used to determine the attributes that are displayed. However, the display is limited to the attributes related to the invoked command. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Get</span> <span class="k">Process</span> <span class="p">|</span> <span class="nb">select </span><span class="n">name</span><span class="p">,</span><span class="n">vm</span>
+</code></pre></div>
+<p>...displays a list of processes, made up only of the name of each process and the amount of virtual memory it uses.</p>
+<p>The formatting commands allow, in addition to printing the standard attributes, to display attributes calculated from the basic attributes. The display can be done in table, list or wide format mode.</p>
+<h2 id="table-format">TABLE FORMAT</h2>
+<p>The Format-Table cmdlet (abbreviated as ft) allows you to display the output of a command in table format. The parameters received by this command are the following:</p>
 <table>
 <thead>
 <tr>
-<th align="left">File Format</th>
-<th align="left">Cmdlet for Reading</th>
-<th align="left">Cmdlet for Writing</th>
+<th>Parameters</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="#text">Text Files (.txt)</a></td>
-<td align="left"><a href="#reading-a-text-file">Get-Content</a></td>
-<td align="left"><a href="#writing-to-a-text-file">Set-Content</a></td>
+<td>-Property</td>
+<td>Allows you to specify the attributes (native or calculated) that you want to display. The wildcard * can be used to specify all of them.</td>
 </tr>
 <tr>
-<td align="left"><a href="#csv">CSV Files (.csv)</a></td>
-<td align="left"><a href="#import-csv">Import-Csv</a></td>
-<td align="left"><a href="#export-csv">Export-Csv</a></td>
+<td>-Autosize</td>
+<td>Allows the command to accommodate the width of the columns in the best possible way. Normally this width is fixed, but this parameter adjusts the width of the columns to the longest value of each attribute.</td>
 </tr>
 <tr>
-<td align="left"><a href="#json">JSON Files (.json)</a></td>
-<td align="left"><a href="#reading-a-json-file">ConvertFrom-Json</a></td>
-<td align="left"><a href="#writing-to-a-json-file">ConvertTo-Json</a></td>
+<td>-Groupby</td>
+<td>This parameter specifies one of the fields. Each time there is a change in the value of this field, a new set of headers is printed. It is recommended to use Sort-Object before doing a Format-Table with Groupby, to avoid unnecessary repetition of headers.</td>
 </tr>
 <tr>
-<td align="left"><a href="#xml">XML Files (.xml)</a></td>
-<td align="left"><a href="#reading-an-xml-file">Select-Xml</a></td>
-<td align="left"><a href="#writing-to-an-xml-file">Export-Clixml</a></td>
-</tr>
-<tr>
-<td align="left"><a href="#html">HTML Files</a></td>
-<td align="left"><a href="#reading-a-text-file">Get-Content</a></td>
-<td align="left"><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/convertto-html?view=powershell-7.3">ConvertTo-Html</a></td>
+<td>-Wrap</td>
+<td>When a field's value is excessively long, Powershell wraps it, indicating this with an ellipsis (...). The Wrap parameter causes long values to span one or more additional lines, depending on the length of the value.</td>
 </tr>
 </tbody>
 </table>
-<p>Here are some examples of how to use these cmdlets:</p>
-<h2 id="text">Text</h2>
-<h3 id="get-content">Get-Content</h3>
-<p>The Get-Content cmdlet gets the content of the item at the location specified by the path, such as the text in a file or the content of a function. For files, the content is read one line at a time and returns a collection of objects, each of which represents a line of content.</p>
-<p>Beginning in PowerShell 3.0, Get-Content can also get a specified number of lines from the beginning or end of an item.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Content</span> <span class="n">C</span><span class="p">:\</span><span class="n">example</span><span class="p">.</span><span class="n">txt</span>
+<p><strong>Examples:</strong>
+<div class="highlight"><pre><span></span><code><span class="nb">get-process</span> <span class="p">|</span> <span class="n">ft-Property</span> <span class="p">*</span>
 </code></pre></div>
-<h3 id="set-content">Set-Content</h3>
-<p>Set-Content is a string-processing cmdlet that writes new content or replaces the content in a file. Set-Content replaces the existing content and differs from the Add-Content cmdlet that appends content to a file. To send content to Set-Content you can use the Value parameter on the command line or send content through the pipeline.</p>
-<p>If you need to create files or directories for the following examples, see New-Item.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-Content</span> <span class="n">C</span><span class="p">:\</span><span class="n">example</span><span class="p">.</span><span class="n">txt</span> <span class="s2">&quot;This is some text.&quot;</span>
+... tries to print all the attributes of the processes. Powershell reviews all lines of the output, and does its best to accommodate all possible fields. Due to this hotfix, the command takes a relatively long time to execute.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">get-process</span> <span class="p">|</span> <span class="nb">ft </span><span class="n">-Property</span> <span class="n">ID</span><span class="p">,</span><span class="n">Name</span><span class="p">,</span><span class="n">Responding</span> <span class="n">-AutoSize</span>
 </code></pre></div>
-<p>This command will write the text "This is some text" to the file file.txt located in the C:\ directory. If the file already exists, its content will be overwritten. If the file does not exist, it will be created.</p>
-<h3 id="add-content">Add-Content</h3>
-<p>The Add-Content cmdlet appends content to a specified item or file. You can specify the content by typing the content in the command or by specifying an object that contains the content.</p>
-<p>If you need to create files or directories for the following examples, see New-Item.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Add-Content</span> <span class="n">-Path</span> <span class="p">.\*.</span><span class="n">txt</span> <span class="n">-Exclude</span> <span class="n">help</span><span class="p">*</span> <span class="n">-Value</span> <span class="s1">&#39;End of file&#39;</span>
+<p>...gets a list of processes with ID, Name, and Responding attributes. The width of the columns is optimized.</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">get-process</span> <span class="p">|</span> <span class="nb">ft </span><span class="n">-Property</span> <span class="p">*</span> <span class="n">-autosize</span>
 </code></pre></div>
-<p>The Path parameter specifies all .txt files in the current directory, but the Exclude parameter ignores file names that match the specified pattern. The Value parameter specifies the text string that is written to the files.</p>
-<p>Use Get-Content to display the contents of these files.</p>
-<h3 id="clear-content">Clear-Content</h3>
-<p>The Clear-Content cmdlet deletes the contents of an item, such as deleting the text from a file, but it does not delete the item. As a result, the item exists, but it is empty. Clear-Content is similar to Clear-Item, but it works on items with contents, instead of items with values.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Clear-Content</span> <span class="s2">&quot;..\SmpUsers\*\init.txt&quot;</span>
+... tries to print all the attributes of the processes. However, this command runs faster, since the width of the columns is optimized.</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">Get-Service</span> <span class="p">|</span> <span class="n">sortStatus</span> <span class="p">|</span> <span class="nb">ft </span><span class="n">Name</span><span class="p">,</span><span class="n">Status</span><span class="p">,</span><span class="n">DisplayName</span> <span class="n">-groupby</span> <span class="n">Status</span>
 </code></pre></div>
-<p>This command deletes all of the content from the init.txt files in all subdirectories of the SmpUsers directory. The files are not deleted, but they are empty.</p>
-<h2 id="csv">CSV</h2>
-<p>A CSV (Comma Separated Values) file is a plain text file format that stores tabular data in a simple, structured way, where each line represents a row, and the data within each row is separated by commas. The first line of the file usually contains the headers, which specify the column names.</p>
-<p>When working with CSV files in PowerShell, it's important to keep in mind that the file format is very simple and flexible, but can also be prone to errors if the data is not well-formed. It's important to validate and clean the data before working with it, and to always specify the correct headers and data types when importing or exporting CSV files.</p>
-<h3 id="io">I/O</h3>
-<div class="highlight"><pre><span></span><code><span class="nb">Import-Csv</span> <span class="n">C</span><span class="p">:\</span><span class="n">example</span><span class="p">.</span><span class="n">csv</span>
+... prints a list of services divided into two sections: One of stopped services (Stopped) and another of running services (Running).</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">ft </span><span class="n">Name</span><span class="p">,</span><span class="n">Status</span><span class="p">,</span><span class="n">DisplayName</span> <span class="n">-autosize</span> <span class="n">-wrap</span>
 </code></pre></div>
-<h4 id="import-csv">Import-CSV</h4>
-<p>This cmdlet reads a CSV file and creates custom objects for each row, using the headers as the property names. You can then work with these objects as you would with any other PowerShell object. Here's an example:</p>
-<p><div class="highlight"><pre><span></span><code><span class="nv">$csv</span> <span class="p">=</span> <span class="nb">Import-CSV</span> <span class="n">C</span><span class="p">:\</span><span class="n">data</span><span class="p">\</span><span class="n">users</span><span class="p">.</span><span class="n">csv</span>
-<span class="k">foreach</span> <span class="p">(</span><span class="nv">$user</span> <span class="k">in</span> <span class="nv">$csv</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nb">Write-Output</span> <span class="nv">$user</span><span class="p">.</span><span class="n">Name</span>
-<span class="p">}</span>
-</code></pre></div>
-This code imports a CSV file containing user data, and then outputs the Name property of each user object.</p>
-<h4 id="export-csv">Export-CSV</h4>
-<div class="highlight"><pre><span></span><code><span class="nv">$data</span> <span class="p">=</span> <span class="p">@{</span><span class="s2">&quot;Name&quot;</span><span class="p">=</span><span class="s2">&quot;John&quot;</span><span class="p">;</span> <span class="s2">&quot;Age&quot;</span><span class="p">=</span><span class="n">30</span><span class="p">}</span>
-<span class="nv">$data</span> <span class="p">|</span> <span class="nb">Export-Csv</span> <span class="n">C</span><span class="p">:\</span><span class="n">example</span><span class="p">.</span><span class="n">csv</span> <span class="n">-NoTypeInformation</span>
-</code></pre></div>
-<p>This cmdlet writes a collection of objects to a CSV file, using the object properties as the column names. Here's an example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">=</span> <span class="nb">Get-ADUser</span> <span class="n">-Filter</span> <span class="p">*</span>
-<span class="nv">$users</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span> <span class="n">EmailAddress</span> <span class="p">|</span> <span class="nb">Export-CSV</span> <span class="n">C</span><span class="p">:\</span><span class="n">data</span><span class="p">\</span><span class="n">users</span><span class="p">.</span><span class="n">csv</span> <span class="n">-NoTypeInformation</span>
-</code></pre></div>
-<p>This code retrieves all users from Active Directory, selects the Name and EmailAddress properties, and then exports them to a CSV file.</p>
-<h3 id="conversion-tofrom">Conversion To/From</h3>
-<h4 id="convertto-csv">ConvertTo-CSV</h4>
-<p>This cmdlet converts a collection of objects to a CSV format, but does not write it to a file. You can then use other cmdlets (like Out-File or Set-Content) to write the CSV to a file. Here's an example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$processes</span> <span class="p">=</span> <span class="nb">Get-Process</span>
-<span class="nv">$processes</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span> <span class="n">ID</span><span class="p">,</span> <span class="n">CPU</span> <span class="p">|</span> <span class="nb">ConvertTo-CSV</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">C</span><span class="p">:\</span><span class="n">data</span><span class="p">\</span><span class="n">processes</span><span class="p">.</span><span class="n">csv</span>
-</code></pre></div>
-<p>This code retrieves information about running processes, selects the Name, ID, and CPU properties, converts it to CSV format, and then writes it to a file.</p>
-<p>Here's another example of how to use ConvertTo-CSV:</p>
-<div class="highlight"><pre><span></span><code><span class="c"># Create an array of objects</span>
-<span class="nv">$people</span> <span class="p">=</span> <span class="p">@(</span>
-    <span class="no">[PSCustomObject]</span><span class="p">@{</span>
-        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&quot;John&quot;</span>
-        <span class="n">Age</span> <span class="p">=</span> <span class="n">35</span>
-        <span class="n">Occupation</span> <span class="p">=</span> <span class="s2">&quot;Software Engineer&quot;</span>
-    <span class="p">},</span>
-    <span class="no">[PSCustomObject]</span><span class="p">@{</span>
-        <span class="n">Name</span> <span class="p">=</span> <span class="s2">&quot;Jane&quot;</span>
-        <span class="n">Age</span> <span class="p">=</span> <span class="n">28</span>
-        <span class="n">Occupation</span> <span class="p">=</span> <span class="s2">&quot;Project Manager&quot;</span>
-    <span class="p">}</span>
-<span class="p">)</span>
+...prints a list of services with the attributes Name, Status and DisplayName. The DisplayName attribute (which is the longest) will span multiple lines if necessary.</p>
+<h2 id="list-format">LIST FORMAT</h2>
+<p>The Format-List cmdlet (abbreviated fl) allows you to display attributes as a series of name-value pairs, for example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Service</span> <span class="n">-name</span> <span class="n">bits</span> <span class="p">|</span> <span class="nb">fl </span><span class="n">-Property</span> <span class="p">*</span>
 
-<span class="c"># Convert the objects to CSV format</span>
-<span class="nv">$csv</span> <span class="p">=</span> <span class="nv">$people</span> <span class="p">|</span> <span class="nb">ConvertTo-CSV</span>
-
-<span class="c"># Output the CSV data</span>
-<span class="nv">$csv</span>
+<span class="n">Name</span>                <span class="p">:</span> <span class="n">bits</span>
+<span class="n">RequiredServices</span>    <span class="p">:</span> <span class="p">{</span><span class="n">RpcSs</span><span class="p">}</span>
+<span class="n">CanPauseAndContinue</span> <span class="p">:</span> <span class="n">False</span>
+<span class="n">CanShutdown</span>         <span class="p">:</span> <span class="n">False</span>
+<span class="n">CanStop</span>             <span class="p">:</span> <span class="n">False</span>
+<span class="n">DisplayName</span>         <span class="p">:</span> <span class="n">Background</span> <span class="n">Intelligent</span> <span class="n">Transfer</span> <span class="n">Service</span>
+<span class="n">DependentServices</span>   <span class="p">:</span> <span class="p">{}</span>
+<span class="n">MachineName</span>         <span class="p">:</span> <span class="p">.</span>
+<span class="n">ServiceName</span>         <span class="p">:</span> <span class="n">bits</span>
+<span class="n">ServicesDependedOn</span>  <span class="p">:</span> <span class="p">{</span><span class="n">RpcSs</span><span class="p">}</span>
+<span class="n">ServiceHandle</span>       <span class="p">:</span>
+<span class="n">Status</span>              <span class="p">:</span> <span class="n">Stopped</span>
+<span class="n">ServiceType</span>         <span class="p">:</span> <span class="n">Win32ShareProcess</span>
+<span class="n">StartType</span>           <span class="p">:</span> <span class="n">Manual</span>
+<span class="n">Site</span>                <span class="p">:</span>
+<span class="n">Container</span>           <span class="p">:</span>
 </code></pre></div>
-<p>In this example, we first create an array of custom objects representing people with different attributes like name, age, and occupation. We then pipe this array to the ConvertTo-CSV cmdlet to convert it to CSV format and store the output in a variable called $csv. Finally, we output the CSV data using the $csv variable.</p>
-<h4 id="convertfrom-csv">ConvertFrom-CSV</h4>
-<p>ConvertFrom-CSV is a cmdlet that allows you to convert CSV data back into PowerShell objects. This cmdlet takes the input CSV data, converts it into PowerShell objects, and outputs the objects.</p>
-<p>Here's an example of how to use ConvertFrom-CSV:</p>
-<div class="highlight"><pre><span></span><code><span class="c"># Convert CSV data to PowerShell objects</span>
-<span class="nv">$csvData</span> <span class="p">=</span> <span class="sh">@&quot;</span>
-<span class="sh">Name,Age,Occupation</span>
-<span class="sh">John,35,Software Engineer</span>
-<span class="sh">Jane,28,Project Manager</span>
-<span class="sh">&quot;@</span> <span class="p">|</span> <span class="nb">ConvertFrom-CSV</span>
-
-<span class="c"># Output the objects</span>
-<span class="nv">$csvData</span>
+<p>Note that the output of the Get-Service command was filtered here, to get only the information for the BITS service (otherwise, Format-List would have returned a similar set of lines for each service). Here Format-List was asked to display all attributes of the service (the -Property parameter with wildcard).</p>
+<h2 id="wide-format">WIDE FORMAT</h2>
+<p>The wide format allows you to display two or more columns of a particular object property, much like the Linux ls command. The Format-Wide (abbreviated fw) cmdlet is used for this purpose.</p>
+<p>Examples:
+<div class="highlight"><pre><span></span><code><span class="nb">get-process</span> <span class="p">|</span> <span class="nb">format-wide</span>
 </code></pre></div>
-<p>In this example, we first define a CSV string containing data about people, with each person represented as a row with columns for name, age, and occupation. We then pipe this CSV string to the ConvertFrom-CSV cmdlet to convert it into PowerShell objects and store the output in a variable called $csvData. Finally, we output the objects using the $csvData variable.</p>
-<h2 id="json">JSON</h2>
-<h3 id="reading-a-json-file">Reading a JSON file</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$json</span> <span class="p">=</span> <span class="nb">Get-Content</span> <span class="p">.\</span><span class="n">example</span><span class="p">.</span><span class="n">json</span> <span class="p">|</span> <span class="nb">ConvertFrom-Json</span>
+... displays two columns of process names (Format-wide defaults to the Name property).</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">get-process</span> <span class="p">|</span> <span class="nb">format-wide</span> <span class="n">name</span> <span class="n">-col</span> <span class="n">4</span>
 </code></pre></div>
-<h3 id="writing-to-a-json-file">Writing to a JSON file</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$data</span> <span class="p">=</span> <span class="p">@{</span><span class="s2">&quot;Name&quot;</span><span class="p">=</span><span class="s2">&quot;John&quot;</span><span class="p">;</span> <span class="s2">&quot;Age&quot;</span><span class="p">=</span><span class="n">30</span><span class="p">}</span>
-<span class="nv">$data</span> <span class="p">|</span> <span class="nb">ConvertTo-Json</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="p">.\</span><span class="n">example</span><span class="p">.</span><span class="n">json</span>
+...shows 4 columns of process names.</p>
+<h2 id="change-of-names-of-attributes">CHANGE OF NAMES OF ATTRIBUTES</h2>
+<p>An example of renaming an attribute is the following:</p>
+<div class="highlight"><pre><span></span><code><span class="n">get</span> <span class="n">service</span> <span class="p">|</span> <span class="nb">ft </span><span class="p">@{</span><span class="n">name</span><span class="p">=</span><span class="s1">&#39;Service&#39;</span><span class="p">;</span><span class="n">expression</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">Name</span><span class="p">}},</span><span class="n">Status</span><span class="p">,</span><span class="n">DisplayName</span>
 </code></pre></div>
-<h3 id="testing-a-json-file">Testing a JSON file</h3>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;{&#39;name&#39;: &#39;Ashley&#39;, &#39;age&#39;: 25}&quot;</span> <span class="p">|</span> <span class="nb">Test-Json</span>
-</code></pre></div>
-<h2 id="xml">XML</h2>
-<h3 id="reading-an-xml-file">Reading an XML file</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$xml</span> <span class="p">=</span> <span class="nb">Select-Xml</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">example</span><span class="p">.</span><span class="n">xml</span> <span class="n">-XPath</span> <span class="s2">&quot;//book&quot;</span>
-</code></pre></div>
-<h3 id="writing-to-an-xml-file">Writing to an XML file</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$data</span> <span class="p">=</span> <span class="p">@{</span><span class="s2">&quot;Name&quot;</span><span class="p">=</span><span class="s2">&quot;John&quot;</span><span class="p">;</span> <span class="s2">&quot;Age&quot;</span><span class="p">=</span><span class="n">30</span><span class="p">}</span>
-<span class="nv">$data</span> <span class="p">|</span> <span class="nb">Export-Clixml</span> <span class="n">C</span><span class="p">:\</span><span class="n">example</span><span class="p">.</span><span class="n">xml</span>
-</code></pre></div>
-<h2 id="html">HTML</h2>
-<p>PowerShell provides a variety of cmdlets that can be used to manipulate HTML files, such as Invoke-WebRequest, Invoke-RestMethod, and ConvertTo-Html.</p>
-<p>Here are some examples of how to use these cmdlets to manipulate HTML files in PowerShell:</p>
-<ol>
-<li>
-<p>Downloading an HTML file using Invoke-WebRequest:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Invoke-WebRequest</span> <span class="n">-Uri</span> <span class="n">https</span><span class="p">://</span><span class="n">example</span><span class="p">.</span><span class="n">com</span> <span class="n">-OutFile</span> <span class="n">example</span><span class="p">.</span><span class="n">html</span>
-</code></pre></div>
-</li>
-<li>
-<p>Extracting data from an HTML file using Invoke-RestMethod:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$response</span> <span class="p">=</span> <span class="nb">Invoke-RestMethod</span> <span class="n">-Uri</span> <span class="n">https</span><span class="p">://</span><span class="n">example</span><span class="p">.</span><span class="n">com</span>
-<span class="nv">$response</span><span class="p">.</span><span class="n">Tables</span><span class="p">[</span><span class="n">0</span><span class="p">]</span> <span class="p">|</span> <span class="nb">ConvertTo-Html</span> <span class="n">-Fragment</span>
-</code></pre></div>
-</li>
-<li>
-<p>Converting a PowerShell object to an HTML table using ConvertTo-Html:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span> <span class="n">CPU</span><span class="p">,</span> <span class="n">WorkingSet</span> <span class="p">|</span> <span class="nb">ConvertTo-Html</span> <span class="n">-Head</span> <span class="s2">&quot;Process Report&quot;</span> <span class="n">-PreContent</span> <span class="s2">&quot;&lt;h1&gt;Current Processes&lt;/h1&gt;&quot;</span>
-</code></pre></div>
-</li>
-</ol>
-<p>These are just a few examples of how to manipulate HTML files in PowerShell. The possibilities are endless, and these cmdlets can be combined with other PowerShell commands to perform more complex tasks.</p>
-<h2 id="output-to-file-or-printer">OUTPUT TO FILE OR PRINTER</h2>
-<p>If you want to save the output of a command to an unformatted plain text file, you can use either of these methods (using the get-process command as an example):</p>
+<p>In this case, a new column is defined, using the expression between the @{ } symbols.</p>
 <ul>
-<li>get-process &gt; processes.txt (using redirection)</li>
-<li>get-process | out-file processes.txt (using the pipeline)</li>
+<li>Name indicates the name that the column will have. It can be abbreviated as n.</li>
+<li>Expression defines the content of the column. It can be abbreviated as e.</li>
+<li>$<em> is a special variable that holds the object that is currently being processed. For this example, $</em>.Name means: "Of the current object, take the Name property."</li>
 </ul>
-<p>Both versions are functionally equivalent, but the out-file command can receive parameters to change the line width and to avoid overwriting an existing file.
-To read a plain text file as text strings, you use the Get-Content cmdlet (with aliases cat or type):</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Content</span> <span class="n">processes</span><span class="p">.</span><span class="n">txt</span>
+<p>The above command could be abbreviated like this:
+<div class="highlight"><pre><span></span><code><span class="n">get</span> <span class="n">service</span> <span class="p">|</span> <span class="nb">ft </span><span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;Service&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">Name</span><span class="p">}},</span><span class="n">Status</span><span class="p">,</span><span class="n">DisplayName</span>
 </code></pre></div>
-<p>If you want to send the output of a command to the printer, you use the out-printer cmdlet:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">get-process</span> <span class="p">|</span> <span class="nb">out-printer</span>
+The following command:
+<div class="highlight"><pre><span></span><code><span class="nb">get-process</span> <span class="p">|</span> <span class="nb">ft </span><span class="n">Name</span><span class="p">,@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;VM (MB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">VM</span> <span class="p">/</span> <span class="n">1MB</span><span class="p">}}</span>
 </code></pre></div>
+...displays a process table with two columns: Name (native property) and VM (MB), which shows the amount of virtual memory used by the process, in megabytes.</p>
+<p>The command:
+<div class="highlight"><pre><span></span><code><span class="nb">get-process</span> <span class="p">|</span> <span class="nb">ft </span><span class="n">Name</span><span class="p">,@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;VM (MB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">VM</span> <span class="p">/</span> <span class="n">1MB</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}}</span> <span class="n">-AutoSize</span>
+</code></pre></div>
+...displays a table similar to the one in the previous example, but rounds the virtual memory to an integer value.</p>
+<h2 id="using-the-format-commands">USING THE FORMAT COMMANDS</h2>
+<p>The formatting command to be used (ft, fl or fw) must be the last one in the pipeline before printing to the screen. The output of a format command can only be redirected to a TEXT file. If you try to convert the output to another format (CSV, HTML, XML) the results will be inconsistent.</p>
+<h2 id="more-filtering-strategies">MORE FILTERING STRATEGIES</h2>
+<p>Command output can be filtered in several ways:</p>
+<ul>
+<li>Using wildcards in the parameters that support it. For example:
+    <div class="highlight"><pre><span></span><code><span class="nb">get-service</span> <span class="n">-name</span> <span class="n">s</span><span class="p">*</span>
+</code></pre></div>
+    ...displays a list of services whose name starts with S.</li>
+<li>
+<p>If the parameter does not support wildcards, the Where-Object (abbreviated Where) cmdlet can be used in the pipeline. For example:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">where </span><span class="n">-filter</span> <span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Status</span> <span class="o">-like</span> <span class="s2">&quot;Run*&quot;</span> <span class="p">}</span>
+</code></pre></div>
+...displays a list of services whose status starts with "Run"</p>
+</li>
+</ul>
+<p>Some of the comparison operators that can be used are:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-eq</td>
+<td>Equal</td>
+</tr>
+<tr>
+<td>-ne</td>
+<td>not equal</td>
+</tr>
+<tr>
+<td>-gt</td>
+<td>Greater than</td>
+</tr>
+<tr>
+<td>-ge</td>
+<td>Greater than or equal</td>
+</tr>
+<tr>
+<td>-lt</td>
+<td>Less Than</td>
+</tr>
+<tr>
+<td>-le</td>
+<td>Less than or equal</td>
+</tr>
+<tr>
+<td>-like</td>
+<td>Matches the expression with wildcards</td>
+</tr>
+<tr>
+<td>-notlike</td>
+<td>Does not match the expression with wildcards</td>
+</tr>
+</tbody>
+</table>
+<p>For example:
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Service</span> <span class="p">|</span> <span class="nb">where </span><span class="n">-filter</span> <span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Status</span> <span class="o">-eq</span> <span class="s2">&quot;Running&quot;</span> <span class="p">}</span>
+</code></pre></div></p>
+<p>String comparisons are normally not case sensitive. If it is required to do so, a c is placed before the operators (-ceq, -cne, -cgt, -cge...).</p>
+<p>You can also use the connectives -and and -or.</p>
+<p>For more information, see the help topic about_comparison_operators.</p>
+<h2 id="a-complete-example-of-complex-filtering">A COMPLETE EXAMPLE OF COMPLEX FILTERING</h2>
+<p>It is required to draw a list that includes the 10 processes that are consuming the most virtual memory, not including Powershell. At the end, the total virtual memory that these 10 processes are consuming should be presented. The listing should only include the Name and VM columns.</p>
+<ul>
+<li>
+<p>The first step (filtering Powershell processes) can be done like this:
+<div class="highlight"><pre><span></span><code><span class="n">Get</span> <span class="k">Process</span> <span class="p">|</span> <span class="nb">where </span><span class="n">-filter</span> <span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Name</span> <span class="o">-notlike</span> <span class="s2">&quot;Powershell*&quot;</span> <span class="p">}</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Then it is organized by the VM column, in descending order, and the columns that you want to show are specified:
+<div class="highlight"><pre><span></span><code><span class="n">Get</span> <span class="k">Process</span> <span class="p">|</span> <span class="nb">where </span><span class="n">-filter</span> <span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Name</span> <span class="o">-notlike</span> <span class="s2">&quot;Powershell*&quot;</span> <span class="p">}</span> <span class="p">|</span> <span class="nb">sort </span><span class="n">VM</span> <span class="n">-desc</span> <span class="p">|</span> <span class="nb">select </span><span class="n">name</span><span class="p">,</span><span class="n">vm</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Finally, the Measure-Object cmdlet is used to find the total virtual memory usage:
+<div class="highlight"><pre><span></span><code><span class="n">Get</span> <span class="k">Process</span> <span class="p">|</span> <span class="nb">where </span><span class="n">-filter</span> <span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Name</span> <span class="o">-notlike</span> <span class="s2">&quot;Powershell*&quot;</span> <span class="p">}</span> <span class="p">|</span> <span class="nb">sort </span><span class="n">VM</span> <span class="p">|</span> <span class="nb">select </span><span class="n">name</span><span class="p">,</span><span class="n">vm</span> <span class="n">-first</span> <span class="n">10</span> <span class="p">|</span> <span class="nb">Measure-Object</span> <span class="n">-Property</span> <span class="n">vm</span> <span class="n">-sum</span>
+</code></pre></div></p>
+</li>
+</ul>
 
               
             </article>
@@ -1142,7 +883,7 @@ To read a plain text file as text strings, you use the Get-Content cmdlet (with 
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../pipeline/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Pipeline" rel="prev">
+        <a href="../Exercises2/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Exercise 2" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1151,26 +892,11 @@ To read a plain text file as text strings, you use the Get-Content cmdlet (with 
               <span class="md-footer__direction">
                 Previous
               </span>
-              Pipeline
+              Exercise 2
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../comparison/" class="md-footer__link md-footer__link--next" aria-label="Next: Object Comparison" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Object Comparison
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
