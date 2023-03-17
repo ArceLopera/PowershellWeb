@@ -93,7 +93,7 @@ nav:
   - Basics:
     - Getting Started: GetStart.md
     - GetHelp: gethelp.md
-    - Exercise 1: Exercises1.md
+    - Exercise 1: Exercises\Exercises1.md
     - GetMember: get_member.md
     - GetAlias: getalias.md
     - Config Profile: config_profile.md
@@ -101,5 +101,6 @@ nav:
     - Pipeline: pipeline.md
     - Output Format: out_format.md
     - Object Comparison: comparison.md
-    - Exercise 2: Exercises2.md
+    - Exercise 2: Exercises\Exercises2.md
     - Formatting: tables_lists.md
+    - Exercise 3: Exercises\Exercises3.md
