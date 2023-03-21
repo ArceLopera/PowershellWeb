@@ -106,3 +106,5 @@ nav:
     - Exercise 3: Exercises\Exercises3.md
     - Windows Management: wmi_cmi.md
     - Exercise 4: Exercises\Exercises4.md
+  - Scripting:
+    - Variables: Scripting\variables.md

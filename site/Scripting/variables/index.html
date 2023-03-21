@@ -12,21 +12,21 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/variables/">
       
-      <link rel="icon" href="Images/pwsh_32512.ico">
+      <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Powershell Refresher</title>
+        <title>Variables - Powershell Refresher</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
       
     
@@ -41,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#powershell-tutorial" class="md-skip">
+        <a href="#variables-in-powershell" class="md-skip">
           Skip to content
         </a>
       
@@ -83,9 +83,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Powershell Refresher" class="md-header__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
+    <a href="../.." title="Powershell Refresher" class="md-header__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
       
-  <img src="Images/pwshHat1.png" alt="logo">
+  <img src="../../Images/pwshHat1.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Variables
             
           </span>
         </div>
@@ -195,12 +195,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="." class="md-tabs__link md-tabs__link--active">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -212,7 +210,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="installation/" class="md-tabs__link">
+    <a href="../../installation/" class="md-tabs__link">
       Installation
     </a>
   </li>
@@ -227,7 +225,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="GetStart/" class="md-tabs__link">
+      <a href="../../GetStart/" class="md-tabs__link">
         Basics
       </a>
     </li>
@@ -237,13 +235,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="Scripting/variables/" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Scripting
       </a>
     </li>
@@ -271,9 +271,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Powershell Refresher" class="md-nav__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
+    <a href="../.." title="Powershell Refresher" class="md-nav__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
       
-  <img src="Images/pwshHat1.png" alt="logo">
+  <img src="../../Images/pwshHat1.png" alt="logo">
 
     </a>
     Powershell Refresher
@@ -299,107 +299,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started-with-powershell" class="md-nav__link">
-    Getting Started with PowerShell
-  </a>
-  
-    <nav class="md-nav" aria-label="Getting Started with PowerShell">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#powershell-basics" class="md-nav__link">
-    PowerShell Basics
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#working-with-files-and-folders" class="md-nav__link">
-    Working with Files and Folders
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#powershell-scripts" class="md-nav__link">
-    PowerShell Scripts
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advanced-powershell" class="md-nav__link">
-    Advanced PowerShell
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    Conclusion
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -412,7 +316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="installation/" class="md-nav__link">
+      <a href="../../installation/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -453,7 +357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="GetStart/" class="md-nav__link">
+      <a href="../../GetStart/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -467,7 +371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="gethelp/" class="md-nav__link">
+      <a href="../../gethelp/" class="md-nav__link">
         GetHelp
       </a>
     </li>
@@ -481,7 +385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Exercises/Exercises1/" class="md-nav__link">
+      <a href="../../Exercises/Exercises1/" class="md-nav__link">
         Exercise 1
       </a>
     </li>
@@ -495,7 +399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="get_member/" class="md-nav__link">
+      <a href="../../get_member/" class="md-nav__link">
         GetMember
       </a>
     </li>
@@ -509,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getalias/" class="md-nav__link">
+      <a href="../../getalias/" class="md-nav__link">
         GetAlias
       </a>
     </li>
@@ -523,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="config_profile/" class="md-nav__link">
+      <a href="../../config_profile/" class="md-nav__link">
         Config Profile
       </a>
     </li>
@@ -537,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="files_folders/" class="md-nav__link">
+      <a href="../../files_folders/" class="md-nav__link">
         Files & Folders
       </a>
     </li>
@@ -551,7 +455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pipeline/" class="md-nav__link">
+      <a href="../../pipeline/" class="md-nav__link">
         Pipeline
       </a>
     </li>
@@ -565,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="out_format/" class="md-nav__link">
+      <a href="../../out_format/" class="md-nav__link">
         Output Format
       </a>
     </li>
@@ -579,7 +483,7 @@
   
   
     <li class="md-nav__item">
-      <a href="comparison/" class="md-nav__link">
+      <a href="../../comparison/" class="md-nav__link">
         Object Comparison
       </a>
     </li>
@@ -593,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Exercises/Exercises2/" class="md-nav__link">
+      <a href="../../Exercises/Exercises2/" class="md-nav__link">
         Exercise 2
       </a>
     </li>
@@ -607,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tables_lists/" class="md-nav__link">
+      <a href="../../tables_lists/" class="md-nav__link">
         Formatting
       </a>
     </li>
@@ -621,7 +525,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Exercises/Exercises3/" class="md-nav__link">
+      <a href="../../Exercises/Exercises3/" class="md-nav__link">
         Exercise 3
       </a>
     </li>
@@ -635,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="wmi_cmi/" class="md-nav__link">
+      <a href="../../wmi_cmi/" class="md-nav__link">
         Windows Management
       </a>
     </li>
@@ -649,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Exercises/Exercises4/" class="md-nav__link">
+      <a href="../../Exercises/Exercises4/" class="md-nav__link">
         Exercise 4
       </a>
     </li>
@@ -669,12 +573,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -695,11 +601,48 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="Scripting/variables/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Variables
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Variables
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variables-in-powershell" class="md-nav__link">
+    Variables in Powershell
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -728,8 +671,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -738,63 +679,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started-with-powershell" class="md-nav__link">
-    Getting Started with PowerShell
-  </a>
-  
-    <nav class="md-nav" aria-label="Getting Started with PowerShell">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#powershell-basics" class="md-nav__link">
-    PowerShell Basics
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#working-with-files-and-folders" class="md-nav__link">
-    Working with Files and Folders
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#powershell-scripts" class="md-nav__link">
-    PowerShell Scripts
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advanced-powershell" class="md-nav__link">
-    Advanced PowerShell
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    Conclusion
+  <a href="#variables-in-powershell" class="md-nav__link">
+    Variables in Powershell
   </a>
   
 </li>
@@ -813,79 +699,55 @@
                 
 
 
-<h1 id="powershell-tutorial">PowerShell Tutorial</h1>
-<p>This tutorial is designed to introduce you to PowerShell, a powerful command-line interface and scripting language built by Microsoft. Whether you are new to PowerShell or are looking to expand your skills, this guide will provide you with the necessary information to get started.</p>
-<h2 id="table-of-contents">Table of Contents</h2>
-<ul>
-<li><a href="installation/">Installation</a></li>
-<li><a href="#getting-started-with-powershell">Getting Started with PowerShell</a><ul>
-<li><a href="#powershell-basics">PowerShell Basics</a></li>
-<li><a href="#working-with-files-and-folders">Working with Files and Folders</a></li>
-<li><a href="#powershell-scripts">PowerShell Scripts</a></li>
-</ul>
+  <h1>Variables</h1>
+
+<p>Powershell allows you to store values ​​in variables. All variable names begin with the $ sign, and are made up of letters, numbers, and the underscore (_).
+The assignment operator is the equal sign (=). </p>
+<p>Some examples:</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$server = "localhost"</td>
+<td>The variable will contain a text string</td>
+</tr>
+<tr>
+<td>$number = 5</td>
+<td>The variable will contain an integer</td>
+</tr>
+<tr>
+<td>$services = Get-Service</td>
+<td>The variable will contain a list of services</td>
+</tr>
+</tbody>
+</table>
+<p>If you want to query the type of data a variable contains, you can do so with the Get-Member cmdlet. Get-Member also displays the variable's properties and methods. For example, variables of the System.String type have the ToUpper() method, which converts the content of the variable to uppercase.</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">$server</span><span class="p">.</span><span class="n">ToUpper</span><span class="p">()</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>LOCALHOST
+</code></pre></div></p>
+<p>Variables can be used to replace any parameter in a cmdlet call. You can store all types of values in PowerShell variables. For example, store the results of commands, and store elements that are used in commands and expressions, such as names, paths, settings, and values.</p>
+<p>To get a list of all the variables in your PowerShell session, type Get-Variable. The variable names are displayed without the preceding dollar ($) sign that is used to reference variables.</p>
+<h2 id="variables-in-powershell">Variables in Powershell</h2>
+<p>There are several different types of variables in PowerShell.</p>
+<ol>
+<li>
+<p><strong>User-created variables</strong>: User-created variables are created and maintained by the user. By default, the variables that you create at the PowerShell command line exist only while the PowerShell window is open. When the PowerShell windows is closed, the variables are deleted. To save a variable, add it to your PowerShell profile. You can also create variables in scripts with global, script, or local scope.</p>
 </li>
-<li><a href="#advanced-powershell">Advanced PowerShell</a></li>
-</ul>
-<h2 id="installation"><a href="installation/">Installation</a></h2>
-<p>PowerShell is pre-installed on Windows 10 and Windows Server 2016 and later, but you may need to update it to the latest version. To install PowerShell on older versions of Windows, visit the <a href="https://github.com/PowerShell/PowerShell">PowerShell GitHub repository</a> and follow the installation instructions.</p>
-<h2 id="getting-started-with-powershell"><a href="GetStart/">Getting Started with PowerShell</a></h2>
-<p>Before we dive into the commands, let's first open PowerShell. There are a few ways to do this:</p>
-<ul>
-<li>Click on the <em>Start</em> menu, search for <em>PowerShell</em>, and click on the <em>Windows PowerShell</em> option.</li>
-<li>Press the <em>Windows</em> key + <em>R</em> to open the <em>Run</em> dialog box, type in <em>powershell</em>, and press <em>Enter</em>.</li>
-<li>If you are using Windows 10, you can also right-click on the <em>Start</em> menu and select <em>Windows PowerShell</em> or <em>Windows PowerShell (Admin)</em>.</li>
-</ul>
-<p>Once you have PowerShell open, you can start entering commands.</p>
-<h3 id="powershell-basics"><a href="GetStart/">PowerShell Basics</a></h3>
-<p>PowerShell commands are called cmdlets, and they follow a simple verb-noun syntax. For example, the command to get a list of files in a directory is Get-ChildItem. Here are some basic PowerShell commands to get you started:</p>
-<ul>
-<li><a href="gethelp/"><em>Get-Help</em></a>: Get help for a cmdlet</li>
-<li><a href="get_member/"><em>Get-Member</em></a>: Essential tool for exploring objects and their properties, methods, and events</li>
-<li><em>Get-Process</em>: Get information about running processes</li>
-<li><em>Get-Service</em>: Get information about running services</li>
-<li><a href="files_folders/#get-childitem"><em>Get-ChildItem</em></a>: Get a list of files and folders in a directory</li>
-<li><a href="files_folders/#set-location"><em>Set-Location</em></a>: Change the current working directory</li>
-<li><em>Clear-Host</em>: Clear the PowerShell console screen</li>
-<li><em>Exit</em>: Exit PowerShell</li>
-</ul>
-<h3 id="working-with-files-and-folders"><a href="files_folders/">Working with Files and Folders</a></h3>
-<p>PowerShell is particularly useful for working with files and folders. Here are some useful commands:</p>
-<ul>
-<li><em>New-Item</em>: Create a new file or folder</li>
-<li><em>Remove-Item</em>: Delete a file or folder</li>
-<li><em>Copy-Item</em>: Copy a file or folder</li>
-<li><em>Move-Item</em>: Move a file or folder</li>
-<li><em>Rename-Item</em>: Rename a file or folder</li>
-<li><a href="out_format/#get-content"><em>Get-Content</em></a>: Get the contents of a file</li>
-<li><a href="out_format/#set-content"><em>Set-Content</em></a>: Set the contents of a file</li>
-</ul>
-<h3 id="powershell-scripts">PowerShell Scripts</h3>
-<p>PowerShell scripts are saved as .ps1 files and can be run from the command line or by double-clicking on the file. Here are some tips for writing PowerShell scripts:</p>
-<ul>
-<li>Use comments to explain your code</li>
-<li>Use variables to store data</li>
-<li>Use loops and conditional statements to control the flow of your script</li>
-<li>Use functions to reuse code</li>
-</ul>
-<h2 id="advanced-powershell">Advanced PowerShell</h2>
-<p>PowerShell is a very powerful tool, and there are many advanced features that you can use to make your scripts even more powerful. Here are some advanced topics to explore:</p>
-<ul>
-<li>Remoting: Run PowerShell commands on remote computers</li>
-<li>Modules: Extend PowerShell with additional functionality</li>
-<li>Desired State Configuration: Automate the configuration of your environment</li>
-<li>Error Handling: Handle errors in your scripts</li>
-</ul>
-<h2 id="conclusion">Conclusion</h2>
-<p>PowerShell is a powerful tool that can help you automate repetitive tasks and manage your environment. By learning the basics of PowerShell, you can greatly improve your productivity and efficiency as an IT professional.</p>
-<p>With PowerShell, you can:</p>
-<ul>
-<li>Automate administrative tasks and eliminate manual work</li>
-<li>Manage and configure Windows operating systems and applications</li>
-<li>Integrate with other technologies and tools, such as Azure and Visual Studio Code</li>
-<li>Analyze and transform data using PowerShell commands and scripts</li>
-</ul>
-<p>In addition, PowerShell has a strong and supportive community of users and developers who are constantly creating new scripts, modules, and tools to extend its functionality.</p>
-<p>Whether you are a sysadmin, a developer, or just someone who wants to learn a powerful scripting language, PowerShell is a valuable tool to add to your skillset. With its robust features and wide range of applications, PowerShell can help you become more efficient and effective in your work. So why not give it a try and see what you can accomplish with PowerShell!</p>
+<li>
+<p><strong>Automatic variables</strong>: Automatic variables store the state of PowerShell. These variables are created by PowerShell, and PowerShell changes their values as required to maintain their accuracy. Users can't change the value of these variables. For example, the $PSHOME variable stores the path to the PowerShell installation directory.</p>
+</li>
+</ol>
+<p>For more information, a list, and a description of the automatic variables, see <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_automatic_variables?view=powershell-7.3">about_Automatic_Variables</a>.</p>
+<ol>
+<li><strong>Preference variables</strong>: Preference variables store user preferences for PowerShell. These variables are created by PowerShell and are populated with default values. Users can change the values of these variables. For example, the $MaximumHistoryCount variable determines the maximum number of entries in the session history.</li>
+</ol>
+<p>For more information, a list, and a description of the preference variables, see <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_preference_variables?view=powershell-7.3">about_Preference_Variables</a>.</p>
 
               
             </article>
@@ -898,21 +760,21 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-      
         
-        <a href="installation/" class="md-footer__link md-footer__link--next" aria-label="Next: Installation" rel="next">
+        <a href="../../Exercises/Exercises4/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Exercise 4" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Next
+                Previous
               </span>
-              Installation
+              Exercise 4
             </div>
           </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
         </a>
+      
       
     </nav>
   
@@ -986,10 +848,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.expand"], "search": "assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.expand"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
