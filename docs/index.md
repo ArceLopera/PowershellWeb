@@ -3,14 +3,14 @@
 This tutorial is designed to introduce you to PowerShell, a powerful command-line interface and scripting language built by Microsoft. Whether you are new to PowerShell or are looking to expand your skills, this guide will provide you with the necessary information to get started.
 
 ## Table of Contents
-- [Installation](installation.md)
+- [Installation](Install\installation.md)
 - [Getting Started with PowerShell](#getting-started-with-powershell)
     - [PowerShell Basics](#powershell-basics)
     - [Working with Files and Folders](#working-with-files-and-folders)
     - [PowerShell Scripts](#powershell-scripts)
 - [Advanced PowerShell](#advanced-powershell)
 
-## [Installation](installation.md)
+## [Installation](Install\installation.md)
 PowerShell is pre-installed on Windows 10 and Windows Server 2016 and later, but you may need to update it to the latest version. To install PowerShell on older versions of Windows, visit the [PowerShell GitHub repository](https://github.com/PowerShell/PowerShell) and follow the installation instructions.
 
 ## [Getting Started with PowerShell](GetStart.md)

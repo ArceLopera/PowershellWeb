@@ -1,43 +1,3 @@
-PowerShell 7 is the latest major release of PowerShell, and it provides many new features and improvements over previous versions. Here's how to install it on various operating systems:
-
-## Windows
-On Windows, you can download the PowerShell 7 installer from the official PowerShell GitHub repository. Choose the MSI installer for your architecture (either x86 or x64) and download the file.
-
-Once the installer is downloaded, double-click on the file to start the installation wizard. Follow the on-screen instructions to complete the installation process. After installation is complete, you can open PowerShell 7 from the Start menu or by typing pwsh in the command prompt.
-
-## Linux
-On Linux, you can install PowerShell 7 using your distribution's package manager. Here are the commands for some popular distributions:
-
-Ubuntu 18.04 and later, and Debian 10 and later: Run the following commands in the terminal:
-
-``` csharp
-# Update the list of packages
-sudo apt-get update
-# Install pre-requisite packages.
-sudo apt-get install -y wget apt-transport-https software-properties-common
-# Download the Microsoft repository GPG keys
-wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb"
-# Register the Microsoft repository GPG keys
-sudo dpkg -i packages-microsoft-prod.deb
-# Update the list of packages after we added packages.microsoft.com
-sudo apt-get update
-# Install PowerShell
-sudo apt-get install -y powershell
-# Start PowerShell
-pwsh
-
-```
-
-
-## macOS
-On macOS, you can install PowerShell 7 using Homebrew, a popular package manager for macOS. Run the following command in the terminal:
-
-``` csharp
-brew install --cask powershell
-```
-
-After installation is complete, you can open PowerShell 7 from the Launchpad or by typing pwsh in the terminal.
-
 ## Powershell 5 and Powershell ISE
 
 PowerShell 5 is a major version of the Windows PowerShell command-line shell and scripting language that was released in February 2016. It was designed primarily for Windows operating systems and provides a powerful tool for automating administrative tasks and managing systems.
@@ -104,29 +64,3 @@ The PowerShell extension for VSCode includes a number of additional features tha
 + **Integrated Source Control**: The extension includes support for integrated source control, so you can use Git or another version control system directly from within the VSCode editor.
 
 Overall, the PowerShell extension for VSCode provide powerful tools for working with PowerShell scripts and modules. 
-
-## Final Recommendations
-
-When it comes to setting up your environment for programming in PowerShell, there are a few key tools and configurations that can help make your workflow more efficient and effective. Here are some recommendations for the best setup for programming in PowerShell:
-
-1. **Install PowerShell 7**
-
-    PowerShell 7 is the latest version of PowerShell and includes many new features and improvements over previous versions. It's recommended that you install PowerShell 7 to take advantage of these new features and to ensure compatibility with the latest PowerShell modules and scripts.
-
-2. **Install a Text Editor or Integrated Development Environment (IDE)**
-
-    Using a dedicated text editor or IDE can help make your workflow more efficient and productive. Popular options for PowerShell development include Visual Studio Code, PowerShell ISE, and the PowerShell extension for Visual Studio.
-
-3. **Install the PowerShell Extension for Your Text Editor or IDE**
-
-    If you're using a text editor or IDE, it's recommended that you install the PowerShell extension for that editor or IDE. This extension provides additional tools and features for working with PowerShell scripts and modules, such as syntax highlighting, IntelliSense, debugging, and code formatting.
-
-4. **Install PowerShell Modules**
-
-    PowerShell modules are collections of PowerShell commands and scripts that you can use to extend the functionality of PowerShell. Many modules are available through the PowerShell Gallery, which is a repository of PowerShell modules that you can download and install using the Install-Module command.
-
-5. [**Configure Your Profile**](config_profile.md)
-
-    PowerShell allows you to configure your profile to set up your environment with your preferred settings and modules every time you start a new session. You can use your profile to set environment variables, define aliases, and load modules automatically. Your profile is stored in a PowerShell script file named $PROFILE, which you can edit using a text editor or IDE.
-
-By following these recommendations, you can set up a powerful and efficient environment for programming in PowerShell. Whether you're a beginner or an experienced developer, having the right tools and configurations can help you write better PowerShell code and automate your tasks more effectively.

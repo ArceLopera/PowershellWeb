@@ -41,11 +41,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://arcelopera.github.io/PowershellWeb/installation/</loc>
-         <lastmod>2023-03-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://arcelopera.github.io/PowershellWeb/out_format/</loc>
          <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
@@ -82,6 +77,21 @@
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Exercises/Exercises4/</loc>
+         <lastmod>2023-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Install/differences/</loc>
+         <lastmod>2023-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Install/installation/</loc>
+         <lastmod>2023-03-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Install/recommendations/</loc>
          <lastmod>2023-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>

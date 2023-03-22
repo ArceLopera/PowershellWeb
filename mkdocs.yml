@@ -89,7 +89,10 @@ extra_javascript:
 # Page tree
 nav:
   - Home: index.md
-  - Installation: installation.md
+  - Installation: 
+    - Multiplatform: Install\installation.md
+    - Versions: Install\differences.md
+    - Recommendations: Install\recommendations.md
   - Basics:
     - Getting Started: GetStart.md
     - GetHelp: gethelp.md
