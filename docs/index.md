@@ -50,7 +50,7 @@ PowerShell is particularly useful for working with files and folders. Here are s
 PowerShell scripts are saved as .ps1 files and can be run from the command line or by double-clicking on the file. Here are some tips for writing PowerShell scripts:
 
 + Use comments to explain your code
-+ Use variables to store data
++ [Use variables to store data](./Scripting/variables.md)
 + Use loops and conditional statements to control the flow of your script
 + Use functions to reuse code
 
