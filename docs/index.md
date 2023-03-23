@@ -45,7 +45,7 @@ PowerShell is particularly useful for working with files and folders. Here are s
 + [*Get-Content*](out_format.md#get-content): Get the contents of a file
 + [*Set-Content*](out_format.md#set-content): Set the contents of a file
 
-### PowerShell Scripts
+### [PowerShell Scripts](./Scripting/variables.md)
 
 PowerShell scripts are saved as .ps1 files and can be run from the command line or by double-clicking on the file. Here are some tips for writing PowerShell scripts:
 

@@ -2,102 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/GetStart/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/comparison/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/config_profile/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/files_folders/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/get_member/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/getalias/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/gethelp/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/out_format/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/pipeline/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/tables_lists/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/wmi_cmi/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Exercises/Exercises1/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Exercises/Exercises2/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Exercises/Exercises3/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Exercises/Exercises4/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Install/differences/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Install/installation/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Install/recommendations/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Scripting/ConsoleIO/</loc>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Scripting/variables/</loc>
-         <lastmod>2023-03-22</lastmod>
+         <lastmod>2023-03-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

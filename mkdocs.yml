@@ -111,3 +111,4 @@ nav:
     - Exercise 4: Exercises\Exercises4.md
   - Scripting:
     - Variables: Scripting\variables.md
+    - Console IO: Scripting\ConsoleIO.md
