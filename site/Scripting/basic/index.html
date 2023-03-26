@@ -12,21 +12,21 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/config_profile/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/basic/">
       
-      <link rel="icon" href="../Images/pwsh_32512.ico">
+      <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Config Profile - Powershell Refresher</title>
+        <title>Basic Scripting - Powershell Refresher</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
       
     
@@ -41,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,6 +68,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#parameterization" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -78,9 +83,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Powershell Refresher" class="md-header__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
+    <a href="../.." title="Powershell Refresher" class="md-header__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
       
-  <img src="../Images/pwshHat1.png" alt="logo">
+  <img src="../../Images/pwshHat1.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -96,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Config Profile
+              Basic Scripting
             
           </span>
         </div>
@@ -193,7 +198,7 @@
 
 
   <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -208,8 +213,24 @@
   
   
     <li class="md-tabs__item">
-      <a href="../Install/installation/" class="md-tabs__link">
+      <a href="../../Install/installation/" class="md-tabs__link">
         Installation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../GetStart/" class="md-tabs__link">
+        Basics
       </a>
     </li>
   
@@ -226,23 +247,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../GetStart/" class="md-tabs__link md-tabs__link--active">
-        Basics
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Scripting/variables/" class="md-tabs__link">
+      <a href="../variables/" class="md-tabs__link md-tabs__link--active">
         Scripting
       </a>
     </li>
@@ -270,9 +275,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Powershell Refresher" class="md-nav__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
+    <a href="../.." title="Powershell Refresher" class="md-nav__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
       
-  <img src="../Images/pwshHat1.png" alt="logo">
+  <img src="../../Images/pwshHat1.png" alt="logo">
 
     </a>
     Powershell Refresher
@@ -300,7 +305,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -341,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Install/installation/" class="md-nav__link">
+      <a href="../../Install/installation/" class="md-nav__link">
         Multiplatform
       </a>
     </li>
@@ -355,7 +360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Install/differences/" class="md-nav__link">
+      <a href="../../Install/differences/" class="md-nav__link">
         Versions
       </a>
     </li>
@@ -369,8 +374,252 @@
   
   
     <li class="md-nav__item">
-      <a href="../Install/recommendations/" class="md-nav__link">
+      <a href="../../Install/recommendations/" class="md-nav__link">
         Recommendations
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Basics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Basics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GetStart/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gethelp/" class="md-nav__link">
+        GetHelp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Exercises/Exercises1/" class="md-nav__link">
+        Exercise 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../get_member/" class="md-nav__link">
+        GetMember
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getalias/" class="md-nav__link">
+        GetAlias
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../config_profile/" class="md-nav__link">
+        Config Profile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../files_folders/" class="md-nav__link">
+        Files & Folders
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipeline/" class="md-nav__link">
+        Pipeline
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../out_format/" class="md-nav__link">
+        Output Format
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../comparison/" class="md-nav__link">
+        Object Comparison
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Exercises/Exercises2/" class="md-nav__link">
+        Exercise 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tables_lists/" class="md-nav__link">
+        Formatting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Exercises/Exercises3/" class="md-nav__link">
+        Exercise 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wmi_cmi/" class="md-nav__link">
+        Windows Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Exercises/Exercises4/" class="md-nav__link">
+        Exercise 4
       </a>
     </li>
   
@@ -396,259 +645,7 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Basics
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Basics" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Basics
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../GetStart/" class="md-nav__link">
-        Getting Started
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../gethelp/" class="md-nav__link">
-        GetHelp
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Exercises/Exercises1/" class="md-nav__link">
-        Exercise 1
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../get_member/" class="md-nav__link">
-        GetMember
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../getalias/" class="md-nav__link">
-        GetAlias
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Config Profile
-      </a>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../files_folders/" class="md-nav__link">
-        Files & Folders
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pipeline/" class="md-nav__link">
-        Pipeline
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../out_format/" class="md-nav__link">
-        Output Format
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../comparison/" class="md-nav__link">
-        Object Comparison
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Exercises/Exercises2/" class="md-nav__link">
-        Exercise 2
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tables_lists/" class="md-nav__link">
-        Formatting
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Exercises/Exercises3/" class="md-nav__link">
-        Exercise 3
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../wmi_cmi/" class="md-nav__link">
-        Windows Management
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Exercises/Exercises4/" class="md-nav__link">
-        Exercise 4
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -671,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/variables/" class="md-nav__link">
+      <a href="../variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -685,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/ConsoleIO/" class="md-nav__link">
+      <a href="../ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
     </li>
@@ -697,11 +694,55 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Scripting/basic/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Basic Scripting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Basic Scripting
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameterization" class="md-nav__link">
+    Parameterization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-script" class="md-nav__link">
+    Run the script
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -731,6 +772,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameterization" class="md-nav__link">
+    Parameterization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-script" class="md-nav__link">
+    Run the script
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -743,73 +806,42 @@
                 
 
 
-  <h1>Config Profile</h1>
+  <h1>Basic Scripting</h1>
 
-<p>Configuring your PowerShell profile is an essential step to personalize your PowerShell environment and make your work more efficient. Your profile is a PowerShell script file that executes every time you start a PowerShell session. You can use it to customize your environment by adding aliases, functions, variables, and modules.</p>
-<p>Here's an example of how to configure your profile in PowerShell:</p>
-<ol>
-<li>
-<p>Open PowerShell and run the following command to create a new profile file if it doesn't exist:</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="o">(</span>!<span class="o">(</span>Test-Path -Path <span class="nv">$PROFILE</span> <span class="o">))</span> <span class="o">{</span> New-Item -Type File -Path <span class="nv">$PROFILE</span> -Force <span class="o">}</span>
+<p>Powershell scripts allow you to store a command or series of commands, for easier execution later. To produce a script, it is enough to record the required commands in a text file with the extension .ps1 .
+For example, consider the following command, which prints a list of fixed disks attached to the system, along with their free space, total size, and free space percentage:
+<div class="highlight"><pre><span></span><code><span class="nb">Get-CimInstance</span> <span class="n">Win32_logicaldisk</span> <span class="p">`</span>
+ <span class="n">-filter</span> <span class="s2">&quot;drivetype=3&quot;</span> <span class="p">|</span>
+ <span class="nb">Sort-Object</span> <span class="n">-Property</span> <span class="n">DeviceID</span> <span class="p">|</span>
+ <span class="nb">format-table</span> <span class="n">-Property</span> <span class="n">DeviceID</span><span class="p">,</span>
+ <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;FreeSpace(MB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">FreeSpace</span> <span class="p">/</span> <span class="n">1MB</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}},</span>
+ <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;Size(GB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">Size</span> <span class="p">/</span> <span class="n">1GB</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}},</span>
+ <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;%Free&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">FreeSpace</span> <span class="p">/</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Size</span> <span class="p">*</span> <span class="n">100</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}}</span>
 </code></pre></div>
-</li>
-<li>
-<p>Open your profile file with your preferred text editor or IDE. You can find the location of your profile file by running the following command:
-    <div class="highlight"><pre><span></span><code>notepad <span class="nv">$PROFILE</span>
+At the end of the first line the backtick ` is used to indicate that the command has not finished yet. In the rest of the lines, this job is done by vertical bars and commas. This way it is easier to read.
+By copying these lines of code and saving them to a text file called Get-DiskInventory.ps1, a script will be created. </p>
+<h2 id="parameterization">Parameterization</h2>
+<p>Scripts can be parameterized, that is, parameters can be created that can be specified at the time the script is executed. For example, in the script of the previous example it is possible to return parameters the name of the computer and the type of unit.
+The parameterized script would look like this:</p>
+<p><div class="highlight"><pre><span></span><code><span class="k">param</span><span class="p">(</span>
+  <span class="nv">$DriveType</span> <span class="p">=</span> <span class="n">3</span>
+<span class="p">)</span>
+
+<span class="nb">Get-CimInstance</span> <span class="n">Win32_logicaldisk</span> <span class="p">`</span>
+  <span class="n">-filter</span> <span class="s2">&quot;drivetype=$DriveType&quot;</span> <span class="p">|</span>
+  <span class="nb">Sort-Object</span><span class="n">-Property</span> <span class="n">DeviceID</span> <span class="p">|</span>
+  <span class="nb">format-table</span> <span class="n">-Property</span> <span class="n">DeviceID</span><span class="p">,</span>
+  <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;FreeSpace(MB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">FreeSpace</span> <span class="p">/</span> <span class="n">1MB</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}},</span>
+  <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;Size(GB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">Size</span> <span class="p">/</span> <span class="n">1GB</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}},</span>
+  <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;%Free&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">FreeSpace</span> <span class="p">/</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Size</span> <span class="p">*</span> <span class="n">100</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}}</span>
 </code></pre></div>
-    This will open your profile file in Notepad.</p>
-</li>
-<li>
-<p>Add any customizations you want to your profile file. For example, you can add an alias to simplify a frequently used command. To create an alias for the Get-ChildItem cmdlet, add the following line to your profile:
-    <div class="highlight"><pre><span></span><code>Set-Alias -Name ls -Value Get-ChildItem
+Optionally, each parameter can be specified with a default value, as seen in the example above.</p>
+<h2 id="run-the-script">Run the script</h2>
+<p>The script can be executed by typing its name in the console. If the script is saved in a different directory than the current one, the full path to the file must be written to execute it.
+In case the script does not execute, it is necessary to change the script execution policy to a more permissive value, using the Set-ExecutionPolicy cmdlet as administrator. See the cmdlet help for more details.</p>
+<div class="highlight"><pre><span></span><code><span class="p">.</span> <span class="p">./</span><span class="nb">Get-DiskInventory</span><span class="p">.</span><span class="n">ps1</span>
 </code></pre></div>
-    This creates an alias named ls that runs the Get-ChildItem cmdlet.</p>
-</li>
-<li>
-<p>Save and close your profile file.</p>
-</li>
-<li>
-<p>Restart PowerShell to apply your changes. Your customizations should now be available in your PowerShell session.</p>
-</li>
-</ol>
-<p>In addition to aliases, you can also use your profile to configure your PowerShell prompt, set default parameters for cmdlets, load modules automatically, and define functions that you frequently use. By taking advantage of the customization options available in your profile, you can make your PowerShell experience more efficient and tailored to your needs.</p>
-<p>Here is an example of a common $profile script for PowerShell:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Add custom PowerShell functions</span>
-<span class="k">function</span> Get-Weather <span class="o">{</span>
-    param<span class="o">([</span>string<span class="o">]</span><span class="nv">$location</span> <span class="o">=</span> <span class="s2">&quot;New York&quot;</span><span class="o">)</span>
-    Invoke-RestMethod -Uri <span class="s2">&quot;https://wttr.in/</span><span class="nv">$location</span><span class="s2">?format=%C+%t&quot;</span> -UseBasicParsing
-<span class="o">}</span>
-
-<span class="c1"># Load useful PowerShell modules</span>
-Import-Module Pester
-Import-Module PSReadline
-Import-Module Microsoft.PowerShell.Management
-
-<span class="c1"># Set default parameters for cmdlets</span>
-<span class="nv">$PSDefaultParameterValues</span> <span class="o">=</span> @<span class="o">{</span>
-    <span class="s2">&quot;Get-ChildItem:Recurse&quot;</span> <span class="o">=</span> <span class="nv">$true</span>
-    <span class="s2">&quot;Out-File:Encoding&quot;</span> <span class="o">=</span> <span class="s2">&quot;utf8&quot;</span>
-<span class="o">}</span>
-
-<span class="c1"># Add custom aliases</span>
-Set-Alias -Name l -Value Get-ChildItem
-Set-Alias -Name gac -Value Get-ChildItem -ParameterName FullName -ArgumentList <span class="s2">&quot;C:\Windows\Microsoft.NET\assembly\GAC*&quot;</span>
-
-<span class="c1"># Configure PowerShell prompt</span>
-<span class="nv">$host</span>.UI.RawUI.WindowTitle <span class="o">=</span> <span class="s2">&quot;</span><span class="nv">$env</span><span class="s2">:USERNAME@</span><span class="nv">$env</span><span class="s2">:COMPUTERNAME&quot;</span>
-<span class="nv">$host</span>.UI.RawUI.ForegroundColor <span class="o">=</span> <span class="s2">&quot;Green&quot;</span>
-<span class="nv">$host</span>.UI.RawUI.BackgroundColor <span class="o">=</span> <span class="s2">&quot;Black&quot;</span>
-<span class="nv">$host</span>.UI.RawUI.WindowSize <span class="o">=</span> New-Object System.Management.Automation.Host.Size<span class="o">(</span><span class="m">120</span>,50<span class="o">)</span>
-</code></pre></div>
-<p>This $profile script defines several customizations for the PowerShell environment, including:</p>
-<ul>
-<li>A custom function named Get-Weather that uses the Invoke-RestMethod cmdlet to retrieve weather information for a specified location.</li>
-<li>The loading of several useful PowerShell modules, including Pester, PSReadline, and Microsoft.PowerShell.Management.</li>
-<li>Default parameter values for the Get-ChildItem and Out-File cmdlets.</li>
-<li>Custom aliases for the Get-ChildItem cmdlet and a common path for the Get-ChildItem cmdlet.</li>
-<li>Configuration of the PowerShell prompt, including the window title, foreground and background colors, and window size.</li>
-</ul>
-<p>By using a $profile script like this one, you can customize your PowerShell environment to suit your needs and make your work more efficient.</p>
+<p>Be sure to include the dot (.) at the beginning of the command. This tells PowerShell to run the script or file that's being called.</p>
 
               
             </article>
@@ -823,7 +855,7 @@ Set-Alias -Name gac -Value Get-ChildItem -ParameterName FullName -ArgumentList <
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../getalias/" class="md-footer__link md-footer__link--prev" aria-label="Previous: GetAlias" rel="prev">
+        <a href="../ConsoleIO/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Console IO" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -832,26 +864,11 @@ Set-Alias -Name gac -Value Get-ChildItem -ParameterName FullName -ArgumentList <
               <span class="md-footer__direction">
                 Previous
               </span>
-              GetAlias
+              Console IO
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../files_folders/" class="md-footer__link md-footer__link--next" aria-label="Next: Files &amp; Folders" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Files & Folders
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
@@ -925,10 +942,10 @@ Set-Alias -Name gac -Value Get-ChildItem -ParameterName FullName -ArgumentList <
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.expand"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.expand"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
