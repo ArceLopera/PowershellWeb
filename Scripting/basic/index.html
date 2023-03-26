@@ -732,6 +732,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#run-the-script" class="md-nav__link">
+    Run the script
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -778,6 +785,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#run-the-script" class="md-nav__link">
+    Run the script
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -797,7 +811,6 @@
 <p>Powershell scripts allow you to store a command or series of commands, for easier execution later. To produce a script, it is enough to record the required commands in a text file with the extension .ps1 .
 For example, consider the following command, which prints a list of fixed disks attached to the system, along with their free space, total size, and free space percentage:
 <div class="highlight"><pre><span></span><code><span class="nb">Get-CimInstance</span> <span class="n">Win32_logicaldisk</span> <span class="p">`</span>
- <span class="n">-ComputerName</span> <span class="n">localhost</span> <span class="p">`</span>
  <span class="n">-filter</span> <span class="s2">&quot;drivetype=3&quot;</span> <span class="p">|</span>
  <span class="nb">Sort-Object</span> <span class="n">-Property</span> <span class="n">DeviceID</span> <span class="p">|</span>
  <span class="nb">format-table</span> <span class="n">-Property</span> <span class="n">DeviceID</span><span class="p">,</span>
@@ -805,19 +818,16 @@ For example, consider the following command, which prints a list of fixed disks 
  <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;Size(GB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">Size</span> <span class="p">/</span> <span class="n">1GB</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}},</span>
  <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;%Free&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">FreeSpace</span> <span class="p">/</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Size</span> <span class="p">*</span> <span class="n">100</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}}</span>
 </code></pre></div>
-At the end of lines 1 and 2, the backtick ` is used before the end of each line, to indicate that the command has not finished yet. In the rest of the lines, this job is done by vertical bars and commas. This way it is easier to read.
-By copying these lines of code and saving them to a text file called Get-DiskInventory.ps1, a script will be created. It can be executed by typing its name in the console. If the script is saved in a different directory than the current one, the full path to the file must be written to execute it.
-In case the script does not execute, it is necessary to change the script execution policy to a more permissive value, using the Set-ExecutionPolicy cmdlet as administrator. See the cmdlet help for more details.</p>
+At the end of the first line the backtick ` is used to indicate that the command has not finished yet. In the rest of the lines, this job is done by vertical bars and commas. This way it is easier to read.
+By copying these lines of code and saving them to a text file called Get-DiskInventory.ps1, a script will be created. </p>
 <h2 id="parameterization">Parameterization</h2>
 <p>Scripts can be parameterized, that is, parameters can be created that can be specified at the time the script is executed. For example, in the script of the previous example it is possible to return parameters the name of the computer and the type of unit.
 The parameterized script would look like this:</p>
 <p><div class="highlight"><pre><span></span><code><span class="k">param</span><span class="p">(</span>
-  <span class="nv">$ComputerName</span> <span class="p">=</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span>
   <span class="nv">$DriveType</span> <span class="p">=</span> <span class="n">3</span>
 <span class="p">)</span>
 
 <span class="nb">Get-CimInstance</span> <span class="n">Win32_logicaldisk</span> <span class="p">`</span>
-  <span class="n">-ComputerName</span> <span class="nv">$ComputerName</span> <span class="p">`</span>
   <span class="n">-filter</span> <span class="s2">&quot;drivetype=$DriveType&quot;</span> <span class="p">|</span>
   <span class="nb">Sort-Object</span><span class="n">-Property</span> <span class="n">DeviceID</span> <span class="p">|</span>
   <span class="nb">format-table</span> <span class="n">-Property</span> <span class="n">DeviceID</span><span class="p">,</span>
@@ -826,6 +836,12 @@ The parameterized script would look like this:</p>
   <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;%Free&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">FreeSpace</span> <span class="p">/</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Size</span> <span class="p">*</span> <span class="n">100</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}}</span>
 </code></pre></div>
 Optionally, each parameter can be specified with a default value, as seen in the example above.</p>
+<h2 id="run-the-script">Run the script</h2>
+<p>The script can be executed by typing its name in the console. If the script is saved in a different directory than the current one, the full path to the file must be written to execute it.
+In case the script does not execute, it is necessary to change the script execution policy to a more permissive value, using the Set-ExecutionPolicy cmdlet as administrator. See the cmdlet help for more details.</p>
+<div class="highlight"><pre><span></span><code><span class="p">.</span> <span class="p">./</span><span class="nb">Get-DiskInventory</span><span class="p">.</span><span class="n">ps1</span>
+</code></pre></div>
+<p>Be sure to include the dot (.) at the beginning of the command. This tells PowerShell to run the script or file that's being called.</p>
 
               
             </article>
