@@ -113,3 +113,4 @@ nav:
     - Variables: Scripting\variables.md
     - Console IO: Scripting\ConsoleIO.md
     - Basic Scripting: Scripting\basic.md
+    - Script Documentation: Scripting\comments.md
