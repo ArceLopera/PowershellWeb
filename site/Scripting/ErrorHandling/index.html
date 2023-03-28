@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Exercises/Exercises1/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/ErrorHandling/">
       
       <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Exercise 1 - Powershell Refresher</title>
+        <title>Handling Errors - Powershell Refresher</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercises-on-get-help-usage" class="md-skip">
+        <a href="#trycatchfinally" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercise 1
+              Handling Errors
             
           </span>
         </div>
@@ -223,15 +223,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../GetStart/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../GetStart/" class="md-tabs__link">
         Basics
       </a>
     </li>
@@ -241,13 +239,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Scripting/variables/" class="md-tabs__link">
+      <a href="../variables/" class="md-tabs__link md-tabs__link--active">
         Scripting
       </a>
     </li>
@@ -394,14 +394,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -450,48 +448,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Exercise 1
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Exercises/Exercises1/" class="md-nav__link">
         Exercise 1
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#exercises-on-get-help-usage" class="md-nav__link">
-    Exercises on Get-Help usage
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -601,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Exercises2/" class="md-nav__link">
+      <a href="../../Exercises/Exercises2/" class="md-nav__link">
         Exercise 2
       </a>
     </li>
@@ -629,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Exercises3/" class="md-nav__link">
+      <a href="../../Exercises/Exercises3/" class="md-nav__link">
         Exercise 3
       </a>
     </li>
@@ -657,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Exercises4/" class="md-nav__link">
+      <a href="../../Exercises/Exercises4/" class="md-nav__link">
         Exercise 4
       </a>
     </li>
@@ -677,12 +638,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -705,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Scripting/variables/" class="md-nav__link">
+      <a href="../variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -719,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Scripting/ConsoleIO/" class="md-nav__link">
+      <a href="../ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
     </li>
@@ -733,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Scripting/basic/" class="md-nav__link">
+      <a href="../basic/" class="md-nav__link">
         Basic Scripting
       </a>
     </li>
@@ -747,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Scripting/comments/" class="md-nav__link">
+      <a href="../comments/" class="md-nav__link">
         Script Documentation
       </a>
     </li>
@@ -761,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Scripting/advanced/" class="md-nav__link">
+      <a href="../advanced/" class="md-nav__link">
         Advanced Script
       </a>
     </li>
@@ -775,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Scripting/cond/" class="md-nav__link">
+      <a href="../cond/" class="md-nav__link">
         Conditionals
       </a>
     </li>
@@ -787,11 +750,62 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Scripting/ErrorHandling/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Handling Errors
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Handling Errors
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trycatchfinally" class="md-nav__link">
+    Try/Catch/Finally
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspecting-errors" class="md-nav__link">
+    Inspecting errors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raising-errors" class="md-nav__link">
+    Raising errors
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -803,7 +817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Scripting/loops/" class="md-nav__link">
+      <a href="../loops/" class="md-nav__link">
         Loops
       </a>
     </li>
@@ -842,8 +856,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exercises-on-get-help-usage" class="md-nav__link">
-    Exercises on Get-Help usage
+  <a href="#trycatchfinally" class="md-nav__link">
+    Try/Catch/Finally
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inspecting-errors" class="md-nav__link">
+    Inspecting errors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raising-errors" class="md-nav__link">
+    Raising errors
   </a>
   
 </li>
@@ -862,105 +890,70 @@
                 
 
 
-  <h1>Exercise 1</h1>
+  <h1>Handling Errors</h1>
 
-<h2 id="exercises-on-get-help-usage">Exercises on Get-Help usage</h2>
+<h2 id="trycatchfinally">Try/Catch/Finally</h2>
+<div class="highlight"><pre><span></span><code><span class="k">Try</span> <span class="p">{</span>
+   <span class="c"># Do something with a file.</span>
+<span class="p">}</span> <span class="k">Catch</span> <span class="no">[System.IO.IOException]</span> <span class="p">{</span>
+   <span class="nb">Write-Host</span> <span class="s2">&quot;Something went wrong&quot;</span>
+<span class="p">}</span>  <span class="k">Catch</span> <span class="p">{</span>
+   <span class="c"># Catch all. It&#39;s not an IOException but something else.</span>
+<span class="p">}</span> <span class="k">Finally</span> <span class="p">{</span>
+   <span class="c"># Clean up resources.</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="inspecting-errors">Inspecting errors</h2>
+<p>An exception object contains:</p>
 <ol>
 <li>
-<p>Verify if there are cmdlets that allow converting the output of another cmdlet to HTML format.</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="n">help</span> <span class="p">*</span><span class="n">html</span><span class="p">*</span>
-</code></pre></div>
-</details></p>
+<p>A message. The message tells you in a few words what went wrong.</p>
 </li>
 <li>
-<p>Verify which cmdlets allow directing output to a printer or a file.</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="nb">Out-Printer</span>
-<span class="nb">Out-File</span>
-</code></pre></div>
-</details></p>
+<p>The stacktrace. The stacktrace tells you which statements ran before the error. Imagine you have a call to function A, followed by B, followed by C. The script stops responding at C. The stacktrace will show that chain of calls.</p>
 </li>
 <li>
-<p>Verify how many cmdlets are used to manage processes.</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="n">help</span> <span class="p">*</span><span class="k">Process</span><span class="p">*</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Which cmdlet can be used to write an entry to an event log?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="nb">Write-EventLog</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Which cmdlets can be used to manage aliases?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="n">help</span> <span class="p">*</span><span class="k">alias</span><span class="p">*</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Is there a way to keep a transcript of a PowerShell session and save it to a file?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="nb">Start-Transcript</span> <span class="n">-Path</span> <span class="s2">&quot;C:\transcripts\transcript0.txt&quot;</span> <span class="n">-NoClobber</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>How can you get the 100 most recent records from the SECURITY event log on a system?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-EventLog</span> <span class="n">-LogName</span> <span class="n">SECURITY</span> <span class="n">-Newest</span> <span class="n">100</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Is there a way to obtain the list of services that are running on a remote computer?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-Answer: Yes, you can use the Get-Service cmdlet with the -ComputerName parameter followed by the name of the remote computer to obtain the list of services running on that computer. Example: 
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Service</span> <span class="n">-ComputerName</span> <span class="n">RemoteComputerName</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Is there a way to obtain the list of services that are running on a remote computer?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-Answer: Yes, you can use the Get-Process cmdlet with the -ComputerName parameter followed by the name of the remote computer to obtain the list of processes running on that computer. Example: 
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="n">-ComputerName</span> <span class="n">RemoteComputerName</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Review the help of the Out-File cmdlet. What is the line size used by this cmdlet by default? Is there a parameter that allows you to change this size?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-Answer: The line size used by default by the Out-File cmdlet is 80 characters. You can change this size using the -Width parameter followed by the desired width. Example: 
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">-FilePath</span> <span class="n">C</span><span class="p">:\</span><span class="n">Processes</span><span class="p">.</span><span class="n">txt</span> <span class="n">-Width</span> <span class="n">120</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>By default, Out-File overwrites the output file if it already exists. Is there a parameter that prevents the overwriting of an existing file?</p>
-<p><details>
-<summary>Click me for proposed solution</summary>
-Answer: Yes, the -NoClobber parameter can be used to prevent the overwriting of an existing file. If this parameter is used and the output file already exists, Out-File will not overwrite the file and will instead display an error message. 
-Example: 
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">-FilePath</span> <span class="n">C</span><span class="p">:\</span><span class="n">Processes</span><span class="p">.</span><span class="n">txt</span> <span class="n">-NoClobber</span>
-</code></pre></div>
-</details></p>
+<p>The offending row. The exception object also tells you which row the script was running when the error occurred. This information can help you debug your code.</p>
 </li>
 </ol>
+<p>So how do you inspect an exception object? There's a built-in variable, $<em>, that has an exception property. To get the error message, for example, you would use $</em>.exception.message.</p>
+<div class="highlight"><pre><span></span><code><span class="k">Try</span> <span class="p">{</span>
+     <span class="c"># Do something with a file.</span>
+   <span class="p">}</span> <span class="k">Catch</span> <span class="no">[System.IO.IOException]</span> <span class="p">{</span>
+     <span class="nb">Write-Host</span> <span class="s2">&quot;Something IO went wrong: </span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">exception</span><span class="p">.</span><span class="n">message</span><span class="p">)</span><span class="s2">&quot;</span>
+   <span class="p">}</span>  <span class="k">Catch</span> <span class="p">{</span>
+     <span class="nb">Write-Host</span> <span class="s2">&quot;Something else went wrong: </span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">exception</span><span class="p">.</span><span class="n">message</span><span class="p">)</span><span class="s2">&quot;</span>
+   <span class="p">}</span>
+</code></pre></div>
+<h2 id="raising-errors">Raising errors</h2>
+<p>In some situations, you might want to cause an error:</p>
+<ul>
+<li>Non-terminating errors. For this type of error, PowerShell just notifies you that something went wrong, by using the Write-Error cmdlet, for example. The script continues to run. That might not be the behavior you want. To raise the severity of the error, you can use a parameter like -ErrorAction to cause an error that can be caught with Try/Catch, like so:
+    <div class="highlight"><pre><span></span><code><span class="k">Try</span> <span class="p">{</span>
+    <span class="nb">Get-Content</span> <span class="s1">&#39;./file.txt&#39;</span> <span class="n">-ErrorAction</span> <span class="n">Stop</span>
+<span class="p">}</span> <span class="k">Catch</span> <span class="p">{</span>
+    <span class="nb">Write-Error</span> <span class="s2">&quot;File can&#39;t be found&quot;</span>
+<span class="p">}</span>
+</code></pre></div></li>
+</ul>
+<p>By using the -ErrorAction parameter and the value Stop, you can cause an error that Try/Catch can catch.</p>
+<ul>
+<li>
+<p>Business rules. You might have a situation where the code doesn't actually stop responding, but you want it to for business reasons. Imagine you're sanitizing input and you check whether a parameter is a path. A business requirement might specify only certain paths are allowed, or the path needs to look a   certain way. If the checks fail, it makes sense to throw an error. In a situation like this, you can use a Throw block:
+    <div class="highlight"><pre><span></span><code><span class="k">Try</span> <span class="p">{</span>
+    <span class="k">If</span> <span class="p">(</span><span class="nv">$Path</span> <span class="o">-eq</span> <span class="s1">&#39;./forbidden&#39;</span><span class="p">)</span> 
+    <span class="p">{</span>
+        <span class="k">Throw</span> <span class="s2">&quot;Path not allowed&quot;</span>
+    <span class="p">}</span>
+    <span class="c"># Carry on.</span>
+
+<span class="p">}</span> <span class="k">Catch</span> <span class="p">{</span>
+<span class="nb">Write-Error</span> <span class="s2">&quot;</span><span class="p">$(</span><span class="nv">$_</span><span class="p">.</span><span class="n">exception</span><span class="p">.</span><span class="n">message</span><span class="p">)</span><span class="s2">&quot;</span> <span class="c"># Path not allowed.</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p>In general, don't use Throw for parameter validation. Use validation attributes instead. If you can't make your code work with these attributes, a Throw might be OK.</p>
+</li>
+</ul>
 
               
             </article>
@@ -974,7 +967,7 @@ Example:
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../gethelp/" class="md-footer__link md-footer__link--prev" aria-label="Previous: GetHelp" rel="prev">
+        <a href="../cond/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Conditionals" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -983,20 +976,20 @@ Example:
               <span class="md-footer__direction">
                 Previous
               </span>
-              GetHelp
+              Conditionals
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../get_member/" class="md-footer__link md-footer__link--next" aria-label="Next: GetMember" rel="next">
+        <a href="../loops/" class="md-footer__link md-footer__link--next" aria-label="Next: Loops" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              GetMember
+              Loops
             </div>
           </div>
           <div class="md-footer__button md-icon">

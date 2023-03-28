@@ -115,3 +115,6 @@ nav:
     - Basic Scripting: Scripting\basic.md
     - Script Documentation: Scripting\comments.md
     - Advanced Script: Scripting\advanced.md
+    - Conditionals: Scripting\cond.md
+    - Handling Errors: Scripting\ErrorHandling.md
+    - Loops: Scripting\loops.md

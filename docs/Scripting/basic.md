@@ -35,7 +35,7 @@ Optionally, each parameter can be specified with a default value, as seen in the
 ## Run the script
 
 The script can be executed by typing its name in the console. If the script is saved in a different directory than the current one, the full path to the file must be written to execute it.
-In case the script does not execute, it is necessary to change the script execution policy to a more permissive value, using the Set-ExecutionPolicy cmdlet as administrator. See the cmdlet help for more details.
+In case the script does not execute, it is necessary to change the script execution policy to a more permissive value, using the Set-ExecutionPolicy cmdlet as administrator. See the cmdlet help for more details. An execution policy is a safety feature. Like requiring the path of a script, a policy can stop you from doing unintentional things. You can set the policy on various levels, like the local computer, current user, or particular session. You can also use a Group Policy setting to set execution policies for computers and users.
 
 ``` pwsh
 . ./Get-DiskInventory.ps1
