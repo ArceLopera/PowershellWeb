@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Exercises/Exercises2/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/advanced/">
       
       <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Exercise 2 - Powershell Refresher</title>
+        <title>Advanced Script - Powershell Refresher</title>
       
     
     
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercise 2
+              Advanced Script
             
           </span>
         </div>
@@ -218,15 +218,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../GetStart/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../GetStart/" class="md-tabs__link">
         Basics
       </a>
     </li>
@@ -236,13 +234,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Scripting/variables/" class="md-tabs__link">
+      <a href="../variables/" class="md-tabs__link md-tabs__link--active">
         Scripting
       </a>
     </li>
@@ -389,14 +389,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -447,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Exercises1/" class="md-nav__link">
+      <a href="../../Exercises/Exercises1/" class="md-nav__link">
         Exercise 1
       </a>
     </li>
@@ -557,19 +555,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Exercises/Exercises2/" class="md-nav__link">
         Exercise 2
       </a>
-      
     </li>
   
 
@@ -595,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Exercises3/" class="md-nav__link">
+      <a href="../../Exercises/Exercises3/" class="md-nav__link">
         Exercise 3
       </a>
     </li>
@@ -623,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Exercises4/" class="md-nav__link">
+      <a href="../../Exercises/Exercises4/" class="md-nav__link">
         Exercise 4
       </a>
     </li>
@@ -643,12 +633,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -671,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Scripting/variables/" class="md-nav__link">
+      <a href="../variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -685,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Scripting/ConsoleIO/" class="md-nav__link">
+      <a href="../ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
     </li>
@@ -699,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Scripting/basic/" class="md-nav__link">
+      <a href="../basic/" class="md-nav__link">
         Basic Scripting
       </a>
     </li>
@@ -713,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Scripting/comments/" class="md-nav__link">
+      <a href="../comments/" class="md-nav__link">
         Script Documentation
       </a>
     </li>
@@ -725,11 +717,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Scripting/advanced/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Advanced Script
       </a>
+      
     </li>
   
 
@@ -771,162 +771,42 @@
                 
 
 
-  <h1>Exercise 2</h1>
+  <h1>Advanced Script</h1>
 
-<ol>
-<li>
-<p>Create two similar text files (with one or two different lines). Compare them using diff.
-    <details>
-        <summary>Click me for proposed solution</summary>
-    <div class="highlight"><pre><span></span><code><span class="c">##Create 1st file</span>
-<span class="nb">New-Item</span> <span class="n">-Path</span> <span class="p">.</span> <span class="n">-Name</span> <span class="s2">&quot;file1.txt&quot;</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span> <span class="n">-Value</span> <span class="s2">&quot;Hello World.\nBonjour Monde!&quot;</span> <span class="n">-Force</span>
-<span class="c">##Create 2nd file</span>
-<span class="nb">New-Item</span> <span class="n">-Path</span> <span class="p">.</span> <span class="n">-Name</span> <span class="s2">&quot;file2.txt&quot;</span> <span class="n">-ItemType</span> <span class="s2">&quot;file&quot;</span> <span class="n">-Value</span> <span class="s2">&quot;Hello World!\nBonjour Monde.&quot;</span> <span class="n">-Force</span>
-<span class="c">##Find the difference between two files</span>
-<span class="nb">diff </span><span class="n">-ReferenceObject</span><span class="p">(</span><span class="nb">cat </span><span class="n">file1</span><span class="p">.</span><span class="n">txt</span><span class="p">)</span> <span class="n">-DifferenceObject</span><span class="p">(</span><span class="nb">cat </span><span class="n">file2</span><span class="p">.</span><span class="n">txt</span><span class="p">)</span>
+<p>Adding the line [CmdletBinding()] after the help comments makes the script advanced, which allows you to return required parameters, set their data type, add aliases for parameters, etc.
+The final version of the example script is as follows:
+<div class="highlight"><pre><span></span><code><span class="cm">&lt;#</span>
+<span class="sd">.SYNOPSIS</span><span class="cm"></span>
+<span class="cm">Get-DiskInventory gets logical disk information for one or more computers.</span>
+<span class="sd">.DESCRIPTION</span><span class="cm"></span>
+<span class="cm">Get-DiskInventory uses CIM to query the instances Win32_LogicalDisk from one or more computers. Display for each disk the drive letter, free space, total space, and percentage of free space.</span>
+<span class="sd">.PARAMETER</span><span class="cm"> DriveType</span>
+<span class="cm">The type of unit to query. View the Win32_LogicalDisk documentation for more information. 3 indicates a fixed disk, and is the default.</span>
+<span class="sd">.EXAMPLE</span><span class="cm"></span>
+<span class="cm">Get-DiskInventory -DriveType 3</span>
+<span class="cm">#&gt;</span>
+<span class="p">[</span><span class="k">CmdletBinding</span><span class="p">()]</span>
+<span class="k">param</span><span class="p">(</span>
+  <span class="p">[</span><span class="k">Parameter</span><span class="p">(</span><span class="k">Mandatory</span><span class="p">=</span><span class="nv">$True</span><span class="p">)]</span>
+  <span class="p">[</span><span class="k">Alias</span><span class="p">(</span><span class="s1">&#39;Type&#39;</span><span class="p">)]</span>
+  <span class="p">[</span><span class="k">ValidateSet</span><span class="p">(</span><span class="n">2</span><span class="p">,</span><span class="n">3</span><span class="p">)]</span>
+  <span class="no">[int]</span><span class="nv">$DriveType</span> <span class="p">=</span> <span class="n">3</span>
+<span class="p">)</span>
+
+<span class="nb">Get-CimInstance</span> <span class="n">Win32_logicaldisk</span> <span class="p">`</span>
+<span class="n">-filter</span> <span class="s2">&quot;drivetype=$DriveType&quot;</span> <span class="p">|</span>
+ <span class="nb">Sort-Object</span><span class="n">-Property</span> <span class="n">DeviceID</span> <span class="p">|</span>
+ <span class="nb">Select-Object</span><span class="n">-Property</span> <span class="n">DeviceID</span><span class="p">,</span>
+ <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;FreeSpace(MB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">FreeSpace</span> <span class="p">/</span> <span class="n">1MB</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}},</span>
+ <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;Size(GB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">Size</span> <span class="p">/</span> <span class="n">1GB</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}},</span>
+ <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;%Free&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">FreeSpace</span> <span class="p">/</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Size</span> <span class="p">*</span> <span class="n">100</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}}</span>
 </code></pre></div></p>
-<p><div class="highlight"><pre><span></span><code>InputObject    SideIndicator
------------    -------------
-Hello World!   =&gt;           
-Bonjour Monde. =&gt;           
-Hello World.   &lt;=           
-Bonjour Monde! &lt;=           
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>What happens if you run:
-<div class="highlight"><pre><span></span><code><span class="nb">get-service</span> <span class="p">|</span> <span class="nb">export-csv</span> <span class="n">servicios</span><span class="p">.</span><span class="n">csv</span> <span class="p">|</span> <span class="nb">out-file</span>
-</code></pre></div>
-Why?
-    <details>
-            <summary>Click me for proposed solution</summary>
-    The output of the above command is:
-    <div class="highlight"><pre><span></span><code>out-file: Cannot process argument because the value of the &quot;path&quot; argument is NULL. Change the value of the &quot;path&quot; argument to a non-null value.
-At line:1 char:42
-+ get-service | export-csv servicios.csv | out-file
-+                                          ~~~~~~~~
-    + CategoryInfo          : InvalidArgument: (:) [Out-File], PSArgumentNullException
-    + FullyQualifiedErrorId : ArgumentNull,Microsoft.PowerShell.Commands.OutFileCommand
-</code></pre></div>
-    This is because export-csv servicios.csv creates the csv file and has null output, therefore out-file is not necessary.</p>
-</details>
-</li>
-<li>
-<p>How would you create a file delimited by semicolons (;)? 
-    HINT: Use export-csv, but with an additional parameter.</p>
-<p><details>
-    <summary>Click me for proposed solution</summary>
-    <div class="highlight"><pre><span></span><code><span class="nb">ps </span><span class="p">|</span> <span class="nb">epcsv </span><span class="n">-delimiter</span> <span class="s2">&quot;;&quot;</span> <span class="n">example</span><span class="p">.</span><span class="n">csv</span>
-<span class="c">##Same as</span>
-<span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">Export-Csv</span> <span class="n">-delimiter</span> <span class="s2">&quot;;&quot;</span> <span class="n">example</span><span class="p">.</span><span class="n">csv</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Export-cliXML and Export-CSV modify the system, because they can create and overwrite files. Is there a parameter that prevents overwriting an existing file? Is there a parameter that allows the command to ask before overwriting a file?</p>
-<p><details>
-    <summary>Click me for proposed solution</summary>
-To prevent overwriting the file if it already exists, the -NoClobber attribute can be used.</p>
-<p><strong>Example:</strong>
-The following command will not overwrite the result from point 3
-<div class="highlight"><pre><span></span><code><span class="nb">ps </span><span class="p">|</span> <span class="nb">epcsv </span><span class="n">example</span><span class="p">.</span><span class="n">csv</span> <span class="n">-NoClobber</span>
-</code></pre></div>
-To ask for confirmation, use the -Confirm parameter.
-<div class="highlight"><pre><span></span><code><span class="nb">ps </span><span class="p">|</span> <span class="nb">epcsv </span><span class="n">-delimiter</span> <span class="s2">&quot;;&quot;</span> <span class="n">example</span><span class="p">.</span><span class="n">csv</span> <span class="n">-Confirm</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Windows uses regional settings, which includes the list separator. In English Windows, the list separator is a comma (,). How do you tell Export-CSV to use the system separator instead of the comma?</p>
-<p><details>
-    <summary>Click me for proposed solution</summary>
-The cmdlet get-culture obtains system configuration information, such as language and writing information.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">ps </span><span class="p">|</span> <span class="nb">epcsv </span><span class="n">test2</span><span class="p">.</span><span class="n">csv</span> <span class="n">-Delimiter</span> <span class="p">((</span><span class="nb">get-culture</span><span class="p">).</span><span class="n">textInfo</span><span class="p">.</span><span class="n">listSeparator</span><span class="p">)</span>
-</code></pre></div>
-<p>Using cat (alias of Get-Content), we can see that the output uses ';' as the Spanish list separator.</p>
-<p><div class="highlight"><pre><span></span><code><span class="nb">cat </span><span class="p">.\</span><span class="n">test2</span><span class="p">.</span><span class="n">csv</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Identify a cmdlet that allows generating a random number.</p>
-<p><details>
-    <summary>Click me for proposed solution</summary>
-The cmdlet get-random returns a pseudo-random 32-bit integer.
-</details></p>
-</li>
-<li>
-<p>Identify a cmdlet that displays the current date and time.</p>
-<p><details>
-    <summary>Click me for proposed solution</summary>
-The cmdlet get-date returns an object that represents the current date and time, which can be represented in various formats such as Windows or UNIX.
-</details></p>
-</li>
-<li>
-<p>What type of object does the cmdlet in question 7 produce?</p>
-<p><details>
-    <summary>Click me for proposed solution</summary>
-Using the cmdlet gm, we can obtain the elements that make up the object and the type. As seen below, the object is part of the System package and its type is DateTime.
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Date</span> <span class="p">|</span> <span class="nb">gm</span>
-
-<span class="n">TypeName</span><span class="p">:</span> <span class="n">System</span><span class="p">.</span><span class="n">DateTime</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Using the cmdlet in question 7 and select-object, display only the day of the week as follows:</p>
-<div class="highlight"><pre><span></span><code>DayOfWeek
----------
-Thursday
-</code></pre></div>
-<p><details>
-    <summary>Click me for proposed solution</summary>
-    <div class="highlight"><pre><span></span><code><span class="nb">get-date</span> <span class="p">|</span> <span class="nb">select </span><span class="n">-property</span> <span class="s2">&quot;dayofweek&quot;</span>
-
-<span class="n">DayOfWeek</span>
-<span class="p">---------</span>
-<span class="n">Friday</span>
-</code></pre></div></p>
-</details>
-</li>
-<li>
-<p>Identify a cmdlet that displays information about patches (hotfixes) installed on the system.</p>
-<p><details>
-    <summary>Click me for proposed solution</summary>
-The cmdlet that returns a list of system patches is:
-<div class="highlight"><pre><span></span><code><span class="nb">get-hotfix</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Using the cmdlet from question 10, display a list of installed patches. Then extend the expression to sort the list by installation date, and display on the screen only the installation date, the user who installed the patch, and the patch ID. Remember to examine the property names.</p>
-<p><details>
-    <summary>Click me for proposed solution</summary>
-The cmdlet that returns a list of system patches is:
-<div class="highlight"><pre><span></span><code><span class="nb">get-hotfix</span> <span class="p">|</span> <span class="nb">sort </span><span class="n">-property</span> <span class="n">installedon</span> <span class="p">|</span> <span class="nb">select </span><span class="n">-property</span> <span class="n">installedon</span><span class="p">,</span> <span class="n">installedby</span><span class="p">,</span> <span class="n">hotfixid</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Complement the solution to question 11 so that the system sorts the results by the patch description, and includes the description, patch ID, and installation date in the listing. Write the results to an HTML file.</p>
-<p><details>
-    <summary>Click me for proposed solution</summary>
-The cmdlet that returns a list of system patches is:
-<div class="highlight"><pre><span></span><code><span class="nb">get-hotFix</span> <span class="p">|</span> <span class="nb">sort </span><span class="n">-property</span> <span class="n">description</span> <span class="p">|</span> <span class="nb">select </span><span class="n">-property</span> <span class="n">hotfixid</span><span class="p">,</span><span class="n">description</span><span class="p">,</span><span class="n">installedon</span>  <span class="p">|</span> <span class="nb">convertto-html</span> <span class="p">|</span> <span class="nb">Out-File</span> <span class="n">hotfix</span><span class="p">.</span><span class="n">html</span>
-</code></pre></div>
-</details></p>
-</li>
-<li>
-<p>Display a list of the 50 newest entries from the System event log. Sort the list so that the oldest entries appear first, and entries produced at the same time should be sorted by index number. Show the index number, time, and source for each entry. Write this information to a plain text file.</p>
-<p><details>
-    <summary>Click me for proposed solution</summary>
-The cmdlet that returns a list of system patches is:
-<div class="highlight"><pre><span></span><code><span class="nb">get-eventlog</span> <span class="n">-newest</span> <span class="n">50</span> <span class="n">-logname</span> <span class="n">system</span> <span class="p">|</span> <span class="nb">sort </span><span class="n">-property</span> <span class="n">index</span> <span class="p">|</span> <span class="nb">sort </span><span class="n">-property</span> <span class="n">timegenerated</span> <span class="n">-descending</span> <span class="p">|</span> <span class="nb">select </span><span class="n">-property</span> <span class="n">index</span><span class="p">,</span> <span class="n">timegenerated</span><span class="p">,</span> <span class="n">source</span> <span class="p">&gt;</span> <span class="n">exercise13</span><span class="p">.</span><span class="n">txt</span>
-</code></pre></div>
-</details></p>
-</li>
-</ol>
+<p>The changes from the previous example are as follows:</p>
+<ul>
+<li>The directive to return the script advanced is included</li>
+<li>The parameter is now required, and the alias Type is created for it.</li>
+<li>The parameter is declared as an integer, and the only valid values ​​it receives are 2 and 3.</li>
+</ul>
 
               
             </article>
@@ -940,7 +820,7 @@ The cmdlet that returns a list of system patches is:
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../comparison/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Object Comparison" rel="prev">
+        <a href="../comments/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Script Documentation" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -949,26 +829,11 @@ The cmdlet that returns a list of system patches is:
               <span class="md-footer__direction">
                 Previous
               </span>
-              Object Comparison
+              Script Documentation
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../../tables_lists/" class="md-footer__link md-footer__link--next" aria-label="Next: Formatting" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Formatting
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
