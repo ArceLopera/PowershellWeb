@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#powershell-tutorial" class="md-skip">
+        <a href="#windows-powershell" class="md-skip">
           Skip to content
         </a>
       
@@ -311,8 +311,6 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           Home
@@ -329,8 +327,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -339,25 +335,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    Table of Contents
+  <a href="#windows-powershell" class="md-nav__link">
+    Windows Powershell
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Windows Powershell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#installation" class="md-nav__link">
     Installation
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#getting-started-with-powershell" class="md-nav__link">
     Getting Started with PowerShell
   </a>
   
-    <nav class="md-nav" aria-label="Getting Started with PowerShell">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line-shell" class="md-nav__link">
+    Command-line Shell
+  </a>
+  
+    <nav class="md-nav" aria-label="Command-line Shell">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -374,15 +383,15 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#powershell-scripts" class="md-nav__link">
-    PowerShell Scripts
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-scripting-language" class="md-nav__link">
+    A Scripting Language
+  </a>
   
 </li>
       
@@ -390,6 +399,19 @@
   <a href="#advanced-powershell" class="md-nav__link">
     Advanced PowerShell
   </a>
+  
+    <nav class="md-nav" aria-label="Advanced PowerShell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-management-framework" class="md-nav__link">
+    Configuration management framework
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -891,8 +913,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -901,25 +921,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    Table of Contents
+  <a href="#windows-powershell" class="md-nav__link">
+    Windows Powershell
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Windows Powershell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#installation" class="md-nav__link">
     Installation
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#getting-started-with-powershell" class="md-nav__link">
     Getting Started with PowerShell
   </a>
   
-    <nav class="md-nav" aria-label="Getting Started with PowerShell">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line-shell" class="md-nav__link">
+    Command-line Shell
+  </a>
+  
+    <nav class="md-nav" aria-label="Command-line Shell">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -936,15 +969,15 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#powershell-scripts" class="md-nav__link">
-    PowerShell Scripts
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-scripting-language" class="md-nav__link">
+    A Scripting Language
+  </a>
   
 </li>
       
@@ -952,6 +985,19 @@
   <a href="#advanced-powershell" class="md-nav__link">
     Advanced PowerShell
   </a>
+  
+    <nav class="md-nav" aria-label="Advanced PowerShell">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-management-framework" class="md-nav__link">
+    Configuration management framework
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -976,22 +1022,14 @@
                 
 
 
-<h1 id="powershell-tutorial">PowerShell Tutorial</h1>
-<p>This tutorial is designed to introduce you to PowerShell, a powerful command-line interface and scripting language built by Microsoft. Whether you are new to PowerShell or are looking to expand your skills, this guide will provide you with the necessary information to get started.</p>
-<h2 id="table-of-contents">Table of Contents</h2>
-<ul>
-<li><a href="Install/installation/">Installation</a></li>
-<li><a href="#getting-started-with-powershell">Getting Started with PowerShell</a><ul>
-<li><a href="#powershell-basics">PowerShell Basics</a></li>
-<li><a href="#working-with-files-and-folders">Working with Files and Folders</a></li>
-<li><a href="#powershell-scripts">PowerShell Scripts</a></li>
-</ul>
-</li>
-<li><a href="#advanced-powershell">Advanced PowerShell</a></li>
-</ul>
-<h2 id="installation"><a href="Install/installation/">Installation</a></h2>
+  <h1>Home</h1>
+
+<p>This guide is designed to introduce you to PowerShell, a powerful command-line interface and scripting language built by Microsoft. Whether you are new to PowerShell or are looking to expand your skills, this guide will provide you with the necessary information to get started.</p>
+<h2 id="windows-powershell">Windows Powershell</h2>
+<p>PowerShell is an automation solution that consists of a command-line shell, a scripting language, and a configuration-management framework.</p>
+<h3 id="installation"><a href="Install/installation/">Installation</a></h3>
 <p>PowerShell is pre-installed on Windows 10 and Windows Server 2016 and later, but you may need to update it to the latest version. To install PowerShell on older versions of Windows, visit the <a href="https://github.com/PowerShell/PowerShell">PowerShell GitHub repository</a> and follow the installation instructions.</p>
-<h2 id="getting-started-with-powershell"><a href="GetStart/">Getting Started with PowerShell</a></h2>
+<h3 id="getting-started-with-powershell"><a href="GetStart/">Getting Started with PowerShell</a></h3>
 <p>Before we dive into the commands, let's first open PowerShell. There are a few ways to do this:</p>
 <ul>
 <li>Click on the <em>Start</em> menu, search for <em>PowerShell</em>, and click on the <em>Windows PowerShell</em> option.</li>
@@ -999,6 +1037,16 @@
 <li>If you are using Windows 10, you can also right-click on the <em>Start</em> menu and select <em>Windows PowerShell</em> or <em>Windows PowerShell (Admin)</em>.</li>
 </ul>
 <p>Once you have PowerShell open, you can start entering commands.</p>
+<h2 id="command-line-shell">Command-line Shell</h2>
+<p>Windows PowerShell superseded the Windows command-line interface (cmd.exe) and the limited functionality of its batch file scripting language. PowerShell accepts and returns .NET objects and includes:</p>
+<ul>
+<li>A command-line history.</li>
+<li>Tab completion and prediction.</li>
+<li>Support for command and parameter <a href="getalias/">aliases</a>.</li>
+<li>Chaining commands that use the <a href="pipeline/">Pipeline feature</a>.</li>
+<li>A robust in-console <a href="gethelp/">help system</a></li>
+</ul>
+<p>Initially, Windows PowerShell was a platform built on the .NET Framework and only worked on Windows operating systems. However, with its recent releases, PowerShell uses the .NET Core and can run on Windows, macOS, and Linux platforms. Due to their multi-platform support, these recent releases are referred to as PowerShell (rather than Windows PowerShell).</p>
 <h3 id="powershell-basics"><a href="GetStart/">PowerShell Basics</a></h3>
 <p>PowerShell commands are called cmdlets, and they follow a simple verb-noun syntax. For example, the command to get a list of files in a directory is Get-ChildItem. Here are some basic PowerShell commands to get you started:</p>
 <ul>
@@ -1011,6 +1059,8 @@
 <li><em>Clear-Host</em>: Clear the PowerShell console screen</li>
 <li><em>Exit</em>: Exit PowerShell</li>
 </ul>
+<p>Commands provide PowerShell’s main functionality. There are many varieties of commands, including cmdlets (pronounced command-lets), functions, filters, scripts, applications, configurations, and workflows. Commands are building blocks that you piece together by using the Windows PowerShell scripting language. Using commands enables you to create custom solutions to complex administrative problems. Alternatively, you can run commands directly within the PowerShell console to complete a single task. The console is the CLI for PowerShell and is the primary way in which you'll interact with PowerShell.</p>
+<p>Cmdlets use a Verb-Noun naming convention. For example, you can use the Get-Command cmdlet to list all cmdlets and functions that are registered in the command shell. The verb identifies the action for the cmdlet to perform, and the noun identifies the resource on which the cmdlet will perform its action.</p>
 <h3 id="working-with-files-and-folders"><a href="files_folders/">Working with Files and Folders</a></h3>
 <p>PowerShell is particularly useful for working with files and folders. Here are some useful commands:</p>
 <ul>
@@ -1022,7 +1072,7 @@
 <li><a href="out_format/#get-content"><em>Get-Content</em></a>: Get the contents of a file</li>
 <li><a href="out_format/#set-content"><em>Set-Content</em></a>: Set the contents of a file</li>
 </ul>
-<h3 id="powershell-scripts"><a href="Scripting/variables/">PowerShell Scripts</a></h3>
+<h2 id="a-scripting-language"><a href="Scripting/variables/">A Scripting Language</a></h2>
 <p>PowerShell scripts are saved as .ps1 files and can be run from the command line or by double-clicking on the file. Here are some tips for writing PowerShell scripts:</p>
 <ul>
 <li><a href="Scripting/comments/">Use comments to explain your code</a></li>
@@ -1038,6 +1088,14 @@
 <li>Desired State Configuration: Automate the configuration of your environment</li>
 <li>Error Handling: Handle errors in your scripts</li>
 </ul>
+<h3 id="configuration-management-framework">Configuration management framework</h3>
+<p>PowerShell incorporates the PowerShell Desired State Configuration (DSC) management framework. This framework enables you to manage enterprise infrastructure with code to help with:</p>
+<ul>
+<li>Using declarative configurations and repeatable scripts for repeatable deployments.</li>
+<li>Enforcing configurations settings and identifying when configuration drift takes place from standard requirements.</li>
+<li>Deploying configuration settings using push or pull models.</li>
+</ul>
+<p>Applications and services with PowerShell–based administrative functions are consistent in how they work. This attribute means that you can quickly apply the lessons you learned. Also, when you use automation scripts to administer a software application, you can reuse them among other applications.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>PowerShell is a powerful tool that can help you automate repetitive tasks and manage your environment. By learning the basics of PowerShell, you can greatly improve your productivity and efficiency as an IT professional.</p>
 <p>With PowerShell, you can:</p>

@@ -908,7 +908,7 @@ The parameterized script would look like this:</p>
 Optionally, each parameter can be specified with a default value, as seen in the example above.</p>
 <h2 id="run-the-script">Run the script</h2>
 <p>The script can be executed by typing its name in the console. If the script is saved in a different directory than the current one, the full path to the file must be written to execute it.
-In case the script does not execute, it is necessary to change the script execution policy to a more permissive value, using the Set-ExecutionPolicy cmdlet as administrator. See the cmdlet help for more details.</p>
+In case the script does not execute, it is necessary to change the script execution policy to a more permissive value, using the Set-ExecutionPolicy cmdlet as administrator. See the cmdlet help for more details. An execution policy is a safety feature. Like requiring the path of a script, a policy can stop you from doing unintentional things. You can set the policy on various levels, like the local computer, current user, or particular session. You can also use a Group Policy setting to set execution policies for computers and users.</p>
 <div class="highlight"><pre><span></span><code><span class="p">.</span> <span class="p">./</span><span class="nb">Get-DiskInventory</span><span class="p">.</span><span class="n">ps1</span>
 </code></pre></div>
 <p>Be sure to include the dot (.) at the beginning of the command. This tells PowerShell to run the script or file that's being called.</p>
