@@ -61,7 +61,7 @@ PowerShell scripts are saved as .ps1 files and can be run from the command line 
 
 + [Use comments to explain your code](./Scripting/comments.md)
 + [Use variables to store data](./Scripting/variables.md)
-+ Use loops and conditional statements to control the flow of your script
++ Use [loops](./Scripting/loops.md) and [conditional](./Scripting/cond.md) statements to control the flow of your script
 + Use functions to reuse code
 
 ## Advanced PowerShell
@@ -69,9 +69,9 @@ PowerShell scripts are saved as .ps1 files and can be run from the command line 
 PowerShell is a very powerful tool, and there are many advanced features that you can use to make your scripts even more powerful. Here are some advanced topics to explore:
 
 + Remoting: Run PowerShell commands on remote computers
-+ Modules: Extend PowerShell with additional functionality
++ [Modules](./Advanced/modules.md): Extend PowerShell with additional functionality
 + Desired State Configuration: Automate the configuration of your environment
-+ Error Handling: Handle errors in your scripts
++ [Error Handling](./Advanced/ErrorHandling.md): Handle errors in your scripts
 
 ### Configuration management framework
 PowerShell incorporates the PowerShell Desired State Configuration (DSC) management framework. This framework enables you to manage enterprise infrastructure with code to help with:
