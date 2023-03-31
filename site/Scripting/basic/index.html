@@ -755,6 +755,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#execution-policy" class="md-nav__link">
+    Execution Policy
+  </a>
+  
+    <nav class="md-nav" aria-label="Execution Policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applocker" class="md-nav__link">
+    AppLocker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -926,6 +946,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#execution-policy" class="md-nav__link">
+    Execution Policy
+  </a>
+  
+    <nav class="md-nav" aria-label="Execution Policy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#applocker" class="md-nav__link">
+    AppLocker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -943,7 +983,10 @@
   <h1>Basic Scripting</h1>
 
 <p>Powershell scripts allow you to store a command or series of commands, for easier execution later. To produce a script, it is enough to record the required commands in a text file with the extension .ps1 .
-For example, consider the following command, which prints a list of fixed disks attached to the system, along with their free space, total size, and free space percentage:
+You can also use scripts to accomplish more complex tasks than are practical by using a single command. While it's technically possible to make a single Windows PowerShell command that's long and complex, it's impractical to manage. Placing complex tasks in a script makes editing simpler and easier to understand.</p>
+<p>Reporting is one complex and repetitive task that you can do with Windows PowerShell. You can use Windows PowerShell to create text or HTML-based reports. For example, you can create a script that reports available disk space on your servers, or you can create a script for Exchange that scans the message tracking logs to report on mail flow statistics.</p>
+<p>Scripts can also use constructs such as ForEach, If, and Switch, which are seldom used in a single command. You can use these constructs to process objects and make decisions in your scripts.</p>
+<p>For example, consider the following command, which prints a list of fixed disks attached to the system, along with their free space, total size, and free space percentage:
 <div class="highlight"><pre><span></span><code><span class="nb">Get-CimInstance</span> <span class="n">Win32_logicaldisk</span> <span class="p">`</span>
  <span class="n">-filter</span> <span class="s2">&quot;drivetype=3&quot;</span> <span class="p">|</span>
  <span class="nb">Sort-Object</span> <span class="n">-Property</span> <span class="n">DeviceID</span> <span class="p">|</span>
@@ -975,7 +1018,31 @@ Optionally, each parameter can be specified with a default value, as seen in the
 In case the script does not execute, it is necessary to change the script execution policy to a more permissive value, using the Set-ExecutionPolicy cmdlet as administrator. See the cmdlet help for more details. An execution policy is a safety feature. Like requiring the path of a script, a policy can stop you from doing unintentional things. You can set the policy on various levels, like the local computer, current user, or particular session. You can also use a Group Policy setting to set execution policies for computers and users.</p>
 <div class="highlight"><pre><span></span><code><span class="p">.</span> <span class="p">./</span><span class="nb">Get-DiskInventory</span><span class="p">.</span><span class="n">ps1</span>
 </code></pre></div>
-<p>Be sure to include the dot (.) at the beginning of the command. This tells PowerShell to run the script or file that's being called.</p>
+<p>To run a Windows PowerShell script at the Windows PowerShell prompt, you can use the following methods:</p>
+<ul>
+<li>Enter the full path to the script; for example, C:\Scripts\MyScript.ps1.</li>
+<li>Enter a relative path to the script; for example, \Scripts\MyScript.ps1.</li>
+<li>Reference the current directory; for example, .\MyScript.ps1.</li>
+</ul>
+<h2 id="execution-policy">Execution Policy</h2>
+<p>You can control whether Windows PowerShell scripts can be run on Windows computers. You do this task by setting the execution policy on the computer. The default execution policy on a computer varies depending on the operating system version. To be sure of the current configuration, you can use the Get-ExecutionPolicy cmdlet.</p>
+<p>The options for the execution policy are:</p>
+<ul>
+<li>Restricted. No scripts are allowed to be run.</li>
+<li>AllSigned. Scripts can be run only if they're digitally signed.</li>
+<li>RemoteSigned. Scripts that are downloaded can only be run if they're digitally signed.</li>
+<li>Unrestricted. All scripts can be run, but a confirmation prompt displays when running unsigned scripts that are downloaded.</li>
+<li>Bypass. All scripts are run without prompts.</li>
+</ul>
+<p>Setting the script execution policy provides a safety net that can prevent untrusted scripts from being run accidentally. However, the execution policy can always be overridden.</p>
+<p>You can set the execution policy on a computer by using the Set-ExecutionPolicy cmdlet. However, this setting is difficult to manage across many computers. When you configure the execution policy for many computers, you can use the Computer Configuration\Policies\Administrative Templates\Windows Components\Windows PowerShell\Turn on Script Execution Group Policy setting to override the local setting.</p>
+<p>You can override the execution policy for an individual Windows PowerShell instance. This setting is useful if company policy requires the execution policy to be set as Restricted, but you still must run scripts occasionally. To override the execution policy, run PowerShell.exe with the -ExecutionPolicy parameter.</p>
+<div class="highlight"><pre><span></span><code><span class="n">Powershell</span><span class="p">.</span><span class="n">exe</span> <span class="n">-ExecutionPolicy</span> <span class="n">ByPass</span>
+</code></pre></div>
+<p>If you've modified a script downloaded from the internet, the script still has the attributes that identify it as a downloaded file. To remove that status from a script, use the Unblock-File cmdlet.</p>
+<h3 id="applocker">AppLocker</h3>
+<p>While the Windows PowerShell script execution policy provides a safety net for inexperienced users, it's not very flexible. When you set an execution policy, you can only check that the script was downloaded and that it's signed.</p>
+<p>Another alternative for controlling the use of Windows PowerShell scripts is AppLocker. With AppLocker, you can set various restrictions that limit the running of specific scripts or scripts in specific locations. Also, unlike the AllSigned execution policy, AppLocker can allow scripts that are signed only by specific publishers.</p>
 
               
             </article>

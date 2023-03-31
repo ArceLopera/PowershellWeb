@@ -25,3 +25,13 @@ The [PowerShell Gallery](https://www.powershellgallery.com/) is a central reposi
 PowerShellGet contains cmdlets for finding and installing modules, scripts, and commands from the online gallery. For example, the Find-Command cmdlet searches for commands, functions, and aliases. It works similar to the Get-Command cmdlet, including support for wildcards.
 
 You can pass the results of the Find-Command cmdlet to the Install-Module cmdlet, which the PowerShellGet module also contains. Install-Module will install the module that contains the cmdlet that you discovered.
+
+The following table lists the two cmdlets used most often to find content in the PowerShell Gallery.
+
+Table 1: Cmdlets used to find content in the PowerShell Gallery
+
+|Cmdlet|	Description|
+| --- | --- |
+|Find-Module|	Use this cmdlet to search for Windows PowerShell modules in the PowerShell Gallery. The simplest usage conducts searches based on the module name, but you can also search based on the command name, version, DscResource, and RoleCapability.|
+|Find-Script|	Use this cmdlet to search for Windows PowerShell scripts in the PowerShell Gallery. The simplest usage conducts searches based on the script name, but you can also search based on the version.|
+
