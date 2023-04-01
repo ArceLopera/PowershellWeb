@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#for" class="md-skip">
+        <a href="#foreach" class="md-skip">
           Skip to content
         </a>
       
@@ -798,9 +798,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#foreach" class="md-nav__link">
+    ForEach
+  </a>
+  
+    <nav class="md-nav" aria-label="ForEach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parallel-performance" class="md-nav__link">
+    Parallel performance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#for" class="md-nav__link">
     For
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-loops" class="md-nav__link">
+    Other Loops
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dowhile" class="md-nav__link">
+    Do..While
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dountil" class="md-nav__link">
+    Do..Until
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#while" class="md-nav__link">
+    While
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -808,6 +862,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../break_cont/" class="md-nav__link">
+        Break & Continue
+      </a>
     </li>
   
 
@@ -906,9 +974,63 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#foreach" class="md-nav__link">
+    ForEach
+  </a>
+  
+    <nav class="md-nav" aria-label="ForEach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parallel-performance" class="md-nav__link">
+    Parallel performance
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#for" class="md-nav__link">
     For
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-loops" class="md-nav__link">
+    Other Loops
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dowhile" class="md-nav__link">
+    Do..While
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dountil" class="md-nav__link">
+    Do..Until
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#while" class="md-nav__link">
+    While
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -928,11 +1050,51 @@
 
   <h1>Loops</h1>
 
-<p>PowerShell has several loop structures, including For, Do...While, and For...Each.</p>
+<p>While there are some simple scripts that use only simple Windows PowerShell commands, most scripts use scripting constructs to perform more complex actions. You can use the ForEach construct to process all of the objects in an array. You can use If..Else and Switch constructs to make decisions in your scripts. Finally, there are less common looping constructs such as For, While, and Do..While loops that can be used when appropriate.</p>
+<h2 id="foreach">ForEach</h2>
+<p>When you perform piping, the commands in the pipeline are applied to each object. In some cases, you might need to use the ForEach-Object cmdlet to process the data in the pipeline. When you store data in an array, the ForEach construct allows you to process each item in the array.</p>
+<p>The ForEach construct uses the following syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="k">ForEach</span> <span class="p">(</span><span class="nv">$user</span> <span class="k">in</span> <span class="nv">$users</span><span class="p">)</span> <span class="p">{</span>
+     <span class="nb">Set-ADUser</span> <span class="nv">$user</span> <span class="n">-Department</span> <span class="s2">&quot;Marketing&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>In a script, the ForEach construct is the most common way to process items that you've placed into an array. It's easy to use because you don't need to know the number of items to process them.</p>
+<h3 id="parallel-performance">Parallel performance</h3>
+<p>In PowerShell 7, the -Parallel parameter was added to the ForEach-Object cmdlet. This allows the pipeline to process multiple objects simultaneously. Processing multiple objects simultaneously can provide better performance than a standard ForEach loop.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">|</span> <span class="k">ForEach</span><span class="n">-Object</span> <span class="n">-Parallel</span> <span class="p">{</span> <span class="nb">Set-ADUser</span> <span class="nv">$user</span> <span class="n">-Department</span> <span class="s2">&quot;Marketing&quot;</span> <span class="p">}</span>
+</code></pre></div>
+<p>By default, the -Parallel parameter allows five items to be processed at a time. You can modify this to be larger or smaller by using the -ThrottleLimit parameter.</p>
 <h2 id="for">For</h2>
-<div class="highlight"><pre><span></span><code><span class="k">For</span> <span class="p">(</span><span class="nv">$i</span> <span class="p">=</span> <span class="n">1</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">-lt</span> <span class="n">3</span><span class="p">;</span> <span class="nv">$i</span><span class="p">++)</span>
-<span class="p">{</span>
-    <span class="nv">$i</span>
+<p>The For construct performs a series of loops similar to a ForEach construct. However, when using the For construct, you must define how many loops occur, which is useful when you want an action to be performed a specific number of times. For example, you could create a specific number of user accounts in a test environment.</p>
+<p>The For construct uses the following syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="k">For</span><span class="p">(</span><span class="nv">$i</span><span class="p">=</span><span class="n">1</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">-le</span> <span class="n">10</span><span class="p">;</span> <span class="nv">$i</span><span class="p">++)</span> <span class="p">{</span>
+   <span class="nb">Write-Host</span> <span class="s2">&quot;Creating User $i&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The For construct uses an initial state, a condition, and an action. In the previous example, the initial state is $i=1. The condition is $i -le 10. When the condition specified is true, another loop is processed. After each loop is processed, the action is performed. In this example, the action is $i++, which increments $i by 1.</p>
+<p>The script block inside the braces is run each time the loop is processed. In the previous example, this loop is processed 10 times.</p>
+<p>When you're processing an array of objects, using the ForEach construct is preferred because you don't need to calculate the number of items in the array before processing.</p>
+<h2 id="other-loops">Other Loops</h2>
+<p>There are other less common looping constructs that you can use. These looping constructs are Do..While, Do..Until, and While. All these looping constructs process a script block until a condition is met, but they vary in how they do it.</p>
+<h3 id="dowhile">Do..While</h3>
+<p>The Do..While construct runs a script block until a specified condition isn't true. This construct guarantees that the script block is run at least once.</p>
+<p>The Do..While construct uses the following syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="k">Do</span> <span class="p">{</span>
+   <span class="nb">Write-Host</span> <span class="s2">&quot;Script block to process&quot;</span>
+<span class="p">}</span> <span class="k">While</span> <span class="p">(</span><span class="nv">$answer</span> <span class="o">-eq</span> <span class="s2">&quot;go&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="dountil">Do..Until</h3>
+<p>The Do..Until construct runs a script block until a specified condition is true. This construct guarantees that the script block is run at least once.</p>
+<p>The Do..Until construct uses the following syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="k">Do</span> <span class="p">{</span>
+   <span class="nb">Write-Host</span> <span class="s2">&quot;Script block to process&quot;</span>
+<span class="p">}</span> <span class="k">Until</span> <span class="p">(</span><span class="nv">$answer</span> <span class="o">-eq</span> <span class="s2">&quot;stop&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="while">While</h3>
+<p>The While construct runs a script block until a specified condition is false. While it's similar to the Do..While construct, it doesn't guarantee that the script block is run.</p>
+<p>The While construct uses the following syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="k">While</span> <span class="p">(</span><span class="nv">$answer</span> <span class="o">-eq</span> <span class="s2">&quot;go&quot;</span><span class="p">)</span> <span class="p">{</span>
+   <span class="nb">Write-Host</span> <span class="s2">&quot;Script block to process&quot;</span>
 <span class="p">}</span>
 </code></pre></div>
 
@@ -964,13 +1126,13 @@
       
       
         
-        <a href="../../Advanced/ErrorHandling/" class="md-footer__link md-footer__link--next" aria-label="Next: Handling Errors" rel="next">
+        <a href="../break_cont/" class="md-footer__link md-footer__link--next" aria-label="Next: Break &amp; Continue" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Handling Errors
+              Break & Continue
             </div>
           </div>
           <div class="md-footer__button md-icon">
