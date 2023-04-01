@@ -790,6 +790,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#switch" class="md-nav__link">
+    Switch
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -807,6 +814,20 @@
     <li class="md-nav__item">
       <a href="../loops/" class="md-nav__link">
         Loops
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../break_cont/" class="md-nav__link">
+        Break & Continue
       </a>
     </li>
   
@@ -912,6 +933,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#switch" class="md-nav__link">
+    Switch
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -945,6 +973,38 @@ $False indicates that an expression is False.</p>
   <span class="nb">Write-Host</span> <span class="nv">$False</span>
 <span class="p">}</span>
 </code></pre></div>
+<p>You can use the If construct in Windows PowerShell to make decisions. You also can use it to evaluate data you've queried or user input. For example, you could have an If statement that displays a warning if available disk space is low.</p>
+<p>The If construct uses the following syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="k">If</span> <span class="p">(</span><span class="nv">$freeSpace</span> <span class="o">-le</span> <span class="n">5GB</span><span class="p">)</span> <span class="p">{</span>
+   <span class="nb">Write-Host</span> <span class="s2">&quot;Free disk space is less than 5 GB&quot;</span>
+<span class="p">}</span> <span class="k">ElseIf</span> <span class="p">(</span><span class="nv">$freeSpace</span> <span class="o">-le</span> <span class="n">10GB</span><span class="p">)</span> <span class="p">{</span>
+   <span class="nb">Write-Host</span> <span class="s2">&quot;Free disk space is less than 10 GB&quot;</span>
+<span class="p">}</span> <span class="k">Else</span> <span class="p">{</span>
+   <span class="nb">Write-Host</span> <span class="s2">&quot;Free disk space is more than 10 GB&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="switch">Switch</h2>
+<p>The Switch construct is similar to an If construct that has multiple ElseIf sections. The Switch construct evaluates a single variable or item against multiple values and has a script block for each value. The script block for each value is run if that value matches the variable. There's also a Default section that runs only if there are no matches.</p>
+<p>The Switch construct uses the following syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="k">Switch</span> <span class="p">(</span><span class="nv">$choice</span><span class="p">)</span> <span class="p">{</span>
+   <span class="n">1</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s2">&quot;You selected menu item 1&quot;</span> <span class="p">}</span>
+   <span class="n">2</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s2">&quot;You selected menu item 2&quot;</span> <span class="p">}</span>
+   <span class="n">3</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s2">&quot;You selected menu item 3&quot;</span> <span class="p">}</span>
+   <span class="k">Default</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s2">&quot;You did not select a valid option&quot;</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>In addition to matching values, the Switch construct can also be used to match patterns. You can use the -wildcard parameter to perform pattern matching by using the same syntax as the -like operator. Alternatively, you can use the -regex parameter to perform matching by using regular expressions.</p>
+<p>It's important to be aware that when you use pattern matching, multiple matches are possible. When there are multiple matches, the script blocks for all matching patterns are run. This is different from an If construct in which only one script block is run.</p>
+<p>The following example uses pattern matching:</p>
+<div class="highlight"><pre><span></span><code><span class="k">Switch</span> <span class="o">-WildCard</span> <span class="p">(</span><span class="nv">$ip</span><span class="p">)</span> <span class="p">{</span>
+   <span class="s2">&quot;10.*&quot;</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s2">&quot;This computer is on the internal network&quot;</span> <span class="p">}</span>
+   <span class="s2">&quot;10.1.*&quot;</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s2">&quot;This computer is in London&quot;</span> <span class="p">}</span>
+   <span class="s2">&quot;10.2.*&quot;</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s2">&quot;This computer is in Vancouver&quot;</span> <span class="p">}</span>
+   <span class="k">Default</span> <span class="p">{</span> <span class="nb">Write-Host</span> <span class="s2">&quot;This computer is not on the internal network&quot;</span> <span class="p">}</span>
+ <span class="p">}</span>
+</code></pre></div>
+<p>For values of $ip on the London or Vancouver networks, two messages will be displayed. If $ip includes an IP address on the 10.x.x.x network, the messages will indicate that the computer is on the internal network and that the computer is in either London or Vancouver. If $ip is not an IP address on the 10.x.x.x network, the message indicates that it's not on the internal network.</p>
+<p>If you provide multiple values in an array to a Switch construct, each item in the array is evaluated. In the previous example, if the variable $ip was an array with two IP addresses, then both IP addresses would be processed. The actions appropriate for each item in the array would be performed.</p>
 
               
             </article>
