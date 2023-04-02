@@ -68,6 +68,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#cmdlets-for-troubleshooting" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -742,9 +747,38 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Advanced Script
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Advanced Script
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cmdlets-for-troubleshooting" class="md-nav__link">
+    Cmdlets for troubleshooting
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -893,6 +927,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cmdlets-for-troubleshooting" class="md-nav__link">
+    Cmdlets for troubleshooting
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -941,6 +990,26 @@ The final version of the example script is as follows:
 <li>The parameter is now required, and the alias Type is created for it.</li>
 <li>The parameter is declared as an integer, and the only valid values ​​it receives are 2 and 3.</li>
 </ul>
+<p>If you've configured your script as an advanced script by using CmdletBinding() in the Param() block, you can also use the cmdlets in the following table as part of your script for troubleshooting.</p>
+<h3 id="cmdlets-for-troubleshooting">Cmdlets for troubleshooting</h3>
+<table>
+<thead>
+<tr>
+<th>Cmdlet</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Write-Verbose</td>
+<td>Text specified by Write-Verbose is displayed only when you use the -Verbose parameter when running the script. The value of $VerbosePreference specifies the action to take after the Write-Verbose command. The default action is SilentlyContinue.</td>
+</tr>
+<tr>
+<td>Write-Debug</td>
+<td>Text specified by Write-Debug is displayed only when you use the -Debug parameter when running the script. The value of $DebugPreference specifies the action to take after the Write-Debug command. The default action is SilentlyContinue, which displays no information to screen. You need to change this action to Continue so that debug messages are displayed.</td>
+</tr>
+</tbody>
+</table>
 
               
             </article>
