@@ -916,6 +916,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Advanced/Credentials/" class="md-nav__link">
+        Credentials
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1027,6 +1041,8 @@ The parameterized script would look like this:</p>
   <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;%Free&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">FreeSpace</span> <span class="p">/</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Size</span> <span class="p">*</span> <span class="n">100</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}}</span>
 </code></pre></div>
 Optionally, each parameter can be specified with a default value, as seen in the example above.</p>
+<p>Parameters are positional by default. If the parameter names aren't specified, then the parameter values are passed to the parameters in order.</p>
+<p>If you don't put a Param() block in your script, you can still pass data into the script by using unnamed parameters. The values that are provided after the script name are available inside the script in the $args array.</p>
 <h2 id="run-the-script">Run the script</h2>
 <p>The script can be executed by typing its name in the console. If the script is saved in a different directory than the current one, the full path to the file must be written to execute it.
 In case the script does not execute, it is necessary to change the script execution policy to a more permissive value, using the Set-ExecutionPolicy cmdlet as administrator. See the cmdlet help for more details. An execution policy is a safety feature. Like requiring the path of a script, a policy can stop you from doing unintentional things. You can set the policy on various levels, like the local computer, current user, or particular session. You can also use a Group Policy setting to set execution policies for computers and users.</p>

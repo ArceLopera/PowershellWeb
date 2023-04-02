@@ -121,3 +121,4 @@ nav:
   - Advanced:
     - Handling Errors: Advanced\ErrorHandling.md
     - Modules: Advanced\modules.md
+    - Credentials: Advanced\Credentials.md

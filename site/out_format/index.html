@@ -1065,6 +1065,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Advanced/Credentials/" class="md-nav__link">
+        Credentials
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1336,7 +1350,13 @@
 <h3 id="get-content">Get-Content</h3>
 <p>The Get-Content cmdlet gets the content of the item at the location specified by the path, such as the text in a file or the content of a function. For files, the content is read one line at a time and returns a collection of objects, each of which represents a line of content.</p>
 <p>Beginning in PowerShell 3.0, Get-Content can also get a specified number of lines from the beginning or end of an item.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Content</span> <span class="n">C</span><span class="p">:\</span><span class="n">example</span><span class="p">.</span><span class="n">txt</span>
+<div class="highlight"><pre><span></span><code><span class="nv">$computers</span> <span class="p">=</span> <span class="nb">Get-Content</span> <span class="n">C</span><span class="p">:\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">computers</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div>
+<p>You can use wildcards in the path for Get-Content to obtain data from multiple files at a time. When you use wildcards for the path, you can modify the files selected by using the -Include and -Exclude parameters. When you use -Include, only the specified patterns are included. When you use -Exclude, all files are included except the patterns specified. Using wildcards can be useful when you want to scan all text files for specific content such as an error in log files.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Content</span> <span class="n">-Path</span> <span class="s2">&quot;C:\Scripts\*&quot;</span> <span class="n">-Include</span> <span class="s2">&quot;*.txt&quot;</span><span class="p">,</span><span class="s2">&quot;*.log&quot;</span>
+</code></pre></div>
+<p>You can limit the amount of data that you retrieve with Get-Content by using the -TotalCount and -Tail parameters. The -TotalCount parameter specifies how many lines should be retrieved from the beginning of a file. The -Tail parameter specifies how many lines to retrieve from the end of a file.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Content</span> <span class="n">C</span><span class="p">:\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">computers</span><span class="p">.</span><span class="n">txt</span> <span class="n">-TotalCount</span> <span class="n">10</span>
 </code></pre></div>
 <h3 id="set-content">Set-Content</h3>
 <p>Set-Content is a string-processing cmdlet that writes new content or replaces the content in a file. Set-Content replaces the existing content and differs from the Add-Content cmdlet that appends content to a file. To send content to Set-Content you can use the Value parameter on the command line or send content through the pipeline.</p>
@@ -1423,6 +1443,8 @@ This code imports a CSV file containing user data, and then outputs the Name pro
 </code></pre></div>
 <p>In this example, we first define a CSV string containing data about people, with each person represented as a row with columns for name, age, and occupation. We then pipe this CSV string to the ConvertFrom-CSV cmdlet to convert it into PowerShell objects and store the output in a variable called $csvData. Finally, we output the objects using the $csvData variable.</p>
 <h2 id="json">JSON</h2>
+<p>JavaScript Object Notation (JSON) is a lightweight data format that's similar to XML, because it can represent multiple layers of data. JSON is a lightweight data-interchange format compared to XML because of its simpler syntax.</p>
+<p>Windows PowerShell doesn't include cmdlets that import or export JSON data directly from a file. Instead, if you have JSON data stored in a file, you can retrieve the data by using Get-Content and then convert the data by using the ConvertFrom-Json cmdlet.</p>
 <h3 id="reading-a-json-file">Reading a JSON file</h3>
 <div class="highlight"><pre><span></span><code><span class="nv">$json</span> <span class="p">=</span> <span class="nb">Get-Content</span> <span class="p">.\</span><span class="n">example</span><span class="p">.</span><span class="n">json</span> <span class="p">|</span> <span class="nb">ConvertFrom-Json</span>
 </code></pre></div>
@@ -1434,7 +1456,12 @@ This code imports a CSV file containing user data, and then outputs the Name pro
 <div class="highlight"><pre><span></span><code><span class="s2">&quot;{&#39;name&#39;: &#39;Ashley&#39;, &#39;age&#39;: 25}&quot;</span> <span class="p">|</span> <span class="nb">Test-Json</span>
 </code></pre></div>
 <h2 id="xml">XML</h2>
+<p>XML is a more complex data storage format than CSV files. The main advantage of using XML for Windows PowerShell is that it can hold multiple levels of data. A CSV file works with a table of information in which the columns are the object properties. In a CSV file, it's difficult to work with multivalued attributes, whereas XML can easily represent multivalued attributes or even objects that have other objects as a property.</p>
 <h3 id="reading-an-xml-file">Reading an XML file</h3>
+<p>The use of Import-Clixml to retrieve data from an XML file creates an array of objects. Because XML can be complex, you might not easily be able to understand the object properties by reviewing the contents of the XML file directly. You can use Get-Member to identify the properties of the data that you import.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">=</span> <span class="nb">Import-Clixml</span> <span class="n">C</span><span class="p">:\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">Users</span><span class="p">.</span><span class="n">xml</span>
+</code></pre></div>
+<p>You can limit the data retrieved by Import-Clixml by using the -First and -Skip parameters. The -First parameter specifies to retrieve only the specified number of objects from the beginning of the XML file. The -Skip parameter specifies to ignore the specified number of objects from the beginning of the XML file and to retrieve all the remaining objects.</p>
 <div class="highlight"><pre><span></span><code><span class="nv">$xml</span> <span class="p">=</span> <span class="nb">Select-Xml</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">example</span><span class="p">.</span><span class="n">xml</span> <span class="n">-XPath</span> <span class="s2">&quot;//book&quot;</span>
 </code></pre></div>
 <h3 id="writing-to-an-xml-file">Writing to an XML file</h3>

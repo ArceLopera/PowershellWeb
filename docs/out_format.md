@@ -18,7 +18,19 @@ The Get-Content cmdlet gets the content of the item at the location specified by
 Beginning in PowerShell 3.0, Get-Content can also get a specified number of lines from the beginning or end of an item.
 
 ``` pwsh
-Get-Content C:\example.txt
+$computers = Get-Content C:\Scripts\computers.txt
+```
+
+You can use wildcards in the path for Get-Content to obtain data from multiple files at a time. When you use wildcards for the path, you can modify the files selected by using the -Include and -Exclude parameters. When you use -Include, only the specified patterns are included. When you use -Exclude, all files are included except the patterns specified. Using wildcards can be useful when you want to scan all text files for specific content such as an error in log files.
+
+``` pwsh
+Get-Content -Path "C:\Scripts\*" -Include "*.txt","*.log"
+```
+
+You can limit the amount of data that you retrieve with Get-Content by using the -TotalCount and -Tail parameters. The -TotalCount parameter specifies how many lines should be retrieved from the beginning of a file. The -Tail parameter specifies how many lines to retrieve from the end of a file.
+
+``` pwsh
+Get-Content C:\Scripts\computers.txt -TotalCount 10
 ```
 
 ### Set-Content
@@ -159,6 +171,10 @@ $csvData
 In this example, we first define a CSV string containing data about people, with each person represented as a row with columns for name, age, and occupation. We then pipe this CSV string to the ConvertFrom-CSV cmdlet to convert it into PowerShell objects and store the output in a variable called $csvData. Finally, we output the objects using the $csvData variable.
 
 ## JSON
+
+JavaScript Object Notation (JSON) is a lightweight data format that's similar to XML, because it can represent multiple layers of data. JSON is a lightweight data-interchange format compared to XML because of its simpler syntax.
+
+Windows PowerShell doesn't include cmdlets that import or export JSON data directly from a file. Instead, if you have JSON data stored in a file, you can retrieve the data by using Get-Content and then convert the data by using the ConvertFrom-Json cmdlet.
 ### Reading a JSON file
 ``` pwsh
 $json = Get-Content .\example.json | ConvertFrom-Json
@@ -174,10 +190,22 @@ $data | ConvertTo-Json | Out-File .\example.json
 "{'name': 'Ashley', 'age': 25}" | Test-Json
 ```
 ## XML
+
+XML is a more complex data storage format than CSV files. The main advantage of using XML for Windows PowerShell is that it can hold multiple levels of data. A CSV file works with a table of information in which the columns are the object properties. In a CSV file, it's difficult to work with multivalued attributes, whereas XML can easily represent multivalued attributes or even objects that have other objects as a property.
 ### Reading an XML file
+
+The use of Import-Clixml to retrieve data from an XML file creates an array of objects. Because XML can be complex, you might not easily be able to understand the object properties by reviewing the contents of the XML file directly. You can use Get-Member to identify the properties of the data that you import.
+
+``` pwsh
+$users = Import-Clixml C:\Scripts\Users.xml
+```
+
+You can limit the data retrieved by Import-Clixml by using the -First and -Skip parameters. The -First parameter specifies to retrieve only the specified number of objects from the beginning of the XML file. The -Skip parameter specifies to ignore the specified number of objects from the beginning of the XML file and to retrieve all the remaining objects.
+
 ``` pwsh
 $xml = Select-Xml -Path C:\example.xml -XPath "//book"
 ```
+
 
 ### Writing to an XML file
 ``` pwsh

@@ -38,6 +38,10 @@ Get-CimInstance Win32_logicaldisk `
 ```
 Optionally, each parameter can be specified with a default value, as seen in the example above.
 
+Parameters are positional by default. If the parameter names aren't specified, then the parameter values are passed to the parameters in order.
+
+If you don't put a Param() block in your script, you can still pass data into the script by using unnamed parameters. The values that are provided after the script name are available inside the script in the $args array.
+
 ## Run the script
 
 The script can be executed by typing its name in the console. If the script is saved in a different directory than the current one, the full path to the file must be written to execute it.
