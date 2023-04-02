@@ -35,3 +35,12 @@ The changes from the previous example are as follows:
 + The directive to return the script advanced is included
 + The parameter is now required, and the alias Type is created for it.
 + The parameter is declared as an integer, and the only valid values ​​it receives are 2 and 3.
+
+If you've configured your script as an advanced script by using CmdletBinding() in the Param() block, you can also use the cmdlets in the following table as part of your script for troubleshooting.
+
+### Cmdlets for troubleshooting
+
+|Cmdlet|	Description|
+| --- | --- |
+|Write-Verbose|	Text specified by Write-Verbose is displayed only when you use the -Verbose parameter when running the script. The value of $VerbosePreference specifies the action to take after the Write-Verbose command. The default action is SilentlyContinue.|
+|Write-Debug|	Text specified by Write-Debug is displayed only when you use the -Debug parameter when running the script. The value of $DebugPreference specifies the action to take after the Write-Debug command. The default action is SilentlyContinue, which displays no information to screen. You need to change this action to Continue so that debug messages are displayed.|
