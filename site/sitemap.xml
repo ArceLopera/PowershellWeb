@@ -141,6 +141,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Scripting/ds/</loc>
+         <lastmod>2023-04-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Scripting/functions/</loc>
          <lastmod>2023-04-03</lastmod>
          <changefreq>daily</changefreq>

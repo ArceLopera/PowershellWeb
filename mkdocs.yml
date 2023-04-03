@@ -111,6 +111,7 @@ nav:
     - Exercise 4: Exercises\Exercises4.md
   - Scripting:
     - Variables: Scripting\variables.md
+    - Data Structures: Scripting\ds.md
     - Console IO: Scripting\ConsoleIO.md
     - Basic Scripting: Scripting\basic.md
     - Script Documentation: Scripting\comments.md

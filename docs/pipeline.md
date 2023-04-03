@@ -1,6 +1,13 @@
 
 The pipeline in PowerShell is a feature that allows you to take the output of one command and pass it as input to another command. This makes it possible to create more complex commands by chaining simple commands together. The pipeline operator, represented by the "|" character, is used to connect commands together.
 
+When using the Windows PowerShell pipeline, you can pass data through the pipeline and perform operations on it. This capability lets you perform many bulk operations such as:
+
++ Querying a list of objects.
++ Filtering the objects.
++ Modifying the objects.
++ Displaying the data.
+
 Here are some examples of how to use the pipeline in PowerShell:
 
 **Example 1: Get-ChildItem and Select-Object**

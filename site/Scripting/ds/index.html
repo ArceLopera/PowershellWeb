@@ -12,21 +12,21 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/config_profile/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/ds/">
       
-      <link rel="icon" href="../Images/pwsh_32512.ico">
+      <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Config Profile - Powershell Refresher</title>
+        <title>Data Structures - Powershell Refresher</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
       
     
@@ -41,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,6 +68,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#array" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -78,9 +83,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Powershell Refresher" class="md-header__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
+    <a href="../.." title="Powershell Refresher" class="md-header__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
       
-  <img src="../Images/pwshHat1.png" alt="logo">
+  <img src="../../Images/pwshHat1.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -96,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Config Profile
+              Data Structures
             
           </span>
         </div>
@@ -193,7 +198,7 @@
 
 
   <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -208,8 +213,24 @@
   
   
     <li class="md-tabs__item">
-      <a href="../Install/installation/" class="md-tabs__link">
+      <a href="../../Install/installation/" class="md-tabs__link">
         Installation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../GetStart/" class="md-tabs__link">
+        Basics
       </a>
     </li>
   
@@ -226,23 +247,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../GetStart/" class="md-tabs__link md-tabs__link--active">
-        Basics
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Scripting/variables/" class="md-tabs__link">
+      <a href="../variables/" class="md-tabs__link md-tabs__link--active">
         Scripting
       </a>
     </li>
@@ -258,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../Advanced/ErrorHandling/" class="md-tabs__link">
+      <a href="../../Advanced/ErrorHandling/" class="md-tabs__link">
         Advanced
       </a>
     </li>
@@ -286,9 +291,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Powershell Refresher" class="md-nav__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
+    <a href="../.." title="Powershell Refresher" class="md-nav__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
       
-  <img src="../Images/pwshHat1.png" alt="logo">
+  <img src="../../Images/pwshHat1.png" alt="logo">
 
     </a>
     Powershell Refresher
@@ -316,7 +321,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -357,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Install/installation/" class="md-nav__link">
+      <a href="../../Install/installation/" class="md-nav__link">
         Multiplatform
       </a>
     </li>
@@ -371,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Install/differences/" class="md-nav__link">
+      <a href="../../Install/differences/" class="md-nav__link">
         Versions
       </a>
     </li>
@@ -385,8 +390,252 @@
   
   
     <li class="md-nav__item">
-      <a href="../Install/recommendations/" class="md-nav__link">
+      <a href="../../Install/recommendations/" class="md-nav__link">
         Recommendations
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Basics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Basics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../GetStart/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gethelp/" class="md-nav__link">
+        GetHelp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Exercises/Exercises1/" class="md-nav__link">
+        Exercise 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../get_member/" class="md-nav__link">
+        GetMember
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getalias/" class="md-nav__link">
+        GetAlias
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../config_profile/" class="md-nav__link">
+        Config Profile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../files_folders/" class="md-nav__link">
+        Files & Folders
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipeline/" class="md-nav__link">
+        Pipeline
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../out_format/" class="md-nav__link">
+        Output Format
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../comparison/" class="md-nav__link">
+        Object Comparison
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Exercises/Exercises2/" class="md-nav__link">
+        Exercise 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tables_lists/" class="md-nav__link">
+        Formatting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Exercises/Exercises3/" class="md-nav__link">
+        Exercise 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wmi_cmi/" class="md-nav__link">
+        Windows Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Exercises/Exercises4/" class="md-nav__link">
+        Exercise 4
       </a>
     </li>
   
@@ -412,259 +661,7 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Basics
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Basics" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Basics
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../GetStart/" class="md-nav__link">
-        Getting Started
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../gethelp/" class="md-nav__link">
-        GetHelp
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Exercises/Exercises1/" class="md-nav__link">
-        Exercise 1
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../get_member/" class="md-nav__link">
-        GetMember
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../getalias/" class="md-nav__link">
-        GetAlias
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Config Profile
-      </a>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../files_folders/" class="md-nav__link">
-        Files & Folders
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pipeline/" class="md-nav__link">
-        Pipeline
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../out_format/" class="md-nav__link">
-        Output Format
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../comparison/" class="md-nav__link">
-        Object Comparison
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Exercises/Exercises2/" class="md-nav__link">
-        Exercise 2
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tables_lists/" class="md-nav__link">
-        Formatting
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Exercises/Exercises3/" class="md-nav__link">
-        Exercise 3
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../wmi_cmi/" class="md-nav__link">
-        Windows Management
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Exercises/Exercises4/" class="md-nav__link">
-        Exercise 4
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -687,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/variables/" class="md-nav__link">
+      <a href="../variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -699,11 +696,142 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../Scripting/ds/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Data Structures
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Data Structures
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#array" class="md-nav__link">
+    Array
+  </a>
+  
+    <nav class="md-nav" aria-label="Array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-arrays" class="md-nav__link">
+    Creating Arrays
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-with-arrays" class="md-nav__link">
+    Working With Arrays
+  </a>
+  
+    <nav class="md-nav" aria-label="Working With Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-item" class="md-nav__link">
+    Display Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-item" class="md-nav__link">
+    Add Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-identify" class="md-nav__link">
+    To Identify
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arraylists" class="md-nav__link">
+    ArrayLists
+  </a>
+  
+    <nav class="md-nav" aria-label="ArrayLists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-arraylists" class="md-nav__link">
+    Creating ArrayLists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arraylist-methods" class="md-nav__link">
+    ArrayList Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hash-tables" class="md-nav__link">
+    Hash Tables
+  </a>
+  
+    <nav class="md-nav" aria-label="Hash Tables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#working-with-hash-tables" class="md-nav__link">
+    Working with Hash Tables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -715,7 +843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/ConsoleIO/" class="md-nav__link">
+      <a href="../ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
     </li>
@@ -729,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/basic/" class="md-nav__link">
+      <a href="../basic/" class="md-nav__link">
         Basic Scripting
       </a>
     </li>
@@ -743,7 +871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/comments/" class="md-nav__link">
+      <a href="../comments/" class="md-nav__link">
         Script Documentation
       </a>
     </li>
@@ -757,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/advanced/" class="md-nav__link">
+      <a href="../advanced/" class="md-nav__link">
         Advanced Script
       </a>
     </li>
@@ -771,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/cond/" class="md-nav__link">
+      <a href="../cond/" class="md-nav__link">
         Conditionals
       </a>
     </li>
@@ -785,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/loops/" class="md-nav__link">
+      <a href="../loops/" class="md-nav__link">
         Loops
       </a>
     </li>
@@ -799,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/break_cont/" class="md-nav__link">
+      <a href="../break_cont/" class="md-nav__link">
         Break & Continue
       </a>
     </li>
@@ -813,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/functions/" class="md-nav__link">
+      <a href="../functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -861,7 +989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Advanced/ErrorHandling/" class="md-nav__link">
+      <a href="../../Advanced/ErrorHandling/" class="md-nav__link">
         Handling Errors
       </a>
     </li>
@@ -875,7 +1003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Advanced/modules/" class="md-nav__link">
+      <a href="../../Advanced/modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -889,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Advanced/Credentials/" class="md-nav__link">
+      <a href="../../Advanced/Credentials/" class="md-nav__link">
         Credentials
       </a>
     </li>
@@ -921,6 +1049,115 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#array" class="md-nav__link">
+    Array
+  </a>
+  
+    <nav class="md-nav" aria-label="Array">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-arrays" class="md-nav__link">
+    Creating Arrays
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-with-arrays" class="md-nav__link">
+    Working With Arrays
+  </a>
+  
+    <nav class="md-nav" aria-label="Working With Arrays">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#display-item" class="md-nav__link">
+    Display Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-item" class="md-nav__link">
+    Add Item
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#to-identify" class="md-nav__link">
+    To Identify
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arraylists" class="md-nav__link">
+    ArrayLists
+  </a>
+  
+    <nav class="md-nav" aria-label="ArrayLists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-arraylists" class="md-nav__link">
+    Creating ArrayLists
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arraylist-methods" class="md-nav__link">
+    ArrayList Methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hash-tables" class="md-nav__link">
+    Hash Tables
+  </a>
+  
+    <nav class="md-nav" aria-label="Hash Tables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#working-with-hash-tables" class="md-nav__link">
+    Working with Hash Tables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -933,73 +1170,101 @@
                 
 
 
-  <h1>Config Profile</h1>
+  <h1>Data Structures</h1>
 
-<p>Configuring your PowerShell profile is an essential step to personalize your PowerShell environment and make your work more efficient. Your profile is a PowerShell script file that executes every time you start a PowerShell session. You can use it to customize your environment by adding aliases, functions, variables, and modules.</p>
-<p>Here's an example of how to configure your profile in PowerShell:</p>
-<ol>
-<li>
-<p>Open PowerShell and run the following command to create a new profile file if it doesn't exist:</p>
-<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="o">(</span>!<span class="o">(</span>Test-Path -Path <span class="nv">$PROFILE</span> <span class="o">))</span> <span class="o">{</span> New-Item -Type File -Path <span class="nv">$PROFILE</span> -Force <span class="o">}</span>
+<h2 id="array">Array</h2>
+<p>An array is a data structure that's designed to store a collection of items of the same type. You can think of an array as a variable containing multiple values or objects. Variables that contain a single value are useful, but for complex tasks you often need to work with groups of items. For example, you might need to update the Voice over IP (VoIP) attribute on multiple domain user accounts. Or you might need to check the status of a group of services and restart all of them that are stopped. When you put multiple objects or values into a variable, it becomes an array.</p>
+<h3 id="creating-arrays">Creating Arrays</h3>
+<p>You can create an array by providing multiple values in a comma-separated list. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$computers</span> <span class="p">=</span> <span class="s2">&quot;LON-DC1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SRV1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SRV2&quot;</span>
+<span class="nv">$numbers</span> <span class="p">=</span> <span class="n">228</span><span class="p">,</span><span class="n">43</span><span class="p">,</span><span class="n">102</span>
 </code></pre></div>
-</li>
-<li>
-<p>Open your profile file with your preferred text editor or IDE. You can find the location of your profile file by running the following command:
-    <div class="highlight"><pre><span></span><code>notepad <span class="nv">$PROFILE</span>
+<p>To create an array of strings, you put quotes around each item. If you put one set of quotes around all the items, it's treated as a single string.</p>
+<p>You also can create an array by using the output from a command. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">=</span> <span class="nb">Get-ADUser</span> <span class="n">-Filter</span> <span class="p">*</span>
+<span class="nv">$files</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">C</span><span class="p">:\</span>
 </code></pre></div>
-    This will open your profile file in Notepad.</p>
-</li>
-<li>
-<p>Add any customizations you want to your profile file. For example, you can add an alias to simplify a frequently used command. To create an alias for the Get-ChildItem cmdlet, add the following line to your profile:
-    <div class="highlight"><pre><span></span><code>Set-Alias -Name ls -Value Get-ChildItem
+<p>ou can verify whether a variable is an array by using the GetType() method on the variable. The BaseType listed will be System.Array.</p>
+<p>You can create an empty array before you're ready to put content in it. This can be useful when you have a loop later on in a script that adds items to the array. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$newUsers</span> <span class="p">=</span> <span class="p">@()</span>
 </code></pre></div>
-    This creates an alias named ls that runs the Get-ChildItem cmdlet.</p>
-</li>
-<li>
-<p>Save and close your profile file.</p>
-</li>
-<li>
-<p>Restart PowerShell to apply your changes. Your customizations should now be available in your PowerShell session.</p>
-</li>
-</ol>
-<p>In addition to aliases, you can also use your profile to configure your PowerShell prompt, set default parameters for cmdlets, load modules automatically, and define functions that you frequently use. By taking advantage of the customization options available in your profile, you can make your PowerShell experience more efficient and tailored to your needs.</p>
-<p>Here is an example of a common $profile script for PowerShell:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Add custom PowerShell functions</span>
-<span class="k">function</span> Get-Weather <span class="o">{</span>
-    param<span class="o">([</span>string<span class="o">]</span><span class="nv">$location</span> <span class="o">=</span> <span class="s2">&quot;New York&quot;</span><span class="o">)</span>
-    Invoke-RestMethod -Uri <span class="s2">&quot;https://wttr.in/</span><span class="nv">$location</span><span class="s2">?format=%C+%t&quot;</span> -UseBasicParsing
-<span class="o">}</span>
-
-<span class="c1"># Load useful PowerShell modules</span>
-Import-Module Pester
-Import-Module PSReadline
-Import-Module Microsoft.PowerShell.Management
-
-<span class="c1"># Set default parameters for cmdlets</span>
-<span class="nv">$PSDefaultParameterValues</span> <span class="o">=</span> @<span class="o">{</span>
-    <span class="s2">&quot;Get-ChildItem:Recurse&quot;</span> <span class="o">=</span> <span class="nv">$true</span>
-    <span class="s2">&quot;Out-File:Encoding&quot;</span> <span class="o">=</span> <span class="s2">&quot;utf8&quot;</span>
-<span class="o">}</span>
-
-<span class="c1"># Add custom aliases</span>
-Set-Alias -Name l -Value Get-ChildItem
-Set-Alias -Name gac -Value Get-ChildItem -ParameterName FullName -ArgumentList <span class="s2">&quot;C:\Windows\Microsoft.NET\assembly\GAC*&quot;</span>
-
-<span class="c1"># Configure PowerShell prompt</span>
-<span class="nv">$host</span>.UI.RawUI.WindowTitle <span class="o">=</span> <span class="s2">&quot;</span><span class="nv">$env</span><span class="s2">:USERNAME@</span><span class="nv">$env</span><span class="s2">:COMPUTERNAME&quot;</span>
-<span class="nv">$host</span>.UI.RawUI.ForegroundColor <span class="o">=</span> <span class="s2">&quot;Green&quot;</span>
-<span class="nv">$host</span>.UI.RawUI.BackgroundColor <span class="o">=</span> <span class="s2">&quot;Black&quot;</span>
-<span class="nv">$host</span>.UI.RawUI.WindowSize <span class="o">=</span> New-Object System.Management.Automation.Host.Size<span class="o">(</span><span class="m">120</span>,50<span class="o">)</span>
+<p>You also can force an array to be created when adding a single value to a variable. This creates an array with a single value into which you can add items later. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="no">[array]</span><span class="nv">$computers</span><span class="p">=</span><span class="s2">&quot;LON-DC1&quot;</span>
 </code></pre></div>
-<p>This $profile script defines several customizations for the PowerShell environment, including:</p>
+<h3 id="working-with-arrays">Working With Arrays</h3>
+<h4 id="display-item">Display Item</h4>
+<div class="highlight"><pre><span></span><code><span class="nv">$users</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
+</code></pre></div>
+<h4 id="add-item">Add Item</h4>
+<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">=</span> <span class="nv">$users</span> <span class="p">+</span> <span class="nv">$user1</span>
+<span class="c"># or</span>
+<span class="nv">$users</span> <span class="p">+=</span> <span class="nv">$user1</span>
+</code></pre></div>
+<h4 id="to-identify">To Identify</h4>
+<p>To identify what you can do with the content in an array, use the Get-Member cmdlet. Pipe the contents of the array to Get-Member, and the results returned identify the properties and methods that you can use for the items in the array. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$files</span> <span class="p">|</span> <span class="nb">Get-Member</span>
+</code></pre></div>
+<p>When you pipe an array containing mixed data types to Get-Member, results are returned for each data type. This is also a helpful way of determining which data types are in the array.</p>
+<p>To review the properties and methods available for an array rather than the items within the array, use the following syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Member</span> <span class="n">-InputObject</span> <span class="nv">$files</span>
+</code></pre></div>
+<h2 id="arraylists">ArrayLists</h2>
+<p>The default type of array that Windows PowerShell creates is a fixed-size array. This means that when you add an item to the array, the array is actually recreated with the additional item. When you work with relatively small arrays, this is not a concern. However, if you add thousands of items to an array one by one, recreating an array each time has a negative performance impact. The other concern when using fixed-size arrays is removing items. There's no simple method to remove an item from a fixed-size array.</p>
+<p>To address the shortcomings of arrays, you can use an array list. An array list functions similar to an array, except that it doesn't have a fixed size. This means that you can use methods to add and remove items.</p>
+<h3 id="creating-arraylists">Creating ArrayLists</h3>
+<div class="highlight"><pre><span></span><code><span class="no">[System.Collections.ArrayList]</span><span class="nv">$computers</span> <span class="p">=</span> <span class="s2">&quot;LON-DC1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SVR1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-CL1&quot;</span>
+</code></pre></div>
+<p>To create an array list that's empty and ready to add items, use the following syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">=</span><span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">ArrayList</span>
+</code></pre></div>
+<h3 id="arraylist-methods">ArrayList Methods</h3>
+<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">)</span>
+<span class="nv">$computers</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="s2">&quot;LON-CL1&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>When you remove an item from an array list, if there are multiple matching items then only the first instance is removed.</p>
+<p>If you want to remove an item from an array list based on the index number, you use the RemoveAt() method. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">.</span><span class="n">RemoveAt</span><span class="p">(</span><span class="n">1</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="hash-tables">Hash Tables</h2>
+<p>A hash table represents a similar concept to an array since it stores multiple items. However, unlike an array which uses an index number to identify each item, a hash table uses for this purpose a unique key. The key is a string that's a unique identifier for the item. Each key in a hash table is associated with a value.</p>
+<p>You can use a hash table to store both IP addresses and the computer names as the following table depicts.</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LON-DC1</td>
+<td>192.168.0.10</td>
+</tr>
+<tr>
+<td>LON-SRV1</td>
+<td>192.168.0.11</td>
+</tr>
+<tr>
+<td>LON-SRV2</td>
+<td>192.168.0.12</td>
+</tr>
+</tbody>
+</table>
+<p>If the hash table is named $servers, then you access the first item in the hash table by using either of the following options:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$servers</span><span class="p">.</span><span class="s1">&#39;LON-DC1&#39;</span>
+<span class="nv">$servers</span><span class="p">[</span><span class="s1">&#39;LON-DC1&#39;</span><span class="p">]</span>
+</code></pre></div>
+<p>You only need to use single quote marks to enclose keys that contain special characters. In the previous example, the hyphen in the computer names is a special character, which requires the key name to be enclosed in single quote marks.</p>
+<h3 id="working-with-hash-tables">Working with Hash Tables</h3>
+<p>Working with hash tables is similar to working with an array, except that to add items to a hash table you need to provide both the key for the item and the value.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$servers</span> <span class="p">=</span> <span class="p">@{</span><span class="s2">&quot;LON-DC1&quot;</span> <span class="p">=</span> <span class="s2">&quot;172.16.0.10&quot;</span><span class="p">;</span> <span class="s2">&quot;LON-SRV1&quot;</span> <span class="p">=</span> <span class="s2">&quot;172.16.0.11&quot;</span><span class="p">}</span>
+</code></pre></div>
+<p>Notice the following syntax in the previous example:</p>
 <ul>
-<li>A custom function named Get-Weather that uses the Invoke-RestMethod cmdlet to retrieve weather information for a specified location.</li>
-<li>The loading of several useful PowerShell modules, including Pester, PSReadline, and Microsoft.PowerShell.Management.</li>
-<li>Default parameter values for the Get-ChildItem and Out-File cmdlets.</li>
-<li>Custom aliases for the Get-ChildItem cmdlet and a common path for the Get-ChildItem cmdlet.</li>
-<li>Configuration of the PowerShell prompt, including the window title, foreground and background colors, and window size.</li>
+<li>It begins with the at (@) symbol.</li>
+<li>The keys and associated values are enclosed in braces.</li>
+<li>The items are separated by a semicolon.</li>
 </ul>
-<p>By using a $profile script like this one, you can customize your PowerShell environment to suit your needs and make your work more efficient.</p>
 
               
             </article>
@@ -1013,7 +1278,7 @@ Set-Alias -Name gac -Value Get-ChildItem -ParameterName FullName -ArgumentList <
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../getalias/" class="md-footer__link md-footer__link--prev" aria-label="Previous: GetAlias" rel="prev">
+        <a href="../variables/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Variables" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1022,20 +1287,20 @@ Set-Alias -Name gac -Value Get-ChildItem -ParameterName FullName -ArgumentList <
               <span class="md-footer__direction">
                 Previous
               </span>
-              GetAlias
+              Variables
             </div>
           </div>
         </a>
       
       
         
-        <a href="../files_folders/" class="md-footer__link md-footer__link--next" aria-label="Next: Files &amp; Folders" rel="next">
+        <a href="../ConsoleIO/" class="md-footer__link md-footer__link--next" aria-label="Next: Console IO" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Files & Folders
+              Console IO
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1115,10 +1380,10 @@ Set-Alias -Name gac -Value Get-ChildItem -ParameterName FullName -ArgumentList <
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.expand"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.expand"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
