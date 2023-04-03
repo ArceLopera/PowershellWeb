@@ -118,7 +118,9 @@ nav:
     - Conditionals: Scripting\cond.md
     - Loops: Scripting\loops.md
     - Break & Continue: Scripting\break_cont.md
+    - Functions: Scripting\functions.md
   - Advanced:
     - Handling Errors: Advanced\ErrorHandling.md
     - Modules: Advanced\modules.md
     - Credentials: Advanced\Credentials.md
+    

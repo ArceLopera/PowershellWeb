@@ -62,7 +62,7 @@ PowerShell scripts are saved as .ps1 files and can be run from the command line 
 + [Use comments to explain your code](./Scripting/comments.md)
 + [Use variables to store data](./Scripting/variables.md)
 + Use [loops](./Scripting/loops.md) and [conditional](./Scripting/cond.md) statements to control the flow of your script
-+ Use functions to reuse code
++ [Use functions to reuse code](./Scripting/functions.md)
 
 ## Advanced PowerShell
 
