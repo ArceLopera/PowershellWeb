@@ -762,6 +762,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../Scripting/ds/" class="md-nav__link">
+        Data Structures
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Scripting/ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
@@ -1025,6 +1039,13 @@
   <h1>Pipeline</h1>
 
 <p>The pipeline in PowerShell is a feature that allows you to take the output of one command and pass it as input to another command. This makes it possible to create more complex commands by chaining simple commands together. The pipeline operator, represented by the "|" character, is used to connect commands together.</p>
+<p>When using the Windows PowerShell pipeline, you can pass data through the pipeline and perform operations on it. This capability lets you perform many bulk operations such as:</p>
+<ul>
+<li>Querying a list of objects.</li>
+<li>Filtering the objects.</li>
+<li>Modifying the objects.</li>
+<li>Displaying the data.</li>
+</ul>
 <p>Here are some examples of how to use the pipeline in PowerShell:</p>
 <p><strong>Example 1: Get-ChildItem and Select-Object</strong></p>
 <p>The Get-ChildItem command is used to list the files and folders in a specified directory. The Select-Object command is used to select specific properties of the objects returned by Get-ChildItem. By using the pipeline, you can pass the output of Get-ChildItem to Select-Object to filter the results.</p>
