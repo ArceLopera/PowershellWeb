@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/advanced/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/functions/">
       
       <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Advanced Script - Powershell Refresher</title>
+        <title>Functions - Powershell Refresher</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cmdlets-for-troubleshooting" class="md-skip">
+        <a href="#variable-scopes" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Advanced Script
+              Functions
             
           </span>
         </div>
@@ -738,48 +738,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Advanced Script
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../advanced/" class="md-nav__link">
         Advanced Script
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#cmdlets-for-troubleshooting" class="md-nav__link">
-    Cmdlets for troubleshooting
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -831,11 +794,48 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../functions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Functions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Functions
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variable-scopes" class="md-nav__link">
+    Variable Scopes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -948,8 +948,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cmdlets-for-troubleshooting" class="md-nav__link">
-    Cmdlets for troubleshooting
+  <a href="#variable-scopes" class="md-nav__link">
+    Variable Scopes
   </a>
   
 </li>
@@ -968,62 +968,51 @@
                 
 
 
-  <h1>Advanced Script</h1>
+  <h1>Functions</h1>
 
-<p>Adding the line [CmdletBinding()] after the help comments makes the script advanced, which allows you to return required parameters, set their data type, add aliases for parameters, etc.
-The final version of the example script is as follows:
-<div class="highlight"><pre><span></span><code><span class="cm">&lt;#</span>
-<span class="sd">.SYNOPSIS</span><span class="cm"></span>
-<span class="cm">Get-DiskInventory gets logical disk information for one or more computers.</span>
-<span class="sd">.DESCRIPTION</span><span class="cm"></span>
-<span class="cm">Get-DiskInventory uses CIM to query the instances Win32_LogicalDisk from one or more computers. Display for each disk the drive letter, free space, total space, and percentage of free space.</span>
-<span class="sd">.PARAMETER</span><span class="cm"> DriveType</span>
-<span class="cm">The type of unit to query. View the Win32_LogicalDisk documentation for more information. 3 indicates a fixed disk, and is the default.</span>
-<span class="sd">.EXAMPLE</span><span class="cm"></span>
-<span class="cm">Get-DiskInventory -DriveType 3</span>
-<span class="cm">#&gt;</span>
-<span class="p">[</span><span class="k">CmdletBinding</span><span class="p">()]</span>
-<span class="k">param</span><span class="p">(</span>
-  <span class="p">[</span><span class="k">Parameter</span><span class="p">(</span><span class="k">Mandatory</span><span class="p">=</span><span class="nv">$True</span><span class="p">)]</span>
-  <span class="p">[</span><span class="k">Alias</span><span class="p">(</span><span class="s1">&#39;Type&#39;</span><span class="p">)]</span>
-  <span class="p">[</span><span class="k">ValidateSet</span><span class="p">(</span><span class="n">2</span><span class="p">,</span><span class="n">3</span><span class="p">)]</span>
-  <span class="no">[int]</span><span class="nv">$DriveType</span> <span class="p">=</span> <span class="n">3</span>
-<span class="p">)</span>
-
-<span class="nb">Get-CimInstance</span> <span class="n">Win32_logicaldisk</span> <span class="p">`</span>
-<span class="n">-filter</span> <span class="s2">&quot;drivetype=$DriveType&quot;</span> <span class="p">|</span>
- <span class="nb">Sort-Object</span><span class="n">-Property</span> <span class="n">DeviceID</span> <span class="p">|</span>
- <span class="nb">Select-Object</span><span class="n">-Property</span> <span class="n">DeviceID</span><span class="p">,</span>
- <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;FreeSpace(MB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">FreeSpace</span> <span class="p">/</span> <span class="n">1MB</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}},</span>
- <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;Size(GB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">Size</span> <span class="p">/</span> <span class="n">1GB</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}},</span>
- <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;%Free&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$_</span><span class="p">.</span><span class="n">FreeSpace</span> <span class="p">/</span> <span class="nv">$_</span><span class="p">.</span><span class="n">Size</span> <span class="p">*</span> <span class="n">100</span> <span class="o">-as</span> <span class="no">[int]</span><span class="p">}}</span>
-</code></pre></div></p>
-<p>The changes from the previous example are as follows:</p>
-<ul>
-<li>The directive to return the script advanced is included</li>
-<li>The parameter is now required, and the alias Type is created for it.</li>
-<li>The parameter is declared as an integer, and the only valid values ​​it receives are 2 and 3.</li>
-</ul>
-<p>If you've configured your script as an advanced script by using CmdletBinding() in the Param() block, you can also use the cmdlets in the following table as part of your script for troubleshooting.</p>
-<h3 id="cmdlets-for-troubleshooting">Cmdlets for troubleshooting</h3>
+<p>When you create many scripts, you'll have snippets of code that you want to reuse. You'll also have snippets of code that you want to reuse within the same script. Rather than having the same code display multiple times in a script, you can create a function that displays once in the script, but is called multiple times. If you need to use the same code across multiple scripts, then you can put the function into a module that can be shared by multiple scripts.</p>
+<p>When you call a function, you can pass data to it. You use the Param() block for a function in the same way as you do for a script. After the declaration for the function, insert the Param() block and the definitions for any variables that are expected to be passed to the function.</p>
+<div class="highlight"><pre><span></span><code><span class="k">Function</span> <span class="nb">Get-SecurityEvent</span> <span class="p">{</span>
+   <span class="k">Param</span> <span class="p">(</span>
+      <span class="no">[string]</span><span class="nv">$ComputerName</span>
+   <span class="p">)</span> <span class="c">#end Param</span>
+   <span class="nb">Get-EventLog</span> <span class="n">-LogName</span> <span class="n">Security</span> <span class="n">-ComputerName</span> <span class="p">-</span><span class="nv">$ComputerName</span> <span class="n">-Newest</span> <span class="n">10</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>To call the function within a script, use the following syntax:</p>
+<div class="highlight"><pre><span></span><code>Get-SecurityEvent -ComputerName LON-DC1
+</code></pre></div>
+<h3 id="variable-scopes">Variable Scopes</h3>
 <table>
 <thead>
 <tr>
-<th>Cmdlet</th>
+<th>Scope</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Write-Verbose</td>
-<td>Text specified by Write-Verbose is displayed only when you use the -Verbose parameter when running the script. The value of $VerbosePreference specifies the action to take after the Write-Verbose command. The default action is SilentlyContinue.</td>
+<td>Global</td>
+<td>The global scope is for the Windows PowerShell prompt. Variables set at the Windows PowerShell prompt can be reviewed in all the scripts started at that Windows PowerShell prompt. Variables created at a Windows PowerShell prompt don't exist in other Windows PowerShell prompts or in instances of the Windows PowerShell Integrated Scripting Environment (ISE).</td>
 </tr>
 <tr>
-<td>Write-Debug</td>
-<td>Text specified by Write-Debug is displayed only when you use the -Debug parameter when running the script. The value of $DebugPreference specifies the action to take after the Write-Debug command. The default action is SilentlyContinue, which displays no information to screen. You need to change this action to Continue so that debug messages are displayed.</td>
+<td>Script</td>
+<td>The script scope is for a single script. Variables set within a script can be reviewed by all the functions within that script. If you set a variable value in the script scope that already exists in the global scope, a new variable is created in the script scope. There are then two variables of the same name in two separate scopes. At this point, when you review the value of the variable in the script, the value of the variable in the script scope is returned.</td>
+</tr>
+<tr>
+<td>Function</td>
+<td>The function scope is for a single function. Variables set within a function aren't shared with other functions or the script. If you set a variable value in the function scope that already exists in the global or script scope, a new variable is created in the function scope. Then, there are two variables of the same name in two separate scopes.</td>
 </tr>
 </tbody>
 </table>
+<p>In addition to reviewing a variable in a higher-level scope, you can also modify that variable by specifically referencing the scope of the variable when you modify it. To modify a script scope variable from a function, use the following syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$script:var</span> <span class="p">=</span> <span class="s2">&quot;Modified from function&quot;</span>
+</code></pre></div>
+<p>It's a best practice to avoid modifying variables between scopes, because doing so can cause confusion. Instead, set the script scope variable equal to the output of the function. If the data in the function is in a variable, you can use Return() to pass it back to the script.</p>
+<p>The following is an example of using Return() at the end of a function to pass a variable value back to the script scope:</p>
+<div class="highlight"><pre><span></span><code><span class="k">Return</span><span class="p">(</span><span class="nv">$users</span><span class="p">)</span>
+</code></pre></div>
+<p>Using Return() in a function adds the specified data to the pipeline of data being returned, but doesn't replace existing data in the pipeline. As part of script development, you need to verify exactly which data is being returned by a function.</p>
 
               
             </article>
@@ -1037,7 +1026,7 @@ The final version of the example script is as follows:
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../comments/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Script Documentation" rel="prev">
+        <a href="../break_cont/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Break &amp; Continue" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1046,20 +1035,20 @@ The final version of the example script is as follows:
               <span class="md-footer__direction">
                 Previous
               </span>
-              Script Documentation
+              Break & Continue
             </div>
           </div>
         </a>
       
       
         
-        <a href="../cond/" class="md-footer__link md-footer__link--next" aria-label="Next: Conditionals" rel="next">
+        <a href="../../Advanced/ErrorHandling/" class="md-footer__link md-footer__link--next" aria-label="Next: Handling Errors" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Conditionals
+              Handling Errors
             </div>
           </div>
           <div class="md-footer__button md-icon">
