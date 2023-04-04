@@ -1265,6 +1265,12 @@
 <li>The keys and associated values are enclosed in braces.</li>
 <li>The items are separated by a semicolon.</li>
 </ul>
+<p>The semicolon between hash table items is required in the previous example because they're all on the same line. If you place each item on a separate line, it's not necessary to use semicolons as separators.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$servers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">,</span><span class="s2">&quot;172.16.0.12&quot;</span><span class="p">)</span>
+<span class="nv">$servers</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="s2">&quot;LON-DC1&quot;</span><span class="p">)</span>
+<span class="c"># Update the value for a key</span>
+<span class="nv">$servers</span><span class="p">.</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">=</span><span class="s2">&quot;172.16.0.100&quot;</span>
+</code></pre></div>
 
               
             </article>

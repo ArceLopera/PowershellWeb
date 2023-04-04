@@ -1077,8 +1077,9 @@
 </code></pre></div>
 <p>This example shows a table with the identifier, name, and virtual memory usage of the machine's processes, ordered in descending order by virtual memory usage.</p>
 <p>Remember that to view the properties of an object (the fields that can be displayed), the Get-Member cmdlet (abbreviated gm) is used:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">gm</span>
+<p><div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="p">|</span> <span class="nb">gm</span>
 </code></pre></div>
+<strong>Best Practice</strong>: Always review the property names in the output of Get-Member before you use those property names in another command. By doing this, you can help to ensure that you use the actual property names and not ones created for display purposes.</p>
 <h2 id="passing-parameters">Passing parameters</h2>
 <p>In a pipeline of the type:</p>
 <p>Command_A | Command_B</p>

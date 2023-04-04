@@ -181,3 +181,18 @@ Get Process | where -filter { $_.Name -notlike "Powershell*" } | sort VM -desc |
 ``` pwsh
 Get Process | where -filter { $_.Name -notlike "Powershell*" } | sort VM | select name,vm -first 10 | Measure-Object -Property vm -sum
 ```
+
+### Other Example 
+
+``` pwsh
+Get-Process |
+Select-Object Name,
+              ID,
+              @{n='VirtualMemory(MB)';e={'{0:N2}' –f ($PSItem.VM / 1MB) -as [Double] }},
+              @{n='PagedMemory(MB)';e={'{0:N2}' –f ($PSItem.PM / 1MB) -as [Double] }}
+```
+
+This example uses the Windows PowerShell -f formatting operator. When used with a string, the -f formatting operator instructs Windows PowerShell to replace one or more placeholders in the string with the specified values that follow the operator.
+
+In this example, the string that precedes the -f operator instructs Windows PowerShell what data to display. The string '{0:N2}' signifies displaying the first data item as a number with two decimal places. The original mathematical expression comes after the operator. It's in parentheses to make sure that it runs as a single unit.
+

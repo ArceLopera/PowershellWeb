@@ -73,7 +73,7 @@ Remember that to view the properties of an object (the fields that can be displa
 ``` pwsh
 Get-Process | gm
 ```
-
+**Best Practice**: Always review the property names in the output of Get-Member before you use those property names in another command. By doing this, you can help to ensure that you use the actual property names and not ones created for display purposes.
 ## Passing parameters
 
 In a pipeline of the type:
