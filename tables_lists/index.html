@@ -674,6 +674,19 @@
     A COMPLETE EXAMPLE OF COMPLEX FILTERING
   </a>
   
+    <nav class="md-nav" aria-label="A COMPLETE EXAMPLE OF COMPLEX FILTERING">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#other-example" class="md-nav__link">
+    Other Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1056,6 +1069,19 @@
     A COMPLETE EXAMPLE OF COMPLEX FILTERING
   </a>
   
+    <nav class="md-nav" aria-label="A COMPLETE EXAMPLE OF COMPLEX FILTERING">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#other-example" class="md-nav__link">
+    Other Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1259,6 +1285,15 @@ The following command:
 </code></pre></div></p>
 </li>
 </ul>
+<h3 id="other-example">Other Example</h3>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="p">|</span>
+<span class="nb">Select-Object</span> <span class="n">Name</span><span class="p">,</span>
+              <span class="n">ID</span><span class="p">,</span>
+              <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;VirtualMemory(MB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="s1">&#39;{0:N2}&#39;</span> <span class="err">–</span><span class="n">f</span> <span class="p">(</span><span class="nv">$PSItem</span><span class="p">.</span><span class="n">VM</span> <span class="p">/</span> <span class="n">1MB</span><span class="p">)</span> <span class="o">-as</span> <span class="no">[Double]</span> <span class="p">}},</span>
+              <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;PagedMemory(MB)&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="s1">&#39;{0:N2}&#39;</span> <span class="err">–</span><span class="n">f</span> <span class="p">(</span><span class="nv">$PSItem</span><span class="p">.</span><span class="n">PM</span> <span class="p">/</span> <span class="n">1MB</span><span class="p">)</span> <span class="o">-as</span> <span class="no">[Double]</span> <span class="p">}}</span>
+</code></pre></div>
+<p>This example uses the Windows PowerShell -f formatting operator. When used with a string, the -f formatting operator instructs Windows PowerShell to replace one or more placeholders in the string with the specified values that follow the operator.</p>
+<p>In this example, the string that precedes the -f operator instructs Windows PowerShell what data to display. The string '{0:N2}' signifies displaying the first data item as a number with two decimal places. The original mathematical expression comes after the operator. It's in parentheses to make sure that it runs as a single unit.</p>
 
               
             </article>
