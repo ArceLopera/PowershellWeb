@@ -587,11 +587,57 @@
     By value (ByValue)
   </a>
   
+    <nav class="md-nav" aria-label="By value (ByValue)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generic-object-types" class="md-nav__link">
+    Generic object types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
   <a href="#by-parameter-name-bypropertyname" class="md-nav__link">
     By parameter name (ByPropertyName)
+  </a>
+  
+    <nav class="md-nav" aria-label="By parameter name (ByPropertyName)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renaming-properties" class="md-nav__link">
+    Renaming properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parenthetical-commands" class="md-nav__link">
+    Parenthetical Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Parenthetical Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expand-property-values" class="md-nav__link">
+    Expand Property Values
   </a>
   
 </li>
@@ -674,6 +720,20 @@
     <li class="md-nav__item">
       <a href="../filtering/" class="md-nav__link">
         Filtering
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enum/" class="md-nav__link">
+        Enumeration
       </a>
     </li>
   
@@ -1022,11 +1082,57 @@
     By value (ByValue)
   </a>
   
+    <nav class="md-nav" aria-label="By value (ByValue)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generic-object-types" class="md-nav__link">
+    Generic object types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
   <a href="#by-parameter-name-bypropertyname" class="md-nav__link">
     By parameter name (ByPropertyName)
+  </a>
+  
+    <nav class="md-nav" aria-label="By parameter name (ByPropertyName)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#renaming-properties" class="md-nav__link">
+    Renaming properties
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parenthetical-commands" class="md-nav__link">
+    Parenthetical Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Parenthetical Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expand-property-values" class="md-nav__link">
+    Expand Property Values
   </a>
   
 </li>
@@ -1121,7 +1227,16 @@
 <p>The command can then be executed using parentheses:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">get-service</span> <span class="n">-computername</span> <span class="p">(</span><span class="nb">get-content</span> <span class="n">computers</span><span class="p">.</span><span class="n">txt</span><span class="p">)</span>
 </code></pre></div>
+<p>When data is passed using ByValue, a parameter can accept complete objects from the pipeline when those objects are of the type that the parameter accepts. A single command can have more than one parameter accepting pipeline input ByValue, but each parameter must accept a different kind of object.</p>
+<p>For example, Get-Service can accept pipeline input ByValue on both its –InputObject and –Name parameters. Each of those parameters accepts a different kind of object. –InputObject accepts objects of the type ServiceController, and –Name accepts objects of the type String. Consider the following example:</p>
+<p><div class="highlight"><pre><span></span><code><span class="s1">&#39;BITS&#39;</span><span class="p">,</span><span class="s1">&#39;WinRM&#39;</span> <span class="p">|</span> <span class="nb">Get-Service</span>
+</code></pre></div>
+Here, two string objects are piped into Get-Service. They attach to the –Name parameter because that parameter accepts that kind of object, ByValue, from the pipeline.</p>
+<h4 id="generic-object-types">Generic object types</h4>
+<p>Windows PowerShell recognizes two generic kinds of object, Object and PSObject. Parameters that accept these kinds of objects can accept any kind of object. When you perform ByValue pipeline parameter binding, Windows PowerShell first looks for the most specific object type possible. If the pipeline contains a String, and a parameter can accept String, that parameter will receive the objects.</p>
+<p>If there's no match for a specific data type, Windows PowerShell will try to match generic data types. That behavior is why commands like Sort-Object and Select-Object work. Each of those commands has a parameter named –InputObject that accepts objects of the type PSObject from the pipeline ByValue. This is why you can pipe any type of object to those commands. Their –InputObject parameter will receive any object from the pipeline because it accepts objects of any kind.</p>
 <h3 id="by-parameter-name-bypropertyname">By parameter name (ByPropertyName)</h3>
+<p>If Windows PowerShell is unable to bind pipeline input by using the ByValue technique, it tries to use the ByPropertyName technique. When Windows PowerShell uses the ByPropertyName technique, it attempts to match a property of the object passed to a parameter of the command to which the object was passed. This match occurs in a simple manner. If the input object has a Name property, it will be matched with the parameter Name because they're spelled the same. However, it will only pass the property if the parameter is programmed to accept a value by property name. This means that you can pass output from one command to another when they don't logically go together.</p>
 <p>In this method, you must specify the parameter names. For example, consider a file called alias.txt with the following content:</p>
 <div class="highlight"><pre><span></span><code>Name,Value
 np,notepad
@@ -1177,6 +1292,46 @@ The Name and Value parameters receive String inputs. And if you review the compl
 </code></pre></div>
 <p>Therefore, information can be passed from one command to another in the following way:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">import-csv</span> <span class="k">alias</span><span class="p">.</span><span class="n">txt</span> <span class="p">|</span> <span class="nb">new-alias</span>
+</code></pre></div>
+<h4 id="renaming-properties">Renaming properties</h4>
+<p>Most often, a property name from an output object doesn't match the name of an input parameter exactly. You can change the name of the property by using Select-Object and create a calculated property. For example, to view the processes running on all computers in your Windows Server Active Directory, try running the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADComputer</span> <span class="n">-Filter</span> <span class="p">*</span> <span class="p">|</span> <span class="nb">Get-Process</span>
+</code></pre></div>
+<p>However, this command doesn't work. No parameter for Get-Process matches a property name for the output of Get-ADComputer. View the output of Get-ADComputer | Get-Member and Get-Help Get-Process and you'll see that what you want is to match the Name property of Get-ADComputer with the -ComputerName parameter of Get-Process. You can do that by using Select-Object and changing the property name for the Get-ADComputer command’s Name property to ComputerName, and then passing the results to Get-Process. The following command will work:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADComputer</span> <span class="n">-Filter</span> <span class="p">*</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="p">@{</span><span class="n">n</span><span class="p">=</span><span class="s1">&#39;ComputerName&#39;</span><span class="p">;</span><span class="n">e</span><span class="p">={</span><span class="nv">$PSItem</span><span class="p">.</span><span class="n">Name</span><span class="p">}}</span> <span class="p">|</span> <span class="nb">Get-Process</span>
+</code></pre></div>
+<p>Remember: Windows PowerShell will always try ByValue first and will use ByPropertyName only if ByValue fails.</p>
+<h2 id="parenthetical-commands">Parenthetical Commands</h2>
+<p>Another option for passing the results of one command to the parameters of another is by using parenthetical commands. A parenthetical command is a command that is enclosed in parentheses. Just as in math, parentheses tell Windows PowerShell to execute the enclosed command first. The parenthetical command runs, and the results of the command are inserted in its place.</p>
+<p>You can use parenthetical commands to pass values to parameters that do not accept pipeline input. This means you can have a pipeline that includes data inputs from multiple sources. Consider the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADGroup</span> <span class="s2">&quot;London Users&quot;</span> <span class="p">|</span> <span class="nb">Add-ADGroupMember</span> <span class="n">-Members</span> <span class="p">(</span><span class="nb">Get-ADUser</span> <span class="n">-Filter</span> <span class="p">{</span><span class="n">City</span> <span class="o">-eq</span> <span class="s1">&#39;London&#39;</span><span class="p">})</span>
+</code></pre></div>
+<p>In this example, output of Get-ADGroup passes to Add-ADGroupMember, telling it which group to modify. However, that is only part of the information needed. We also need to tell Add-ADGroupMember what users to add to the group. The -Members parameter does not accept piped input, and even if it did, we have already piped data to the command. Therefore, we need to use a parenthetical command to provide a list of users that we want added to the group.</p>
+<p>Parenthetical commands do not rely on pipeline parameter binding. They work with any parameter if the parenthetical command produces the kind of object that the parameter expects.</p>
+<h3 id="expand-property-values">Expand Property Values</h3>
+<p>You can use parenthetical commands to provide parameter input without using the pipeline. In some cases, however, you might have to manipulate the objects produced by a parenthetical command so that the command’s output is of the type that the parameter requires.</p>
+<p>For example, you might want to list all the processes that are running on every computer in the domain. In this example, imagine that you have a very small lab domain that contains just a few computers. You can get a list of every computer in the domain by running the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADComputer</span> <span class="err">–</span><span class="k">Filter</span> <span class="p">*</span>
+</code></pre></div>
+<p>However, this command produces objects of the type ADComputer. You couldn't use those objects directly in a parenthetical command such as in the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="err">–</span><span class="n">ComputerName</span> <span class="p">(</span><span class="nb">Get-ADComputer</span> <span class="err">–</span><span class="k">Filter</span> <span class="p">*)</span>
+</code></pre></div>
+<p>The –ComputerName parameter expects objects of the type String. However, the parenthetical command doesn't produce String type objects. The –ComputerName parameter only wants a computer name. However, the command provides it an object that contains a name, an operating system version, and several other properties.</p>
+<p>You could try the following command:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="err">–</span><span class="n">ComputerName</span> <span class="p">(</span><span class="nb">Get-ADComputer</span> <span class="err">–</span><span class="k">Filter</span> <span class="p">*</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="err">–</span><span class="n">Property</span> <span class="n">Name</span><span class="p">)</span>
+</code></pre></div>
+This command selects only the Name property. This property is still a member of a whole ADComputer object. It's the Name property of an object. Although the Name property contains a string, it isn't itself a string. The –ComputerName parameter expects a string, not an object with a property. Therefore, that command doesn't work either.</p>
+<p>The following command achieves the goal of passing the computer name as a string to the -ComputerName parameter:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Process</span> <span class="err">–</span><span class="n">ComputerName</span> <span class="p">(</span><span class="nb">Get-ADComputer</span> <span class="err">–</span><span class="k">Filter</span> <span class="p">*</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="err">–</span><span class="n">ExpandProperty</span> <span class="n">Name</span><span class="p">)</span>
+</code></pre></div>
+<p>The –ExpandProperty parameter accepts one, and only one, property name. When you use that parameter, only the contents of the specified property are produced by Select-Object. Some people refer to this feature as extracting the property contents. The official description of the feature is expanding the property contents.</p>
+<p>In the preceding command, the result of the parenthetical command is a collection of strings that are passed as individual strings, not an array, and that is what the –ComputerName parameter expects. The command will work correctly; however, it might produce an error if one or more of the computers can't be reached on the network.</p>
+<p>Expanding property values also works when piping output. Consider the following example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADUser</span> <span class="n">Ty</span> <span class="n">-Properties</span> <span class="n">MemberOf</span> <span class="p">|</span> <span class="nb">Get-ADGroup</span>
+</code></pre></div>
+<p>This command returns an error because Windows PowerShell can't match the MemberOf property to any property of Get-ADGroup.</p>
+<p>However, if you expand the value of the MemberOf property, as in the following example, Windows PowerShell can match the resulting output to a value that Get-ADGroup understands as valid input:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ADUser</span> <span class="n">Ty</span> <span class="n">-Properties</span> <span class="n">MemberOf</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-ExpandProperty</span> <span class="n">MemberOf</span> <span class="p">|</span> <span class="nb">Get-ADGroup</span>
 </code></pre></div>
 
               

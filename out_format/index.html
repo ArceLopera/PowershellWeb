@@ -835,6 +835,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../enum/" class="md-nav__link">
+        Enumeration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Exercises/Exercises3/" class="md-nav__link">
         Exercise 3
       </a>
@@ -1532,6 +1546,13 @@ This code imports a CSV file containing user data, and then outputs the Name pro
 </li>
 </ol>
 <p>These are just a few examples of how to manipulate HTML files in PowerShell. The possibilities are endless, and these cmdlets can be combined with other PowerShell commands to perform more complex tasks.</p>
+<p>ConvertTo-Html creates a simple list or table that's coded as HTML. You can control the HTML format in a limited way through a variety of parameters, such as:</p>
+<ul>
+<li>‑Head. Specifies the content of an HTML head section.</li>
+<li>‑Title. Sets the value of the HTML title tag.</li>
+<li>‑PreContent. Defines any content that should display before the table or list output.</li>
+<li>‑PostContent. Defines any content that should display after the table or list output.</li>
+</ul>
 <h2 id="output-to-file-or-printer">OUTPUT TO FILE OR PRINTER</h2>
 <p>If you want to save the output of a command to an unformatted plain text file, you can use either of these methods (using the get-process command as an example):</p>
 <ul>
@@ -1542,6 +1563,9 @@ This code imports a CSV file containing user data, and then outputs the Name pro
 To read a plain text file as text strings, you use the Get-Content cmdlet (with aliases cat or type):</p>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-Content</span> <span class="n">processes</span><span class="p">.</span><span class="n">txt</span>
 </code></pre></div>
+<p>PowerShell also supports the text redirection operators (&gt; and &gt;&gt;) that cmd.exe uses. These operators act as an alias for Out-File. The greater than sign (&gt;) at the end of a pipeline directs output to a file, overwriting the content. Two consecutive greater than signs (&gt;&gt;) direct output to a file, appending the output to any text already in the file.</p>
+<p>Out-File is the easiest way to move data from PowerShell to external storage. However, the text files that Out-File creates are usually intended for reviewing by a person. Therefore, reading the data back into Windows PowerShell in a way that enables data manipulation, sorting, selection, and measurement is frequently difficult or impractical.</p>
+<p>Out-File doesn't produce any output of its own, which means that the command doesn't put objects into the pipeline. After you run the command, you should expect no output on the screen.</p>
 <p>If you want to send the output of a command to the printer, you use the out-printer cmdlet:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">get-process</span> <span class="p">|</span> <span class="nb">out-printer</span>
 </code></pre></div>
