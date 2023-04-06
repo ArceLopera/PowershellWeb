@@ -242,6 +242,13 @@ Here are some examples of how to use these cmdlets to manipulate HTML files in P
 
 These are just a few examples of how to manipulate HTML files in PowerShell. The possibilities are endless, and these cmdlets can be combined with other PowerShell commands to perform more complex tasks.
 
+ConvertTo-Html creates a simple list or table that's coded as HTML. You can control the HTML format in a limited way through a variety of parameters, such as:
+
++ ‑Head. Specifies the content of an HTML head section.
++ ‑Title. Sets the value of the HTML title tag.
++ ‑PreContent. Defines any content that should display before the table or list output.
++ ‑PostContent. Defines any content that should display after the table or list output.
+
 ## OUTPUT TO FILE OR PRINTER
 If you want to save the output of a command to an unformatted plain text file, you can use either of these methods (using the get-process command as an example):
 
@@ -254,6 +261,12 @@ To read a plain text file as text strings, you use the Get-Content cmdlet (with 
 ``` pwsh
 Get-Content processes.txt
 ```
+
+PowerShell also supports the text redirection operators (> and >>) that cmd.exe uses. These operators act as an alias for Out-File. The greater than sign (>) at the end of a pipeline directs output to a file, overwriting the content. Two consecutive greater than signs (>>) direct output to a file, appending the output to any text already in the file.
+
+Out-File is the easiest way to move data from PowerShell to external storage. However, the text files that Out-File creates are usually intended for reviewing by a person. Therefore, reading the data back into Windows PowerShell in a way that enables data manipulation, sorting, selection, and measurement is frequently difficult or impractical.
+
+Out-File doesn't produce any output of its own, which means that the command doesn't put objects into the pipeline. After you run the command, you should expect no output on the screen.
 
 If you want to send the output of a command to the printer, you use the out-printer cmdlet:
 
