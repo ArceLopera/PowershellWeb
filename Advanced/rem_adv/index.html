@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/ds/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Advanced/rem_adv/">
       
       <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Data Structures - Powershell Refresher</title>
+        <title>Advanced - Powershell Refresher</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#array" class="md-skip">
+        <a href="#the-using-scope-modifier" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Structures
+              Advanced
             
           </span>
         </div>
@@ -239,15 +239,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../variables/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Scripting/variables/" class="md-tabs__link">
         Scripting
       </a>
     </li>
@@ -257,13 +255,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-tabs__link">
+      <a href="../ErrorHandling/" class="md-tabs__link md-tabs__link--active">
         Advanced
       </a>
     </li>
@@ -682,14 +682,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -712,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../Scripting/variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -724,142 +722,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Data Structures
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Scripting/ds/" class="md-nav__link">
         Data Structures
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#array" class="md-nav__link">
-    Array
-  </a>
-  
-    <nav class="md-nav" aria-label="Array">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arrays" class="md-nav__link">
-    Creating Arrays
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#working-with-arrays" class="md-nav__link">
-    Working With Arrays
-  </a>
-  
-    <nav class="md-nav" aria-label="Working With Arrays">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#display-item" class="md-nav__link">
-    Display Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-item" class="md-nav__link">
-    Add Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#to-identify" class="md-nav__link">
-    To Identify
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arraylists" class="md-nav__link">
-    ArrayLists
-  </a>
-  
-    <nav class="md-nav" aria-label="ArrayLists">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arraylists" class="md-nav__link">
-    Creating ArrayLists
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#arraylist-methods" class="md-nav__link">
-    ArrayList Methods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hash-tables" class="md-nav__link">
-    Hash Tables
-  </a>
-  
-    <nav class="md-nav" aria-label="Hash Tables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#working-with-hash-tables" class="md-nav__link">
-    Working with Hash Tables
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -871,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ConsoleIO/" class="md-nav__link">
+      <a href="../../Scripting/ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
     </li>
@@ -885,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basic/" class="md-nav__link">
+      <a href="../../Scripting/basic/" class="md-nav__link">
         Basic Scripting
       </a>
     </li>
@@ -899,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../comments/" class="md-nav__link">
+      <a href="../../Scripting/comments/" class="md-nav__link">
         Script Documentation
       </a>
     </li>
@@ -913,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/" class="md-nav__link">
+      <a href="../../Scripting/advanced/" class="md-nav__link">
         Advanced Script
       </a>
     </li>
@@ -927,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cond/" class="md-nav__link">
+      <a href="../../Scripting/cond/" class="md-nav__link">
         Conditionals
       </a>
     </li>
@@ -941,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loops/" class="md-nav__link">
+      <a href="../../Scripting/loops/" class="md-nav__link">
         Loops
       </a>
     </li>
@@ -955,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../break_cont/" class="md-nav__link">
+      <a href="../../Scripting/break_cont/" class="md-nav__link">
         Break & Continue
       </a>
     </li>
@@ -969,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../functions/" class="md-nav__link">
+      <a href="../../Scripting/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -989,12 +856,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -1017,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-nav__link">
+      <a href="../ErrorHandling/" class="md-nav__link">
         Handling Errors
       </a>
     </li>
@@ -1031,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/modules/" class="md-nav__link">
+      <a href="../modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -1045,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/Credentials/" class="md-nav__link">
+      <a href="../Credentials/" class="md-nav__link">
         Credentials
       </a>
     </li>
@@ -1057,12 +926,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" data-md-state="indeterminate" type="checkbox" id="__nav_5_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" checked>
       
       
       
@@ -1085,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/remoting/" class="md-nav__link">
+      <a href="../remoting/" class="md-nav__link">
         Basic
       </a>
     </li>
@@ -1099,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sec/" class="md-nav__link">
+      <a href="../rem_sec/" class="md-nav__link">
         Security
       </a>
     </li>
@@ -1113,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_mod/" class="md-nav__link">
+      <a href="../rem_mod/" class="md-nav__link">
         Modes
       </a>
     </li>
@@ -1125,11 +996,82 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Advanced/rem_adv/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Advanced
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Advanced
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-using-scope-modifier" class="md-nav__link">
+    The $Using: scope modifier
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-multi-hop-remoting" class="md-nav__link">
+    Enable Multi-hop Remoting
+  </a>
+  
+    <nav class="md-nav" aria-label="Enable Multi-hop Remoting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabling-credssp" class="md-nav__link">
+    Enabling CredSSP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource-based-kerberos-constrained-delegation" class="md-nav__link">
+    Resource-based, Kerberos-constrained delegation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#just-enough-administration" class="md-nav__link">
+    Just Enough Administration
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1141,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sess/" class="md-nav__link">
+      <a href="../rem_sess/" class="md-nav__link">
         Sessions
       </a>
     </li>
@@ -1187,77 +1129,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#array" class="md-nav__link">
-    Array
+  <a href="#the-using-scope-modifier" class="md-nav__link">
+    The $Using: scope modifier
   </a>
-  
-    <nav class="md-nav" aria-label="Array">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arrays" class="md-nav__link">
-    Creating Arrays
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#working-with-arrays" class="md-nav__link">
-    Working With Arrays
-  </a>
-  
-    <nav class="md-nav" aria-label="Working With Arrays">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#display-item" class="md-nav__link">
-    Display Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-item" class="md-nav__link">
-    Add Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#to-identify" class="md-nav__link">
-    To Identify
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#arraylists" class="md-nav__link">
-    ArrayLists
+  <a href="#enable-multi-hop-remoting" class="md-nav__link">
+    Enable Multi-hop Remoting
   </a>
   
-    <nav class="md-nav" aria-label="ArrayLists">
+    <nav class="md-nav" aria-label="Enable Multi-hop Remoting">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#creating-arraylists" class="md-nav__link">
-    Creating ArrayLists
+  <a href="#enabling-credssp" class="md-nav__link">
+    Enabling CredSSP
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#arraylist-methods" class="md-nav__link">
-    ArrayList Methods
+  <a href="#resource-based-kerberos-constrained-delegation" class="md-nav__link">
+    Resource-based, Kerberos-constrained delegation
   </a>
   
 </li>
@@ -1268,22 +1163,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hash-tables" class="md-nav__link">
-    Hash Tables
+  <a href="#just-enough-administration" class="md-nav__link">
+    Just Enough Administration
   </a>
-  
-    <nav class="md-nav" aria-label="Hash Tables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#working-with-hash-tables" class="md-nav__link">
-    Working with Hash Tables
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1301,107 +1183,85 @@
                 
 
 
-  <h1>Data Structures</h1>
+  <h1>Advanced</h1>
 
-<h2 id="array">Array</h2>
-<p>An array is a data structure that's designed to store a collection of items of the same type. You can think of an array as a variable containing multiple values or objects. Variables that contain a single value are useful, but for complex tasks you often need to work with groups of items. For example, you might need to update the Voice over IP (VoIP) attribute on multiple domain user accounts. Or you might need to check the status of a group of services and restart all of them that are stopped. When you put multiple objects or values into a variable, it becomes an array.</p>
-<h3 id="creating-arrays">Creating Arrays</h3>
-<p>You can create an array by providing multiple values in a comma-separated list. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span> <span class="p">=</span> <span class="s2">&quot;LON-DC1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SRV1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SRV2&quot;</span>
-<span class="nv">$numbers</span> <span class="p">=</span> <span class="n">228</span><span class="p">,</span><span class="n">43</span><span class="p">,</span><span class="n">102</span>
+<p>Windows PowerShell provides access protection to variables, aliases, functions, and Windows PowerShell drives by limiting where they can be changed and read. By enforcing a few simple rules using Windows PowerShell scopes, you ensure that you don't inadvertently change an item that shouldn't be changed. The basic rules of scopes are:</p>
+<p>Unless you explicitly make it private, items you include in a scope are visible in the scope in which it was created and in any child scope. You can use variables, aliases, functions, or Windows PowerShell drives in one or more scopes.
+Items you create within a scope can be changed only in the scope in which the item was created unless you explicitly stipulate a different scope.
+If you create an item in a scope and the item has the same name as an item in a different scope, the original item might get hidden under the new item. However, it doesn't get overridden or changed.</p>
+<p>You can use local variables in remote commands, but you must indicate that the variable is defined in the local session. Windows PowerShell assumes that the variables used in remote commands are defined in the session in which the command runs.</p>
+<h2 id="the-using-scope-modifier">The $Using: scope modifier</h2>
+<p>As mentioned earlier, starting with Windows PowerShell 3.0, you can implement the $Using: scope modifier to identify a local variable in a remote command. This is a special scope modifier and is the most straightforward way to reference a local variable in a remote command. This technique passes on the variable value(s) to the remote computer, and therefore involves less processing across the hosts being used. By default, variables in remote commands are assumed to be defined in the remote session.</p>
+<p>The syntax of Using is $Using:.
+In the following example, the $ps variable is created in the local session but is used in the session in which the command runs. The $Using: scope modifier identifies $ps as a local variable:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$ps</span> <span class="p">=</span> <span class="s2">&quot;Windows PowerShell&quot;</span> 
+
+<span class="nb">Invoke-Command</span> <span class="n">-ComputerName</span> <span class="n">LON-DC1</span> <span class="n">-ScriptBlock</span> <span class="p">{</span><span class="nb">Get-WinEvent</span> <span class="n">-LogName</span> <span class="nv">$Using</span><span class="p">:</span><span class="n">ps</span><span class="p">}</span>
 </code></pre></div>
-<p>To create an array of strings, you put quotes around each item. If you put one set of quotes around all the items, it's treated as a single string.</p>
-<p>You also can create an array by using the output from a command. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">=</span> <span class="nb">Get-ADUser</span> <span class="n">-Filter</span> <span class="p">*</span>
-<span class="nv">$files</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">C</span><span class="p">:\</span>
+<p>You can also apply the $Using: scope modifier in PSSessions such as in the following example:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$s</span> <span class="p">=</span> <span class="nb">New-PSSession</span> <span class="n">-ComputerName</span> <span class="n">LON-DC1</span>
+
+<span class="nv">$ps</span> <span class="p">=</span> <span class="s2">&quot;Windows PowerShell&quot;</span>
+
+<span class="nb">Invoke-Command</span> <span class="n">-Sessions</span> <span class="nv">$s</span> <span class="n">-ScriptBlock</span> <span class="p">{</span><span class="nb">Get-WinEvent</span> <span class="n">-LogName</span> <span class="nv">$Using</span><span class="p">:</span><span class="n">ps</span><span class="p">}</span>
 </code></pre></div>
-<p>ou can verify whether a variable is an array by using the GetType() method on the variable. The BaseType listed will be System.Array.</p>
-<p>You can create an empty array before you're ready to put content in it. This can be useful when you have a loop later on in a script that adds items to the array. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$newUsers</span> <span class="p">=</span> <span class="p">@()</span>
+<h2 id="enable-multi-hop-remoting">Enable Multi-hop Remoting</h2>
+<p>Another challenge with remoting is related to delegating credentials across multiple remote connections. By default, credentials can be delegated across only one connection, or hop. This restrictions delegation prevents the remote computer from further delegating your credentials, since this could introduce an extra security risk.</p>
+<p>In general, this is the scenario we want to address:</p>
+<p>You're signed in to ServerA.
+From ServerA, you start a remote PowerShell session to connect to ServerB.
+A command you run on ServerB via your PowerShell Remoting session attempts to access a resource on ServerC.
+Access to the resource on ServerC is denied because the credentials you used to create the PowerShell Remoting session are not passed from ServerB to ServerC.
+The need to perform multiple hop (or, multi-hop) delegation can often occur in production environments. For example, in some organizations administrators aren't permitted to connect directly from their client computers to a server in the datacenter. Instead, they must connect to an intermediate gateway or jump server, and then from there connect to the server they intend to manage. In its default configuration, remoting doesn't permit this approach. After you're connected to a remote computer, your credential can go no further than the remote computer. Trying to access any resource that isn't located on that computer typically results in a failure because your access isn't accompanied by a credential. The solution is to enable Credential Security Support Provider (CredSSP).</p>
+<h3 id="enabling-credssp">Enabling CredSSP</h3>
+<p>CredSSP caches credentials on the remote server (ServerB, from the previous example). Because of this, you should be aware that using CredSSP opens you up to potential credential theft attacks. If the remote computer is compromised, the attacker has access to the user's credentials. CredSSP is disabled by default on both client and server computers. You should enable CredSSP only in the most trusted environments. For example, a domain administrator connecting to a domain controller could have CredSSP enabled because the domain controller is highly trusted.</p>
+<p>You must enable the CredSSP protocol both on the initiating computer, referred to as the client, and on the receiving computer, referred to as the server. Doing this enables the receiving computer to delegate your credential one additional hop.</p>
+<p>To configure the client, run the following command, substituting servername with the name of the server that will be able to redelegate your credential:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Enable-WsManCredSSP</span> <span class="err">–</span><span class="n">Role</span> <span class="n">Client</span> <span class="err">–</span><span class="n">Delegate</span> <span class="n">servername</span>
 </code></pre></div>
-<p>You also can force an array to be created when adding a single value to a variable. This creates an array with a single value into which you can add items later. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="no">[array]</span><span class="nv">$computers</span><span class="p">=</span><span class="s2">&quot;LON-DC1&quot;</span>
-</code></pre></div>
-<h3 id="working-with-arrays">Working With Arrays</h3>
-<h4 id="display-item">Display Item</h4>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
-</code></pre></div>
-<h4 id="add-item">Add Item</h4>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">=</span> <span class="nv">$users</span> <span class="p">+</span> <span class="nv">$user1</span>
-<span class="c"># or</span>
-<span class="nv">$users</span> <span class="p">+=</span> <span class="nv">$user1</span>
-</code></pre></div>
-<h4 id="to-identify">To Identify</h4>
-<p>To identify what you can do with the content in an array, use the Get-Member cmdlet. Pipe the contents of the array to Get-Member, and the results returned identify the properties and methods that you can use for the items in the array. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$files</span> <span class="p">|</span> <span class="nb">Get-Member</span>
-</code></pre></div>
-<p>When you pipe an array containing mixed data types to Get-Member, results are returned for each data type. This is also a helpful way of determining which data types are in the array.</p>
-<p>To review the properties and methods available for an array rather than the items within the array, use the following syntax:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Member</span> <span class="n">-InputObject</span> <span class="nv">$files</span>
-</code></pre></div>
-<h2 id="arraylists">ArrayLists</h2>
-<p>The default type of array that Windows PowerShell creates is a fixed-size array. This means that when you add an item to the array, the array is actually recreated with the additional item. When you work with relatively small arrays, this is not a concern. However, if you add thousands of items to an array one by one, recreating an array each time has a negative performance impact. The other concern when using fixed-size arrays is removing items. There's no simple method to remove an item from a fixed-size array.</p>
-<p>To address the shortcomings of arrays, you can use an array list. An array list functions similar to an array, except that it doesn't have a fixed size. This means that you can use methods to add and remove items.</p>
-<h3 id="creating-arraylists">Creating ArrayLists</h3>
-<div class="highlight"><pre><span></span><code><span class="no">[System.Collections.ArrayList]</span><span class="nv">$computers</span> <span class="p">=</span> <span class="s2">&quot;LON-DC1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SVR1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-CL1&quot;</span>
-</code></pre></div>
-<p>To create an array list that's empty and ready to add items, use the following syntax:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">=</span><span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">ArrayList</span>
-</code></pre></div>
-<h3 id="arraylist-methods">ArrayList Methods</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">)</span>
-<span class="nv">$computers</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="s2">&quot;LON-CL1&quot;</span><span class="p">)</span>
-</code></pre></div>
-<p>When you remove an item from an array list, if there are multiple matching items then only the first instance is removed.</p>
-<p>If you want to remove an item from an array list based on the index number, you use the RemoveAt() method. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">.</span><span class="n">RemoveAt</span><span class="p">(</span><span class="n">1</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="hash-tables">Hash Tables</h2>
-<p>A hash table represents a similar concept to an array since it stores multiple items. However, unlike an array which uses an index number to identify each item, a hash table uses for this purpose a unique key. The key is a string that's a unique identifier for the item. Each key in a hash table is associated with a value.</p>
-<p>You can use a hash table to store both IP addresses and the computer names as the following table depicts.</p>
-<table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>LON-DC1</td>
-<td>192.168.0.10</td>
-</tr>
-<tr>
-<td>LON-SRV1</td>
-<td>192.168.0.11</td>
-</tr>
-<tr>
-<td>LON-SRV2</td>
-<td>192.168.0.12</td>
-</tr>
-</tbody>
-</table>
-<p>If the hash table is named $servers, then you access the first item in the hash table by using either of the following options:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$servers</span><span class="p">.</span><span class="s1">&#39;LON-DC1&#39;</span>
-<span class="nv">$servers</span><span class="p">[</span><span class="s1">&#39;LON-DC1&#39;</span><span class="p">]</span>
-</code></pre></div>
-<p>You only need to use single quote marks to enclose keys that contain special characters. In the previous example, the hyphen in the computer names is a special character, which requires the key name to be enclosed in single quote marks.</p>
-<h3 id="working-with-hash-tables">Working with Hash Tables</h3>
-<p>Working with hash tables is similar to working with an array, except that to add items to a hash table you need to provide both the key for the item and the value.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$servers</span> <span class="p">=</span> <span class="p">@{</span><span class="s2">&quot;LON-DC1&quot;</span> <span class="p">=</span> <span class="s2">&quot;172.16.0.10&quot;</span><span class="p">;</span> <span class="s2">&quot;LON-SRV1&quot;</span> <span class="p">=</span> <span class="s2">&quot;172.16.0.11&quot;</span><span class="p">}</span>
-</code></pre></div>
-<p>Notice the following syntax in the previous example:</p>
+<p>The server name can contain wildcard characters. However, using the asterisk (<em>) wildcard by itself is too permissive because you would be enabling any computer to redelegate your credential, even an unauthorized user. Instead, consider a limited wildcard pattern, such as </em>.ADATUM.com, which would limit redelegation to computers in that domain.</p>
+<p>To configure the server, run Enable-WsManCredSSP –Role Server. No delegated computer list is required on the server. You also can configure these settings through Group Policy, which offers a more centralized and consistent configuration across an enterprise.</p>
+<p>There have been numerous security breaches documented while using CredSSP, and therefore it's no longer a preferred option. You should instead use constrained delegation.</p>
+<h3 id="resource-based-kerberos-constrained-delegation">Resource-based, Kerberos-constrained delegation</h3>
+<p>Starting with Windows Server 2012, you can forgo using CredSSP and instead use constrained delegation. Constrained delegation implements delegation of service tickets by using security descriptors rather than an allow list of server names. This allows the resource to determine which security principals can request tickets on behalf of another user. Resource-based constrained delegation works correctly regardless of domain functional level.</p>
+<p>Constrained delegation requires:</p>
 <ul>
-<li>It begins with the at (@) symbol.</li>
-<li>The keys and associated values are enclosed in braces.</li>
-<li>The items are separated by a semicolon.</li>
+<li>Access to a domain controller in the same domain as the host computer from which the Windows PowerShell remoting commands are being run.</li>
+<li>Access to a domain controller in the domain hosting the remote server you're trying to access from the intermediate remote server.</li>
 </ul>
-<p>The semicolon between hash table items is required in the previous example because they're all on the same line. If you place each item on a separate line, it's not necessary to use semicolons as separators.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$servers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">,</span><span class="s2">&quot;172.16.0.12&quot;</span><span class="p">)</span>
-<span class="nv">$servers</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="s2">&quot;LON-DC1&quot;</span><span class="p">)</span>
-<span class="c"># Update the value for a key</span>
-<span class="nv">$servers</span><span class="p">.</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">=</span><span class="s2">&quot;172.16.0.100&quot;</span>
+<p>The code for setting up the permissions requires a computer running Windows Server with the Active Directory PowerShell Remote Server Administration Tools (RSAT). You can add RSAT as a Windows feature by running the following two commands:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Add-WindowsFeature</span> <span class="n">RSAT-AD-PowerShell</span>
+<span class="nb">Import-Module</span> <span class="n">ActiveDirectory</span>
 </code></pre></div>
+<p>To grant resource-based, Kerberos-constrained delegation from LON-SVR1 through LON-SVR2 to LON-SVR3, run the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Set-ADComputer</span> <span class="n">-Identity</span> <span class="n">LON-SVR2</span> <span class="n">-PrincipalsAllowedToDelegateToAccount</span> <span class="n">LON-SVR3</span>
+</code></pre></div>
+<p>One issue could cause this command to fail. The Key Distribution Center (KDC) has a 15-minute SPN negative cache. If LON-SVR2 has already tried to communicate with LON-SVR3, then there's a negative cache entry. You'll need to clear the cache on LON-SVR2 by using one of the following techniques:</p>
+<ul>
+<li>Run the command klist purge -li 0x3e7. This is the preferred and fastest method.</li>
+<li>Wait 15 minutes for the cache to clear automatically.</li>
+<li>Restart LON-SVR2.</li>
+</ul>
+<p>To test constrained delegation, run the following code example:
+<div class="highlight"><pre><span></span><code><span class="nv">$cred</span> <span class="p">=</span> <span class="nb">Get-Credential</span> <span class="n">Adatum</span><span class="p">\</span><span class="n">TestUser</span>                
+<span class="nb">Invoke-Command</span> <span class="n">-ComputerName</span> <span class="n">LON-SVR1</span><span class="p">.</span><span class="n">Name</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-ScriptBlock</span> <span class="p">{</span><span class="nb">Test-Path</span> <span class="p">\\$(</span><span class="nv">$using</span><span class="p">:</span><span class="n">ServerC</span><span class="p">.</span><span class="n">Name</span><span class="p">)\</span><span class="n">C</span><span class="p">$</span>            <span class="p">`</span>
+<span class="nb">Get-Process</span> <span class="n">lsass</span> <span class="n">-ComputerName</span> <span class="p">$(</span><span class="nv">$using</span><span class="p">:</span><span class="n">LON-SVR2</span><span class="p">.</span><span class="n">Name</span><span class="p">)</span>
+<span class="nb">Get-EventLog</span> <span class="n">-LogName</span> <span class="n">System</span> <span class="n">-Newest</span> <span class="n">3</span> <span class="n">-ComputerName</span> <span class="nv">$using</span><span class="p">:</span><span class="n">LON-SVR3</span><span class="p">.</span><span class="n">Name</span>            
+<span class="p">}</span>
+</code></pre></div></p>
+<h2 id="just-enough-administration">Just Enough Administration</h2>
+<p>Just Enough Administration (JEA) is a security technology that enables delegated administration for anything managed by PowerShell. With JEA, you can:</p>
+<ul>
+<li>Reduce the number of administrators on your machines by using virtual accounts or group-managed service accounts to perform privileged actions on behalf of regular users.</li>
+<li>Limit what users can do by specifying which cmdlets, functions, and external commands they can run.</li>
+<li>Better understand what your users are doing by reviewing transcripts and logs that depict exactly which commands a user ran during their session.</li>
+</ul>
+<p>Highly privileged accounts used to administer your servers pose a serious security risk. Should an attacker compromise one of these accounts, they could launch lateral attacks across your organization. Each compromised account gives an attacker access to even more accounts and resources, and puts them one step closer to stealing company secrets, launching a denial-of-service (DOS) attack, and more.</p>
+<p>It's not always easy to remove administrative privileges, either. Consider the common scenario where the DNS role is installed on the same machine as your Active Directory domain controller. Your DNS administrators require local administrator privileges to fix issues with the DNS server. But to do so, you must make them members of the highly privileged Administrators security group. This approach effectively gives DNS Administrators the ability to gain control over your entire domain and access to all the resources on that machine.</p>
+<p>JEA addresses this problem through the principle of least privilege. With JEA, you can configure a management endpoint for DNS administrators that gives them access only to the PowerShell commands they need to get their job done. This means you can provide the appropriate access to repair a poisoned DNS cache or restart the DNS server without unintentionally giving them rights to Active Directory, or to browse the file system, or run potentially dangerous scripts. Better yet, when the JEA session is configured to use temporary, privileged virtual accounts, your DNS administrators can connect to the server by using non-admin credentials and still run commands that typically require admin privileges. JEA enables you to remove users from widely privileged local or domain administrator roles and carefully control what they can do on each machine.</p>
+<p>JEA is a feature included in PowerShell 5.0 and newer. For full functionality, you should install the latest version of PowerShell available for your system. PowerShell Remoting provides the foundation on which JEA is built. It's necessary to ensure PowerShell Remoting is enabled and properly secured before you can use JEA.</p>
+<p>When creating a JEA endpoint, you need to define one or more role capabilities that describe what someone can do in a JEA session. A role capability is a PowerShell data file with the .psrc extension that lists all the cmdlets, functions, providers, and external programs that are made available to connecting users.</p>
+<p>You can create a new PowerShell role capability file with the New-PSRoleCapabilityFile cmdlet. You should then edit the resulting role capability file to allow the commands required for the role. The PowerShell help documentation contains several examples of how you can configure the file.</p>
 
               
             </article>
@@ -1415,7 +1275,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../variables/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Variables" rel="prev">
+        <a href="../rem_mod/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Modes" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1424,20 +1284,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Variables
+              Modes
             </div>
           </div>
         </a>
       
       
         
-        <a href="../ConsoleIO/" class="md-footer__link md-footer__link--next" aria-label="Next: Console IO" rel="next">
+        <a href="../rem_sess/" class="md-footer__link md-footer__link--next" aria-label="Next: Sessions" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Console IO
+              Sessions
             </div>
           </div>
           <div class="md-footer__button md-icon">

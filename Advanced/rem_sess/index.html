@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/ds/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Advanced/rem_sess/">
       
       <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Data Structures - Powershell Refresher</title>
+        <title>Sessions - Powershell Refresher</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#array" class="md-skip">
+        <a href="#disconnected-sessions" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Structures
+              Sessions
             
           </span>
         </div>
@@ -239,15 +239,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../variables/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Scripting/variables/" class="md-tabs__link">
         Scripting
       </a>
     </li>
@@ -257,13 +255,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-tabs__link">
+      <a href="../ErrorHandling/" class="md-tabs__link md-tabs__link--active">
         Advanced
       </a>
     </li>
@@ -682,14 +682,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -712,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../Scripting/variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -724,142 +722,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Data Structures
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Scripting/ds/" class="md-nav__link">
         Data Structures
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#array" class="md-nav__link">
-    Array
-  </a>
-  
-    <nav class="md-nav" aria-label="Array">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arrays" class="md-nav__link">
-    Creating Arrays
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#working-with-arrays" class="md-nav__link">
-    Working With Arrays
-  </a>
-  
-    <nav class="md-nav" aria-label="Working With Arrays">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#display-item" class="md-nav__link">
-    Display Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-item" class="md-nav__link">
-    Add Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#to-identify" class="md-nav__link">
-    To Identify
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arraylists" class="md-nav__link">
-    ArrayLists
-  </a>
-  
-    <nav class="md-nav" aria-label="ArrayLists">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arraylists" class="md-nav__link">
-    Creating ArrayLists
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#arraylist-methods" class="md-nav__link">
-    ArrayList Methods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hash-tables" class="md-nav__link">
-    Hash Tables
-  </a>
-  
-    <nav class="md-nav" aria-label="Hash Tables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#working-with-hash-tables" class="md-nav__link">
-    Working with Hash Tables
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -871,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ConsoleIO/" class="md-nav__link">
+      <a href="../../Scripting/ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
     </li>
@@ -885,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basic/" class="md-nav__link">
+      <a href="../../Scripting/basic/" class="md-nav__link">
         Basic Scripting
       </a>
     </li>
@@ -899,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../comments/" class="md-nav__link">
+      <a href="../../Scripting/comments/" class="md-nav__link">
         Script Documentation
       </a>
     </li>
@@ -913,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/" class="md-nav__link">
+      <a href="../../Scripting/advanced/" class="md-nav__link">
         Advanced Script
       </a>
     </li>
@@ -927,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cond/" class="md-nav__link">
+      <a href="../../Scripting/cond/" class="md-nav__link">
         Conditionals
       </a>
     </li>
@@ -941,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loops/" class="md-nav__link">
+      <a href="../../Scripting/loops/" class="md-nav__link">
         Loops
       </a>
     </li>
@@ -955,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../break_cont/" class="md-nav__link">
+      <a href="../../Scripting/break_cont/" class="md-nav__link">
         Break & Continue
       </a>
     </li>
@@ -969,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../functions/" class="md-nav__link">
+      <a href="../../Scripting/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -989,12 +856,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -1017,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-nav__link">
+      <a href="../ErrorHandling/" class="md-nav__link">
         Handling Errors
       </a>
     </li>
@@ -1031,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/modules/" class="md-nav__link">
+      <a href="../modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -1045,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/Credentials/" class="md-nav__link">
+      <a href="../Credentials/" class="md-nav__link">
         Credentials
       </a>
     </li>
@@ -1057,12 +926,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" data-md-state="indeterminate" type="checkbox" id="__nav_5_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" checked>
       
       
       
@@ -1085,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/remoting/" class="md-nav__link">
+      <a href="../remoting/" class="md-nav__link">
         Basic
       </a>
     </li>
@@ -1099,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sec/" class="md-nav__link">
+      <a href="../rem_sec/" class="md-nav__link">
         Security
       </a>
     </li>
@@ -1113,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_mod/" class="md-nav__link">
+      <a href="../rem_mod/" class="md-nav__link">
         Modes
       </a>
     </li>
@@ -1127,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_adv/" class="md-nav__link">
+      <a href="../rem_adv/" class="md-nav__link">
         Advanced
       </a>
     </li>
@@ -1139,11 +1010,96 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Advanced/rem_sess/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Sessions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Sessions
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#disconnected-sessions" class="md-nav__link">
+    Disconnected sessions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controlling-sessions" class="md-nav__link">
+    Controlling sessions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-and-manage-persistent-pssessions" class="md-nav__link">
+    Create and manage persistent PSSessions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disconnect-pssessions" class="md-nav__link">
+    Disconnect PSSessions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implicit-remoting" class="md-nav__link">
+    Implicit Remoting
+  </a>
+  
+    <nav class="md-nav" aria-label="Implicit Remoting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implicit-remoting-brings-tools-to-you" class="md-nav__link">
+    Implicit remoting brings tools to you
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-implicit-remoting" class="md-nav__link">
+    Using implicit remoting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1187,97 +1143,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#array" class="md-nav__link">
-    Array
+  <a href="#disconnected-sessions" class="md-nav__link">
+    Disconnected sessions
   </a>
-  
-    <nav class="md-nav" aria-label="Array">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arrays" class="md-nav__link">
-    Creating Arrays
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#working-with-arrays" class="md-nav__link">
-    Working With Arrays
-  </a>
-  
-    <nav class="md-nav" aria-label="Working With Arrays">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#display-item" class="md-nav__link">
-    Display Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-item" class="md-nav__link">
-    Add Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#to-identify" class="md-nav__link">
-    To Identify
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#arraylists" class="md-nav__link">
-    ArrayLists
+  <a href="#controlling-sessions" class="md-nav__link">
+    Controlling sessions
   </a>
-  
-    <nav class="md-nav" aria-label="ArrayLists">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arraylists" class="md-nav__link">
-    Creating ArrayLists
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#arraylist-methods" class="md-nav__link">
-    ArrayList Methods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#hash-tables" class="md-nav__link">
-    Hash Tables
+  <a href="#create-and-manage-persistent-pssessions" class="md-nav__link">
+    Create and manage persistent PSSessions
   </a>
   
-    <nav class="md-nav" aria-label="Hash Tables">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disconnect-pssessions" class="md-nav__link">
+    Disconnect PSSessions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implicit-remoting" class="md-nav__link">
+    Implicit Remoting
+  </a>
+  
+    <nav class="md-nav" aria-label="Implicit Remoting">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#working-with-hash-tables" class="md-nav__link">
-    Working with Hash Tables
+  <a href="#implicit-remoting-brings-tools-to-you" class="md-nav__link">
+    Implicit remoting brings tools to you
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-implicit-remoting" class="md-nav__link">
+    Using implicit remoting
   </a>
   
 </li>
@@ -1301,107 +1211,67 @@
                 
 
 
-  <h1>Data Structures</h1>
+  <h1>Sessions</h1>
 
-<h2 id="array">Array</h2>
-<p>An array is a data structure that's designed to store a collection of items of the same type. You can think of an array as a variable containing multiple values or objects. Variables that contain a single value are useful, but for complex tasks you often need to work with groups of items. For example, you might need to update the Voice over IP (VoIP) attribute on multiple domain user accounts. Or you might need to check the status of a group of services and restart all of them that are stopped. When you put multiple objects or values into a variable, it becomes an array.</p>
-<h3 id="creating-arrays">Creating Arrays</h3>
-<p>You can create an array by providing multiple values in a comma-separated list. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span> <span class="p">=</span> <span class="s2">&quot;LON-DC1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SRV1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SRV2&quot;</span>
-<span class="nv">$numbers</span> <span class="p">=</span> <span class="n">228</span><span class="p">,</span><span class="n">43</span><span class="p">,</span><span class="n">102</span>
-</code></pre></div>
-<p>To create an array of strings, you put quotes around each item. If you put one set of quotes around all the items, it's treated as a single string.</p>
-<p>You also can create an array by using the output from a command. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">=</span> <span class="nb">Get-ADUser</span> <span class="n">-Filter</span> <span class="p">*</span>
-<span class="nv">$files</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">C</span><span class="p">:\</span>
-</code></pre></div>
-<p>ou can verify whether a variable is an array by using the GetType() method on the variable. The BaseType listed will be System.Array.</p>
-<p>You can create an empty array before you're ready to put content in it. This can be useful when you have a loop later on in a script that adds items to the array. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$newUsers</span> <span class="p">=</span> <span class="p">@()</span>
-</code></pre></div>
-<p>You also can force an array to be created when adding a single value to a variable. This creates an array with a single value into which you can add items later. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="no">[array]</span><span class="nv">$computers</span><span class="p">=</span><span class="s2">&quot;LON-DC1&quot;</span>
-</code></pre></div>
-<h3 id="working-with-arrays">Working With Arrays</h3>
-<h4 id="display-item">Display Item</h4>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
-</code></pre></div>
-<h4 id="add-item">Add Item</h4>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">=</span> <span class="nv">$users</span> <span class="p">+</span> <span class="nv">$user1</span>
-<span class="c"># or</span>
-<span class="nv">$users</span> <span class="p">+=</span> <span class="nv">$user1</span>
-</code></pre></div>
-<h4 id="to-identify">To Identify</h4>
-<p>To identify what you can do with the content in an array, use the Get-Member cmdlet. Pipe the contents of the array to Get-Member, and the results returned identify the properties and methods that you can use for the items in the array. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$files</span> <span class="p">|</span> <span class="nb">Get-Member</span>
-</code></pre></div>
-<p>When you pipe an array containing mixed data types to Get-Member, results are returned for each data type. This is also a helpful way of determining which data types are in the array.</p>
-<p>To review the properties and methods available for an array rather than the items within the array, use the following syntax:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Member</span> <span class="n">-InputObject</span> <span class="nv">$files</span>
-</code></pre></div>
-<h2 id="arraylists">ArrayLists</h2>
-<p>The default type of array that Windows PowerShell creates is a fixed-size array. This means that when you add an item to the array, the array is actually recreated with the additional item. When you work with relatively small arrays, this is not a concern. However, if you add thousands of items to an array one by one, recreating an array each time has a negative performance impact. The other concern when using fixed-size arrays is removing items. There's no simple method to remove an item from a fixed-size array.</p>
-<p>To address the shortcomings of arrays, you can use an array list. An array list functions similar to an array, except that it doesn't have a fixed size. This means that you can use methods to add and remove items.</p>
-<h3 id="creating-arraylists">Creating ArrayLists</h3>
-<div class="highlight"><pre><span></span><code><span class="no">[System.Collections.ArrayList]</span><span class="nv">$computers</span> <span class="p">=</span> <span class="s2">&quot;LON-DC1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SVR1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-CL1&quot;</span>
-</code></pre></div>
-<p>To create an array list that's empty and ready to add items, use the following syntax:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">=</span><span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">ArrayList</span>
-</code></pre></div>
-<h3 id="arraylist-methods">ArrayList Methods</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">)</span>
-<span class="nv">$computers</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="s2">&quot;LON-CL1&quot;</span><span class="p">)</span>
-</code></pre></div>
-<p>When you remove an item from an array list, if there are multiple matching items then only the first instance is removed.</p>
-<p>If you want to remove an item from an array list based on the index number, you use the RemoveAt() method. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">.</span><span class="n">RemoveAt</span><span class="p">(</span><span class="n">1</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="hash-tables">Hash Tables</h2>
-<p>A hash table represents a similar concept to an array since it stores multiple items. However, unlike an array which uses an index number to identify each item, a hash table uses for this purpose a unique key. The key is a string that's a unique identifier for the item. Each key in a hash table is associated with a value.</p>
-<p>You can use a hash table to store both IP addresses and the computer names as the following table depicts.</p>
-<table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>LON-DC1</td>
-<td>192.168.0.10</td>
-</tr>
-<tr>
-<td>LON-SRV1</td>
-<td>192.168.0.11</td>
-</tr>
-<tr>
-<td>LON-SRV2</td>
-<td>192.168.0.12</td>
-</tr>
-</tbody>
-</table>
-<p>If the hash table is named $servers, then you access the first item in the hash table by using either of the following options:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$servers</span><span class="p">.</span><span class="s1">&#39;LON-DC1&#39;</span>
-<span class="nv">$servers</span><span class="p">[</span><span class="s1">&#39;LON-DC1&#39;</span><span class="p">]</span>
-</code></pre></div>
-<p>You only need to use single quote marks to enclose keys that contain special characters. In the previous example, the hyphen in the computer names is a special character, which requires the key name to be enclosed in single quote marks.</p>
-<h3 id="working-with-hash-tables">Working with Hash Tables</h3>
-<p>Working with hash tables is similar to working with an array, except that to add items to a hash table you need to provide both the key for the item and the value.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$servers</span> <span class="p">=</span> <span class="p">@{</span><span class="s2">&quot;LON-DC1&quot;</span> <span class="p">=</span> <span class="s2">&quot;172.16.0.10&quot;</span><span class="p">;</span> <span class="s2">&quot;LON-SRV1&quot;</span> <span class="p">=</span> <span class="s2">&quot;172.16.0.11&quot;</span><span class="p">}</span>
-</code></pre></div>
-<p>Notice the following syntax in the previous example:</p>
+<h2 id="disconnected-sessions">Disconnected sessions</h2>
+<p>In Windows PowerShell 3.0 and newer, you can also manually disconnect from sessions. This allows you to close the session in which a PowerShell session was established, even shut down the local computer, without disrupting commands running in the PowerShell session on the remote computer. This is particularly useful for running commands that take a long time to complete and provides the time and device flexibility that IT professionals need.</p>
+<h2 id="controlling-sessions">Controlling sessions</h2>
+<p>Every computer has a drive named WSMan that includes many configuration parameters related to the session, such as:</p>
 <ul>
-<li>It begins with the at (@) symbol.</li>
-<li>The keys and associated values are enclosed in braces.</li>
-<li>The items are separated by a semicolon.</li>
+<li>Maximum session run time</li>
+<li>Maximum idle time</li>
+<li>Maximum number of incoming connections</li>
+<li>Maximum number of sessions per administrator</li>
 </ul>
-<p>The semicolon between hash table items is required in the previous example because they're all on the same line. If you place each item on a separate line, it's not necessary to use semicolons as separators.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$servers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">,</span><span class="s2">&quot;172.16.0.12&quot;</span><span class="p">)</span>
-<span class="nv">$servers</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="s2">&quot;LON-DC1&quot;</span><span class="p">)</span>
-<span class="c"># Update the value for a key</span>
-<span class="nv">$servers</span><span class="p">.</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">=</span><span class="s2">&quot;172.16.0.100&quot;</span>
+<p>You can explore these configuration parameters by running dir WSMan:\localhost\shell, and change them in that same location. You also can control many of the settings through Group Policy.</p>
+<h2 id="create-and-manage-persistent-pssessions">Create and manage persistent PSSessions</h2>
+<p>You use the New-PSSession command to create a persistent connection. The command contains many of the same parameters as Invoke-Command, including -Credential, –Port, and –UseSSL. This is because you're creating a connection that is identical to the one Invoke-Command creates. However, instead of closing this connection immediately, you're leaving it running.</p>
+<p>PowerShell sessions do have an idle timeout, after which the remote computer will close them automatically. A closed PowerShell session differs from a disconnected PowerShell session, because closed PowerShell sessions can't be reconnected. In this case, you can only remove the PowerShell session, and then recreate it.</p>
+<p>New-PSSession can accept multiple computer names, which causes it to create multiple PowerShell session objects. When you run the New-PSSession command, it outputs objects representing the newly created PowerShell sessions. You can assign these PowerShell sessions to a variable to make them easier to refer to, and to use in the future.</p>
+<p>You can use a PowerShell session as soon as you create it. Both the Invoke-Command and Enter-PSSession commands can accept a PowerShell session object instead of a computer name. Invoke-Command can accept multiple PowerShell session objects. You use the commands’ –Session parameter for this purpose. When you use this parameter, the commands use the existing PowerShell session instead of creating a new connection. When your command finishes running or you exit the PowerShell session, the PowerShell session remains running and connected, and ready for future use.</p>
+<p>For example, you can use the following commands to enter a PowerShell session on LON-CL1 and then close it:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$client</span> <span class="p">=</span> <span class="nb">New-PSSession</span> <span class="err">–</span><span class="n">ComputerName</span> <span class="n">LON-CL1</span>
+<span class="nb">Enter-PSSession</span> <span class="err">–</span><span class="n">Session</span> <span class="nv">$client</span>
+<span class="nb">Exit-PSSession</span>
 </code></pre></div>
+<p>Alternatively, you could use the following commands to achieve the same results:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$computers</span> <span class="p">=</span> <span class="nb">New-PSSession</span> <span class="err">–</span><span class="n">ComputerName</span> <span class="n">LON-CL1</span><span class="p">,</span><span class="n">LON-DC1</span>
+<span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">Session</span> <span class="nv">$computers</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span> <span class="nb">Get-Process</span> <span class="p">}</span>
+</code></pre></div>
+<p>For example, the following command can use the $dc variable to open a PowerShell session to LON-DC1 within a script or code block:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$dc</span> <span class="p">=</span> <span class="nb">New-PSSession</span> <span class="err">–</span><span class="n">ComputerName</span> <span class="n">LON-DC1</span>
+</code></pre></div>
+<p>The following command creates remote sessions on Server01 and Server02, and the session objects are stored in the $s variable:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$s</span> <span class="p">=</span> <span class="nb">New-PSSession</span> <span class="n">-ComputerName</span> <span class="n">Server01</span><span class="p">,</span> <span class="n">Server02</span>
+</code></pre></div>
+<p>Now that the sessions are established, you can run any command in them. And because the sessions are persistent, you can collect data from one command and use it in another command.</p>
+<p>For example, the following command runs a Get-HotFix command in the sessions in the $s variable, and it saves the results in the $h variable:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Invoke-Command</span> <span class="n">-Session</span> <span class="nv">$s</span> <span class="p">{</span><span class="nv">$h</span> <span class="p">=</span> <span class="nb">Get-HotFix</span><span class="p">}</span>
+</code></pre></div>
+<p>The $h variable is created in each of the sessions in $s, but it doesn't exist in the local session. Now you can use the data in the $h variable with other commands in the same session, and the results are displayed on the local computer. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Invoke-Command</span> <span class="n">-Session</span> <span class="nv">$s</span> <span class="p">{</span><span class="nv">$h</span> <span class="p">|</span> <span class="nb">where </span><span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">InstalledBy</span> <span class="o">-ne</span> <span class="s2">&quot;NTAUTHORITY\SYSTEM&quot;</span><span class="p">}}</span>
+</code></pre></div>
+<h2 id="disconnect-pssessions">Disconnect PSSessions</h2>
+<p>You can disconnect from PSSessions when both the initiating computer and the remote computer are running Windows PowerShell 3.0 and later. Disconnecting is typically a manual process. In some scenarios, Windows PowerShell can automatically place a connection into the Disconnected state if the connection is interrupted. However, if you manually close the Windows PowerShell host application it won't disconnect from the sessions, it will just close them.</p>
+<p>Using disconnected sessions is similar to the following process:</p>
+<ol>
+<li>Use New-PSSession to create the new PSSession. Optionally, use the PSSession to run commands.</li>
+<li>Run Disconnect-PSSession to disconnect from the PSSession. Pass the PSSession object that you want to disconnect from to the command’s –Session parameter.</li>
+<li>Optionally, move to another computer and open Windows PowerShell.</li>
+<li>Run Get-PSSession with the –ComputerName parameter to obtain a list of your PSSessions running on the specified computer.</li>
+<li>Use Connect-PSSession to reconnect to the desired PSSession.</li>
+</ol>
+<p>You cannot review or reconnect to another user’s PSSessions on a computer.</p>
+<h2 id="implicit-remoting">Implicit Remoting</h2>
+<p>One of the ongoing problems in the Windows management space is version mismatch. For example, Windows servers 2019 and 2022 include many new Windows PowerShell commands. You can make these commands available on Windows 10 or Windows 11 as part of the Remote Server Administration Tools (RSAT). However, you might not be able to use the same approach with older versions of Windows.</p>
+<p>You must be familiar with another ongoing problem if you recently had to rebuild a workstation. The problem is the sheer amount of time it can take to track down and install administrative tools and Microsoft Management Consoles (MMCs) on a computer. Assuming all of them are compatible with your Windows versions, installation alone can take days.</p>
+<p>These problems lead administrators to forgo installing tools on workstations, and instead access tools directly on the server through Microsoft Remote Desktop. However, this isn't a good solution because it puts the server in the position of having to be a client, while simultaneously providing services to hundreds or thousands of users. The advent of Server Core, which lacks a graphical user interface (GUI), was in part to make servers perform better and need fewer updates. However, this also means that they can't run GUI tools and MMCs.</p>
+<h3 id="implicit-remoting-brings-tools-to-you">Implicit remoting brings tools to you</h3>
+<p>Implicit remoting brings a copy of a server’s Windows PowerShell tools to your local computer. In reality, you're not copying the commands at all; you're creating a kind of shortcut, called a proxy function, to the server’s commands. When you run the commands on your local computer, they implicitly run on the server through remoting. Results are then sent back to you. It's exactly as if you ran everything through Invoke-Command, but it's much more convenient. Commands also run quicker, because commands on the server are co-located with the server’s functionality and data.</p>
+<h3 id="using-implicit-remoting">Using implicit remoting</h3>
+<p>While implicit remoting became available in Windows PowerShell 2.0, it became much easier to use starting with Windows PowerShell 3.0. All that's required is to create a session to the server containing the module that you want to use. Then, using Import-Module and its –PSSession parameter, you import the desired module. The commands in that module, and even its Help files become available in your local Windows PowerShell session.</p>
+<p>With implicit remoting, you have the option of adding a prefix to the noun of commands that you import. Doing this can make it easier, for example, to have multiple versions of the same commands loaded simultaneously without causing a naming collision. For example, if you import both Microsoft Exchange Server 2016 and Exchange Server 2019 commands, you might add the 2016 and 2019 prefix to each of them, respectively. This enables you to run both sets of commands. In reality, each would be running on their respective servers, enabling you to run both sets (perhaps in a migration scenario) side-by-side.</p>
+<p>The Help option also works for commands that are running through implicit remoting. However, the Help files are drawn through the same remoting session as the commands themselves. Therefore, the remote computer must have an updated copy of its Help files. This can be a concern on servers because they might not be used frequently and might not have had Update-Help run on them recently to pull down the latest Help files.</p>
 
               
             </article>
@@ -1415,7 +1285,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../variables/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Variables" rel="prev">
+        <a href="../rem_adv/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Advanced" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1424,26 +1294,11 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Variables
+              Advanced
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../ConsoleIO/" class="md-footer__link md-footer__link--next" aria-label="Next: Console IO" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Console IO
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   

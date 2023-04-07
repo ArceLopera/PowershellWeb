@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/ds/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Advanced/remoting/">
       
       <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Data Structures - Powershell Refresher</title>
+        <title>Basic - Powershell Refresher</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#array" class="md-skip">
+        <a href="#remoting-architecture" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Structures
+              Basic
             
           </span>
         </div>
@@ -239,15 +239,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../variables/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Scripting/variables/" class="md-tabs__link">
         Scripting
       </a>
     </li>
@@ -257,13 +255,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-tabs__link">
+      <a href="../ErrorHandling/" class="md-tabs__link md-tabs__link--active">
         Advanced
       </a>
     </li>
@@ -682,14 +682,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -712,13 +710,245 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../Scripting/variables/" class="md-nav__link">
         Variables
       </a>
     </li>
   
 
             
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Scripting/ds/" class="md-nav__link">
+        Data Structures
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Scripting/ConsoleIO/" class="md-nav__link">
+        Console IO
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Scripting/basic/" class="md-nav__link">
+        Basic Scripting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Scripting/comments/" class="md-nav__link">
+        Script Documentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Scripting/advanced/" class="md-nav__link">
+        Advanced Script
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Scripting/cond/" class="md-nav__link">
+        Conditionals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Scripting/loops/" class="md-nav__link">
+        Loops
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Scripting/break_cont/" class="md-nav__link">
+        Break & Continue
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Scripting/functions/" class="md-nav__link">
+        Functions
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Advanced
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Advanced" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Advanced
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ErrorHandling/" class="md-nav__link">
+        Handling Errors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Credentials/" class="md-nav__link">
+        Credentials
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_4">
+          Remoting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Remoting" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Remoting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
               
@@ -734,12 +964,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Data Structures
+          Basic
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Data Structures
+        Basic
       </a>
       
         
@@ -756,97 +986,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#array" class="md-nav__link">
-    Array
+  <a href="#remoting-architecture" class="md-nav__link">
+    Remoting Architecture
   </a>
-  
-    <nav class="md-nav" aria-label="Array">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arrays" class="md-nav__link">
-    Creating Arrays
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#working-with-arrays" class="md-nav__link">
-    Working With Arrays
-  </a>
-  
-    <nav class="md-nav" aria-label="Working With Arrays">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#display-item" class="md-nav__link">
-    Display Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-item" class="md-nav__link">
-    Add Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#to-identify" class="md-nav__link">
-    To Identify
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#arraylists" class="md-nav__link">
-    ArrayLists
+  <a href="#without-configuration" class="md-nav__link">
+    Without Configuration
   </a>
-  
-    <nav class="md-nav" aria-label="ArrayLists">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arraylists" class="md-nav__link">
-    Creating ArrayLists
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#arraylist-methods" class="md-nav__link">
-    ArrayList Methods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#hash-tables" class="md-nav__link">
-    Hash Tables
+  <a href="#over-ssh" class="md-nav__link">
+    Over SSH
   </a>
   
-    <nav class="md-nav" aria-label="Hash Tables">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compare-remoting-with-remote-connectivity" class="md-nav__link">
+    Compare Remoting with Remote Connectivity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enabling-remoting" class="md-nav__link">
+    Enabling Remoting
+  </a>
+  
+    <nav class="md-nav" aria-label="Enabling Remoting">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#working-with-hash-tables" class="md-nav__link">
-    Working with Hash Tables
+  <a href="#manually" class="md-nav__link">
+    Manually
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-using-a-gpo" class="md-nav__link">
+    By Using a GPO
   </a>
   
 </li>
@@ -871,235 +1055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ConsoleIO/" class="md-nav__link">
-        Console IO
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../basic/" class="md-nav__link">
-        Basic Scripting
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../comments/" class="md-nav__link">
-        Script Documentation
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../advanced/" class="md-nav__link">
-        Advanced Script
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cond/" class="md-nav__link">
-        Conditionals
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../loops/" class="md-nav__link">
-        Loops
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../break_cont/" class="md-nav__link">
-        Break & Continue
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../functions/" class="md-nav__link">
-        Functions
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5">
-          Advanced
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Advanced" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
-          Advanced
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-nav__link">
-        Handling Errors
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Advanced/modules/" class="md-nav__link">
-        Modules
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Advanced/Credentials/" class="md-nav__link">
-        Credentials
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" data-md-state="indeterminate" type="checkbox" id="__nav_5_4" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5_4">
-          Remoting
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Remoting" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_4">
-          <span class="md-nav__icon md-icon"></span>
-          Remoting
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Advanced/remoting/" class="md-nav__link">
-        Basic
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Advanced/rem_sec/" class="md-nav__link">
+      <a href="../rem_sec/" class="md-nav__link">
         Security
       </a>
     </li>
@@ -1113,7 +1069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_mod/" class="md-nav__link">
+      <a href="../rem_mod/" class="md-nav__link">
         Modes
       </a>
     </li>
@@ -1127,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_adv/" class="md-nav__link">
+      <a href="../rem_adv/" class="md-nav__link">
         Advanced
       </a>
     </li>
@@ -1141,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sess/" class="md-nav__link">
+      <a href="../rem_sess/" class="md-nav__link">
         Sessions
       </a>
     </li>
@@ -1187,97 +1143,51 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#array" class="md-nav__link">
-    Array
+  <a href="#remoting-architecture" class="md-nav__link">
+    Remoting Architecture
   </a>
-  
-    <nav class="md-nav" aria-label="Array">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arrays" class="md-nav__link">
-    Creating Arrays
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#working-with-arrays" class="md-nav__link">
-    Working With Arrays
-  </a>
-  
-    <nav class="md-nav" aria-label="Working With Arrays">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#display-item" class="md-nav__link">
-    Display Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-item" class="md-nav__link">
-    Add Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#to-identify" class="md-nav__link">
-    To Identify
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#arraylists" class="md-nav__link">
-    ArrayLists
+  <a href="#without-configuration" class="md-nav__link">
+    Without Configuration
   </a>
-  
-    <nav class="md-nav" aria-label="ArrayLists">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arraylists" class="md-nav__link">
-    Creating ArrayLists
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#arraylist-methods" class="md-nav__link">
-    ArrayList Methods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#hash-tables" class="md-nav__link">
-    Hash Tables
+  <a href="#over-ssh" class="md-nav__link">
+    Over SSH
   </a>
   
-    <nav class="md-nav" aria-label="Hash Tables">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compare-remoting-with-remote-connectivity" class="md-nav__link">
+    Compare Remoting with Remote Connectivity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enabling-remoting" class="md-nav__link">
+    Enabling Remoting
+  </a>
+  
+    <nav class="md-nav" aria-label="Enabling Remoting">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#working-with-hash-tables" class="md-nav__link">
-    Working with Hash Tables
+  <a href="#manually" class="md-nav__link">
+    Manually
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-using-a-gpo" class="md-nav__link">
+    By Using a GPO
   </a>
   
 </li>
@@ -1301,107 +1211,71 @@
                 
 
 
-  <h1>Data Structures</h1>
+  <h1>Basic</h1>
 
-<h2 id="array">Array</h2>
-<p>An array is a data structure that's designed to store a collection of items of the same type. You can think of an array as a variable containing multiple values or objects. Variables that contain a single value are useful, but for complex tasks you often need to work with groups of items. For example, you might need to update the Voice over IP (VoIP) attribute on multiple domain user accounts. Or you might need to check the status of a group of services and restart all of them that are stopped. When you put multiple objects or values into a variable, it becomes an array.</p>
-<h3 id="creating-arrays">Creating Arrays</h3>
-<p>You can create an array by providing multiple values in a comma-separated list. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span> <span class="p">=</span> <span class="s2">&quot;LON-DC1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SRV1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SRV2&quot;</span>
-<span class="nv">$numbers</span> <span class="p">=</span> <span class="n">228</span><span class="p">,</span><span class="n">43</span><span class="p">,</span><span class="n">102</span>
-</code></pre></div>
-<p>To create an array of strings, you put quotes around each item. If you put one set of quotes around all the items, it's treated as a single string.</p>
-<p>You also can create an array by using the output from a command. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">=</span> <span class="nb">Get-ADUser</span> <span class="n">-Filter</span> <span class="p">*</span>
-<span class="nv">$files</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">C</span><span class="p">:\</span>
-</code></pre></div>
-<p>ou can verify whether a variable is an array by using the GetType() method on the variable. The BaseType listed will be System.Array.</p>
-<p>You can create an empty array before you're ready to put content in it. This can be useful when you have a loop later on in a script that adds items to the array. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$newUsers</span> <span class="p">=</span> <span class="p">@()</span>
-</code></pre></div>
-<p>You also can force an array to be created when adding a single value to a variable. This creates an array with a single value into which you can add items later. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="no">[array]</span><span class="nv">$computers</span><span class="p">=</span><span class="s2">&quot;LON-DC1&quot;</span>
-</code></pre></div>
-<h3 id="working-with-arrays">Working With Arrays</h3>
-<h4 id="display-item">Display Item</h4>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
-</code></pre></div>
-<h4 id="add-item">Add Item</h4>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">=</span> <span class="nv">$users</span> <span class="p">+</span> <span class="nv">$user1</span>
-<span class="c"># or</span>
-<span class="nv">$users</span> <span class="p">+=</span> <span class="nv">$user1</span>
-</code></pre></div>
-<h4 id="to-identify">To Identify</h4>
-<p>To identify what you can do with the content in an array, use the Get-Member cmdlet. Pipe the contents of the array to Get-Member, and the results returned identify the properties and methods that you can use for the items in the array. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$files</span> <span class="p">|</span> <span class="nb">Get-Member</span>
-</code></pre></div>
-<p>When you pipe an array containing mixed data types to Get-Member, results are returned for each data type. This is also a helpful way of determining which data types are in the array.</p>
-<p>To review the properties and methods available for an array rather than the items within the array, use the following syntax:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Member</span> <span class="n">-InputObject</span> <span class="nv">$files</span>
-</code></pre></div>
-<h2 id="arraylists">ArrayLists</h2>
-<p>The default type of array that Windows PowerShell creates is a fixed-size array. This means that when you add an item to the array, the array is actually recreated with the additional item. When you work with relatively small arrays, this is not a concern. However, if you add thousands of items to an array one by one, recreating an array each time has a negative performance impact. The other concern when using fixed-size arrays is removing items. There's no simple method to remove an item from a fixed-size array.</p>
-<p>To address the shortcomings of arrays, you can use an array list. An array list functions similar to an array, except that it doesn't have a fixed size. This means that you can use methods to add and remove items.</p>
-<h3 id="creating-arraylists">Creating ArrayLists</h3>
-<div class="highlight"><pre><span></span><code><span class="no">[System.Collections.ArrayList]</span><span class="nv">$computers</span> <span class="p">=</span> <span class="s2">&quot;LON-DC1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SVR1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-CL1&quot;</span>
-</code></pre></div>
-<p>To create an array list that's empty and ready to add items, use the following syntax:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">=</span><span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">ArrayList</span>
-</code></pre></div>
-<h3 id="arraylist-methods">ArrayList Methods</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">)</span>
-<span class="nv">$computers</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="s2">&quot;LON-CL1&quot;</span><span class="p">)</span>
-</code></pre></div>
-<p>When you remove an item from an array list, if there are multiple matching items then only the first instance is removed.</p>
-<p>If you want to remove an item from an array list based on the index number, you use the RemoveAt() method. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">.</span><span class="n">RemoveAt</span><span class="p">(</span><span class="n">1</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="hash-tables">Hash Tables</h2>
-<p>A hash table represents a similar concept to an array since it stores multiple items. However, unlike an array which uses an index number to identify each item, a hash table uses for this purpose a unique key. The key is a string that's a unique identifier for the item. Each key in a hash table is associated with a value.</p>
-<p>You can use a hash table to store both IP addresses and the computer names as the following table depicts.</p>
-<table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>LON-DC1</td>
-<td>192.168.0.10</td>
-</tr>
-<tr>
-<td>LON-SRV1</td>
-<td>192.168.0.11</td>
-</tr>
-<tr>
-<td>LON-SRV2</td>
-<td>192.168.0.12</td>
-</tr>
-</tbody>
-</table>
-<p>If the hash table is named $servers, then you access the first item in the hash table by using either of the following options:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$servers</span><span class="p">.</span><span class="s1">&#39;LON-DC1&#39;</span>
-<span class="nv">$servers</span><span class="p">[</span><span class="s1">&#39;LON-DC1&#39;</span><span class="p">]</span>
-</code></pre></div>
-<p>You only need to use single quote marks to enclose keys that contain special characters. In the previous example, the hyphen in the computer names is a special character, which requires the key name to be enclosed in single quote marks.</p>
-<h3 id="working-with-hash-tables">Working with Hash Tables</h3>
-<p>Working with hash tables is similar to working with an array, except that to add items to a hash table you need to provide both the key for the item and the value.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$servers</span> <span class="p">=</span> <span class="p">@{</span><span class="s2">&quot;LON-DC1&quot;</span> <span class="p">=</span> <span class="s2">&quot;172.16.0.10&quot;</span><span class="p">;</span> <span class="s2">&quot;LON-SRV1&quot;</span> <span class="p">=</span> <span class="s2">&quot;172.16.0.11&quot;</span><span class="p">}</span>
-</code></pre></div>
-<p>Notice the following syntax in the previous example:</p>
+<p>You can run commands on one or hundreds of computers with a single PowerShell command. PowerShell supports remote computing by using various technologies, including Windows Management Instrumentation (WMI), remote procedure call (RPC), and Web Services for Management (WS-Management, or WS-MAN). Windows PowerShell remoting uses the WS-Management protocol to let you run any Windows PowerShell command on one or more remote computers. For example, you can establish persistent connections, start interactive sessions, and run scripts on remote computers.</p>
+<p>Remoting uses an open-standard protocol called Web Services for Management (WS-Management or WS-MAN). As the name implies, this protocol is built on the same HTTP, or HTTPS, protocol that web browsers use to communicate with web servers. This makes the protocol easier to manage and to route through firewalls. Windows operating systems implement the protocol by using the Windows Remote Management (WinRM) service. PowerShell supports WMI, WS-Management, and Secure Shell (SSH) remoting. In PowerShell 6, Remote Procedure Calls (RPC)-based communication is not supported. In PowerShell 7 and newer, RPC is supported only in Windows.</p>
+<p>You must enable remoting on the computers on which you want to receive incoming connections, although no configuration is necessary on computers that are initiating outgoing connections. PowerShell remoting is enabled by default for incoming connections on all currently supported versions of Windows Server. You can also enable it on any computer that's running Windows PowerShell 3.0 or newer.</p>
+<h2 id="remoting-architecture">Remoting Architecture</h2>
+<p>Remoting starts with the WinRM service. It registers one or more listeners, with each listener accepting incoming traffic through either HTTP or HTTPS. Each listener can be bound to a single local IP address or to multiple IP addresses. There is no dependency on Microsoft Internet Information Services (IIS), which means that IIS doesn't have to be installed for WinRM to function.</p>
+<p>Incoming traffic includes a packet header that indicates the traffic’s intended destination, or endpoint. In Windows PowerShell, these endpoints are also known as session configurations. Each endpoint is associated with a specific application. When traffic is directed to an endpoint, WinRM starts the associated application, hands off the incoming traffic, and then waits for the application to complete its task. The application can pass data back to WinRM, and WinRM transmits the data back to the originating computer.</p>
+<p>In a Windows PowerShell scenario, you would send commands to WinRM, which then runs the commands. The process is listed as Wsmprovhost in the remote computer’s process list. Windows PowerShell would then run those commands and convert the resulting objects (if there are any) into XML. The XML text stream is then handed back to WinRM, which transmits it to the originating computer. Windows PowerShell on the remote computer translates the XML back into static objects. This enables the command results to behave much like any other objects within the Windows PowerShell pipeline.</p>
+<p>Windows PowerShell can register multiple endpoints or session configurations with WinRM. In fact, a 64-bit operating system will register an endpoint for both the 64-bit Windows PowerShell host and the 32-bit host, by default. You also can create your own custom endpoints that have highly precise permissions and capabilities assigned to them.</p>
+<h2 id="without-configuration">Without Configuration</h2>
+<p>Many Windows PowerShell cmdlets have the ComputerName parameter that enables you to collect data and change settings on one or more remote computers. These cmdlets use varying communication protocols and work on all Windows operating systems without any special configuration.</p>
+<p>These cmdlets include:</p>
 <ul>
-<li>It begins with the at (@) symbol.</li>
-<li>The keys and associated values are enclosed in braces.</li>
-<li>The items are separated by a semicolon.</li>
+<li>Restart-Computer</li>
+<li>Test-Connection</li>
+<li>Clear-EventLog</li>
+<li>Get-EventLog</li>
+<li>Get-HotFix</li>
+<li>Get-Process</li>
+<li>Get-Service</li>
+<li>Set-Service</li>
+<li>Get-WinEvent</li>
+<li>Get-WmiObject</li>
 </ul>
-<p>The semicolon between hash table items is required in the previous example because they're all on the same line. If you place each item on a separate line, it's not necessary to use semicolons as separators.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$servers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">,</span><span class="s2">&quot;172.16.0.12&quot;</span><span class="p">)</span>
-<span class="nv">$servers</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="s2">&quot;LON-DC1&quot;</span><span class="p">)</span>
-<span class="c"># Update the value for a key</span>
-<span class="nv">$servers</span><span class="p">.</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">=</span><span class="s2">&quot;172.16.0.100&quot;</span>
+<p>Typically, cmdlets that support remoting without special configuration have the ComputerName parameter and don't have the Session parameter.</p>
+<p>To find these cmdlets in your session, enter:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Command</span> <span class="p">|</span> <span class="nb">where </span><span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="n">parameters</span><span class="p">.</span><span class="n">keys</span> <span class="o">-contains</span> <span class="s2">&quot;ComputerName&quot;</span> <span class="o">-and</span> <span class="nv">$_</span><span class="p">.</span><span class="n">parameters</span><span class="p">.</span><span class="n">keys</span> <span class="o">-notcontains</span> <span class="s2">&quot;Session&quot;</span><span class="p">}</span>
 </code></pre></div>
+<h2 id="over-ssh">Over SSH</h2>
+<p>PowerShell remoting normally uses WinRM for connection negotiation and data transport. SSH is now available for Linux and Windows platforms and allows true multiplatform PowerShell remoting.</p>
+<p>WinRM provides a robust hosting model for PowerShell remote sessions. SSH-based remoting doesn't currently support remote endpoint configuration and Just Enough Administration (JEA).</p>
+<p>SSH remoting offers basic PowerShell session remoting between Windows and Linux computers. SSH remoting creates a PowerShell host process on the target computer as an SSH subsystem. Microsoft plans to eventually implement a general hosting model similar to WinRM to support endpoint configuration and JEA.</p>
+<p>The New-PSSession, Enter-PSSession, and Invoke-Command cmdlets now have a new parameter set to support this new remoting connection.</p>
+<p>To use PowerShell remoting over SSH, you must install PowerShell 6 or newer and SSH on all computers. Then, you must install both the SSH client (ssh.exe) and server (sshd.exe) executables so that you can remote to and from the computers. OpenSSH for Windows is available starting with Windows 10 build 1809 and Windows Server 2019. For Linux, install the version of SSH (including the sshd.exe server) that's appropriate for your platform. You also need to install the current version of PowerShell from GitHub to ensure that the SSH remoting feature is available. You should configure the SSH server to create an SSH subsystem to host a PowerShell process on the remote computer. You also need to enable either password or key-based authentication.</p>
+<h2 id="compare-remoting-with-remote-connectivity">Compare Remoting with Remote Connectivity</h2>
+<p>Remoting is the name of a specific Windows PowerShell feature, not to be confused with the more generic concept of remote connectivity. Remoting is a generalized way to transmit any command to a remote computer so it runs locally on that computer. The command that you run doesn't have to be available on the computer that initiates the connection. Only the remote computers must be able to run it.</p>
+<p>The purpose of remoting is to reduce or eliminate the need for individual command authors to code their own communications protocols. Many command authors are already required to do this to ship their products. This is why many different protocols and technologies are currently in use.</p>
+<p>Many commands implement their own communications protocols, although in the future many of them might instead be changed to use remoting. For example, Get-WmiObject uses RPCs, whereas Get-Process communicates with the computer’s Remote Registry service. Microsoft Exchange Server commands have their own communications channels, and Active Directory commands communicate with a specific web service gateway by using their own protocol. All these other forms of communication might have unique firewall requirements and might require specific configurations to be in place to operate.</p>
+<h2 id="enabling-remoting">Enabling Remoting</h2>
+<p>It's important to understand that you need to enable Windows PowerShell remoting only on computers that will receive incoming connections. No configuration is necessary to enable outgoing communications, except for making sure that any local firewall will allow the outgoing traffic.</p>
+<h3 id="manually">Manually</h3>
+<p>PowerShell remoting is enabled by default on Windows Server platforms. You can enable PowerShell remoting on other supported Windows versions, and you can also re-enable remoting if it becomes disabled. To manually enable Windows PowerShell remoting on a computer, run the Windows PowerShell Enable-PSRemoting cmdlet. This is a persistent change that you can disable later by running Disable-PSRemoting. Note that this task requires the privileges granted to local Administrators group.</p>
+<p>The Enable-PSRemoting cmdlet performs the following operations:</p>
+<ol>
+<li>
+<p>Runs the Set-WSManQuickConfig cmdlet, which in turn performs the following tasks:</p>
+<ul>
+<li>Starts the WinRM service.</li>
+<li>Sets the startup type on the WinRM service to Automatic.</li>
+<li>Creates a listener to accept requests on any IP address.</li>
+<li>Enables a firewall exception for WS-Management communications.</li>
+<li>Creates the simple-name and long-name session endpoint configurations, if needed.</li>
+<li>Enables all session configurations.</li>
+<li>Changes the security descriptor of all session configurations to allow remote access.</li>
+</ul>
+</li>
+<li>
+<p>Restarts the WinRM service to make the preceding changes effective.</p>
+</li>
+</ol>
+<p>This command will fail on client computers where one or more network connections are set to Public instead of Work or Home. You can override this failure by adding the –SkipNetworkProfileCheck parameter. However, be aware that Windows Firewall won't allow exceptions when you're connected to a Public network.</p>
+<p>The Set-WSManQuickConfig cmdlet doesn't affect remote endpoint configurations created by Windows PowerShell. It only affects endpoints created with PowerShell version 6 and newer. To enable and disable PowerShell remoting endpoints that are hosted by Windows PowerShell, run the Enable-PSRemoting cmdlet from within a Windows PowerShell session.</p>
+<h3 id="by-using-a-gpo">By Using a GPO</h3>
+<p>Many organizations will prefer to centrally control Windows PowerShell remoting enablement and settings through GPOs. Microsoft supports this capability. You must set up various settings in a GPO to duplicate the steps taken by Enable-PSRemoting. To enable remoting by using Group Policy, you should configure the Allow Remote Server Management Through WinRM policy setting in the appropriate GPO. This setting also allows you to filter IP addresses from which remote connections can be initiated. In addition to configuring this policy, you should also configure appropriate firewall exceptions, as described earlier.</p>
 
               
             </article>
@@ -1415,7 +1289,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../variables/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Variables" rel="prev">
+        <a href="../Credentials/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Credentials" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1424,20 +1298,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Variables
+              Credentials
             </div>
           </div>
         </a>
       
       
         
-        <a href="../ConsoleIO/" class="md-footer__link md-footer__link--next" aria-label="Next: Console IO" rel="next">
+        <a href="../rem_sec/" class="md-footer__link md-footer__link--next" aria-label="Next: Security" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Console IO
+              Security
             </div>
           </div>
           <div class="md-footer__button md-icon">
