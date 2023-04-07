@@ -126,4 +126,10 @@ nav:
     - Handling Errors: Advanced\ErrorHandling.md
     - Modules: Advanced\modules.md
     - Credentials: Advanced\Credentials.md
+    - Remoting: 
+      - Basic: Advanced\remoting.md
+      - Security: Advanced\rem_sec.md
+      - Modes: Advanced\rem_mod.md
+      - Advanced: Advanced\rem_adv.md
+      - Sessions: Advanced\rem_sess.md
     

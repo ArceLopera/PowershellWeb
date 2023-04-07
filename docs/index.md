@@ -68,7 +68,7 @@ PowerShell scripts are saved as .ps1 files and can be run from the command line 
 
 PowerShell is a very powerful tool, and there are many advanced features that you can use to make your scripts even more powerful. Here are some advanced topics to explore:
 
-+ Remoting: Run PowerShell commands on remote computers
++ [Remoting](./Advanced/remoting.md): Run PowerShell commands on remote computers
 + [Modules](./Advanced/modules.md): Extend PowerShell with additional functionality
 + Desired State Configuration: Automate the configuration of your environment
 + [Error Handling](./Advanced/ErrorHandling.md): Handle errors in your scripts

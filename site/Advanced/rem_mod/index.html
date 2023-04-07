@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/ds/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Advanced/rem_mod/">
       
       <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Data Structures - Powershell Refresher</title>
+        <title>Modes - Powershell Refresher</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#array" class="md-skip">
+        <a href="#one-to-one-remoting" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Structures
+              Modes
             
           </span>
         </div>
@@ -239,15 +239,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../variables/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Scripting/variables/" class="md-tabs__link">
         Scripting
       </a>
     </li>
@@ -257,13 +255,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-tabs__link">
+      <a href="../ErrorHandling/" class="md-tabs__link md-tabs__link--active">
         Advanced
       </a>
     </li>
@@ -682,14 +682,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -712,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../Scripting/variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -724,142 +722,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Data Structures
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Scripting/ds/" class="md-nav__link">
         Data Structures
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#array" class="md-nav__link">
-    Array
-  </a>
-  
-    <nav class="md-nav" aria-label="Array">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arrays" class="md-nav__link">
-    Creating Arrays
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#working-with-arrays" class="md-nav__link">
-    Working With Arrays
-  </a>
-  
-    <nav class="md-nav" aria-label="Working With Arrays">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#display-item" class="md-nav__link">
-    Display Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-item" class="md-nav__link">
-    Add Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#to-identify" class="md-nav__link">
-    To Identify
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#arraylists" class="md-nav__link">
-    ArrayLists
-  </a>
-  
-    <nav class="md-nav" aria-label="ArrayLists">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arraylists" class="md-nav__link">
-    Creating ArrayLists
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#arraylist-methods" class="md-nav__link">
-    ArrayList Methods
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hash-tables" class="md-nav__link">
-    Hash Tables
-  </a>
-  
-    <nav class="md-nav" aria-label="Hash Tables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#working-with-hash-tables" class="md-nav__link">
-    Working with Hash Tables
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -871,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ConsoleIO/" class="md-nav__link">
+      <a href="../../Scripting/ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
     </li>
@@ -885,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basic/" class="md-nav__link">
+      <a href="../../Scripting/basic/" class="md-nav__link">
         Basic Scripting
       </a>
     </li>
@@ -899,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../comments/" class="md-nav__link">
+      <a href="../../Scripting/comments/" class="md-nav__link">
         Script Documentation
       </a>
     </li>
@@ -913,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/" class="md-nav__link">
+      <a href="../../Scripting/advanced/" class="md-nav__link">
         Advanced Script
       </a>
     </li>
@@ -927,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cond/" class="md-nav__link">
+      <a href="../../Scripting/cond/" class="md-nav__link">
         Conditionals
       </a>
     </li>
@@ -941,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loops/" class="md-nav__link">
+      <a href="../../Scripting/loops/" class="md-nav__link">
         Loops
       </a>
     </li>
@@ -955,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../break_cont/" class="md-nav__link">
+      <a href="../../Scripting/break_cont/" class="md-nav__link">
         Break & Continue
       </a>
     </li>
@@ -969,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../functions/" class="md-nav__link">
+      <a href="../../Scripting/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -989,12 +856,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -1017,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-nav__link">
+      <a href="../ErrorHandling/" class="md-nav__link">
         Handling Errors
       </a>
     </li>
@@ -1031,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/modules/" class="md-nav__link">
+      <a href="../modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -1045,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/Credentials/" class="md-nav__link">
+      <a href="../Credentials/" class="md-nav__link">
         Credentials
       </a>
     </li>
@@ -1057,12 +926,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" data-md-state="indeterminate" type="checkbox" id="__nav_5_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" checked>
       
       
       
@@ -1085,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/remoting/" class="md-nav__link">
+      <a href="../remoting/" class="md-nav__link">
         Basic
       </a>
     </li>
@@ -1099,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sec/" class="md-nav__link">
+      <a href="../rem_sec/" class="md-nav__link">
         Security
       </a>
     </li>
@@ -1111,11 +982,110 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Advanced/rem_mod/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Modes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Modes
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#one-to-one-remoting" class="md-nav__link">
+    One-to-one Remoting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-to-many-remoting" class="md-nav__link">
+    One-to-many Remoting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#throttling" class="md-nav__link">
+    Throttling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passing-values" class="md-nav__link">
+    Passing values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-commands-locally-and-remotely" class="md-nav__link">
+    Running commands locally and remotely
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persistence" class="md-nav__link">
+    Persistence
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-computer-names" class="md-nav__link">
+    Multiple computer names
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple computer names">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-mistakes-when-using-computer-names" class="md-nav__link">
+    Common mistakes when using computer names
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compare-remoting-output-with-local-output" class="md-nav__link">
+    Compare Remoting Output with Local Output
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1127,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_adv/" class="md-nav__link">
+      <a href="../rem_adv/" class="md-nav__link">
         Advanced
       </a>
     </li>
@@ -1141,7 +1111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sess/" class="md-nav__link">
+      <a href="../rem_sess/" class="md-nav__link">
         Sessions
       </a>
     </li>
@@ -1187,77 +1157,58 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#array" class="md-nav__link">
-    Array
+  <a href="#one-to-one-remoting" class="md-nav__link">
+    One-to-one Remoting
   </a>
-  
-    <nav class="md-nav" aria-label="Array">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arrays" class="md-nav__link">
-    Creating Arrays
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#working-with-arrays" class="md-nav__link">
-    Working With Arrays
-  </a>
-  
-    <nav class="md-nav" aria-label="Working With Arrays">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#display-item" class="md-nav__link">
-    Display Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-item" class="md-nav__link">
-    Add Item
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#to-identify" class="md-nav__link">
-    To Identify
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#arraylists" class="md-nav__link">
-    ArrayLists
-  </a>
-  
-    <nav class="md-nav" aria-label="ArrayLists">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-arraylists" class="md-nav__link">
-    Creating ArrayLists
+  <a href="#one-to-many-remoting" class="md-nav__link">
+    One-to-many Remoting
   </a>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#throttling" class="md-nav__link">
+    Throttling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passing-values" class="md-nav__link">
+    Passing values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-commands-locally-and-remotely" class="md-nav__link">
+    Running commands locally and remotely
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#persistence" class="md-nav__link">
+    Persistence
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-computer-names" class="md-nav__link">
+    Multiple computer names
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple computer names">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#arraylist-methods" class="md-nav__link">
-    ArrayList Methods
+  <a href="#common-mistakes-when-using-computer-names" class="md-nav__link">
+    Common mistakes when using computer names
   </a>
   
 </li>
@@ -1268,22 +1219,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hash-tables" class="md-nav__link">
-    Hash Tables
+  <a href="#compare-remoting-output-with-local-output" class="md-nav__link">
+    Compare Remoting Output with Local Output
   </a>
-  
-    <nav class="md-nav" aria-label="Hash Tables">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#working-with-hash-tables" class="md-nav__link">
-    Working with Hash Tables
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1301,107 +1239,99 @@
                 
 
 
-  <h1>Data Structures</h1>
+  <h1>Modes</h1>
 
-<h2 id="array">Array</h2>
-<p>An array is a data structure that's designed to store a collection of items of the same type. You can think of an array as a variable containing multiple values or objects. Variables that contain a single value are useful, but for complex tasks you often need to work with groups of items. For example, you might need to update the Voice over IP (VoIP) attribute on multiple domain user accounts. Or you might need to check the status of a group of services and restart all of them that are stopped. When you put multiple objects or values into a variable, it becomes an array.</p>
-<h3 id="creating-arrays">Creating Arrays</h3>
-<p>You can create an array by providing multiple values in a comma-separated list. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span> <span class="p">=</span> <span class="s2">&quot;LON-DC1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SRV1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SRV2&quot;</span>
-<span class="nv">$numbers</span> <span class="p">=</span> <span class="n">228</span><span class="p">,</span><span class="n">43</span><span class="p">,</span><span class="n">102</span>
-</code></pre></div>
-<p>To create an array of strings, you put quotes around each item. If you put one set of quotes around all the items, it's treated as a single string.</p>
-<p>You also can create an array by using the output from a command. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">=</span> <span class="nb">Get-ADUser</span> <span class="n">-Filter</span> <span class="p">*</span>
-<span class="nv">$files</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">C</span><span class="p">:\</span>
-</code></pre></div>
-<p>ou can verify whether a variable is an array by using the GetType() method on the variable. The BaseType listed will be System.Array.</p>
-<p>You can create an empty array before you're ready to put content in it. This can be useful when you have a loop later on in a script that adds items to the array. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$newUsers</span> <span class="p">=</span> <span class="p">@()</span>
-</code></pre></div>
-<p>You also can force an array to be created when adding a single value to a variable. This creates an array with a single value into which you can add items later. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="no">[array]</span><span class="nv">$computers</span><span class="p">=</span><span class="s2">&quot;LON-DC1&quot;</span>
-</code></pre></div>
-<h3 id="working-with-arrays">Working With Arrays</h3>
-<h4 id="display-item">Display Item</h4>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
-</code></pre></div>
-<h4 id="add-item">Add Item</h4>
-<div class="highlight"><pre><span></span><code><span class="nv">$users</span> <span class="p">=</span> <span class="nv">$users</span> <span class="p">+</span> <span class="nv">$user1</span>
-<span class="c"># or</span>
-<span class="nv">$users</span> <span class="p">+=</span> <span class="nv">$user1</span>
-</code></pre></div>
-<h4 id="to-identify">To Identify</h4>
-<p>To identify what you can do with the content in an array, use the Get-Member cmdlet. Pipe the contents of the array to Get-Member, and the results returned identify the properties and methods that you can use for the items in the array. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$files</span> <span class="p">|</span> <span class="nb">Get-Member</span>
-</code></pre></div>
-<p>When you pipe an array containing mixed data types to Get-Member, results are returned for each data type. This is also a helpful way of determining which data types are in the array.</p>
-<p>To review the properties and methods available for an array rather than the items within the array, use the following syntax:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Member</span> <span class="n">-InputObject</span> <span class="nv">$files</span>
-</code></pre></div>
-<h2 id="arraylists">ArrayLists</h2>
-<p>The default type of array that Windows PowerShell creates is a fixed-size array. This means that when you add an item to the array, the array is actually recreated with the additional item. When you work with relatively small arrays, this is not a concern. However, if you add thousands of items to an array one by one, recreating an array each time has a negative performance impact. The other concern when using fixed-size arrays is removing items. There's no simple method to remove an item from a fixed-size array.</p>
-<p>To address the shortcomings of arrays, you can use an array list. An array list functions similar to an array, except that it doesn't have a fixed size. This means that you can use methods to add and remove items.</p>
-<h3 id="creating-arraylists">Creating ArrayLists</h3>
-<div class="highlight"><pre><span></span><code><span class="no">[System.Collections.ArrayList]</span><span class="nv">$computers</span> <span class="p">=</span> <span class="s2">&quot;LON-DC1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-SVR1&quot;</span><span class="p">,</span><span class="s2">&quot;LON-CL1&quot;</span>
-</code></pre></div>
-<p>To create an array list that's empty and ready to add items, use the following syntax:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">=</span><span class="nb">New-Object</span> <span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">ArrayList</span>
-</code></pre></div>
-<h3 id="arraylist-methods">ArrayList Methods</h3>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">)</span>
-<span class="nv">$computers</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="s2">&quot;LON-CL1&quot;</span><span class="p">)</span>
-</code></pre></div>
-<p>When you remove an item from an array list, if there are multiple matching items then only the first instance is removed.</p>
-<p>If you want to remove an item from an array list based on the index number, you use the RemoveAt() method. For example:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$computers</span><span class="p">.</span><span class="n">RemoveAt</span><span class="p">(</span><span class="n">1</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="hash-tables">Hash Tables</h2>
-<p>A hash table represents a similar concept to an array since it stores multiple items. However, unlike an array which uses an index number to identify each item, a hash table uses for this purpose a unique key. The key is a string that's a unique identifier for the item. Each key in a hash table is associated with a value.</p>
-<p>You can use a hash table to store both IP addresses and the computer names as the following table depicts.</p>
-<table>
-<thead>
-<tr>
-<th>Key</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>LON-DC1</td>
-<td>192.168.0.10</td>
-</tr>
-<tr>
-<td>LON-SRV1</td>
-<td>192.168.0.11</td>
-</tr>
-<tr>
-<td>LON-SRV2</td>
-<td>192.168.0.12</td>
-</tr>
-</tbody>
-</table>
-<p>If the hash table is named $servers, then you access the first item in the hash table by using either of the following options:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$servers</span><span class="p">.</span><span class="s1">&#39;LON-DC1&#39;</span>
-<span class="nv">$servers</span><span class="p">[</span><span class="s1">&#39;LON-DC1&#39;</span><span class="p">]</span>
-</code></pre></div>
-<p>You only need to use single quote marks to enclose keys that contain special characters. In the previous example, the hyphen in the computer names is a special character, which requires the key name to be enclosed in single quote marks.</p>
-<h3 id="working-with-hash-tables">Working with Hash Tables</h3>
-<p>Working with hash tables is similar to working with an array, except that to add items to a hash table you need to provide both the key for the item and the value.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$servers</span> <span class="p">=</span> <span class="p">@{</span><span class="s2">&quot;LON-DC1&quot;</span> <span class="p">=</span> <span class="s2">&quot;172.16.0.10&quot;</span><span class="p">;</span> <span class="s2">&quot;LON-SRV1&quot;</span> <span class="p">=</span> <span class="s2">&quot;172.16.0.11&quot;</span><span class="p">}</span>
-</code></pre></div>
-<p>Notice the following syntax in the previous example:</p>
+<h2 id="one-to-one-remoting">One-to-one Remoting</h2>
+<p>One-to-one remoting resembles the SSH tool that's used on many UNIX and Linux computers in that you use a command prompt on the remote computer. While the implementation of remoting is quite different from SSH, their use cases are fairly similar. In Windows PowerShell, you enter commands on your local computer, which then transmits them to the remote computer where they run. Results are serialized into XML and transmitted back to your computer, which then deserializes them into objects and puts them into the Windows PowerShell pipeline. Unlike SSH, one-to-one remoting isn't built on the Telnet protocol.</p>
+<p>To start one-to-one Windows PowerShell remoting, run the Enter-PSSession command, combined with its –ComputerName parameter. You can use other parameters to perform basic connection customization, which we'll cover in later topics.</p>
+<p>After you're connected, the Windows PowerShell prompt changes to indicate the computer to which you're connected. To exit the session and return to the local command prompt, run Exit-PSSession. If you close Windows PowerShell while connected, the connection will close on its own.</p>
+<h2 id="one-to-many-remoting">One-to-many Remoting</h2>
+<p>One-to-many remoting lets you send a single command to multiple computers in parallel. Each computer will run the command that you transmit, serialize the results into XML, and transmit those results back to your computer. Your computer then deserializes the XML into objects and puts them into the Windows PowerShell pipeline. When doing this, several properties are added to each object, including a PSComputerName property that indicates which computer each result came from. That property lets you sort, group, and filter based on computer name.</p>
+<p>You can use one-to-many remoting using two different techniques:</p>
 <ul>
-<li>It begins with the at (@) symbol.</li>
-<li>The keys and associated values are enclosed in braces.</li>
-<li>The items are separated by a semicolon.</li>
+<li><strong>Invoke-Command –ComputerName name1,name2 –ScriptBlock { command }.</strong> This technique sends the command (or commands) contained in the script block to the computers that you list. This technique is useful for sending one or two commands; multiple commands are separated by a semicolon.</li>
+<li><strong>Invoke-Command –ComputerName name1,name2 –FilePath filepath.</strong> This technique sends the contents of a script file with a .ps1 file name extension to the computers that you list. The local computer opens the file and reads its contents. However, the remote computers don't have to have direct access to the file. This technique is useful for sending a large file of commands, such as a complete script.</li>
 </ul>
-<p>The semicolon between hash table items is required in the previous example because they're all on the same line. If you place each item on a separate line, it's not necessary to use semicolons as separators.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$servers</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">,</span><span class="s2">&quot;172.16.0.12&quot;</span><span class="p">)</span>
-<span class="nv">$servers</span><span class="p">.</span><span class="n">Remove</span><span class="p">(</span><span class="s2">&quot;LON-DC1&quot;</span><span class="p">)</span>
-<span class="c"># Update the value for a key</span>
-<span class="nv">$servers</span><span class="p">.</span><span class="s2">&quot;LON-SRV2&quot;</span><span class="p">=</span><span class="s2">&quot;172.16.0.100&quot;</span>
+<p>Within any script block (including the script block provided to the –ScriptBlock parameter) you can use a semicolon to separate multiple commands. For example, { Get-Service ; Get-Process } will run Get-Service, and then run Get-Process.</p>
+<h2 id="throttling">Throttling</h2>
+<p>To help you manage the resources on your local computer, PowerShell includes a per-command throttling feature that lets you limit the number of concurrent remote connections established for each command. By default, Windows PowerShell will connect to only 32 computers at once. If you list more than 32 computers, the connections to the other computers will be queued. Once sessions to some of the computers from the first batch complete and return their results, connections to the computers in the next batch will be initiated.</p>
+<p>You can alter this behavior by using the –ThrottleLimit parameter of Invoke-Command. Raising the number doesn't put an extra load on the remote computers. However, it does put an extra load on the computer where Invoke-Command was invoked. It also utilizes more bandwidth. Each concurrent connection is basically a thread of Windows PowerShell. Therefore, raising the number of computers consumes memory and processor speed on the local computer.</p>
+<h2 id="passing-values">Passing values</h2>
+<p>The script block or file contents are transmitted as literal text to the remote computers that run them exactly as is. The computer doesn't parse the script block or file on which the Invoke-Command was run. Consider the following command example:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$var</span> <span class="p">=</span> <span class="s1">&#39;BITS&#39;</span>
+<span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span> <span class="nb">Get-Service</span> <span class="err">–</span><span class="n">Name</span> <span class="nv">$var</span> <span class="p">}</span> <span class="err">–</span><span class="n">Computer</span> <span class="n">LON-DC1</span>
 </code></pre></div>
+<p>In this scenario, the variable $var is being set on the local computer rather than being included into the script block to be run on LON-DC1. In other words, $var is not defined or set in the PowerShell remoting session to LON-DC1, which is a common mistake that administrators new to Windows PowerShell often make.</p>
+<p>Invoke-Command cannot include variables in its script block or script file unless the remote computer can understand those variables. As such, it might seem more complicated to find a way to pass data from the initiating computer to the remote computer. However, Invoke-Command actually provides a specific mechanism for doing this task.</p>
+<p>To review, the intent behind the following command is to display a list of the 10 most recent Security event log entries on each targeted computer. However, the command will not work as written:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$Log</span> <span class="p">=</span> <span class="s1">&#39;Security&#39;</span>
+<span class="nv">$Quantity</span> <span class="p">=</span> <span class="n">10</span>
+<span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">Computer</span> <span class="n">ONE</span><span class="p">,</span><span class="n">TWO</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span>
+  <span class="nb">Get-EventLog</span> <span class="err">–</span><span class="n">LogName</span> <span class="nv">$Log</span> <span class="err">–</span><span class="n">Newest</span> <span class="nv">$Quantity</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>The problem is that the variables $Log and $Quantity have meanings only on the local computer, and those values are not inserted into the script block prior to those values being sent to the remote computers. Therefore, the remote computers don't know what they mean.</p>
+<p>The correct syntax for this command is as follows:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$Log</span> <span class="p">=</span> <span class="s1">&#39;Security&#39;</span>
+<span class="nv">$Quantity</span> <span class="p">=</span> <span class="n">10</span>
+<span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">Computer</span> <span class="n">ONE</span><span class="p">,</span><span class="n">TWO</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span>
+  <span class="k">Param</span><span class="p">(</span><span class="nv">$x</span><span class="p">,</span><span class="nv">$y</span><span class="p">)</span> <span class="nb">Get-EventLog</span> <span class="err">–</span><span class="n">LogName</span> <span class="nv">$x</span> <span class="err">–</span><span class="n">Newest</span> <span class="nv">$y</span>
+<span class="p">}</span> <span class="err">–</span><span class="n">ArgumentList</span> <span class="nv">$Log</span><span class="p">,</span><span class="nv">$Quantity</span>
+</code></pre></div>
+<p>By using this syntax, the local variables are passed to the ArgumentList parameter of Invoke-Command. Within the script block, a Param() block is created, which contains the same number of variables as the –ArgumentList list of values, which, in this case, is two. Note that you can assign any names to the variables within the Param() block. They will receive data from the ArgumentList parameter based on order. In other words, because $Log was listed first on ArgumentList, its value will be passed to $x because that's the first entry in the Param() block. The variables in the Param() block can then be used inside the script block, as depicted in the example.</p>
+<p>This syntax will work for Windows PowerShell 2.0 and newer. However, Windows PowerShell 3.0 introduced a simplified alternative approach. If you have a local variable $variable, and you want to include its contents in a command that will be run on a remote computer, you can run the following syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span> <span class="k">Do</span><span class="n">-Something</span> <span class="nv">$Using</span><span class="p">:</span><span class="n">variable</span> <span class="p">}</span> <span class="err">–</span><span class="n">ComputerName</span> <span class="n">REMOTE</span>
+</code></pre></div>
+<p>The $Using: prefix is properly processed by the local and remote computers, resulting in the $Using:variable being replaced with the contents of the local variable $variable.</p>
+<h2 id="running-commands-locally-and-remotely">Running commands locally and remotely</h2>
+<p>Pay close attention to the commands that you enclose in the script block, which will be passed to the remote computer. Remember that your local computer won't process any script block contents, but simply pass it to the remote computer. For example, consider the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span> <span class="k">Do</span><span class="n">-Something</span> <span class="err">–</span><span class="n">Credential</span> <span class="p">(</span><span class="nb">Get-Credential</span><span class="p">)</span> <span class="p">}</span> <span class="n">-ComputerName</span> <span class="n">LON-DC1</span>
+</code></pre></div>
+<p>This command will run the Get-Credential cmdlet on the remote computer. If you try running Get-Credential on a local computer, it will use a graphical dialog box to prompt for the credential.</p>
+<p>Now consider this modified version of the command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span> <span class="k">Param</span><span class="p">(</span><span class="nv">$c</span><span class="p">)</span> <span class="k">Do</span><span class="n">-Something</span> <span class="err">–</span><span class="n">Credential</span> <span class="nv">$c</span> <span class="p">}</span>
+               <span class="n">-ComputerName</span> <span class="n">LON-DC1</span>
+               <span class="n">-ArgumentList</span> <span class="p">(</span><span class="nb">Get-Credential</span><span class="p">)</span>
+</code></pre></div>
+<p>This command runs Get-Credential on the local computer and runs it only once. The resulting object is passed into the $c parameter of the script block, enabling each computer to use the same credential.</p>
+<p>These examples illustrate the importance of writing remoting commands carefully. By using a combination of running commands remotely and locally, you can achieve various useful goals.</p>
+<h2 id="persistence">Persistence</h2>
+<p>Using the techniques outlined here, every time you use Invoke-Command, the remote computer creates a new wsmprovhost process, and runs the command or commands. It then returns the results, and then closes that Windows PowerShell instance. Each successive Invoke-Command, even if made to the same computer, is akin to opening a new Windows PowerShell window. Any work done by a previous session won't exist unless you save it to a disk or some other persistent storage. For example, consider the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">ComputerName</span> <span class="n">LON-DC1</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span> <span class="nv">$x</span> <span class="p">=</span> <span class="s1">&#39;BITS&#39;</span> <span class="p">}</span>
+<span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">ComputerName</span> <span class="n">LON-DC1</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span> <span class="nb">Get-Service</span> <span class="err">–</span><span class="n">Name</span> <span class="nv">$x</span> <span class="p">}</span>
+</code></pre></div>
+<p>In this example, the Get-Service would fail, because it's dependent on the value of a variable created as part of the previous wsmprovhost process. When the first script invoked by the Invoke-Command completes, its variables are cleared from memory. To address this issue, you can create a wsmprovhost process on a remote computer so that you can successfully send successive commands to it.</p>
+<h2 id="multiple-computer-names">Multiple computer names</h2>
+<p>The –ComputerName parameter of Invoke-Command can accept any collection of string objects as computer names. The following list describes different techniques that can be used to create such collections:</p>
+<p>-ComputerName ONE,TWO,THREE. A static, comma-separated list of computer names.
+-ComputerName (Get-Content Names.txt). Reads names from a text file named Names.txt, assuming the file contains one computer name per line.
+-ComputerName (Import-Csv Computers.csv | Select –ExpandProperty Computer). Reads a comma-separated value (CSV) file that's named Computers.csv and contains a column named Computer that contains computer names.
+-ComputerName (Get-ADComputer –Filter * | Select –ExpandProperty Name). Queries every computer object in AD DS, which can take a significant amount of time in a large domain.</p>
+<h3 id="common-mistakes-when-using-computer-names">Common mistakes when using computer names</h3>
+<p>Be careful where you specify a computer name. For example, review the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span> <span class="nb">Get-Service</span> <span class="err">–</span><span class="n">ComputerName</span> <span class="n">ONE</span><span class="p">,</span><span class="n">TWO</span> <span class="p">}</span>
+</code></pre></div>
+<p>This command doesn't provide a –ComputerName parameter to Invoke-Command. Therefore, the command runs on the local computer. The local computer will run Get-Service targeting computers named ONE and TWO. The protocols used by Get-Service will be used instead of Windows PowerShell remoting. Compare this with the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span> <span class="nb">Get-Service</span> <span class="p">}</span> <span class="err">–</span><span class="n">ComputerName</span> <span class="n">ONE</span><span class="p">,</span><span class="n">TWO</span>
+</code></pre></div>
+<p>This command will use Windows PowerShell remoting to connect to computers named ONE and TWO. Each of these computers will run Get-Service locally, returning their results using remoting.</p>
+<p>For more interactive Windows PowerShell remoting situations, you can manage individual sessions as separate entities. To do this, you first create a session by using the New-PSSession command. The benefit of using the New-PSSession command is that the session will persist throughout multiple Invoke-Command instances, allowing you to pass variables and objects to other commands in your script. You can create persistent sessions by using the New-PSSession command and assigning it to a variable. You then can reference the variable later by using the Invoke-Command command. When finished, you can close persistent sessions by using the Remove-PSSession command.</p>
+<h2 id="compare-remoting-output-with-local-output">Compare Remoting Output with Local Output</h2>
+<p>When you run a command such as Get-Process on your local computer, the command returns object or objects of the type System.Diagnostics.Process and adds them to the Windows PowerShell pipeline. These objects have properties, methods, and frequently, events. Methods provide the ability to perform task. For example, the Kill() method of a Process object terminates the process that this object represents.</p>
+<p>The process of converting an object into a form that can be readily transported is known as serialization. Serialization takes an object's state and transforms it into serial data format, such as XML or binary format. Deserialization converts the formatted XML or binary data into an object type.</p>
+<p>When a command runs on a remote computer, that computer serializes the results in XML, and transmits that XML text to your computer. You do this to put the object’s information into a format that can be transmitted over a network. However, for complex objects the serialization process can use only static information about an object—in other words, its properties.</p>
+<p>When your computer receives the XML, it's deserialized back into objects that are put in the Windows PowerShell pipeline. When you have a Process object, by piping it to Get-Member, you know it's now of the type Deserialized.System.Diagnostics.Process, a related, but different, kind of object. The deserialized object has no methods and no events.</p>
+<p>Given the serialization and deserialization which is part of PowerShell remoting, you should consider any objects that are obtained in this manner to be a static snapshot. The values of object properties are not updatable, and the objects cannot be used to perform any actions. Therefore, any tasks that require interacting with remote objects should be performed on the remote computer as part of the PowerShell remoting session.</p>
+<p>For example, here is an example of a command that will not yield the desired results:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">Computer</span> <span class="n">LON-DC1</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span> <span class="nb">Get-Process</span> <span class="err">–</span><span class="n">Name</span> <span class="n">Note</span><span class="p">*</span> <span class="p">}</span> <span class="p">|</span>
+<span class="nb">Stop-Process</span>
+</code></pre></div>
+<p>In this example, you're retrieving Process objects, but the task of stopping processes takes place on the local computer rather than the remote one. This will result in stopping any local processes that happen to have the names matching the remote ones.</p>
+<p>The proper way to accomplish the intended outcome would be to run:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">Invoke-Command</span> <span class="err">–</span><span class="n">Computer</span> <span class="n">LON-DC1</span> <span class="err">–</span><span class="n">ScriptBlock</span> <span class="p">{</span> <span class="nb">Get-Process</span> <span class="err">–</span><span class="n">Name</span> <span class="n">Note</span><span class="p">*</span> <span class="p">|</span>
+<span class="nb">Stop-Process</span> <span class="p">}</span>
+</code></pre></div>
+In this case, the processing has occurred entirely on the remote computer, with only the final results being serialized and sent back. The difference between these two commands is subtle but important to understand.</p>
 
               
             </article>
@@ -1415,7 +1345,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../variables/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Variables" rel="prev">
+        <a href="../rem_sec/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Security" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1424,20 +1354,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Variables
+              Security
             </div>
           </div>
         </a>
       
       
         
-        <a href="../ConsoleIO/" class="md-footer__link md-footer__link--next" aria-label="Next: Console IO" rel="next">
+        <a href="../rem_adv/" class="md-footer__link md-footer__link--next" aria-label="Next: Advanced" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Console IO
+              Advanced
             </div>
           </div>
           <div class="md-footer__button md-icon">
