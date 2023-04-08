@@ -109,7 +109,7 @@ nav:
     - Filtering: filtering.md
     - Enumeration: enum.md
     - Exercise 3: Exercises\Exercises3.md
-    - Windows Management: wmi_cmi.md
+    - Windows Management: wmi_cim.md
     - Exercise 4: Exercises\Exercises4.md
   - Scripting:
     - Variables: Scripting\variables.md
@@ -132,4 +132,5 @@ nav:
       - Modes: Advanced\rem_mod.md
       - Advanced: Advanced\rem_adv.md
       - Sessions: Advanced\rem_sess.md
+      - Using WMI or CIM: Advanced\rem_wmi_cim.md
     

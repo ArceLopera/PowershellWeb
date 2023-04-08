@@ -648,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../wmi_cmi/" class="md-nav__link">
+      <a href="../../wmi_cim/" class="md-nav__link">
         Windows Management
       </a>
     </li>
@@ -1040,6 +1040,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#common-remoting-techniques" class="md-nav__link">
+    Common Remoting Techniques
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1099,6 +1106,20 @@
     <li class="md-nav__item">
       <a href="../rem_sess/" class="md-nav__link">
         Sessions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rem_wmi_cim/" class="md-nav__link">
+        Using WMI or CIM
       </a>
     </li>
   
@@ -1197,6 +1218,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#common-remoting-techniques" class="md-nav__link">
+    Common Remoting Techniques
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1276,6 +1304,16 @@
 <p>The Set-WSManQuickConfig cmdlet doesn't affect remote endpoint configurations created by Windows PowerShell. It only affects endpoints created with PowerShell version 6 and newer. To enable and disable PowerShell remoting endpoints that are hosted by Windows PowerShell, run the Enable-PSRemoting cmdlet from within a Windows PowerShell session.</p>
 <h3 id="by-using-a-gpo">By Using a GPO</h3>
 <p>Many organizations will prefer to centrally control Windows PowerShell remoting enablement and settings through GPOs. Microsoft supports this capability. You must set up various settings in a GPO to duplicate the steps taken by Enable-PSRemoting. To enable remoting by using Group Policy, you should configure the Allow Remote Server Management Through WinRM policy setting in the appropriate GPO. This setting also allows you to filter IP addresses from which remote connections can be initiated. In addition to configuring this policy, you should also configure appropriate firewall exceptions, as described earlier.</p>
+<h2 id="common-remoting-techniques">Common Remoting Techniques</h2>
+<p>The Enter-PSSession and Invoke-Command commands support several parameters that you can use to change common connection options. These parameters include:</p>
+<ul>
+<li>–Port. Specifies an alternate TCP port for the connection. Use this parameter when the computer to which you're connecting is listening on a port other than the default 5985 (HTTP) or 5986 (HTTPS). Be aware that you can, locally or through Group Policy, configure a different port as a permanent new default.</li>
+<li>–UseSSL. Instructs Windows PowerShell to use HTTPS instead of HTTP.</li>
+<li>–Credential. Specifies an alternative credential for the connection. This credential will be validated by the remote computer and must have sufficient privileges and permissions to perform whatever tasks you intend to perform on the remote computer.</li>
+<li>–ConfigurationName. Connects to an endpoint (session configuration) other than the default endpoint. For example, you can specify microsoft.powershell32 to connect to the remote computer’s 32-bit Windows PowerShell endpoint.</li>
+<li>–Authentication. Specifies an authentication protocol. The default is Kerberos authentication, but other options include Basic, CredSSP, Digest, Negotiate, and NegotiateWithImplicitCredential. The protocol that you specify must be enabled in the WS-Management configuration on both the initiating and receiving computers.</li>
+</ul>
+<p>You can configure additional session options by using New-PSSessionOption to create a new session option object, and then passing it to the –SessionOption parameter of Enter-PSSession or Invoke-Command. Review the Help file for New-PSSessionOption to learn about its capabilities. You can modify the default values, such as the port number and enabled authentication protocols in the WSMan PowerShell drive.</p>
 
               
             </article>
