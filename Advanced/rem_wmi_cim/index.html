@@ -12,21 +12,21 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/wmi_cmi/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Advanced/rem_wmi_cim/">
       
-      <link rel="icon" href="../Images/pwsh_32512.ico">
+      <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Windows Management - Powershell Refresher</title>
+        <title>Using WMI or CIM - Powershell Refresher</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
       
     
@@ -41,7 +41,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#wmi-and-cmi-basics" class="md-skip">
+        <a href="#using-wmi-cmdlets" class="md-skip">
           Skip to content
         </a>
       
@@ -83,9 +83,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Powershell Refresher" class="md-header__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
+    <a href="../.." title="Powershell Refresher" class="md-header__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
       
-  <img src="../Images/pwshHat1.png" alt="logo">
+  <img src="../../Images/pwshHat1.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Windows Management
+              Using WMI or CIM
             
           </span>
         </div>
@@ -198,7 +198,7 @@
 
 
   <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -213,8 +213,40 @@
   
   
     <li class="md-tabs__item">
-      <a href="../Install/installation/" class="md-tabs__link">
+      <a href="../../Install/installation/" class="md-tabs__link">
         Installation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../GetStart/" class="md-tabs__link">
+        Basics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Scripting/variables/" class="md-tabs__link">
+        Scripting
       </a>
     </li>
   
@@ -231,39 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../GetStart/" class="md-tabs__link md-tabs__link--active">
-        Basics
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Scripting/variables/" class="md-tabs__link">
-        Scripting
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Advanced/ErrorHandling/" class="md-tabs__link">
+      <a href="../ErrorHandling/" class="md-tabs__link md-tabs__link--active">
         Advanced
       </a>
     </li>
@@ -291,9 +291,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Powershell Refresher" class="md-nav__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
+    <a href="../.." title="Powershell Refresher" class="md-nav__button md-logo" aria-label="Powershell Refresher" data-md-component="logo">
       
-  <img src="../Images/pwshHat1.png" alt="logo">
+  <img src="../../Images/pwshHat1.png" alt="logo">
 
     </a>
     Powershell Refresher
@@ -321,7 +321,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -362,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Install/installation/" class="md-nav__link">
+      <a href="../../Install/installation/" class="md-nav__link">
         Multiplatform
       </a>
     </li>
@@ -376,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Install/differences/" class="md-nav__link">
+      <a href="../../Install/differences/" class="md-nav__link">
         Versions
       </a>
     </li>
@@ -390,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Install/recommendations/" class="md-nav__link">
+      <a href="../../Install/recommendations/" class="md-nav__link">
         Recommendations
       </a>
     </li>
@@ -410,14 +410,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -440,7 +438,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../GetStart/" class="md-nav__link">
+      <a href="../../GetStart/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -454,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gethelp/" class="md-nav__link">
+      <a href="../../gethelp/" class="md-nav__link">
         GetHelp
       </a>
     </li>
@@ -468,7 +466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Exercises/Exercises1/" class="md-nav__link">
+      <a href="../../Exercises/Exercises1/" class="md-nav__link">
         Exercise 1
       </a>
     </li>
@@ -482,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../get_member/" class="md-nav__link">
+      <a href="../../get_member/" class="md-nav__link">
         GetMember
       </a>
     </li>
@@ -496,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getalias/" class="md-nav__link">
+      <a href="../../getalias/" class="md-nav__link">
         GetAlias
       </a>
     </li>
@@ -510,7 +508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../config_profile/" class="md-nav__link">
+      <a href="../../config_profile/" class="md-nav__link">
         Config Profile
       </a>
     </li>
@@ -524,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../files_folders/" class="md-nav__link">
+      <a href="../../files_folders/" class="md-nav__link">
         Files & Folders
       </a>
     </li>
@@ -538,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pipeline/" class="md-nav__link">
+      <a href="../../pipeline/" class="md-nav__link">
         Pipeline
       </a>
     </li>
@@ -552,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../out_format/" class="md-nav__link">
+      <a href="../../out_format/" class="md-nav__link">
         Output Format
       </a>
     </li>
@@ -566,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../comparison/" class="md-nav__link">
+      <a href="../../comparison/" class="md-nav__link">
         Object Comparison
       </a>
     </li>
@@ -580,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Exercises/Exercises2/" class="md-nav__link">
+      <a href="../../Exercises/Exercises2/" class="md-nav__link">
         Exercise 2
       </a>
     </li>
@@ -594,7 +592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tables_lists/" class="md-nav__link">
+      <a href="../../tables_lists/" class="md-nav__link">
         Formatting
       </a>
     </li>
@@ -608,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../filtering/" class="md-nav__link">
+      <a href="../../filtering/" class="md-nav__link">
         Filtering
       </a>
     </li>
@@ -622,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../enum/" class="md-nav__link">
+      <a href="../../enum/" class="md-nav__link">
         Enumeration
       </a>
     </li>
@@ -636,7 +634,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Exercises/Exercises3/" class="md-nav__link">
+      <a href="../../Exercises/Exercises3/" class="md-nav__link">
         Exercise 3
       </a>
     </li>
@@ -648,62 +646,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Windows Management
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../wmi_cim/" class="md-nav__link">
         Windows Management
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wmi-and-cmi-basics" class="md-nav__link">
-    WMI and CMI basics
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-wmiobject" class="md-nav__link">
-    Get-WmiObject
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-ciminstance" class="md-nav__link">
-    Get-CimInstance
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -715,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Exercises/Exercises4/" class="md-nav__link">
+      <a href="../../Exercises/Exercises4/" class="md-nav__link">
         Exercise 4
       </a>
     </li>
@@ -763,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/variables/" class="md-nav__link">
+      <a href="../../Scripting/variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -777,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/ds/" class="md-nav__link">
+      <a href="../../Scripting/ds/" class="md-nav__link">
         Data Structures
       </a>
     </li>
@@ -791,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/ConsoleIO/" class="md-nav__link">
+      <a href="../../Scripting/ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
     </li>
@@ -805,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/basic/" class="md-nav__link">
+      <a href="../../Scripting/basic/" class="md-nav__link">
         Basic Scripting
       </a>
     </li>
@@ -819,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/comments/" class="md-nav__link">
+      <a href="../../Scripting/comments/" class="md-nav__link">
         Script Documentation
       </a>
     </li>
@@ -833,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/advanced/" class="md-nav__link">
+      <a href="../../Scripting/advanced/" class="md-nav__link">
         Advanced Script
       </a>
     </li>
@@ -847,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/cond/" class="md-nav__link">
+      <a href="../../Scripting/cond/" class="md-nav__link">
         Conditionals
       </a>
     </li>
@@ -861,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/loops/" class="md-nav__link">
+      <a href="../../Scripting/loops/" class="md-nav__link">
         Loops
       </a>
     </li>
@@ -875,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/break_cont/" class="md-nav__link">
+      <a href="../../Scripting/break_cont/" class="md-nav__link">
         Break & Continue
       </a>
     </li>
@@ -889,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Scripting/functions/" class="md-nav__link">
+      <a href="../../Scripting/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -909,12 +856,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -937,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Advanced/ErrorHandling/" class="md-nav__link">
+      <a href="../ErrorHandling/" class="md-nav__link">
         Handling Errors
       </a>
     </li>
@@ -951,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Advanced/modules/" class="md-nav__link">
+      <a href="../modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -965,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Advanced/Credentials/" class="md-nav__link">
+      <a href="../Credentials/" class="md-nav__link">
         Credentials
       </a>
     </li>
@@ -977,12 +926,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" data-md-state="indeterminate" type="checkbox" id="__nav_5_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" checked>
       
       
       
@@ -1005,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Advanced/remoting/" class="md-nav__link">
+      <a href="../remoting/" class="md-nav__link">
         Basic
       </a>
     </li>
@@ -1019,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Advanced/rem_sec/" class="md-nav__link">
+      <a href="../rem_sec/" class="md-nav__link">
         Security
       </a>
     </li>
@@ -1033,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Advanced/rem_mod/" class="md-nav__link">
+      <a href="../rem_mod/" class="md-nav__link">
         Modes
       </a>
     </li>
@@ -1047,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Advanced/rem_adv/" class="md-nav__link">
+      <a href="../rem_adv/" class="md-nav__link">
         Advanced
       </a>
     </li>
@@ -1061,9 +1012,108 @@
   
   
     <li class="md-nav__item">
-      <a href="../Advanced/rem_sess/" class="md-nav__link">
+      <a href="../rem_sess/" class="md-nav__link">
         Sessions
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Using WMI or CIM
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Using WMI or CIM
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-wmi-cmdlets" class="md-nav__link">
+    Using WMI Cmdlets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-cim-cmdlets" class="md-nav__link">
+    Using CIM Cmdlets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cimsession-objects" class="md-nav__link">
+    CIMSession objects
+  </a>
+  
+    <nav class="md-nav" aria-label="CIMSession objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-session-objects" class="md-nav__link">
+    Creating session objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-sessions" class="md-nav__link">
+    Using Sessions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-session-options" class="md-nav__link">
+    Configuring session options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-sessions" class="md-nav__link">
+    Removing sessions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1107,23 +1157,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wmi-and-cmi-basics" class="md-nav__link">
-    WMI and CMI basics
+  <a href="#using-wmi-cmdlets" class="md-nav__link">
+    Using WMI Cmdlets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-wmiobject" class="md-nav__link">
-    Get-WmiObject
+  <a href="#using-cim-cmdlets" class="md-nav__link">
+    Using CIM Cmdlets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-ciminstance" class="md-nav__link">
-    Get-CimInstance
+  <a href="#cimsession-objects" class="md-nav__link">
+    CIMSession objects
   </a>
+  
+    <nav class="md-nav" aria-label="CIMSession objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-session-objects" class="md-nav__link">
+    Creating session objects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-sessions" class="md-nav__link">
+    Using Sessions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-session-options" class="md-nav__link">
+    Configuring session options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-sessions" class="md-nav__link">
+    Removing sessions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1141,44 +1225,53 @@
                 
 
 
-  <h1>Windows Management</h1>
+  <h1>Using WMI or CIM</h1>
 
-<h2 id="wmi-and-cmi-basics">WMI and CMI basics</h2>
-<p>A Windows computer contains thousands of items of management information. The WMI (Windows Management Instrumentation) and CIM (Common Information Model) frameworks seek to facilitate and organize these elements.</p>
-<p>Information in WMI is organized by namespaces.</p>
-<ul>
-<li>The <code>root\CIMv2</code> namespace contains all information about the Windows operating system and the underlying hardware.</li>
-<li>On client computers, the namespace <code>root\SecurityCenter2</code> (<code>root\SecurityCenter</code> in earlier versions of the operating system) contains information about firewall, antivirus, and antispyware software installed on the computer.</li>
-</ul>
-<p>Within each namespace, WMI includes a series of classes. Each class represents a type of management component that WMI knows how to query. For example, the <code>Win32_LogicalDisk</code> class in the <code>root\CIMv2</code> namespace contains information about logical disks, while the <code>AntiSpywareProduct</code> class in the <code>root\SecurityCenterv2</code> namespace contains information about antispyware products. .</p>
-<p>If manageable components exist for a certain class, they will appear as instances of that class. Class names in the <code>root\CIMv2</code> namespace usually start with <code>Win32_</code> (even on 64-bit machines) or <code>CIM_</code> . Typically, the properties of such instances are read-only (that is, you cannot make changes to the parameter values).</p>
-<p>There are different tools designed to explore the different classes of WMI. One of them is <a href="https://github.com/vinaypamnani/wmie2/releases">WMI Explorer</a></p>
-<h2 id="get-wmiobject">Get-WmiObject</h2>
-<p>You can use the <code>Get-WmiObject</code> cmdlet to explore WMI namespaces. For example, if you wanted to query the classes related to disks, you could use the following command:
-<div class="highlight"><pre><span></span><code><span class="nb">Get-WmiObject</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">\</span><span class="n">CIMv2</span> <span class="n">-list</span> <span class="p">|</span> <span class="nb">where </span><span class="n">name</span> <span class="o">-like</span> <span class="s1">&#39;*disk*&#39;</span>
-</code></pre></div></p>
-<p>The following command displays a complete list of classes within the <code>root\CIMv2</code> namespace:
-<div class="highlight"><pre><span></span><code><span class="nb">Get-WmiObject</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">\</span><span class="n">CIMv2</span> <span class="n">-list</span>
-</code></pre></div></p>
-<p>To interrogate a specific class, use the <code>-class</code> parameter:
-<div class="highlight"><pre><span></span><code><span class="nb">Get-WmiObject</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">\</span><span class="n">CIMv2</span> <span class="n">-class</span> <span class="n">win32_desktop</span>
-</code></pre></div></p>
-<p>The above command can be abbreviated, since the default namespace is <code>root\CIMv2</code>, and the <code>-class</code> parameter are both positional:
-<div class="highlight"><pre><span></span><code><span class="nb">Get-WmiObject</span> <span class="n">win32_desktop</span>
-</code></pre></div></p>
-<h2 id="get-ciminstance">Get-CimInstance</h2>
-<p>The <code>Get-CimInstance</code> command was introduced in Powershell version 3, and works much like <code>Get-WmiObject</code>, except for the following:</p>
-<ul>
-<li>The <code>-ClassName</code> parameter is used instead of <code>-Class</code>.</li>
-<li>There is no <code>-list</code> parameter to list all classes in a namespace.</li>
-</ul>
-<p>The <code>Get-CimClass</code> cmdlet must be used with the <code>-Namespace</code> parameter.
-Examples:
-List the instances of the <code>Win32_LogicalDisk</code> class:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-CimInstance</span> <span class="n">-ClassName</span> <span class="n">win32_logicaldisk</span>
+<p>You can use Windows Management Instrumentation (WMI) and Common Information Model (CIM) cmdlets to query and manage remote computers. When you connect to a remote computer, you can specify alternative credentials for the connection, but alternative credentials are optional. WMI and CIM cmdlets have different capabilities and different syntaxes for remote connections.</p>
+<h2 id="using-wmi-cmdlets">Using WMI Cmdlets</h2>
+<p>For the WMI commands, use the -ComputerName parameter to specify a remote computer’s name or IP address. You can specify multiple computer names to run the command on multiple computers in a single statement. You can provide the computer names as a comma-separated list, an array containing multiple computer names, or a parenthetical command that produces a collection of computer names as string objects.</p>
+<p>Use the -Credential parameter to specify an alternative username. If you specify only a username, then you're prompted for the password. If you use the Get-Credential cmdlet to store the username and password in a variable, then you can reference that variable to eliminate the password prompt. In the following example, you'll be prompted for the password:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-WmiObject</span> <span class="n">-ComputerName</span> <span class="n">LON-DC1</span> <span class="n">-Credential</span> <span class="n">ADATUM</span><span class="p">\</span><span class="n">Administrator</span> <span class="n">-Class</span> <span class="n">Win32_BIOS</span>
 </code></pre></div>
-<p>Get the list of classes from <code>root\CIMv2</code>, filtering out those that have to do with disks:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-CimClass</span> <span class="n">-Namespace</span> <span class="n">root</span><span class="p">\</span><span class="n">CIMv2</span> <span class="p">|</span> <span class="nb">where </span><span class="n">cimclassname</span> <span class="o">-Like</span> <span class="s1">&#39;*disk*&#39;</span>
+<p>When you specify multiple computer names, Windows PowerShell contacts them one at a time in the order that you specify. If connectivity to one computer fails, the command produces an error message and continues to try the remaining computers.</p>
+<h2 id="using-cim-cmdlets">Using CIM Cmdlets</h2>
+<p>The CIM cmdlets also provide support for ad hoc connections to remote computers by using the -ComputerName parameter. However, the CIM cmdlets don't have a -Credential parameter to specify alternate credentials. If you want to use alternate credentials, you need to create a CIM session.</p>
+<p>You can run the following CIM command to retrieve the same information as the Get-WmiObject command in the previous code example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-CimInstance</span> <span class="n">-ComputerName</span> <span class="n">LON-DC1</span> <span class="n">-Classname</span> <span class="n">Win32_BIOS</span>
+</code></pre></div>
+<p>Remember that CIM commands use the WS-MAN protocol for ad hoc connections. This protocol has specific authentication requirements. When establishing a connection between computers in the same domain or in trusting domains, you typically have to provide a computer’s name as it displays in Active Directory Domain Services (AD DS). You can't provide an alias name or an IP address because that will result in a failure of Kerberos authentication.</p>
+<h2 id="cimsession-objects">CIMSession objects</h2>
+<p>A Common Information Model (CIM) session is a persistent configuration object that's used when creating a connection to a remote computer. The connection uses WS-MAN by default, but you can specify the DCOM protocol. After a session is created, you can use it to process multiple queries for that computer. This simplifies connectivity because all of the configuration options are contained in the session. A CIM session also allows you to specify connectivity options that aren't available for an ad hoc connection.</p>
+<h3 id="creating-session-objects">Creating session objects</h3>
+<p>When you create a session, you should store it in a variable to reference it later. The basic syntax to create a session and store it in a variable is:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$s</span> <span class="p">=</span> <span class="nb">New-CimSession</span> <span class="n">-ComputerName</span> <span class="n">LON-DC1</span>
+<span class="c"># You can create multiple sessions at the same time:</span>
+<span class="nv">$sessions</span> <span class="p">=</span> <span class="nb">New-CimSession</span> <span class="n">-ComputerName</span> <span class="n">LON-CL1</span><span class="p">,</span><span class="n">LON-DC1</span>
+</code></pre></div>
+<p>When you create a session, PowerShell doesn't establish the connection immediately. When a cmdlet uses the CIM session, PowerShell connects to the specified computer, and then, when the cmdlet finishes, PowerShell terminates the connection.</p>
+<p>In some cases, it might be beneficial to use PowerShell remoting instead of CIM sessions for remote connectivity. PowerShell remoting opens a connection to the remote computer and keeps it open until explicitly closed. If you're running multiple queries against a computer, this might improve performance.</p>
+<h3 id="using-sessions">Using Sessions</h3>
+<p>After you've stored the session in a variable, you reference it with CIM cmdlets by using the -CimSession parameter. The following example uses a variable that contains multiple sessions:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-CimInstance</span> <span class="n">-CimSession</span> <span class="nv">$sessions</span> <span class="n">-ClassName</span> <span class="n">Win32_OperatingSystem</span>
+</code></pre></div>
+<p>Remember that sessions are designed to work best in a domain environment, between computers in the same domain or in trusting domains. If you have to create a session to a nondomain computer or to a computer in an untrusted domain, you'll need to do additional configuration.</p>
+<p>The help information for some cmdlets such as Get-SmbShare states that they support a -CimSession parameter. Those commands use CIM internally. When you use those commands to query a remote computer, you can provide a CIM session object to the -CimSession parameter to connect by using an existing session.</p>
+<h3 id="configuring-session-options">Configuring session options</h3>
+<p>A session option object allows you to specify many settings for a session. When you create a new session, you specify the session option object to configure the session. The following example creates a session by using DCOM instead of WS-MAN:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$opt</span> <span class="p">=</span> <span class="nb">New-CimSessionOption</span> <span class="n">-Protocol</span> <span class="n">Dcom</span>
+<span class="nv">$DcomSession</span> <span class="p">=</span> <span class="nb">New-CimSession</span> <span class="n">-ComputerName</span> <span class="n">LON-DC1</span> <span class="n">-SessionOption</span> <span class="nv">$opt</span>
+<span class="nb">Get-CimInstance</span> <span class="n">-ClassName</span> <span class="n">Win32_BIOS</span> <span class="n">-CimSession</span> <span class="nv">$DcomSession</span>
+</code></pre></div>
+<p>The first line in the preceding code creates a session option object that specifies that the DCOM protocol should be used for connectivity. The second line creates a new session by using that session option object and stores it in a variable. The final line uses the session to query the remote computer defined in the session and return the requested information.</p>
+<h3 id="removing-sessions">Removing sessions</h3>
+<p>After you create a session, it remains in memory and available for use until the instance of PowerShell is closed. You can manually remove sessions by using the Remove-CimSession cmdlet. The following example removes one or more sessions contained in a variable:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$sessions</span> <span class="p">|</span> <span class="nb">Remove-CimSession</span>
+</code></pre></div>
+<p>To remove the sessions for a specific remote computer, you can query the sessions for that computer and then remove them, as the following example depicts:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-CimSession</span> <span class="n">-ComputerName</span> <span class="n">LON-DC1</span> <span class="p">|</span> <span class="nb">Remove-CimSession</span>
+</code></pre></div>
+<p>To remove all sessions, run the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-CimSession</span> <span class="p">|</span> <span class="nb">Remove-CimSession</span>
 </code></pre></div>
 
               
@@ -1193,7 +1286,7 @@ List the instances of the <code>Win32_LogicalDisk</code> class:</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../Exercises/Exercises3/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Exercise 3" rel="prev">
+        <a href="../rem_sess/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sessions" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1202,26 +1295,11 @@ List the instances of the <code>Win32_LogicalDisk</code> class:</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Exercise 3
+              Sessions
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../Exercises/Exercises4/" class="md-footer__link md-footer__link--next" aria-label="Next: Exercise 4" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Exercise 4
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
@@ -1295,10 +1373,10 @@ List the instances of the <code>Win32_LogicalDisk</code> class:</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.expand"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.expand"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
