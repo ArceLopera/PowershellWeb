@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/ConsoleIO/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Advanced/job-back/">
       
       <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Console IO - Powershell Refresher</title>
+        <title>Background Jobs - Powershell Refresher</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#requesting-info" class="md-skip">
+        <a href="#types-of-background-jobs" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Console IO
+              Background Jobs
             
           </span>
         </div>
@@ -239,15 +239,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../variables/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Scripting/variables/" class="md-tabs__link">
         Scripting
       </a>
     </li>
@@ -257,13 +255,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-tabs__link">
+      <a href="../ErrorHandling/" class="md-tabs__link md-tabs__link--active">
         Advanced
       </a>
     </li>
@@ -682,14 +682,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -712,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../Scripting/variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -726,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ds/" class="md-nav__link">
+      <a href="../../Scripting/ds/" class="md-nav__link">
         Data Structures
       </a>
     </li>
@@ -738,75 +736,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Console IO
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Scripting/ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requesting-info" class="md-nav__link">
-    Requesting Info
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#writing-info" class="md-nav__link">
-    Writing Info
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#out-gridview" class="md-nav__link">
-    Out-GridView
-  </a>
-  
-    <nav class="md-nav" aria-label="Out-GridView">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#-outputmode-parameter" class="md-nav__link">
-    -OutputMode parameter
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -818,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basic/" class="md-nav__link">
+      <a href="../../Scripting/basic/" class="md-nav__link">
         Basic Scripting
       </a>
     </li>
@@ -832,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../comments/" class="md-nav__link">
+      <a href="../../Scripting/comments/" class="md-nav__link">
         Script Documentation
       </a>
     </li>
@@ -846,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/" class="md-nav__link">
+      <a href="../../Scripting/advanced/" class="md-nav__link">
         Advanced Script
       </a>
     </li>
@@ -860,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cond/" class="md-nav__link">
+      <a href="../../Scripting/cond/" class="md-nav__link">
         Conditionals
       </a>
     </li>
@@ -874,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loops/" class="md-nav__link">
+      <a href="../../Scripting/loops/" class="md-nav__link">
         Loops
       </a>
     </li>
@@ -888,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../break_cont/" class="md-nav__link">
+      <a href="../../Scripting/break_cont/" class="md-nav__link">
         Break & Continue
       </a>
     </li>
@@ -902,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../functions/" class="md-nav__link">
+      <a href="../../Scripting/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -922,12 +856,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -950,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-nav__link">
+      <a href="../ErrorHandling/" class="md-nav__link">
         Handling Errors
       </a>
     </li>
@@ -964,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/modules/" class="md-nav__link">
+      <a href="../modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -978,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/Credentials/" class="md-nav__link">
+      <a href="../Credentials/" class="md-nav__link">
         Credentials
       </a>
     </li>
@@ -992,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/local/" class="md-nav__link">
+      <a href="../local/" class="md-nav__link">
         Manage Local
       </a>
     </li>
@@ -1032,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/st-provide/" class="md-nav__link">
+      <a href="../st-provide/" class="md-nav__link">
         Providers
       </a>
     </li>
@@ -1046,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/st-drives/" class="md-nav__link">
+      <a href="../st-drives/" class="md-nav__link">
         Drives
       </a>
     </li>
@@ -1065,12 +1001,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" data-md-state="indeterminate" type="checkbox" id="__nav_5_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" type="checkbox" id="__nav_5_6" checked>
       
       
       
@@ -1091,11 +1029,116 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Advanced/job-back/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Background Jobs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Background Jobs
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-background-jobs" class="md-nav__link">
+    Types of Background Jobs
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Background Jobs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#local-jobs" class="md-nav__link">
+    Local Jobs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-jobs" class="md-nav__link">
+    Remote Jobs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cim-and-wmi-jobs" class="md-nav__link">
+    CIM and WMI Jobs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#job-objects" class="md-nav__link">
+    Job Objects
+  </a>
+  
+    <nav class="md-nav" aria-label="Job Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retrieving-jobs" class="md-nav__link">
+    Retrieving Jobs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-jobs" class="md-nav__link">
+    Listing Jobs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#job-management-commands" class="md-nav__link">
+    Job-Management Commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-results" class="md-nav__link">
+    Retrieve Results
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1107,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/job-sched/" class="md-nav__link">
+      <a href="../job-sched/" class="md-nav__link">
         Scheduled Jobs
       </a>
     </li>
@@ -1154,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/remoting/" class="md-nav__link">
+      <a href="../remoting/" class="md-nav__link">
         Basic
       </a>
     </li>
@@ -1168,7 +1211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sec/" class="md-nav__link">
+      <a href="../rem_sec/" class="md-nav__link">
         Security
       </a>
     </li>
@@ -1182,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_mod/" class="md-nav__link">
+      <a href="../rem_mod/" class="md-nav__link">
         Modes
       </a>
     </li>
@@ -1196,7 +1239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_adv/" class="md-nav__link">
+      <a href="../rem_adv/" class="md-nav__link">
         Advanced
       </a>
     </li>
@@ -1210,7 +1253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sess/" class="md-nav__link">
+      <a href="../rem_sess/" class="md-nav__link">
         Sessions
       </a>
     </li>
@@ -1224,7 +1267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_wmi_cim/" class="md-nav__link">
+      <a href="../rem_wmi_cim/" class="md-nav__link">
         Using WMI or CIM
       </a>
     </li>
@@ -1271,7 +1314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-ur/" class="md-nav__link">
+      <a href="../ad-ur/" class="md-nav__link">
         Users
       </a>
     </li>
@@ -1285,7 +1328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-gr/" class="md-nav__link">
+      <a href="../ad-gr/" class="md-nav__link">
         Groups
       </a>
     </li>
@@ -1299,7 +1342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-ac/" class="md-nav__link">
+      <a href="../ad-ac/" class="md-nav__link">
         Accounts
       </a>
     </li>
@@ -1313,7 +1356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-ou/" class="md-nav__link">
+      <a href="../ad-ou/" class="md-nav__link">
         Organizational Units
       </a>
     </li>
@@ -1327,7 +1370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-obj/" class="md-nav__link">
+      <a href="../ad-obj/" class="md-nav__link">
         Objects
       </a>
     </li>
@@ -1374,7 +1417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-ipadd/" class="md-nav__link">
+      <a href="../net-ipadd/" class="md-nav__link">
         IP addresses
       </a>
     </li>
@@ -1388,7 +1431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-iproute/" class="md-nav__link">
+      <a href="../net-iproute/" class="md-nav__link">
         IP Routing
       </a>
     </li>
@@ -1402,7 +1445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-dns/" class="md-nav__link">
+      <a href="../net-dns/" class="md-nav__link">
         DNS
       </a>
     </li>
@@ -1416,7 +1459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-fire/" class="md-nav__link">
+      <a href="../net-fire/" class="md-nav__link">
         Firewall
       </a>
     </li>
@@ -1463,7 +1506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-gp/" class="md-nav__link">
+      <a href="../ws-gp/" class="md-nav__link">
         Group Policy
       </a>
     </li>
@@ -1477,7 +1520,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-wf/" class="md-nav__link">
+      <a href="../ws-wf/" class="md-nav__link">
         Windows Feature
       </a>
     </li>
@@ -1491,7 +1534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-hv/" class="md-nav__link">
+      <a href="../ws-hv/" class="md-nav__link">
         Hyper-V
       </a>
     </li>
@@ -1505,7 +1548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-iis/" class="md-nav__link">
+      <a href="../ws-iis/" class="md-nav__link">
         Internet Information Services
       </a>
     </li>
@@ -1551,30 +1594,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requesting-info" class="md-nav__link">
-    Requesting Info
+  <a href="#types-of-background-jobs" class="md-nav__link">
+    Types of Background Jobs
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#writing-info" class="md-nav__link">
-    Writing Info
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#out-gridview" class="md-nav__link">
-    Out-GridView
-  </a>
-  
-    <nav class="md-nav" aria-label="Out-GridView">
+    <nav class="md-nav" aria-label="Types of Background Jobs">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#-outputmode-parameter" class="md-nav__link">
-    -OutputMode parameter
+  <a href="#local-jobs" class="md-nav__link">
+    Local Jobs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-jobs" class="md-nav__link">
+    Remote Jobs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cim-and-wmi-jobs" class="md-nav__link">
+    CIM and WMI Jobs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#job-objects" class="md-nav__link">
+    Job Objects
+  </a>
+  
+    <nav class="md-nav" aria-label="Job Objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retrieving-jobs" class="md-nav__link">
+    Retrieving Jobs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-jobs" class="md-nav__link">
+    Listing Jobs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#job-management-commands" class="md-nav__link">
+    Job-Management Commands
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retrieve-results" class="md-nav__link">
+    Retrieve Results
   </a>
   
 </li>
@@ -1598,91 +1682,151 @@
                 
 
 
-  <h1>Console IO</h1>
+  <h1>Background Jobs</h1>
 
-<p>To enhance the usability of your scripts, you must learn how to accept user input. This skill allows you to create scripts that can be used for multiple purposes. In addition, accepting user input allows you to create scripts that are easier for others to use. </p>
-<h2 id="requesting-info">Requesting Info</h2>
-<p>The Read-Host cmdlet displays a request message, and then reads a response from the user. For example:</p>
-<p><div class="highlight"><pre><span></span><code><span class="nb">Read-Host</span> <span class="s2">&quot;Enter a computer name&quot;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Enter a computer name: SERVER
-SERVER
-</code></pre></div>
-The cmdlet adds a colon (:) after the request message, and places the user's response in the pipeline. In most cases, the user's response is captured in a variable, as in the following example:
-<div class="highlight"><pre><span></span><code><span class="nv">$computer</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Enter a computer name&quot;</span>
-<span class="n">Enter</span> <span class="n">a</span> <span class="n">computer</span> <span class="n">name</span><span class="p">:</span> <span class="n">SERVER</span>
+<p>In addition to the traditional tasks that run in the foreground within the Windows PowerShell console or ISE, you also can run background tasks. When you run a command as a background job, Windows PowerShell performs the task asynchronously in its own thread. This thread is separate from the pipeline thread that the command uses. When a command runs as a background job, even if it takes a long time to complete, you regain access to the PowerShell prompt immediately. This allows you to run other commands while the job runs in the background.</p>
+<h2 id="types-of-background-jobs">Types of Background Jobs</h2>
+<p>There are three basic types of background jobs:</p>
+<ol>
+<li>
+<p>Local jobs run their commands on the local computer and typically access only local resources. However, you can create local jobs that target a remote computer. For example, you could create a local job that includes the following command, where the –ComputerName parameter makes it connect to a remote computer:
+    <div class="highlight"><pre><span></span><code><span class="nb">Get-Service</span> <span class="err">–</span><span class="n">Name</span> <span class="p">*</span> <span class="n">-ComputerName</span> <span class="n">LON-DC1</span>
 </code></pre></div></p>
-<p>You can combine a Write-Host command with Read-Host to display text and avoid a colon being appended, as the following example depicts:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Write-Host</span> <span class="s2">&quot;How many days? &quot;</span> <span class="n">-NoNewline</span>
-<span class="nv">$answer</span> <span class="p">=</span> <span class="nb">Read-Host</span>
+</li>
+<li>
+<p>Remote jobs use Windows PowerShell remote to transmit commands to one or more remote computers. The commands run on those remote computers and the results are returned to the local computer and stored in memory. Windows PowerShell Help files refer to this kind of job as a remote job.</p>
+</li>
+<li>
+<p>CIM and WMI jobs use the Common Information Model (CIM) and Windows Management Instrumentation (WMI) repository of management information. The commands run on your computer but can connect to one or more remote computers' repositories. Local jobs that use CIM commands use the Start-Job command, whereas WMI and other commands use the -AsJob parameter within a WMI command.</p>
+</li>
+</ol>
+<p>Each job type has specific characteristics. For example, local and Windows PowerShell remote jobs run in a background Windows PowerShell run space. Think of them as running in a hidden instance of Windows PowerShell. Other types of jobs might have different characteristics. Also, add-in modules add more job types to Windows PowerShell, and those job types have their own characteristics. Remote jobs are useful for managing multiple remote computers simultaneously. Remote computers run Windows PowerShell remote commands by using their own local resources. Therefore, you can include any command in the job.</p>
+<p>Remember that these job types aren't the only ones that Windows PowerShell supports. Use modules and other add-ins to create other job types. Workflow jobs help you automate long-running tasks, or workflows, by simultaneously targeting multiple managed computers or devices. Windows PowerShell workflows offer extra resiliency benefits. When you restart target devices, unfinished workflow automatically restarts on the target device or devices and continues with the job's workflow commands.</p>
+<p>It's important to note that interactive Windows PowerShell console workflow jobs aren't available in a noninteractive Windows PowerShell console. Scheduling a task to run at machine startup won't find suspended jobs from a noninteractive console. Scheduled tasks can't find workflow jobs to resume unless you're signed in to an interactive session.</p>
+<h3 id="local-jobs">Local Jobs</h3>
+<p>Start local jobs by running Start-Job. Provide either the –ScriptBlock parameter to specify a single command line or a small number of commands. Provide the –FilePath parameter to run an entire script on a background thread.</p>
+<p>By default, jobs receive a sequential job identification (ID) number and a default job name. You can't change the assigned job ID number, but you can use the –Name parameter to specify a custom job name. Custom names make it easier to retrieve a job and identify it in the job list.</p>
+<p>At first, job ID numbers might not seem to be sequential. However, you'll learn the reason for this later in this module.</p>
+<p>You can specify the –Credential parameter to run a job under a different user account. Other parameters allow you to run the command under a specific Windows PowerShell version, in a 32-bit session, and in other sessions.</p>
+<p>Here are examples of how to start local jobs:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Start-Job</span> <span class="n">-ScriptBlock</span> <span class="p">{</span> <span class="nb">Dir </span><span class="n">C</span><span class="p">:\</span> <span class="n">-Recurse</span> <span class="p">}</span> <span class="n">-Name</span> <span class="n">LocalDirectory</span>
+
+<span class="n">Id</span>     <span class="n">Name</span>            <span class="n">PSJobTypeName</span>   <span class="n">State</span>         <span class="n">HasMoreData</span>     <span class="n">Location</span>
+<span class="p">--</span>     <span class="p">----</span>            <span class="p">-------------</span>   <span class="p">-----</span>         <span class="p">-----------</span>     <span class="p">--------</span>
+<span class="n">2</span>      <span class="n">LocalDirectory</span>  <span class="n">BackgroundJob</span>   <span class="n">Running</span>       <span class="n">True</span>            <span class="n">localhost</span>
+
+
+<span class="nb">Start-Job</span> <span class="n">-FilePath</span> <span class="n">C</span><span class="p">:\</span><span class="n">test</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-Name</span> <span class="n">TestScript</span>
+
+<span class="n">Id</span>     <span class="n">Name</span>            <span class="n">PSJobTypeName</span>   <span class="n">State</span>         <span class="n">HasMoreData</span>     <span class="n">Location</span>
+<span class="p">--</span>     <span class="p">----</span>            <span class="p">-------------</span>   <span class="p">-----</span>         <span class="p">-----------</span>     <span class="p">--------</span>
+<span class="n">4</span>      <span class="n">TestScript</span>      <span class="n">BackgroundJob</span>   <span class="n">Running</span>       <span class="n">True</span>            <span class="n">localhost</span>
 </code></pre></div>
-<p>Input from Read-Host is limited to 1022 characters.</p>
-<p>You can mask the input users enter at the prompt by using the -MaskInput or -AsSecureString parameters. Both parameters cause the characters entered by the user to display as asterisks (*). When -MaskInput is used, the response is collected as a String object. When -AsSecureString is used, the response is collected as a SecureString object. A SecureString object is required for scenarios such as setting passwords, where data shouldn't be stored as clear text in memory.</p>
-<h2 id="writing-info">Writing Info</h2>
-<p>To write data to the console:</p>
+<h3 id="remote-jobs">Remote Jobs</h3>
+<p>Start Windows PowerShell remote jobs by running Invoke-Command. This is the same command that sends commands to a remote computer. Add the –AsJob parameter to make the command run in the background. Use the –JobName parameter to specify a custom job name. All other parameters of Invoke-Command are used in the same way. Here's an example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Invoke-Command</span> <span class="n">-ScriptBlock</span> <span class="p">{</span> <span class="nb">Get-EventLog</span> <span class="n">-LogName</span> <span class="n">System</span> <span class="n">-Newest</span> <span class="n">10</span> <span class="p">}</span>
+<span class="n">-ComputerName</span> <span class="n">LON-DC1</span><span class="p">,</span><span class="n">LON-CL1</span><span class="p">,</span><span class="n">LON-SVR1</span> <span class="n">-AsJob</span> <span class="n">-JobName</span> <span class="n">RemoteLogs</span>
+
+<span class="n">Id</span>     <span class="n">Name</span>            <span class="n">PSJobTypeName</span>   <span class="n">State</span>         <span class="n">HasMoreData</span>     <span class="n">Location</span>
+<span class="p">--</span>     <span class="p">----</span>            <span class="p">-------------</span>   <span class="p">-----</span>         <span class="p">-----------</span>     <span class="p">--------</span>
+<span class="n">6</span>      <span class="n">RemoteLogs</span>      <span class="n">RemoteJob</span>       <span class="n">Running</span>       <span class="n">True</span>            <span class="n">LON-DC1</span><span class="p">...</span>
+</code></pre></div>
+<p>The –ComputerName parameter is a parameter of Invoke-Command, not of Get-EventLog. The parameter causes the local computer to coordinate the Windows PowerShell remote connections to the three computers specified. Each computer receives only the Get-EventLog command and runs it locally, returning results.</p>
+<p>The computer on which you run Invoke-Command creates and manages remote jobs. You can refer to that computer as the initiating computer. The commands inside the job are transmitted to remote computers, which then run them and return results to the initiating computer. The initiating computer stores the job’s results in its memory.</p>
+<h3 id="cim-and-wmi-jobs">CIM and WMI Jobs</h3>
+<p>To use CIM commands in a job, you must launch the job with Start-Job. Here's an example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Start-Job</span>  <span class="n">-ScriptBlock</span> <span class="p">{</span><span class="nb">Get-CimInstance</span> <span class="n">-ClassName</span> <span class="n">Win32_ComputerSystem</span><span class="p">}</span>
+
+<span class="n">Id</span>     <span class="n">Name</span>  <span class="n">PSJobTypeName</span>  <span class="n">State</span>   <span class="n">HasMoreData</span>  <span class="n">Location</span>   <span class="n">Command</span>                  
+<span class="p">--</span>     <span class="p">----</span>  <span class="p">-------------</span>  <span class="p">-----</span>   <span class="p">-----------</span>  <span class="p">--------</span>   <span class="p">-------</span>                  
+<span class="n">3</span>      <span class="n">Job3</span>  <span class="n">BackgroundJob</span>  <span class="n">Running</span> <span class="n">True</span>         <span class="n">localhost</span>  <span class="nb">Get-CimInstance</span> <span class="n">-Class</span><span class="p">..</span>
+</code></pre></div>
+<p>You also can run other commands that use CIM as jobs by using Start-Job. An example is Invoke-CimMethod. The fact that CIM commands don't have an –AsJob parameter isn't important. You just need to remember to use the job commands when you want to run CIM commands as jobs.</p>
+<p>Start a WMI job by running Get-WmiObject. This is the same command you'd use to query WMI instances. Add the –AsJob parameter to run the command on a background thread. There's no option to provide a custom job name. The Get-Help information for Get-WmiObject states the following for the –AsJob parameter:</p>
+<p>To use this parameter with remote computers, the local and remote computers must be configured for Windows PowerShell remoting. Additionally, you must start Windows PowerShell by using the Run as administrator option in Windows 7 and newer versions of Windows.</p>
+<p>WMI jobs don't require that you enable Windows PowerShell remoting on either the initiating computer or the remote computer. However, they do require that WMI be accessible on the remote computers.</p>
+<p>Here's an example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-WmiObject</span> <span class="n">-Class</span> <span class="n">Win32_NTEventLogFile</span> <span class="n">-ComputerName</span> <span class="n">localhost</span><span class="p">,</span><span class="n">LON-DC1</span> <span class="n">-AsJob</span>
+
+<span class="n">Id</span>     <span class="n">Name</span>            <span class="n">PSJobTypeName</span>   <span class="n">State</span>         <span class="n">HasMoreData</span>     <span class="n">Location</span>
+<span class="p">--</span>     <span class="p">---</span>
+
+<span class="p">-</span>            <span class="p">-------------</span>   <span class="p">-----</span>         <span class="p">-----------</span>     <span class="p">--------</span>
+<span class="n">10</span>     <span class="n">Job10</span>           <span class="n">WmiJob</span>          <span class="n">Running</span>       <span class="n">True</span>            <span class="n">localho</span><span class="p">...</span>
+</code></pre></div>
+<h2 id="job-objects">Job Objects</h2>
+<p>Notice that each of the preceding examples results in a job object. It represents the running job, and you can use it to monitor and manage the job.</p>
+<p>Each job consists of at least two job objects. The parent job is the top-level object and represents the entire job, regardless of the number of computers to which the job connects. The parent job contains one or more child jobs. Each child job represents a single computer. A local job contains only one child job. Windows PowerShell remoting and WMI jobs contain one child job for each computer that you specify.</p>
+<h3 id="retrieving-jobs">Retrieving Jobs</h3>
+<p>Run Get-Job to list all current jobs. You can list a specified job by adding the –ID or –Name parameter and specifying the desired job ID or job name. Retrieve child jobs by using the job ID. Here are examples:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Job</span>
+
+<span class="n">Id</span>     <span class="n">Name</span>            <span class="n">PSJobTypeName</span>   <span class="n">State</span>         <span class="n">HasMoreData</span>     <span class="n">Location</span>
+<span class="p">--</span>     <span class="p">----</span>            <span class="p">-------------</span>   <span class="p">-----</span>         <span class="p">-----------</span>     <span class="p">--------</span>
+<span class="n">2</span>      <span class="n">LocalDirectory</span>  <span class="n">BackgroundJob</span>   <span class="n">Running</span>       <span class="n">True</span>            <span class="n">localhost</span>
+<span class="n">4</span>      <span class="n">TestScript</span>      <span class="n">BackgroundJob</span>   <span class="n">Completed</span>     <span class="n">True</span>            <span class="n">localhost</span>
+<span class="n">6</span>      <span class="n">RemoteLogs</span>      <span class="n">RemoteJob</span>       <span class="n">Failed</span>        <span class="n">True</span>            <span class="n">LON-DC1</span><span class="p">...</span>
+<span class="n">10</span>     <span class="n">Job10</span>           <span class="n">WmiJob</span>          <span class="n">Failed</span>        <span class="n">False</span>           <span class="n">localho</span><span class="p">...</span>
+
+
+<span class="nb">Get-Job</span> <span class="n">-Name</span> <span class="n">TestScript</span>
+
+<span class="n">Id</span>     <span class="n">Name</span>            <span class="n">PSJobTypeName</span>   <span class="n">State</span>         <span class="n">HasMoreData</span>     <span class="n">Location</span>
+<span class="p">--</span>     <span class="p">----</span>            <span class="p">-------------</span>   <span class="p">-----</span>         <span class="p">-----------</span>     <span class="p">--------</span>
+<span class="n">4</span>      <span class="n">TestScript</span>      <span class="n">BackgroundJob</span>   <span class="n">Completed</span>     <span class="n">True</span>            <span class="n">localhost</span>
+
+
+<span class="nb">Get-Job</span> <span class="n">-ID</span> <span class="n">5</span>
+
+<span class="n">Id</span>     <span class="n">Name</span>            <span class="n">PSJobTypeName</span>   <span class="n">State</span>         <span class="n">HasMoreData</span>     <span class="n">Location</span>
+<span class="p">--</span>     <span class="p">----</span>            <span class="p">-------------</span>   <span class="p">-----</span>         <span class="p">-----------</span>     <span class="p">--------</span>
+<span class="n">5</span>      <span class="n">Job5</span>                            <span class="n">Completed</span>     <span class="n">True</span>            <span class="n">localhost</span>
+</code></pre></div>
+<p>Notice that each job has a state. Parent jobs always display the state of any failed child jobs, even if other child jobs succeeded. In other words, if a parent job contains four child jobs, and three of those jobs finished successfully but one failed, the parent job status will be Failed.</p>
+<h3 id="listing-jobs">Listing Jobs</h3>
+<p>List the child jobs of a specified parent job by retrieving the parent job object and expanding its ChildJobs property. In Windows PowerShell 3.0 and newer, use the -IncludeChildJobs parameter of Get-Job to display a job’s child jobs. Here's an example:</p>
+<div class="highlight"><pre><span></span><code><span class="n">C</span><span class="p">:\</span><span class="n">PS</span><span class="p">&gt;</span><span class="nb">Get-Job</span> <span class="n">-Name</span> <span class="n">RemoteJobs</span> <span class="n">-IncludeChildJobs</span>
+
+<span class="n">Id</span>     <span class="n">Name</span>            <span class="n">PSJobTypeName</span>   <span class="n">State</span>         <span class="n">HasMoreData</span>     <span class="n">Location</span>
+<span class="p">--</span>     <span class="p">----</span>            <span class="p">-------------</span>   <span class="p">-----</span>         <span class="p">-----------</span>     <span class="p">--------</span>
+<span class="n">7</span>      <span class="n">Job7</span>                            <span class="n">Failed</span>        <span class="n">False</span>           <span class="n">LON-DC1</span>
+<span class="n">8</span>      <span class="n">Job8</span>                            <span class="n">Completed</span>     <span class="n">True</span>            <span class="n">LON-CL1</span>
+<span class="n">9</span>      <span class="n">Job9</span>                            <span class="n">Failed</span>        <span class="n">False</span>           <span class="n">LON-SVR1</span>
+</code></pre></div>
+<p>The earlier method uses the following example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Job</span> <span class="n">-Name</span> <span class="n">RemoteLogs</span> <span class="p">|</span> <span class="nb">Select </span><span class="n">-ExpandProperty</span> <span class="n">ChildJobs</span>
+
+<span class="n">Id</span>     <span class="n">Name</span>            <span class="n">PSJobTypeName</span>   <span class="n">State</span>         <span class="n">HasMoreData</span>     <span class="n">Location</span>
+<span class="p">--</span>     <span class="p">----</span>            <span class="p">-------------</span>   <span class="p">-----</span>         <span class="p">-----------</span>     <span class="p">--------</span>
+<span class="n">7</span>      <span class="n">Job7</span>                            <span class="n">Failed</span>        <span class="n">False</span>           <span class="n">LON-DC1</span>
+<span class="n">8</span>      <span class="n">Job8</span>                            <span class="n">Completed</span>     <span class="n">True</span>            <span class="n">LON-CL1</span>
+<span class="n">9</span>      <span class="n">Job9</span>                            <span class="n">Failed</span>        <span class="n">False</span>           <span class="n">LON-SVR1</span>
+</code></pre></div>
+<p>This technique enables you to discover the job ID numbers and names of the child job objects. Notice that child jobs all have a default name that corresponds with their ID number. The preceding syntax will work in Windows PowerShell 2.0 and newer versions.</p>
+<h3 id="job-management-commands">Job-Management Commands</h3>
+<p>Manage jobs by using several available Windows PowerShell commands. Pipe one or more jobs to each of these commands or specify jobs by using the –ID or –Name parameters. Both parameters accept multiple values, which means that you can specify a comma-separated list of job ID numbers or names. The job-management commands include:</p>
 <ul>
-<li>Write-Host: Allows you to write data directly to the console, skipping the pipeline. For this reason, its output cannot be captured or redirected to logs. It is recommended not to use it.</li>
-<li>Write-Output: Allows data to be written to the pipeline. If there is no redirection to another command, the data will be output to the screen. This is the recommended way to print data to the console.</li>
-<li>Other ways:
-    Powershell has other cmdlets to produce console output. None of them use the pipeline (they function as Write-Host), but their output can be suppressed at will, through the use of environment variables. The commands are the following:</li>
+<li>Stop-Job, which halts a job that's running. Use this command to cancel a job that's in an infinite loop or that has run longer than you want.</li>
+<li>Remove-Job, which deletes a job object, including any command results stored in memory. Use this command when you're finished working with a job, so the shell releases memory.</li>
+<li>Wait-Job, which you typically use in a script. It pauses script processing until the jobs you indicate reach the specified state. Use this command in a script to start several jobs, and then make the script wait until those jobs complete before continuing.</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Write-Warning</td>
-<td>Prints the message in orange, preceded by the word WARNING. Its printing depends on the value of the $WarningPerference variable, which defaults to Continue.</td>
-</tr>
-<tr>
-<td>Write-Verbose</td>
-<td>Prints the message in blue, preceded by the word VERBOSE. Its printing depends on the value of the $VerbosePreference variable, which is set to SilentlyContinue by default.</td>
-</tr>
-<tr>
-<td>Write-Debug</td>
-<td>Prints the message in blue, preceded by the word DEBUG. Its printing depends on the value of the $DebugPreference variable, which defaults to SilentlyContinue.</td>
-</tr>
-<tr>
-<td>Write-error</td>
-<td>Generates an error message. Its printing depends on the value of the $ErrorActionPreference variable, which defaults to Continue.</td>
-</tr>
-</tbody>
-</table>
-<p>If the variable corresponding to the command has the value Continue, the message is printed. If the value is SilentlyContinue, the printing of the message is suppressed.</p>
-<h2 id="out-gridview">Out-GridView</h2>
-<p>Out-GridView is primarily used to review data. However, you can also use Out-GridView to create a simple menu selection interface. When the user makes one or more selections in the window presented by Out-GridView, the data for those objects is either passed further through the pipeline or placed into a variable.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$selection</span> <span class="p">=</span> <span class="nv">$users</span> <span class="p">|</span> <span class="nb">Out-GridView</span> <span class="n">-PassThru</span>
+<p>The Windows PowerShell process manages remote, WMI, and local jobs. When you close a PowerShell session, Windows PowerShell removes all jobs and their results, and you can no longer access them.</p>
+<h3 id="retrieve-results">Retrieve Results</h3>
+<p>When a job runs, Windows PowerShell stores all command outputs in memory, starting with the first output that the command produced. You don't have to wait for a command to complete before output becomes available.</p>
+<p>The job list indicates whether a job has stored results that you haven’t yet retrieved. Here's an example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Job</span>
+
+<span class="n">Id</span>     <span class="n">Name</span>            <span class="n">PSJobTypeName</span>   <span class="n">State</span>         <span class="n">HasMoreData</span>     <span class="n">Location</span>
+<span class="p">--</span>     <span class="p">----</span>            <span class="p">-------------</span>   <span class="p">-----</span>         <span class="p">-----------</span>     <span class="p">--------</span>
+<span class="n">13</span>     <span class="n">Job13</span>           <span class="n">BackgroundJob</span>   <span class="n">Running</span>       <span class="n">True</span>            <span class="n">localhost</span>
 </code></pre></div>
-<p>In the previous example, an array of user accounts is piped to Out-GridView. Out-GridView displays the user accounts on screen, and the user can select one or more rows in the Out-GridView window. When the user selects OK, the selected rows are stored in the $selection variable. You can then perform further processing on the users’ accounts.</p>
-<p>To retain more control over the amount of data that users can select, you can use the -OutputMode parameter instead of the -PassThru parameter. The following table depicts the values that can be defined for the -OutputMode parameter.</p>
-<h3 id="-outputmode-parameter">-OutputMode parameter</h3>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>None</td>
-<td>This is the default value that doesn't pass any objects further down the pipeline.</td>
-</tr>
-<tr>
-<td>Single</td>
-<td>This value allows users to select zero rows or one row in the Out-GridView window.</td>
-</tr>
-<tr>
-<td>Multiple</td>
-<td>This value allows users to select zero rows, one row, or multiple rows in the Out-GridView window. This value is equivalent to using the -PassThru parameter.</td>
-</tr>
-</tbody>
-</table>
-<p>Because users aren't forced to select a row in the Out-GridView window, you must ensure that your script properly handles the scenario where a row isn't selected.</p>
+<p>In this example, job ID 13 is still running, but the HasMoreData column indicates that results already have been stored in memory. To receive a job's results, use the Receive-Job command.</p>
+<p>By default, job results are removed from memory after they're delivered to you. That means that you can use Receive-Job only once per job. Add the –Keep parameter to retain a copy of the job results in memory, so that you can retrieve them again.</p>
+<p>If you retrieve the results of a parent job, you'll receive the results from all child jobs. You also can retrieve the results of a single child job or multiple child jobs.</p>
+<p>You also can retrieve the results of a job that's still running. However, unless you specify –Keep, the job object’s results will be empty until the job’s command adds new output.</p>
+<p>Here's an example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Receive-Job</span> <span class="err">–</span><span class="n">ID</span> <span class="n">13</span> <span class="n">-Keep</span> <span class="p">|</span> <span class="nb">Format-Table</span> <span class="err">–</span><span class="n">Property</span> <span class="n">Name</span><span class="p">,</span><span class="n">Length</span>
+</code></pre></div>
 
               
             </article>
@@ -1696,7 +1840,7 @@ The cmdlet adds a colon (:) after the request message, and places the user's res
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../ds/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data Structures" rel="prev">
+        <a href="../st-drives/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Drives" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1705,20 +1849,20 @@ The cmdlet adds a colon (:) after the request message, and places the user's res
               <span class="md-footer__direction">
                 Previous
               </span>
-              Data Structures
+              Drives
             </div>
           </div>
         </a>
       
       
         
-        <a href="../basic/" class="md-footer__link md-footer__link--next" aria-label="Next: Basic Scripting" rel="next">
+        <a href="../job-sched/" class="md-footer__link md-footer__link--next" aria-label="Next: Scheduled Jobs" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Basic Scripting
+              Scheduled Jobs
             </div>
           </div>
           <div class="md-footer__button md-icon">

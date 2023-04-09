@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/ConsoleIO/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Advanced/st-drives/">
       
       <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Console IO - Powershell Refresher</title>
+        <title>Drives - Powershell Refresher</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#requesting-info" class="md-skip">
+        <a href="#powershell-drive-cmdlets" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Console IO
+              Drives
             
           </span>
         </div>
@@ -239,15 +239,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../variables/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Scripting/variables/" class="md-tabs__link">
         Scripting
       </a>
     </li>
@@ -257,13 +255,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-tabs__link">
+      <a href="../ErrorHandling/" class="md-tabs__link md-tabs__link--active">
         Advanced
       </a>
     </li>
@@ -682,14 +682,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -712,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../Scripting/variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -726,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ds/" class="md-nav__link">
+      <a href="../../Scripting/ds/" class="md-nav__link">
         Data Structures
       </a>
     </li>
@@ -738,75 +736,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Console IO
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Scripting/ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requesting-info" class="md-nav__link">
-    Requesting Info
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#writing-info" class="md-nav__link">
-    Writing Info
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#out-gridview" class="md-nav__link">
-    Out-GridView
-  </a>
-  
-    <nav class="md-nav" aria-label="Out-GridView">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#-outputmode-parameter" class="md-nav__link">
-    -OutputMode parameter
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -818,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basic/" class="md-nav__link">
+      <a href="../../Scripting/basic/" class="md-nav__link">
         Basic Scripting
       </a>
     </li>
@@ -832,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../comments/" class="md-nav__link">
+      <a href="../../Scripting/comments/" class="md-nav__link">
         Script Documentation
       </a>
     </li>
@@ -846,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/" class="md-nav__link">
+      <a href="../../Scripting/advanced/" class="md-nav__link">
         Advanced Script
       </a>
     </li>
@@ -860,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cond/" class="md-nav__link">
+      <a href="../../Scripting/cond/" class="md-nav__link">
         Conditionals
       </a>
     </li>
@@ -874,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loops/" class="md-nav__link">
+      <a href="../../Scripting/loops/" class="md-nav__link">
         Loops
       </a>
     </li>
@@ -888,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../break_cont/" class="md-nav__link">
+      <a href="../../Scripting/break_cont/" class="md-nav__link">
         Break & Continue
       </a>
     </li>
@@ -902,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../functions/" class="md-nav__link">
+      <a href="../../Scripting/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -922,12 +856,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -950,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-nav__link">
+      <a href="../ErrorHandling/" class="md-nav__link">
         Handling Errors
       </a>
     </li>
@@ -964,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/modules/" class="md-nav__link">
+      <a href="../modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -978,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/Credentials/" class="md-nav__link">
+      <a href="../Credentials/" class="md-nav__link">
         Credentials
       </a>
     </li>
@@ -992,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/local/" class="md-nav__link">
+      <a href="../local/" class="md-nav__link">
         Manage Local
       </a>
     </li>
@@ -1004,12 +940,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" data-md-state="indeterminate" type="checkbox" id="__nav_5_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" type="checkbox" id="__nav_5_5" checked>
       
       
       
@@ -1032,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/st-provide/" class="md-nav__link">
+      <a href="../st-provide/" class="md-nav__link">
         Providers
       </a>
     </li>
@@ -1044,11 +982,117 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Advanced/st-drives/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Drives
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Drives
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#powershell-drive-cmdlets" class="md-nav__link">
+    PowerShell Drive Cmdlets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#working-with-powershell-drive-locations" class="md-nav__link">
+    Working with PowerShell drive locations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-the-filesystem" class="md-nav__link">
+    Manage the FileSystem
+  </a>
+  
+    <nav class="md-nav" aria-label="Manage the FileSystem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moving-within-the-file-system" class="md-nav__link">
+    Moving within the file system
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-new-files-or-folders" class="md-nav__link">
+    Create new files or folders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-files-or-folders" class="md-nav__link">
+    Delete files or folders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-and-enumerate-files-or-folders" class="md-nav__link">
+    Find and enumerate files or folders
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-the-registry" class="md-nav__link">
+    Manage The Registry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#work-with-certificates" class="md-nav__link">
+    Work with certificates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-powershell-drives" class="md-nav__link">
+    Other PowerShell Drives
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1093,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/job-back/" class="md-nav__link">
+      <a href="../job-back/" class="md-nav__link">
         Background Jobs
       </a>
     </li>
@@ -1107,7 +1151,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/job-sched/" class="md-nav__link">
+      <a href="../job-sched/" class="md-nav__link">
         Scheduled Jobs
       </a>
     </li>
@@ -1154,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/remoting/" class="md-nav__link">
+      <a href="../remoting/" class="md-nav__link">
         Basic
       </a>
     </li>
@@ -1168,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sec/" class="md-nav__link">
+      <a href="../rem_sec/" class="md-nav__link">
         Security
       </a>
     </li>
@@ -1182,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_mod/" class="md-nav__link">
+      <a href="../rem_mod/" class="md-nav__link">
         Modes
       </a>
     </li>
@@ -1196,7 +1240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_adv/" class="md-nav__link">
+      <a href="../rem_adv/" class="md-nav__link">
         Advanced
       </a>
     </li>
@@ -1210,7 +1254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sess/" class="md-nav__link">
+      <a href="../rem_sess/" class="md-nav__link">
         Sessions
       </a>
     </li>
@@ -1224,7 +1268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_wmi_cim/" class="md-nav__link">
+      <a href="../rem_wmi_cim/" class="md-nav__link">
         Using WMI or CIM
       </a>
     </li>
@@ -1271,7 +1315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-ur/" class="md-nav__link">
+      <a href="../ad-ur/" class="md-nav__link">
         Users
       </a>
     </li>
@@ -1285,7 +1329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-gr/" class="md-nav__link">
+      <a href="../ad-gr/" class="md-nav__link">
         Groups
       </a>
     </li>
@@ -1299,7 +1343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-ac/" class="md-nav__link">
+      <a href="../ad-ac/" class="md-nav__link">
         Accounts
       </a>
     </li>
@@ -1313,7 +1357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-ou/" class="md-nav__link">
+      <a href="../ad-ou/" class="md-nav__link">
         Organizational Units
       </a>
     </li>
@@ -1327,7 +1371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-obj/" class="md-nav__link">
+      <a href="../ad-obj/" class="md-nav__link">
         Objects
       </a>
     </li>
@@ -1374,7 +1418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-ipadd/" class="md-nav__link">
+      <a href="../net-ipadd/" class="md-nav__link">
         IP addresses
       </a>
     </li>
@@ -1388,7 +1432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-iproute/" class="md-nav__link">
+      <a href="../net-iproute/" class="md-nav__link">
         IP Routing
       </a>
     </li>
@@ -1402,7 +1446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-dns/" class="md-nav__link">
+      <a href="../net-dns/" class="md-nav__link">
         DNS
       </a>
     </li>
@@ -1416,7 +1460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-fire/" class="md-nav__link">
+      <a href="../net-fire/" class="md-nav__link">
         Firewall
       </a>
     </li>
@@ -1463,7 +1507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-gp/" class="md-nav__link">
+      <a href="../ws-gp/" class="md-nav__link">
         Group Policy
       </a>
     </li>
@@ -1477,7 +1521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-wf/" class="md-nav__link">
+      <a href="../ws-wf/" class="md-nav__link">
         Windows Feature
       </a>
     </li>
@@ -1491,7 +1535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-hv/" class="md-nav__link">
+      <a href="../ws-hv/" class="md-nav__link">
         Hyper-V
       </a>
     </li>
@@ -1505,7 +1549,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-iis/" class="md-nav__link">
+      <a href="../ws-iis/" class="md-nav__link">
         Internet Information Services
       </a>
     </li>
@@ -1551,36 +1595,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requesting-info" class="md-nav__link">
-    Requesting Info
+  <a href="#powershell-drive-cmdlets" class="md-nav__link">
+    PowerShell Drive Cmdlets
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#writing-info" class="md-nav__link">
-    Writing Info
+  <a href="#working-with-powershell-drive-locations" class="md-nav__link">
+    Working with PowerShell drive locations
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#out-gridview" class="md-nav__link">
-    Out-GridView
+  <a href="#manage-the-filesystem" class="md-nav__link">
+    Manage the FileSystem
   </a>
   
-    <nav class="md-nav" aria-label="Out-GridView">
+    <nav class="md-nav" aria-label="Manage the FileSystem">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#-outputmode-parameter" class="md-nav__link">
-    -OutputMode parameter
+  <a href="#moving-within-the-file-system" class="md-nav__link">
+    Moving within the file system
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-new-files-or-folders" class="md-nav__link">
+    Create new files or folders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-files-or-folders" class="md-nav__link">
+    Delete files or folders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-and-enumerate-files-or-folders" class="md-nav__link">
+    Find and enumerate files or folders
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-the-registry" class="md-nav__link">
+    Manage The Registry
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#work-with-certificates" class="md-nav__link">
+    Work with certificates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-powershell-drives" class="md-nav__link">
+    Other PowerShell Drives
+  </a>
   
 </li>
       
@@ -1598,34 +1684,79 @@
                 
 
 
-  <h1>Console IO</h1>
+  <h1>Drives</h1>
 
-<p>To enhance the usability of your scripts, you must learn how to accept user input. This skill allows you to create scripts that can be used for multiple purposes. In addition, accepting user input allows you to create scripts that are easier for others to use. </p>
-<h2 id="requesting-info">Requesting Info</h2>
-<p>The Read-Host cmdlet displays a request message, and then reads a response from the user. For example:</p>
-<p><div class="highlight"><pre><span></span><code><span class="nb">Read-Host</span> <span class="s2">&quot;Enter a computer name&quot;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Enter a computer name: SERVER
-SERVER
-</code></pre></div>
-The cmdlet adds a colon (:) after the request message, and places the user's response in the pipeline. In most cases, the user's response is captured in a variable, as in the following example:
-<div class="highlight"><pre><span></span><code><span class="nv">$computer</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Enter a computer name&quot;</span>
-<span class="n">Enter</span> <span class="n">a</span> <span class="n">computer</span> <span class="n">name</span><span class="p">:</span> <span class="n">SERVER</span>
-</code></pre></div></p>
-<p>You can combine a Write-Host command with Read-Host to display text and avoid a colon being appended, as the following example depicts:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Write-Host</span> <span class="s2">&quot;How many days? &quot;</span> <span class="n">-NoNewline</span>
-<span class="nv">$answer</span> <span class="p">=</span> <span class="nb">Read-Host</span>
-</code></pre></div>
-<p>Input from Read-Host is limited to 1022 characters.</p>
-<p>You can mask the input users enter at the prompt by using the -MaskInput or -AsSecureString parameters. Both parameters cause the characters entered by the user to display as asterisks (*). When -MaskInput is used, the response is collected as a String object. When -AsSecureString is used, the response is collected as a SecureString object. A SecureString object is required for scenarios such as setting passwords, where data shouldn't be stored as clear text in memory.</p>
-<h2 id="writing-info">Writing Info</h2>
-<p>To write data to the console:</p>
+<p>A PowerShell drive, or drive, is a connection to a data store. Each PowerShell drive uses a single PowerShell provider to connect to a data store. The PowerShell drive has all the capabilities of the PowerShell provider that it uses to make the connection.</p>
+<p>Names identify drives in Windows PowerShell. Drives can consist of a single letter. Single-letter drive names typically connect to a FileSystem drive. For example, drive C connects to the physical drive C of a computer. However, names also can consist of more than one character. For example, the drive HKCU connects to the HKEY_CURRENT_USER registry hive.</p>
+<p>To create a new connection, you use the New-PSDrive cmdlet. You must specify a unique drive name, the root location for the new drive, and the PowerShell provider that will make the connection. Depending on the PowerShell provider's capabilities, you might also specify alternative credentials and other options.</p>
+<p>Windows PowerShell always starts a new session with the following drives:</p>
 <ul>
-<li>Write-Host: Allows you to write data directly to the console, skipping the pipeline. For this reason, its output cannot be captured or redirected to logs. It is recommended not to use it.</li>
-<li>Write-Output: Allows data to be written to the pipeline. If there is no redirection to another command, the data will be output to the screen. This is the recommended way to print data to the console.</li>
-<li>Other ways:
-    Powershell has other cmdlets to produce console output. None of them use the pipeline (they function as Write-Host), but their output can be suppressed at will, through the use of environment variables. The commands are the following:</li>
+<li>Registry drives HKLM and HKCU</li>
+<li>Local hard drives, such as drive C</li>
+<li>Windows PowerShell storage drives Variable, Function, and Alias</li>
+<li>Web Services for Management (WS-Management) settings drive WSMan</li>
+<li>Environment variables drive Env</li>
+<li>Certificate store drive CERT</li>
 </ul>
+<p>You can review a list of drives by running the Get-PSDrive cmdlet.</p>
+<p>Drive names don't include a colon. Drive name examples include Variable and Alias. However, when you want to refer to a drive as a path, include a colon. For example, Variable: refers to the path to the Variable drive, just as C: refers to the path to drive C. Cmdlets such as New-PSDrive require a drive name, but when using these commands, don't include a colon in the drive name.</p>
+<h2 id="powershell-drive-cmdlets">PowerShell Drive Cmdlets</h2>
+<p>Because Windows PowerShell creates PowerShell drives for local drives (such as drive C), you might already be using some of the cmdlets associated with PowerShell drives without realizing it. PowerShell drives contain items that contain child items or item properties. The Windows PowerShell cmdlet names that work with PowerShell drive objects use the nouns Item, ChildItem, and ItemProperty.</p>
+<p>You can use the Get-Command cmdlet with the -Noun parameter to review a list of commands that work on each PowerShell drive object. You can also use Get-Help to review the help for each command. The following table describes the verbs that are associated with common PSDrive cmdlets.</p>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New</td>
+<td>Creates a new item or item property.</td>
+</tr>
+<tr>
+<td>Set</td>
+<td>Sets the value of an item or item property.</td>
+</tr>
+<tr>
+<td>Get</td>
+<td>Displays properties of an item or child item, or value of an item property.</td>
+</tr>
+<tr>
+<td>Clear</td>
+<td>Clears the value of an item or item property.</td>
+</tr>
+<tr>
+<td>Copy</td>
+<td>Copies an item or item property from one location to another.</td>
+</tr>
+<tr>
+<td>Move</td>
+<td>Moves an item or item property from one location to another.</td>
+</tr>
+<tr>
+<td>Remove</td>
+<td>Deletes an item or item property.</td>
+</tr>
+<tr>
+<td>Rename</td>
+<td>Renames an item or item property.</td>
+</tr>
+<tr>
+<td>Invoke</td>
+<td>Performs the default action that's associated with an item.</td>
+</tr>
+</tbody>
+</table>
+<p>The items in the various PowerShell drives behave differently. Although these commands work in all PowerShell drives, how the verbs act on the items in each PowerShell drive might vary. Additionally, other commands might work with those items. The other topics in this module describe how to work with specific PowerShell drives.</p>
+<p>When you use commands that have the Item, ChildItem, and ItemProperty nouns, you typically specify a path to tell the command what item or items you want to manipulate. Most of these commands have two parameters for paths:</p>
+<ul>
+<li>–Path. This typically interprets the asterisk (<em>) and the question mark (?) as wildcard characters. In other words, the path </em>.txt refers to all files ending in “.txt.” This approach works correctly in the file system because the file system doesn't allow item names to contain the asterisk or question mark characters.</li>
+<li>–LiteralPath. This parameter treats all characters as literals and doesn't interpret any character as a wildcard. The literal path .txt means the item named “.txt.” This approach is useful in drives where the asterisk and question mark characters are allowed in item names, such as in the registry.</li>
+</ul>
+<h2 id="working-with-powershell-drive-locations">Working with PowerShell drive locations</h2>
+<p>In addition to the commands for working with PowerShell drive items and item properties, there are also commands for working with PowerShell drive working locations. Working locations are paths within PowerShell drives to items that can have child items, such as a file system folder or registry path. The commands that manage PowerShell drive locations use the Location noun and include those described in the following table.</p>
 <table>
 <thead>
 <tr>
@@ -1635,54 +1766,143 @@ The cmdlet adds a colon (:) after the request message, and places the user's res
 </thead>
 <tbody>
 <tr>
-<td>Write-Warning</td>
-<td>Prints the message in orange, preceded by the word WARNING. Its printing depends on the value of the $WarningPerference variable, which defaults to Continue.</td>
+<td>Get-Location</td>
+<td>Displays the current working location.</td>
 </tr>
 <tr>
-<td>Write-Verbose</td>
-<td>Prints the message in blue, preceded by the word VERBOSE. Its printing depends on the value of the $VerbosePreference variable, which is set to SilentlyContinue by default.</td>
+<td>Set-Location</td>
+<td>Sets the current working location.</td>
 </tr>
 <tr>
-<td>Write-Debug</td>
-<td>Prints the message in blue, preceded by the word DEBUG. Its printing depends on the value of the $DebugPreference variable, which defaults to SilentlyContinue.</td>
+<td>Push-Location</td>
+<td>Adds a location to the top of a location stack.</td>
 </tr>
 <tr>
-<td>Write-error</td>
-<td>Generates an error message. Its printing depends on the value of the $ErrorActionPreference variable, which defaults to Continue.</td>
+<td>Pop-Location</td>
+<td>Changes the current location to the location at the top of a location stack.</td>
 </tr>
 </tbody>
 </table>
-<p>If the variable corresponding to the command has the value Continue, the message is printed. If the value is SilentlyContinue, the printing of the message is suppressed.</p>
-<h2 id="out-gridview">Out-GridView</h2>
-<p>Out-GridView is primarily used to review data. However, you can also use Out-GridView to create a simple menu selection interface. When the user makes one or more selections in the window presented by Out-GridView, the data for those objects is either passed further through the pipeline or placed into a variable.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$selection</span> <span class="p">=</span> <span class="nv">$users</span> <span class="p">|</span> <span class="nb">Out-GridView</span> <span class="n">-PassThru</span>
+<p>The Push-Location and Pop-Location cmdlets are the equivalent of the pushd and popd commands in the Windows Commamd Prompt (cmd.exe) console. In PowerShell, pushd and popd are aliases for those cmdlets.</p>
+<h2 id="manage-the-filesystem">Manage the FileSystem</h2>
+<p>Administrators who are familiar with using the Windows Command Prompt (cmd.exe) most likely know commands to manage a file system. Common cmd.exe commands include Dir, Move, Ren, RmDir, Del, Copy, MkDir, and Cd. In Windows PowerShell, these common commands are provided as aliases or functions that map to equivalent PowerShell drive cmdlets.</p>
+<p>You can use the Get-Alias or Get-Command cmdlets to identify the cmdlets that map to these aliases and functions. Keep in mind that the aliases and functions aren't exact duplicates of the original cmd.exe commands, but instead the syntax of an alias matches the corresponding cmdlet. For example, the Dir command is an alias for the Get-ChildItem cmdlet. To obtain a directory listing that includes subdirectories, you run the Get-ChildItem –Recurse command. The parameters are the same whether you decide to use the cmdlet name or the alias. That means that you can run the Dir –Recurse command, but not Dir /s as you would when using Windows Command Prompt.</p>
+<p>Because Windows PowerShell accepts a slash (/) or backslash () as a path separator, Windows PowerShell interprets Dir /s to display a directory listing for the folder named s. If a folder named s exists, the command appears to work and doesn't display an error. If no such folder exists, it displays an error.</p>
+<h3 id="moving-within-the-file-system">Moving within the file system</h3>
+<p>You can move within the file system by using the Set-Location cmdlet. This cmdlet functions similar to the Windows Command Prompt command Cd. When using it, you can specify either an absolute or a relative path. For example, Set-Location C:\Users changes to the C:\Users folder. Set-Location Temp changes to the Temp folder that's one level down from the current directory.</p>
+<h3 id="create-new-files-or-folders">Create new files or folders</h3>
+<p>You can create new files and folders by using the New-Item cmdlet. You include the -Path parameter to define the name and location, and the -ItemType parameter to specify whether you want to create a file or directory.</p>
+<h3 id="delete-files-or-folders">Delete files or folders</h3>
+<p>You can remove files or folders with the Remove-Item cmdlet and the positional -Path parameter. To delete folders that contain files, you need to include the -Recurse switch so that the child file items are also deleted. Otherwise, or you'll be asked to confirm the action.</p>
+<h3 id="find-and-enumerate-files-or-folders">Find and enumerate files or folders</h3>
+<p>Use the Get-Item cmdlet and the -Path parameter to retrieve a single file or folder. You can also retrieve the children of an item by including the * wildcard in the path. For example, the Get-Item * command returns all files and folders in the current directory. The Get-Item * command is equivalent to the Get-ChildItem cmdlet, which returns all the children of a specified path.</p>
+<p>You can use the Get-ChildItem cmdlet with the -Recurse switch to enumerate through child files and folders. The FileSystem provider also supports the -Exclude, -Include, and -Filter parameters. These modify the value of the -Path parameter and specify file and folder names to include or exclude in the retrieval process.</p>
+<h2 id="manage-the-registry">Manage The Registry</h2>
+<p>Experienced system administrators are familiar with the graphical Registry Editor, which they can use to manage registry keys, entries, and values. However, you can also manage the registry by using Windows PowerShell and the Registry provider.</p>
+<p>You can use the New-PSDrive cmdlet to create PowerShell drives for any part of the registry. PowerShell uses the Registry provider to create two PowerShell drives automatically:</p>
+<p>HKLM. Represents the HKEY_LOCAL_MACHINE registry hive.</p>
+<p>HKCU. Represents the HKEY_LOCAL_USER registry hive.</p>
+<p>You access registry keys by using cmdlets with the Item and ChildItem nouns, whereas you access entries and values by using cmdlets with the ItemProperty and ItemPropertyValue nouns. This is because PowerShell considers registry entries to be properties of a key item.</p>
+<p>To return all the registry keys under the HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion path, run the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ChildItem</span> <span class="n">HKLM</span><span class="p">:\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">Windows</span><span class="p">\</span><span class="n">CurrentVersion</span>
 </code></pre></div>
-<p>In the previous example, an array of user accounts is piped to Out-GridView. Out-GridView displays the user accounts on screen, and the user can select one or more rows in the Out-GridView window. When the user selects OK, the selected rows are stored in the $selection variable. You can then perform further processing on the users’ accounts.</p>
-<p>To retain more control over the amount of data that users can select, you can use the -OutputMode parameter instead of the -PassThru parameter. The following table depicts the values that can be defined for the -OutputMode parameter.</p>
-<h3 id="-outputmode-parameter">-OutputMode parameter</h3>
+<p>Within the registry, a registry key is equivalent to a folder within a file system that's used to organize information. The information used by apps is stored in registry values. The value name is a unique identifier for the value, and the value data is the information used by apps.</p>
+<p>For example, to return the registry values under the HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run path, run the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ItemProperty</span> <span class="n">HKLM</span><span class="p">:\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">Windows</span><span class="p">\</span><span class="n">CurrentVersion</span><span class="p">\</span><span class="n">Run</span>
+</code></pre></div>
+<p>You can use the Get-ItemPropertyValue cmdlet to obtain the value of a specific registry entry. For example, if you want to return the path to the Windows Defender executable identified by the value WindowsDefender entry, run the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ItemPropertyValue</span> <span class="n">HKLM</span><span class="p">:\</span><span class="n">SOFTWARE</span><span class="p">\</span><span class="n">Microsoft</span><span class="p">\</span><span class="n">Windows</span><span class="p">\</span><span class="n">CurrentVersion</span><span class="p">\</span><span class="n">Run</span> <span class="n">-Name</span> <span class="n">WindowsDefender</span>
+</code></pre></div>
+<p>The Registry provider doesn't support the Invoke-Item cmdlet. There's no default action for registry keys, entries, or values.</p>
+<p>The Registry provider supports a dynamic parameter, -Type, for the *-ItemProperty cmdlets that are unique to the Registry provider. The following table lists valid parameter values and their equivalent registry data types.</p>
 <table>
 <thead>
 <tr>
-<th>Value</th>
-<th>Description</th>
+<th>Parameter value</th>
+<th>Registry data type</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>None</td>
-<td>This is the default value that doesn't pass any objects further down the pipeline.</td>
+<td>String</td>
+<td>REG_SZ</td>
 </tr>
 <tr>
-<td>Single</td>
-<td>This value allows users to select zero rows or one row in the Out-GridView window.</td>
+<td>ExpandString</td>
+<td>REG_EXPAND_SZ</td>
 </tr>
 <tr>
-<td>Multiple</td>
-<td>This value allows users to select zero rows, one row, or multiple rows in the Out-GridView window. This value is equivalent to using the -PassThru parameter.</td>
+<td>Binary</td>
+<td>REG_BINARY</td>
+</tr>
+<tr>
+<td>DWord</td>
+<td>REG_DWORD</td>
+</tr>
+<tr>
+<td>MultiString</td>
+<td>REG_MULTI_SZ</td>
+</tr>
+<tr>
+<td>QWord</td>
+<td>REG_QWORD</td>
+</tr>
+<tr>
+<td>Unknown</td>
+<td>Unsupported types such as REG_RESOURCE_LIST</td>
 </tr>
 </tbody>
 </table>
-<p>Because users aren't forced to select a row in the Out-GridView window, you must ensure that your script properly handles the scenario where a row isn't selected.</p>
+<p>The Registry provider supports transactions that allow you to manage multiple commands as a single unit. The commands in a transaction will either all be committed (completed) or the results will be rolled back (undone). This feature allows you to set multiple registry values together without worrying that some of the settings will be updated successfully while others might fail. Use the -UseTransaction parameter to include a command in a transaction.</p>
+<p>For more information about transactions in Windows PowerShell, refer to the about_Transactions help topic.</p>
+<p>Remember to back up your registry settings before you attempt to modify registry keys and values. You can export registry settings to a file by using the reg.exe command.</p>
+<h2 id="work-with-certificates">Work with certificates</h2>
+<p>If you've reviewed or managed security certificates on a client or server computer, you've probably used the Certificates snap-in for the Microsoft Management Console (MMC). The Certificates snap-in enables you to browse the certificates stores on local or remote computers. The Windows PowerShell Certificates provider also allows you to review and manage security certificates.</p>
+<p>The Certificates provider creates a PowerShell drive named Cert. The Cert drive always has at least two high-level store locations that group certificates for the users and the local computer. These locations are CurrentUser and LocalMachine. The certificates specific to the user or computer are in the My subfolder, represented by the Cert:\CurrentUser\My notation.</p>
+<p>The Certificates provider supports the Get, Set, Move, New, Remove, and Invoke verbs in combination with the Item and ChildItem nouns. (Note that the ItemProperty noun is not supported.) All *-Location commands are also supported.</p>
+<p>The Invoke-Item cmdlet in combination with the Certificates provider opens the MMC with the Certificates snap-in automatically loaded.</p>
+<p>The Get-ChildItem command has various dynamic parameters that are unique to the Certificate provider. These parameters include:</p>
+<ul>
+<li>-CodeSigningCert. Gets certificates that can be used for code signing.</li>
+<li>-DocumentEncryptionCert. Gets certificates for document encryption.</li>
+<li>-DnsName. Gets certificates with the domain name in the DNSNameList property of the certificate. This parameter accepts wildcards.</li>
+<li>-EKU. Gets certificates with the specified text in the EnhancedKeyUsageList property. This parameter supports wildcards.</li>
+<li>-ExpiringInDays. Gets certificates that are expiring within the specified number of days.</li>
+<li>-SSLServerAuthentication. Gets only Secure Sockets Layer (SSL) server certificates.</li>
+</ul>
+<p>There are also many certificate management cmdlets in the pki module that don't require you to use the Cert drive. For example, to create a self-signed certificate for the server webapp.contoso.com, use the following code:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">New-SelfSignedCertificate</span> <span class="n">-DnsName</span> <span class="s2">&quot;webapp.contoso.com&quot;</span> <span class="n">-CertStoreLocation</span> <span class="s2">&quot;Cert:\LocalMachine\My&quot;</span>
+</code></pre></div>
+<p>For a list of certificate management cmdlets in the pki module, run Get-Command -Module pki.</p>
+<h2 id="other-powershell-drives">Other PowerShell Drives</h2>
+<p>In addition to the file system drives, the registry drives, and the Cert drive, Windows PowerShell includes other drives:</p>
+<ul>
+<li>Alias. Review and manage Windows PowerShell aliases.</li>
+<li>Env. Review and manage Windows environment variables.</li>
+<li>Function. Review and manage Windows PowerShell functions.</li>
+<li>Variable. Review and manage Windows PowerShell variables.</li>
+<li>WSMan. Review and manage WS-Management configurations.</li>
+</ul>
+<p>There are many providers included with other modules that can create PowerShell drives. For example, the process of installing management tools for Windows Server roles often includes additional drives such as:</p>
+<ul>
+<li>AD. This drive is created by the ActiveDirectory provider, which is part of the ActiveDirectory module included with the Remote Server Administration Tools (RSAT). The ActiveDirectory provider supports reviewing and managing AD DS database contents, such as user and computer accounts.</li>
+<li>IIS. This drive is created by the WebAdministration provider, which is part of the WebAdministration module that's included with IIS management tools. The WebAdministration provider allows you to review and manage application pools, websites, web applications, and virtual directories.</li>
+</ul>
+<p>The ActiveDirectory module includes many cmdlets for managing Active Directory objects. To review the cmdlets in the ActiveDirectory module, run Get-Command -Module ActiveDirectory.</p>
+<p>The WebAdministration module includes many cmdlets for managing IIS. To review the cmdlets in the WebAdministration module, run Get-Command -Module WebAdministration.</p>
+<p>These additional drives support using most of the standard provider verbs and nouns. There might also be specific cmdlets that can perform the same functions. For instance, you can use the Get-Alias cmdlet or the following provider-based command to return a list of all aliases in the current Windows PowerShell session:
+In some cases, there are no equivalent cmdlets for a provider-based command. For example, there's no Remove-Alias cmdlet that deletes an alias, but you can use either of the following commands to delete an alias named MyAlias:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Item</span> <span class="n">-Path</span> <span class="k">Alias</span><span class="p">:</span>
+</code></pre></div>
+<p>In some cases, there are no equivalent cmdlets for a provider-based command. For example, there's no Remove-Alias cmdlet that deletes an alias, but you can use either of the following commands to delete an alias named MyAlias:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Remove-Item</span> <span class="n">-Path</span> <span class="k">Alias</span><span class="p">:</span><span class="n">MyAlias</span>
+
+<span class="nb">Clear-Item</span> <span class="n">-Path</span> <span class="k">Alias</span><span class="p">:</span><span class="n">MyAlias</span>
+</code></pre></div>
+<p>the providers used to create these drives can have dynamic parameters or properties associated with them. The Alias provider, for example, includes the dynamic parameter -Options, which you can use to specify the Options property of an alias.</p>
+<p>To understand what you can do with an item that's accessible through a drive, you should review the help for the provider that's used to create the drive. In the help, you can identify any dynamic parameters or properties. You can identify the provider used to create a drive by using the Get-PSDrive cmdlet. You can use the Get-Help cmdlet to review the help available for the provider. For example, you could use the command to review help for the Alias provider:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Help</span> <span class="n">About_Alias_Provider</span>
+</code></pre></div>
 
               
             </article>
@@ -1696,7 +1916,7 @@ The cmdlet adds a colon (:) after the request message, and places the user's res
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../ds/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data Structures" rel="prev">
+        <a href="../st-provide/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Providers" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1705,20 +1925,20 @@ The cmdlet adds a colon (:) after the request message, and places the user's res
               <span class="md-footer__direction">
                 Previous
               </span>
-              Data Structures
+              Providers
             </div>
           </div>
         </a>
       
       
         
-        <a href="../basic/" class="md-footer__link md-footer__link--next" aria-label="Next: Basic Scripting" rel="next">
+        <a href="../job-back/" class="md-footer__link md-footer__link--next" aria-label="Next: Background Jobs" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Basic Scripting
+              Background Jobs
             </div>
           </div>
           <div class="md-footer__button md-icon">

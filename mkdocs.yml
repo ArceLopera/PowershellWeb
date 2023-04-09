@@ -127,6 +127,12 @@ nav:
     - Modules: Advanced\modules.md
     - Credentials: Advanced\Credentials.md
     - Manage Local: Advanced\local.md
+    - Storage:
+      - Providers: Advanced\st-provide.md
+      - Drives: Advanced\st-drives.md
+    - Automation:
+      - Background Jobs: Advanced\job-back.md
+      - Scheduled Jobs: Advanced\job-sched.md
     - Remoting: 
       - Basic: Advanced\remoting.md
       - Security: Advanced\rem_sec.md
