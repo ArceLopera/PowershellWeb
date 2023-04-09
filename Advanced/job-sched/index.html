@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/ConsoleIO/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Advanced/job-sched/">
       
       <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Console IO - Powershell Refresher</title>
+        <title>Scheduled Jobs - Powershell Refresher</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#requesting-info" class="md-skip">
+        <a href="#scheduled-tasks" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Console IO
+              Scheduled Jobs
             
           </span>
         </div>
@@ -239,15 +239,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../variables/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Scripting/variables/" class="md-tabs__link">
         Scripting
       </a>
     </li>
@@ -257,13 +255,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-tabs__link">
+      <a href="../ErrorHandling/" class="md-tabs__link md-tabs__link--active">
         Advanced
       </a>
     </li>
@@ -682,14 +682,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -712,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../Scripting/variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -726,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ds/" class="md-nav__link">
+      <a href="../../Scripting/ds/" class="md-nav__link">
         Data Structures
       </a>
     </li>
@@ -738,75 +736,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Console IO
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Scripting/ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requesting-info" class="md-nav__link">
-    Requesting Info
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#writing-info" class="md-nav__link">
-    Writing Info
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#out-gridview" class="md-nav__link">
-    Out-GridView
-  </a>
-  
-    <nav class="md-nav" aria-label="Out-GridView">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#-outputmode-parameter" class="md-nav__link">
-    -OutputMode parameter
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -818,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basic/" class="md-nav__link">
+      <a href="../../Scripting/basic/" class="md-nav__link">
         Basic Scripting
       </a>
     </li>
@@ -832,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../comments/" class="md-nav__link">
+      <a href="../../Scripting/comments/" class="md-nav__link">
         Script Documentation
       </a>
     </li>
@@ -846,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/" class="md-nav__link">
+      <a href="../../Scripting/advanced/" class="md-nav__link">
         Advanced Script
       </a>
     </li>
@@ -860,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cond/" class="md-nav__link">
+      <a href="../../Scripting/cond/" class="md-nav__link">
         Conditionals
       </a>
     </li>
@@ -874,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loops/" class="md-nav__link">
+      <a href="../../Scripting/loops/" class="md-nav__link">
         Loops
       </a>
     </li>
@@ -888,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../break_cont/" class="md-nav__link">
+      <a href="../../Scripting/break_cont/" class="md-nav__link">
         Break & Continue
       </a>
     </li>
@@ -902,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../functions/" class="md-nav__link">
+      <a href="../../Scripting/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -922,12 +856,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -950,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-nav__link">
+      <a href="../ErrorHandling/" class="md-nav__link">
         Handling Errors
       </a>
     </li>
@@ -964,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/modules/" class="md-nav__link">
+      <a href="../modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -978,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/Credentials/" class="md-nav__link">
+      <a href="../Credentials/" class="md-nav__link">
         Credentials
       </a>
     </li>
@@ -992,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/local/" class="md-nav__link">
+      <a href="../local/" class="md-nav__link">
         Manage Local
       </a>
     </li>
@@ -1032,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/st-provide/" class="md-nav__link">
+      <a href="../st-provide/" class="md-nav__link">
         Providers
       </a>
     </li>
@@ -1046,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/st-drives/" class="md-nav__link">
+      <a href="../st-drives/" class="md-nav__link">
         Drives
       </a>
     </li>
@@ -1065,12 +1001,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" data-md-state="indeterminate" type="checkbox" id="__nav_5_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" type="checkbox" id="__nav_5_6" checked>
       
       
       
@@ -1093,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/job-back/" class="md-nav__link">
+      <a href="../job-back/" class="md-nav__link">
         Background Jobs
       </a>
     </li>
@@ -1105,11 +1043,89 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Advanced/job-sched/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Scheduled Jobs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Scheduled Jobs
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scheduled-tasks" class="md-nav__link">
+    Scheduled tasks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#define-scheduled-jobs" class="md-nav__link">
+    Define Scheduled Jobs
+  </a>
+  
+    <nav class="md-nav" aria-label="Define Scheduled Jobs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#job-options" class="md-nav__link">
+    Job options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#job-triggers" class="md-nav__link">
+    Job triggers
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-and-register-a-scheduled-job" class="md-nav__link">
+    Create and Register a Scheduled Job
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retrieve-the-results" class="md-nav__link">
+    Retrieve The Results
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1154,7 +1170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/remoting/" class="md-nav__link">
+      <a href="../remoting/" class="md-nav__link">
         Basic
       </a>
     </li>
@@ -1168,7 +1184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sec/" class="md-nav__link">
+      <a href="../rem_sec/" class="md-nav__link">
         Security
       </a>
     </li>
@@ -1182,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_mod/" class="md-nav__link">
+      <a href="../rem_mod/" class="md-nav__link">
         Modes
       </a>
     </li>
@@ -1196,7 +1212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_adv/" class="md-nav__link">
+      <a href="../rem_adv/" class="md-nav__link">
         Advanced
       </a>
     </li>
@@ -1210,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sess/" class="md-nav__link">
+      <a href="../rem_sess/" class="md-nav__link">
         Sessions
       </a>
     </li>
@@ -1224,7 +1240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_wmi_cim/" class="md-nav__link">
+      <a href="../rem_wmi_cim/" class="md-nav__link">
         Using WMI or CIM
       </a>
     </li>
@@ -1271,7 +1287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-ur/" class="md-nav__link">
+      <a href="../ad-ur/" class="md-nav__link">
         Users
       </a>
     </li>
@@ -1285,7 +1301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-gr/" class="md-nav__link">
+      <a href="../ad-gr/" class="md-nav__link">
         Groups
       </a>
     </li>
@@ -1299,7 +1315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-ac/" class="md-nav__link">
+      <a href="../ad-ac/" class="md-nav__link">
         Accounts
       </a>
     </li>
@@ -1313,7 +1329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-ou/" class="md-nav__link">
+      <a href="../ad-ou/" class="md-nav__link">
         Organizational Units
       </a>
     </li>
@@ -1327,7 +1343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-obj/" class="md-nav__link">
+      <a href="../ad-obj/" class="md-nav__link">
         Objects
       </a>
     </li>
@@ -1374,7 +1390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-ipadd/" class="md-nav__link">
+      <a href="../net-ipadd/" class="md-nav__link">
         IP addresses
       </a>
     </li>
@@ -1388,7 +1404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-iproute/" class="md-nav__link">
+      <a href="../net-iproute/" class="md-nav__link">
         IP Routing
       </a>
     </li>
@@ -1402,7 +1418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-dns/" class="md-nav__link">
+      <a href="../net-dns/" class="md-nav__link">
         DNS
       </a>
     </li>
@@ -1416,7 +1432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-fire/" class="md-nav__link">
+      <a href="../net-fire/" class="md-nav__link">
         Firewall
       </a>
     </li>
@@ -1463,7 +1479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-gp/" class="md-nav__link">
+      <a href="../ws-gp/" class="md-nav__link">
         Group Policy
       </a>
     </li>
@@ -1477,7 +1493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-wf/" class="md-nav__link">
+      <a href="../ws-wf/" class="md-nav__link">
         Windows Feature
       </a>
     </li>
@@ -1491,7 +1507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-hv/" class="md-nav__link">
+      <a href="../ws-hv/" class="md-nav__link">
         Hyper-V
       </a>
     </li>
@@ -1505,7 +1521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-iis/" class="md-nav__link">
+      <a href="../ws-iis/" class="md-nav__link">
         Internet Information Services
       </a>
     </li>
@@ -1551,36 +1567,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requesting-info" class="md-nav__link">
-    Requesting Info
+  <a href="#scheduled-tasks" class="md-nav__link">
+    Scheduled tasks
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#writing-info" class="md-nav__link">
-    Writing Info
+  <a href="#define-scheduled-jobs" class="md-nav__link">
+    Define Scheduled Jobs
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#out-gridview" class="md-nav__link">
-    Out-GridView
-  </a>
-  
-    <nav class="md-nav" aria-label="Out-GridView">
+    <nav class="md-nav" aria-label="Define Scheduled Jobs">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#-outputmode-parameter" class="md-nav__link">
-    -OutputMode parameter
+  <a href="#job-options" class="md-nav__link">
+    Job options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#job-triggers" class="md-nav__link">
+    Job triggers
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-and-register-a-scheduled-job" class="md-nav__link">
+    Create and Register a Scheduled Job
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#retrieve-the-results" class="md-nav__link">
+    Retrieve The Results
+  </a>
   
 </li>
       
@@ -1598,91 +1628,138 @@
                 
 
 
-  <h1>Console IO</h1>
+  <h1>Scheduled Jobs</h1>
 
-<p>To enhance the usability of your scripts, you must learn how to accept user input. This skill allows you to create scripts that can be used for multiple purposes. In addition, accepting user input allows you to create scripts that are easier for others to use. </p>
-<h2 id="requesting-info">Requesting Info</h2>
-<p>The Read-Host cmdlet displays a request message, and then reads a response from the user. For example:</p>
-<p><div class="highlight"><pre><span></span><code><span class="nb">Read-Host</span> <span class="s2">&quot;Enter a computer name&quot;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Enter a computer name: SERVER
-SERVER
-</code></pre></div>
-The cmdlet adds a colon (:) after the request message, and places the user's response in the pipeline. In most cases, the user's response is captured in a variable, as in the following example:
-<div class="highlight"><pre><span></span><code><span class="nv">$computer</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Enter a computer name&quot;</span>
-<span class="n">Enter</span> <span class="n">a</span> <span class="n">computer</span> <span class="n">name</span><span class="p">:</span> <span class="n">SERVER</span>
-</code></pre></div></p>
-<p>You can combine a Write-Host command with Read-Host to display text and avoid a colon being appended, as the following example depicts:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Write-Host</span> <span class="s2">&quot;How many days? &quot;</span> <span class="n">-NoNewline</span>
-<span class="nv">$answer</span> <span class="p">=</span> <span class="nb">Read-Host</span>
-</code></pre></div>
-<p>Input from Read-Host is limited to 1022 characters.</p>
-<p>You can mask the input users enter at the prompt by using the -MaskInput or -AsSecureString parameters. Both parameters cause the characters entered by the user to display as asterisks (*). When -MaskInput is used, the response is collected as a String object. When -AsSecureString is used, the response is collected as a SecureString object. A SecureString object is required for scenarios such as setting passwords, where data shouldn't be stored as clear text in memory.</p>
-<h2 id="writing-info">Writing Info</h2>
-<p>To write data to the console:</p>
+<p>Scheduled jobs are a combination of Windows PowerShell background jobs and Windows Task Scheduler tasks. Similar to background jobs, you define scheduled jobs in Windows PowerShell. Additionally, like tasks, job results are saved to disk, and scheduled jobs can run even if Windows PowerShell isn't running.</p>
+<h2 id="scheduled-tasks">Scheduled tasks</h2>
+<p>Scheduled tasks are part of the Windows core infrastructure components. Other Windows components and products that run on Windows extensively use scheduled tasks. They're generally simpler than scheduled jobs. The Task Scheduler enables you to configure a schedule for running almost any program or process, in any security context, triggered by various system events or a particular date or time.</p>
+<p>However, scheduled tasks can't capture and manipulate task output. A scheduled task can run almost anything runnable on a Windows device, so it's impossible to anticipate and capture the scheduled task’s output. However, because a Windows PowerShell scheduled job is always a Windows PowerShell script, even if that script runs a non-Windows PowerShell program, the system is able to capture output. In this case, a Windows PowerShell object is returned at the end of the script block. A scheduled task consists of:</p>
 <ul>
-<li>Write-Host: Allows you to write data directly to the console, skipping the pipeline. For this reason, its output cannot be captured or redirected to logs. It is recommended not to use it.</li>
-<li>Write-Output: Allows data to be written to the pipeline. If there is no redirection to another command, the data will be output to the screen. This is the recommended way to print data to the console.</li>
-<li>Other ways:
-    Powershell has other cmdlets to produce console output. None of them use the pipeline (they function as Write-Host), but their output can be suppressed at will, through the use of environment variables. The commands are the following:</li>
+<li>The Action, which specifies the program to be run.</li>
+<li>The Principal, which identifies the context to use to run an action.</li>
+<li>The Trigger, which defines the time or system event that determines when the program is to be run.</li>
+<li>The Additional settings, which further configure the task and control how the action is run.</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Write-Warning</td>
-<td>Prints the message in orange, preceded by the word WARNING. Its printing depends on the value of the $WarningPerference variable, which defaults to Continue.</td>
-</tr>
-<tr>
-<td>Write-Verbose</td>
-<td>Prints the message in blue, preceded by the word VERBOSE. Its printing depends on the value of the $VerbosePreference variable, which is set to SilentlyContinue by default.</td>
-</tr>
-<tr>
-<td>Write-Debug</td>
-<td>Prints the message in blue, preceded by the word DEBUG. Its printing depends on the value of the $DebugPreference variable, which defaults to SilentlyContinue.</td>
-</tr>
-<tr>
-<td>Write-error</td>
-<td>Generates an error message. Its printing depends on the value of the $ErrorActionPreference variable, which defaults to Continue.</td>
-</tr>
-</tbody>
-</table>
-<p>If the variable corresponding to the command has the value Continue, the message is printed. If the value is SilentlyContinue, the printing of the message is suppressed.</p>
-<h2 id="out-gridview">Out-GridView</h2>
-<p>Out-GridView is primarily used to review data. However, you can also use Out-GridView to create a simple menu selection interface. When the user makes one or more selections in the window presented by Out-GridView, the data for those objects is either passed further through the pipeline or placed into a variable.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$selection</span> <span class="p">=</span> <span class="nv">$users</span> <span class="p">|</span> <span class="nb">Out-GridView</span> <span class="n">-PassThru</span>
+<p>Commands that work with scheduled tasks are in the ScheduledTasks module that's included with Windows 10 and Windows Server 2019. To review the complete list of commands, run the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Command</span> <span class="err">–</span><span class="n">Module</span> <span class="n">ScheduledTasks</span>
 </code></pre></div>
-<p>In the previous example, an array of user accounts is piped to Out-GridView. Out-GridView displays the user accounts on screen, and the user can select one or more rows in the Out-GridView window. When the user selects OK, the selected rows are stored in the $selection variable. You can then perform further processing on the users’ accounts.</p>
-<p>To retain more control over the amount of data that users can select, you can use the -OutputMode parameter instead of the -PassThru parameter. The following table depicts the values that can be defined for the -OutputMode parameter.</p>
-<h3 id="-outputmode-parameter">-OutputMode parameter</h3>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>None</td>
-<td>This is the default value that doesn't pass any objects further down the pipeline.</td>
-</tr>
-<tr>
-<td>Single</td>
-<td>This value allows users to select zero rows or one row in the Out-GridView window.</td>
-</tr>
-<tr>
-<td>Multiple</td>
-<td>This value allows users to select zero rows, one row, or multiple rows in the Out-GridView window. This value is equivalent to using the -PassThru parameter.</td>
-</tr>
-</tbody>
-</table>
-<p>Because users aren't forced to select a row in the Out-GridView window, you must ensure that your script properly handles the scenario where a row isn't selected.</p>
+<p>As an example, check on the available scheduled tasks by running the Get-ScheduledTask command. This will list all available scheduled tasks, regardless of whether they're enabled or disabled.</p>
+<p>Get information on a specific task by running Get-ScheduledTask with the -TaskPath parameter. For best practices, ensure that you put the actual path in quotes. Get further information about a particular task by using the Get-ScheduledTaskInfo command. You can then combine these commands using a pipeline to get additional information. For example, retrieve detailed information about the Automatic Update task running on your system by entering the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-ScheduledTask</span> <span class="n">-TaskPath</span> <span class="s2">&quot;\Microsoft\Windows\WindowsUpdate\&quot;</span> <span class="p">|</span> <span class="nb">Get-ScheduledTaskInfo</span>
+</code></pre></div>
+<p>You also can create and run scheduled tasks from the Task Scheduler. However, what if you're running Windows PowerShell commands or scripts, or Windows tools that don't write their output to a file? If output is important to you, a better choice is using a Windows PowerShell scheduled job. After that job is in the Task Scheduler, you can manipulate it further. You can start or stop it in the Task Scheduler. If you want to create multiple scheduled jobs or tasks locally, or even on remote computers, automate their creation and maintenance with the scheduled job or the scheduled task commands.</p>
+<p>Adding Windows PowerShell scripts as scheduled jobs in the Task Scheduler can greatly improve your productivity. PowerShell Gallery contains thousands of scripts that you can use or modify for your specific use, and these scripts are separated into various categories.</p>
+<p>For example, there are hundreds of viable scripts that you can run against Active Directory Domain Services (AD DS) and other Active Directory services. Some of these scripts can be very useful. An example is the script that finds user accounts that haven't been used for more than 90 days and then disables them, which can help strengthen domain security. You can modify this script to your specific domain, and then create it as a scheduled job. After you configure this task, you can then find and manipulate the job in the Task Scheduler. Schedule it to run every week and provide a report about what accounts, if any, were disabled.</p>
+<h2 id="define-scheduled-jobs">Define Scheduled Jobs</h2>
+<p>Scheduled jobs are a useful combination of Windows PowerShell background jobs and Windows Task Scheduler tasks. Similar to the latter, scheduled jobs are saved to disk. You can review and manage Windows PowerShell scheduled jobs in the Task Scheduler, enabling and disabling tasks or simply running the scheduled job. You can even use the scheduled job:</p>
+<ul>
+<li>As a template for creating other scheduled jobs.</li>
+<li>To establish a one-time schedule or periodic schedule for starting jobs.</li>
+<li>To set conditions under which jobs start again.</li>
+</ul>
+<p>You can do all of these tasks from the Task Scheduler.</p>
+<p>Windows PowerShell saves the results of scheduled jobs to disk and creates a running log of job output. Scheduled jobs have a customized set of commands that you can use to manage them. You can use these commands to create, edit, manage, disable, and re-enable scheduled jobs, job triggers, and job options.</p>
+<p>To create a scheduled job, use the scheduled job commands. Note that anything created in Task Scheduler is considered a scheduled task even if it's in the Microsoft\Windows\PowerShell\ScheduledJobs path in the Task Scheduler. After you create a scheduled job, review and manage it in the Task Scheduler by selecting a scheduled job to:</p>
+<ul>
+<li>Find the job triggers on the Triggers tab.</li>
+<li>Find the scheduled job options on the General and Conditions tabs.</li>
+<li>Review the job instances that have already been run on the History tab.</li>
+</ul>
+<p>When you change a scheduled job setting in Task Scheduler, the change applies for all future instances of that scheduled job.</p>
+<p>The commands that work with scheduled jobs in the PSScheduledJob module are included in the current versions of the Windows Server and Client operating systems. To review the complete list of commands, run the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Command</span> <span class="err">–</span><span class="n">Module</span> <span class="n">PSScheduledJob</span>
+</code></pre></div>
+<p>Scheduled jobs consist of three components:</p>
+<ul>
+<li>The job itself defines the command that will run.</li>
+<li>Job options define options and running criteria.</li>
+<li>Job triggers define when the job will run.</li>
+</ul>
+<p>You typically create a job option object and a job trigger object, and store those objects in variables. You then use those variables when creating the actual scheduled job.</p>
+<p>The ScheduledTasks module includes commands that can manage all tasks in the Windows Task Scheduler.</p>
+<h3 id="job-options">Job options</h3>
+<p>Use New-ScheduledJobOption to create a new job option object. This command has several parameters that let you define options for the job, such as:</p>
+<ul>
+<li>–HideInTaskScheduler, which prevents the job from displaying in the Task Scheduler. If you don't include this option, the final job will display in the Task Scheduler graphical user interface (GUI).</li>
+<li>–RunElevated, which configures the job to run under elevated permissions.</li>
+<li>–WakeToRun, which wakes the computer when the job is scheduled to run.</li>
+</ul>
+<p>Use other parameters to configure jobs that run when the computer is idle and other options. Many parameters correspond to options in the Task Scheduler GUI.</p>
+<p>Create a new option object and store it in a variable by using the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$opt</span> <span class="p">=</span> <span class="nb">New-ScheduledJobOption</span> <span class="err">–</span><span class="n">RequireNetwork</span> <span class="err">–</span><span class="n">RunElevated</span> <span class="n">-WakeToRun</span>
+</code></pre></div>
+<p>You don't need to create an option object if you don't want to specify any of its configuration items.</p>
+<h3 id="job-triggers">Job triggers</h3>
+<p>A job trigger defines when a job will run. Each job can have multiple triggers. You create a trigger object by using the New-JobTrigger command. There are five basic types of triggers:</p>
+<ul>
+<li>–Once specifies a job that runs one time only. You can also specify a –RandomDelay, and you must specify the –At parameter to define when the job will run. That parameter accepts a System.DateTime object or a string that can be interpreted as a date.</li>
+<li>–Weekly specifies a job that runs weekly. You can specify a –RandomDelay, and you must specify both the –At and –DaysOfWeek parameters. –At accepts a date and time to define when the job will run. –DaysOfWeek accepts one or more days of the week to run the job. You'll typically use –At to specify a time and use –DaysOfWeek to define the days the job should run.</li>
+<li>–Daily specifies a job that runs every day. You must specify –At and provide a time when the job will run. You can also specify a –RandomDelay.</li>
+<li>–AtLogOn specifies a job that runs when the user logs on. This kind of job is similar to a logon script, except that it's defined locally rather than in the domain. You can specify –User to limit the user accounts that trigger the job, and –RandomDelay to add a random delay.</li>
+<li>–AtStartUp is similar to –AtLogOn, except that it runs the job when the computer starts. That typically runs the job before a user signs in.</li>
+</ul>
+<p>For example, the following command creates a trigger that runs on Mondays and Thursdays every week, at 3:00 PM local time:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$trigger</span> <span class="p">=</span> <span class="nb">New-JobTrigger</span> <span class="n">-Weekly</span> <span class="n">-DaysOfWeek</span> <span class="n">Monday</span><span class="p">,</span><span class="n">Thursday</span> <span class="n">-At</span> <span class="s1">&#39;3:00PM&#39;</span>
+</code></pre></div>
+<h2 id="create-and-register-a-scheduled-job">Create and Register a Scheduled Job</h2>
+<p>Use Register-ScheduledJob to create and register a new scheduled job. Specify any of the following parameters:</p>
+<ul>
+<li>–Name is required and specifies a display name for the job.</li>
+<li>–ScriptBlock is required and specifies the command or commands that the job runs. You also could specify + –FilePath and provide the path and name of a Windows PowerShell script file that the job will run.</li>
+<li>–Credential is optional and specifies the user account that will be used to run the job.</li>
+<li>–InitializationScript accepts an optional script block. The command or commands in that script block will run before the job starts.</li>
+<li>–MaxResultCount is optional and specifies the maximum number of result sets to store on disk. After this number is reached, the shell deletes older results to make room for new ones. The default value for the + -MaxResultCount parameter is 32.</li>
+<li>–ScheduledJobOption accepts a job option object.</li>
+<li>–Trigger accepts a job trigger object.</li>
+</ul>
+<p>To register a new job by using an option object in $opt and a trigger object in $trigger, use the following example:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$opt</span> <span class="p">=</span> <span class="nb">New-ScheduledJobOption</span> <span class="n">-WakeToRun</span>
+
+<span class="nv">$trigger</span> <span class="p">=</span> <span class="nb">New-ScheduledTaskTrigger</span> <span class="n">-Once</span> <span class="n">-At</span> <span class="p">(</span><span class="nb">Get-Date</span><span class="p">).</span><span class="n">AddMinutes</span><span class="p">(</span><span class="n">5</span><span class="p">)</span>
+
+<span class="nb">Register-ScheduledJob</span> <span class="n">-Trigger</span> <span class="nv">$trigger</span> <span class="n">-ScheduledJobOption</span> <span class="nv">$opt</span> <span class="n">-ScriptBlock</span> <span class="p">{</span> <span class="nb">Dir </span><span class="n">C</span><span class="p">:\</span> <span class="p">}</span> <span class="n">-MaxResultCount</span> <span class="n">5</span> <span class="n">-Name</span> <span class="s2">&quot;LocalDir&quot;</span>
+
+<span class="n">Id</span>         <span class="n">Name</span>            <span class="n">JobTriggers</span>     <span class="n">Command</span>       <span class="n">Enabled</span>   
+<span class="p">--</span>         <span class="p">----</span>            <span class="p">-----------</span>     <span class="p">-------</span>        <span class="p">-------</span>   
+<span class="n">1</span>          <span class="n">LocalDir</span>        <span class="n">1</span>                <span class="nb">Dir </span><span class="n">C</span><span class="p">:\</span>        <span class="n">True</span>
+</code></pre></div>
+<p>Windows PowerShell registers the resulting job in the Windows Task Scheduler and creates the job definition on disk. Job definitions are XML files stored in your profile folder in \AppData\Local\Microsoft\Windows\PowerShell\ScheduledJobs.</p>
+<p>You can run Get-ScheduledJob to review a list of scheduled jobs on the local computer. If you know a scheduled job’s name, you can use Get-JobTrigger and the –Name parameter to retrieve a list of that job’s triggers.</p>
+<h2 id="retrieve-the-results">Retrieve The Results</h2>
+<p>Because scheduled jobs can run when Windows PowerShell isn't running, results are stored on disk in XML files. If you create a job by using the –MaxResultCount parameter, the shell automatically deletes old XML files to make room for new ones. This deletion ensures that no more XML files exist than were specified in the –MaxResultCount parameter.</p>
+<p>After a scheduled job finishes, running Get-Job in Windows PowerShell displays the scheduled job's results as a job object.</p>
+<p>Here's an example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Job</span>
+
+<span class="n">Id</span>     <span class="n">Name</span>      <span class="n">PSJobTypeName</span>   <span class="n">State</span>         <span class="n">HasMoreData</span>     <span class="n">Location</span>       <span class="n">Command</span>
+<span class="p">--</span>     <span class="p">----</span>      <span class="p">-------------</span>   <span class="p">-----</span>         <span class="p">-----------</span>     <span class="p">--------</span>       <span class="p">-------</span>
+<span class="n">6</span>      <span class="n">LocalDir</span>  <span class="n">PSScheduledJob</span>  <span class="n">Completed</span>     <span class="n">True</span>            <span class="n">localhost</span>      <span class="nb">Dir </span><span class="n">C</span><span class="p">:\</span>
+</code></pre></div>
+<p>You can use Receive-Job to get a scheduled job's results. If you don't specify –Keep, you can receive a job's results only once per Windows PowerShell session. However, because the results are stored on disk, you can open a new Windows PowerShell session and receive the results again. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Receive-Job</span> <span class="n">-id</span> <span class="n">6</span> <span class="n">-Keep</span>
+
+
+    <span class="n">Directory</span><span class="p">:</span> <span class="n">C</span><span class="p">:\</span>
+
+
+<span class="n">Mode</span>                <span class="n">LastWriteTime</span>     <span class="n">Length</span> <span class="n">Name</span>                    
+<span class="p">----</span>                <span class="p">-------------</span>     <span class="p">------</span> <span class="p">----</span>                    
+<span class="n">d</span><span class="p">----</span>         <span class="n">7</span><span class="p">/</span><span class="n">26</span><span class="p">/</span><span class="n">2021</span>  <span class="n">12</span><span class="p">:</span><span class="n">33</span> <span class="n">AM</span>            <span class="n">PerfLogs</span>                
+<span class="n">d-r</span><span class="p">--</span>        <span class="n">11</span><span class="p">/</span><span class="n">28</span><span class="p">/</span><span class="n">2021</span>   <span class="n">1</span><span class="p">:</span><span class="n">54</span> <span class="n">PM</span>            <span class="n">Program</span> <span class="n">Files</span>           
+<span class="n">d-r</span><span class="p">--</span>        <span class="n">12</span><span class="p">/</span><span class="n">28</span><span class="p">/</span><span class="n">2021</span>   <span class="n">2</span><span class="p">:</span><span class="n">22</span> <span class="n">PM</span>            <span class="n">Program</span> <span class="n">Files</span> <span class="p">(</span><span class="n">x86</span><span class="p">)</span>     
+<span class="n">d</span><span class="p">----</span>        <span class="n">11</span><span class="p">/</span><span class="n">16</span><span class="p">/</span><span class="n">2021</span>   <span class="n">9</span><span class="p">:</span><span class="n">33</span> <span class="n">AM</span>            <span class="n">reports</span>                 
+<span class="n">d</span><span class="p">----</span>         <span class="n">9</span><span class="p">/</span><span class="n">18</span><span class="p">/</span><span class="n">2021</span>   <span class="n">7</span><span class="p">:</span><span class="n">28</span> <span class="n">AM</span>            <span class="n">Review</span>                  
+<span class="n">d</span><span class="p">----</span>          <span class="n">1</span><span class="p">/</span><span class="n">5</span><span class="p">/</span><span class="n">2022</span>   <span class="n">7</span><span class="p">:</span><span class="n">49</span> <span class="n">AM</span>            <span class="n">scr</span>                     
+<span class="n">d</span><span class="p">----</span>          <span class="n">1</span><span class="p">/</span><span class="n">5</span><span class="p">/</span><span class="n">2022</span>   <span class="n">7</span><span class="p">:</span><span class="n">50</span> <span class="n">AM</span>            <span class="n">scrx</span>                    
+<span class="n">d-r</span><span class="p">--</span>         <span class="n">9</span><span class="p">/</span><span class="n">15</span><span class="p">/</span><span class="n">2021</span>   <span class="n">8</span><span class="p">:</span><span class="n">16</span> <span class="n">AM</span>            <span class="n">Users</span>                   
+<span class="n">d</span><span class="p">----</span>        <span class="n">12</span><span class="p">/</span><span class="n">19</span><span class="p">/</span><span class="n">2021</span>   <span class="n">3</span><span class="p">:</span><span class="n">24</span> <span class="n">AM</span>            <span class="n">Windows</span>                 
+<span class="n">-a</span><span class="p">---</span>          <span class="n">1</span><span class="p">/</span><span class="n">1</span><span class="p">/</span><span class="n">2022</span>   <span class="n">9</span><span class="p">:</span><span class="n">39</span> <span class="n">AM</span>    <span class="n">2892628</span> <span class="n">EventReport</span><span class="p">.</span><span class="n">html</span>        
+<span class="n">-a</span><span class="p">---</span>          <span class="n">1</span><span class="p">/</span><span class="n">2</span><span class="p">/</span><span class="n">2022</span>  <span class="n">12</span><span class="p">:</span><span class="n">37</span> <span class="n">PM</span>         <span class="n">82</span> <span class="nb">Get-DiskInfo</span><span class="p">.</span><span class="n">ps1</span>        
+<span class="n">-a</span><span class="p">---</span>        <span class="n">12</span><span class="p">/</span><span class="n">30</span><span class="p">/</span><span class="n">2021</span>  <span class="n">12</span><span class="p">:</span><span class="n">33</span> <span class="n">PM</span>        <span class="n">246</span> <span class="n">test</span><span class="p">.</span><span class="n">ps1</span>
+</code></pre></div>
+<p>Each time the scheduled job runs, Windows PowerShell creates a new job object to represent the results of the most recent job that ran. You can use Remove-Job to remove a job and delete its results file from disk, as the following example depicts:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Job</span> <span class="n">-id</span> <span class="n">6</span> <span class="p">|</span> <span class="nb">Remove-Job</span>
+</code></pre></div>
 
               
             </article>
@@ -1696,7 +1773,7 @@ The cmdlet adds a colon (:) after the request message, and places the user's res
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../ds/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data Structures" rel="prev">
+        <a href="../job-back/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Background Jobs" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1705,20 +1782,20 @@ The cmdlet adds a colon (:) after the request message, and places the user's res
               <span class="md-footer__direction">
                 Previous
               </span>
-              Data Structures
+              Background Jobs
             </div>
           </div>
         </a>
       
       
         
-        <a href="../basic/" class="md-footer__link md-footer__link--next" aria-label="Next: Basic Scripting" rel="next">
+        <a href="../remoting/" class="md-footer__link md-footer__link--next" aria-label="Next: Basic" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Basic Scripting
+              Basic
             </div>
           </div>
           <div class="md-footer__button md-icon">

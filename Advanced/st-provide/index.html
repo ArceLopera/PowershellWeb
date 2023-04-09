@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Scripting/ConsoleIO/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Advanced/st-provide/">
       
       <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Console IO - Powershell Refresher</title>
+        <title>Providers - Powershell Refresher</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#requesting-info" class="md-skip">
+        <a href="#built-in-providers" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Console IO
+              Providers
             
           </span>
         </div>
@@ -239,15 +239,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../variables/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../Scripting/variables/" class="md-tabs__link">
         Scripting
       </a>
     </li>
@@ -257,13 +255,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-tabs__link">
+      <a href="../ErrorHandling/" class="md-tabs__link md-tabs__link--active">
         Advanced
       </a>
     </li>
@@ -682,14 +682,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" data-md-state="indeterminate" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -712,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../Scripting/variables/" class="md-nav__link">
         Variables
       </a>
     </li>
@@ -726,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ds/" class="md-nav__link">
+      <a href="../../Scripting/ds/" class="md-nav__link">
         Data Structures
       </a>
     </li>
@@ -738,75 +736,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Console IO
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Scripting/ConsoleIO/" class="md-nav__link">
         Console IO
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requesting-info" class="md-nav__link">
-    Requesting Info
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#writing-info" class="md-nav__link">
-    Writing Info
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#out-gridview" class="md-nav__link">
-    Out-GridView
-  </a>
-  
-    <nav class="md-nav" aria-label="Out-GridView">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#-outputmode-parameter" class="md-nav__link">
-    -OutputMode parameter
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -818,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basic/" class="md-nav__link">
+      <a href="../../Scripting/basic/" class="md-nav__link">
         Basic Scripting
       </a>
     </li>
@@ -832,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../comments/" class="md-nav__link">
+      <a href="../../Scripting/comments/" class="md-nav__link">
         Script Documentation
       </a>
     </li>
@@ -846,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/" class="md-nav__link">
+      <a href="../../Scripting/advanced/" class="md-nav__link">
         Advanced Script
       </a>
     </li>
@@ -860,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cond/" class="md-nav__link">
+      <a href="../../Scripting/cond/" class="md-nav__link">
         Conditionals
       </a>
     </li>
@@ -874,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../loops/" class="md-nav__link">
+      <a href="../../Scripting/loops/" class="md-nav__link">
         Loops
       </a>
     </li>
@@ -888,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../break_cont/" class="md-nav__link">
+      <a href="../../Scripting/break_cont/" class="md-nav__link">
         Break & Continue
       </a>
     </li>
@@ -902,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../functions/" class="md-nav__link">
+      <a href="../../Scripting/functions/" class="md-nav__link">
         Functions
       </a>
     </li>
@@ -922,12 +856,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -950,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ErrorHandling/" class="md-nav__link">
+      <a href="../ErrorHandling/" class="md-nav__link">
         Handling Errors
       </a>
     </li>
@@ -964,7 +900,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/modules/" class="md-nav__link">
+      <a href="../modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -978,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/Credentials/" class="md-nav__link">
+      <a href="../Credentials/" class="md-nav__link">
         Credentials
       </a>
     </li>
@@ -992,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/local/" class="md-nav__link">
+      <a href="../local/" class="md-nav__link">
         Manage Local
       </a>
     </li>
@@ -1004,12 +940,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" data-md-state="indeterminate" type="checkbox" id="__nav_5_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" type="checkbox" id="__nav_5_5" checked>
       
       
       
@@ -1030,11 +968,55 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Advanced/st-provide/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Providers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Providers
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#built-in-providers" class="md-nav__link">
+    Built-in Providers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#access-provider-help" class="md-nav__link">
+    Access Provider Help
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1046,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/st-drives/" class="md-nav__link">
+      <a href="../st-drives/" class="md-nav__link">
         Drives
       </a>
     </li>
@@ -1093,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/job-back/" class="md-nav__link">
+      <a href="../job-back/" class="md-nav__link">
         Background Jobs
       </a>
     </li>
@@ -1107,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/job-sched/" class="md-nav__link">
+      <a href="../job-sched/" class="md-nav__link">
         Scheduled Jobs
       </a>
     </li>
@@ -1154,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/remoting/" class="md-nav__link">
+      <a href="../remoting/" class="md-nav__link">
         Basic
       </a>
     </li>
@@ -1168,7 +1150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sec/" class="md-nav__link">
+      <a href="../rem_sec/" class="md-nav__link">
         Security
       </a>
     </li>
@@ -1182,7 +1164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_mod/" class="md-nav__link">
+      <a href="../rem_mod/" class="md-nav__link">
         Modes
       </a>
     </li>
@@ -1196,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_adv/" class="md-nav__link">
+      <a href="../rem_adv/" class="md-nav__link">
         Advanced
       </a>
     </li>
@@ -1210,7 +1192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_sess/" class="md-nav__link">
+      <a href="../rem_sess/" class="md-nav__link">
         Sessions
       </a>
     </li>
@@ -1224,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/rem_wmi_cim/" class="md-nav__link">
+      <a href="../rem_wmi_cim/" class="md-nav__link">
         Using WMI or CIM
       </a>
     </li>
@@ -1271,7 +1253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-ur/" class="md-nav__link">
+      <a href="../ad-ur/" class="md-nav__link">
         Users
       </a>
     </li>
@@ -1285,7 +1267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-gr/" class="md-nav__link">
+      <a href="../ad-gr/" class="md-nav__link">
         Groups
       </a>
     </li>
@@ -1299,7 +1281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-ac/" class="md-nav__link">
+      <a href="../ad-ac/" class="md-nav__link">
         Accounts
       </a>
     </li>
@@ -1313,7 +1295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-ou/" class="md-nav__link">
+      <a href="../ad-ou/" class="md-nav__link">
         Organizational Units
       </a>
     </li>
@@ -1327,7 +1309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ad-obj/" class="md-nav__link">
+      <a href="../ad-obj/" class="md-nav__link">
         Objects
       </a>
     </li>
@@ -1374,7 +1356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-ipadd/" class="md-nav__link">
+      <a href="../net-ipadd/" class="md-nav__link">
         IP addresses
       </a>
     </li>
@@ -1388,7 +1370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-iproute/" class="md-nav__link">
+      <a href="../net-iproute/" class="md-nav__link">
         IP Routing
       </a>
     </li>
@@ -1402,7 +1384,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-dns/" class="md-nav__link">
+      <a href="../net-dns/" class="md-nav__link">
         DNS
       </a>
     </li>
@@ -1416,7 +1398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/net-fire/" class="md-nav__link">
+      <a href="../net-fire/" class="md-nav__link">
         Firewall
       </a>
     </li>
@@ -1463,7 +1445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-gp/" class="md-nav__link">
+      <a href="../ws-gp/" class="md-nav__link">
         Group Policy
       </a>
     </li>
@@ -1477,7 +1459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-wf/" class="md-nav__link">
+      <a href="../ws-wf/" class="md-nav__link">
         Windows Feature
       </a>
     </li>
@@ -1491,7 +1473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-hv/" class="md-nav__link">
+      <a href="../ws-hv/" class="md-nav__link">
         Hyper-V
       </a>
     </li>
@@ -1505,7 +1487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Advanced/ws-iis/" class="md-nav__link">
+      <a href="../ws-iis/" class="md-nav__link">
         Internet Information Services
       </a>
     </li>
@@ -1551,36 +1533,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#requesting-info" class="md-nav__link">
-    Requesting Info
+  <a href="#built-in-providers" class="md-nav__link">
+    Built-in Providers
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#writing-info" class="md-nav__link">
-    Writing Info
+  <a href="#access-provider-help" class="md-nav__link">
+    Access Provider Help
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#out-gridview" class="md-nav__link">
-    Out-GridView
-  </a>
-  
-    <nav class="md-nav" aria-label="Out-GridView">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#-outputmode-parameter" class="md-nav__link">
-    -OutputMode parameter
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1598,91 +1560,45 @@
                 
 
 
-  <h1>Console IO</h1>
+  <h1>Providers</h1>
 
-<p>To enhance the usability of your scripts, you must learn how to accept user input. This skill allows you to create scripts that can be used for multiple purposes. In addition, accepting user input allows you to create scripts that are easier for others to use. </p>
-<h2 id="requesting-info">Requesting Info</h2>
-<p>The Read-Host cmdlet displays a request message, and then reads a response from the user. For example:</p>
-<p><div class="highlight"><pre><span></span><code><span class="nb">Read-Host</span> <span class="s2">&quot;Enter a computer name&quot;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Enter a computer name: SERVER
-SERVER
-</code></pre></div>
-The cmdlet adds a colon (:) after the request message, and places the user's response in the pipeline. In most cases, the user's response is captured in a variable, as in the following example:
-<div class="highlight"><pre><span></span><code><span class="nv">$computer</span> <span class="p">=</span> <span class="nb">Read-Host</span> <span class="s2">&quot;Enter a computer name&quot;</span>
-<span class="n">Enter</span> <span class="n">a</span> <span class="n">computer</span> <span class="n">name</span><span class="p">:</span> <span class="n">SERVER</span>
-</code></pre></div></p>
-<p>You can combine a Write-Host command with Read-Host to display text and avoid a colon being appended, as the following example depicts:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Write-Host</span> <span class="s2">&quot;How many days? &quot;</span> <span class="n">-NoNewline</span>
-<span class="nv">$answer</span> <span class="p">=</span> <span class="nb">Read-Host</span>
-</code></pre></div>
-<p>Input from Read-Host is limited to 1022 characters.</p>
-<p>You can mask the input users enter at the prompt by using the -MaskInput or -AsSecureString parameters. Both parameters cause the characters entered by the user to display as asterisks (*). When -MaskInput is used, the response is collected as a String object. When -AsSecureString is used, the response is collected as a SecureString object. A SecureString object is required for scenarios such as setting passwords, where data shouldn't be stored as clear text in memory.</p>
-<h2 id="writing-info">Writing Info</h2>
-<p>To write data to the console:</p>
+<p>PowerShell providers are adapters that connect Windows PowerShell to data stores. They offer an easier-to-understand and consistent interface for working with data stores. </p>
+<p>A PowerShell provider, or just provider, is an adapter that makes some data stores resemble hard drives within Windows PowerShell. Because most administrators are already familiar with managing hard drives using command-line commands, PowerShell providers help those administrators manage other forms of data storage using the same familiar commands.</p>
+<p>A provider presents data as a hierarchical store. For example, items such as folders can have sub-items that appear as subfolders. Items can also have properties, and providers let you manipulate both items and their properties by using a specific set of commands.</p>
+<p>Managing a technology by using a provider is more difficult than managing it by using technology-specific commands. Individual commands perform specific actions, and the command name describes what the command does. For example, in Internet Information Services (IIS), the Get-WebSite command retrieves IIS sites. When you use the IIS provider, you run the Get-ChildItem IIS:\Sites command instead.</p>
+<p>The advantage of a PowerShell provider is that it's dynamic, which makes it suitable for technologies that are subject to frequent changes. For example, when managing IIS, its provider can accommodate newly introduced Microsoft and third-party IIS add-ins. Even though using a provider to manage dynamic and extensible technologies tends to be more complex, it offers a more consistent approach due to its extensibility.</p>
+<p>Some common providers include:</p>
 <ul>
-<li>Write-Host: Allows you to write data directly to the console, skipping the pipeline. For this reason, its output cannot be captured or redirected to logs. It is recommended not to use it.</li>
-<li>Write-Output: Allows data to be written to the pipeline. If there is no redirection to another command, the data will be output to the screen. This is the recommended way to print data to the console.</li>
-<li>Other ways:
-    Powershell has other cmdlets to produce console output. None of them use the pipeline (they function as Write-Host), but their output can be suppressed at will, through the use of environment variables. The commands are the following:</li>
+<li><a href="../st-drives/#manage-the-registry"><strong>Registry.</strong></a> Provides access to the registry keys and values.</li>
+<li><strong>Alias.</strong> Provides access to aliases for Windows PowerShell cmdlets.</li>
+<li><strong>Environment.</strong> Provides access to Windows environment variables and their values.</li>
+<li><strong>FileSystem.</strong> Provides access to the files and folders in the file system.</li>
+<li><strong>Function.</strong> Provides access to Windows PowerShell functions loaded into memory.</li>
+<li><strong>Variable.</strong> Provides access to Windows PowerShell variables and their values loaded into memory.</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Write-Warning</td>
-<td>Prints the message in orange, preceded by the word WARNING. Its printing depends on the value of the $WarningPerference variable, which defaults to Continue.</td>
-</tr>
-<tr>
-<td>Write-Verbose</td>
-<td>Prints the message in blue, preceded by the word VERBOSE. Its printing depends on the value of the $VerbosePreference variable, which is set to SilentlyContinue by default.</td>
-</tr>
-<tr>
-<td>Write-Debug</td>
-<td>Prints the message in blue, preceded by the word DEBUG. Its printing depends on the value of the $DebugPreference variable, which defaults to SilentlyContinue.</td>
-</tr>
-<tr>
-<td>Write-error</td>
-<td>Generates an error message. Its printing depends on the value of the $ErrorActionPreference variable, which defaults to Continue.</td>
-</tr>
-</tbody>
-</table>
-<p>If the variable corresponding to the command has the value Continue, the message is printed. If the value is SilentlyContinue, the printing of the message is suppressed.</p>
-<h2 id="out-gridview">Out-GridView</h2>
-<p>Out-GridView is primarily used to review data. However, you can also use Out-GridView to create a simple menu selection interface. When the user makes one or more selections in the window presented by Out-GridView, the data for those objects is either passed further through the pipeline or placed into a variable.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">$selection</span> <span class="p">=</span> <span class="nv">$users</span> <span class="p">|</span> <span class="nb">Out-GridView</span> <span class="n">-PassThru</span>
+<h2 id="built-in-providers">Built-in Providers</h2>
+<p>The generic commands that you use to work with providers offer a superset of every feature that a provider might support. For example, the Get-ChildItem command includes the –UseTransaction parameter. However, the only built-in provider that supports the Transactions capability is the Registry provider. If you try to use the -UseTransaction parameter in any other provider, you'll receive an error message. You'll also receive an error message whenever you use a common parameter that the provider doesn't support.</p>
+<p>Running the Get-PSProvider cmdlet lists the capabilities of each provider that loads into Windows PowerShell. The capabilities of each provider will be different because each provider connects to a different underlying technology.</p>
+<p>Some important capabilities include:</p>
+<ul>
+<li><strong>ShouldProcess</strong> for providers that can support the –WhatIf and –Confirm parameters.</li>
+<li><strong>Filter</strong> for providers that support filtering.</li>
+<li><strong>Include</strong> for providers that can include items in the data store based on the name. Supports using wildcards.</li>
+<li><strong>Exclude</strong> for providers that can exclude items in the data store based on the name. Supports using wildcards.</li>
+<li><strong>ExpandWildcards</strong> for providers that support wildcards in their paths.</li>
+<li><strong>Credentials</strong> for providers that support alternative credentials.</li>
+<li><strong>Transactions</strong> for providers that support transacted operations.</li>
+</ul>
+<p>You should always review the capabilities of a provider before you work with it. This helps you avoid unexpected errors when you try to use unsupported capabilities.</p>
+<h2 id="access-provider-help">Access Provider Help</h2>
+<p>ou can display a list of available providers by using the Get-PSProvider cmdlet. Be aware that providers can be added into Windows PowerShell when you load modules, and they don't display until loaded. For example, when you run the Import-Module ActiveDirectory command to load the ActiveDirectory module or use module autoloading when running an Active Directory cmdlet, a PowerShell provider for Active Directory is included.</p>
+<p>Some providers include help files that you can review. Help files use the naming format about_ProviderName_Provider. For example, the help file for the FileSystem provider is about_FileSystem_Provider. You can review this help file's contents by running the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Help</span> <span class="n">about_FileSystem_Provider</span>
 </code></pre></div>
-<p>In the previous example, an array of user accounts is piped to Out-GridView. Out-GridView displays the user accounts on screen, and the user can select one or more rows in the Out-GridView window. When the user selects OK, the selected rows are stored in the $selection variable. You can then perform further processing on the users’ accounts.</p>
-<p>To retain more control over the amount of data that users can select, you can use the -OutputMode parameter instead of the -PassThru parameter. The following table depicts the values that can be defined for the -OutputMode parameter.</p>
-<h3 id="-outputmode-parameter">-OutputMode parameter</h3>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>None</td>
-<td>This is the default value that doesn't pass any objects further down the pipeline.</td>
-</tr>
-<tr>
-<td>Single</td>
-<td>This value allows users to select zero rows or one row in the Out-GridView window.</td>
-</tr>
-<tr>
-<td>Multiple</td>
-<td>This value allows users to select zero rows, one row, or multiple rows in the Out-GridView window. This value is equivalent to using the -PassThru parameter.</td>
-</tr>
-</tbody>
-</table>
-<p>Because users aren't forced to select a row in the Out-GridView window, you must ensure that your script properly handles the scenario where a row isn't selected.</p>
+<p>Cmdlets that work with providers use the nouns Item and ItemProperty. To list cmdlets that work with providers, run the following cmdlets:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Command</span> <span class="p">*</span><span class="n">-Item</span><span class="p">,*</span><span class="n">-ItemProperty</span>
+</code></pre></div>
+<p>Examples for every scenario might not be in commands’ help, because the commands are designed to work with any provider. The intent of provider help is to supplement command help with more specific descriptions and examples.</p>
 
               
             </article>
@@ -1696,7 +1612,7 @@ The cmdlet adds a colon (:) after the request message, and places the user's res
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../ds/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data Structures" rel="prev">
+        <a href="../local/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Manage Local" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1705,20 +1621,20 @@ The cmdlet adds a colon (:) after the request message, and places the user's res
               <span class="md-footer__direction">
                 Previous
               </span>
-              Data Structures
+              Manage Local
             </div>
           </div>
         </a>
       
       
         
-        <a href="../basic/" class="md-footer__link md-footer__link--next" aria-label="Next: Basic Scripting" rel="next">
+        <a href="../st-drives/" class="md-footer__link md-footer__link--next" aria-label="Next: Drives" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Basic Scripting
+              Drives
             </div>
           </div>
           <div class="md-footer__button md-icon">
