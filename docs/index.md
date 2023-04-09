@@ -24,7 +24,7 @@ Windows PowerShell superseded the Windows command-line interface (cmd.exe) and t
 + Tab completion and prediction.
 + Support for command and parameter [aliases](getalias.md).
 + Chaining commands that use the [Pipeline feature](pipeline.md).
-+ A robust in-console [help system](gethelp.md)
++ A robust in-console [help system](gethelp.md).
 
 Initially, Windows PowerShell was a platform built on the .NET Framework and only worked on Windows operating systems. However, with its recent releases, PowerShell uses the .NET Core and can run on Windows, macOS, and Linux platforms. Due to their multi-platform support, these recent releases are referred to as PowerShell (rather than Windows PowerShell).
 
@@ -37,6 +37,8 @@ PowerShell commands are called cmdlets, and they follow a simple verb-noun synta
 + *Get-Service*: Get information about running services
 + [*Get-ChildItem*](files_folders.md#get-childitem): Get a list of files and folders in a directory
 + [*Set-Location*](files_folders.md#set-location): Change the current working directory
++ [*Get-Content*](out_format.md#get-content): Get the contents of a file
++ [*Set-Content*](out_format.md#set-content): Set the contents of a file
 + *Clear-Host*: Clear the PowerShell console screen
 + *Exit*: Exit PowerShell
 
@@ -44,16 +46,6 @@ Commands provide PowerShell’s main functionality. There are many varieties of 
 
 Cmdlets use a Verb-Noun naming convention. For example, you can use the Get-Command cmdlet to list all cmdlets and functions that are registered in the command shell. The verb identifies the action for the cmdlet to perform, and the noun identifies the resource on which the cmdlet will perform its action.
 
-### [Working with Files and Folders](files_folders.md)
-PowerShell is particularly useful for working with files and folders. Here are some useful commands:
-
-+ *New-Item*: Create a new file or folder
-+ *Remove-Item*: Delete a file or folder
-+ *Copy-Item*: Copy a file or folder
-+ *Move-Item*: Move a file or folder
-+ *Rename-Item*: Rename a file or folder
-+ [*Get-Content*](out_format.md#get-content): Get the contents of a file
-+ [*Set-Content*](out_format.md#set-content): Set the contents of a file
 
 ## [A Scripting Language](./Scripting/variables.md)
 
@@ -70,17 +62,8 @@ PowerShell is a very powerful tool, and there are many advanced features that yo
 
 + [Remoting](./Advanced/remoting.md): Run PowerShell commands on remote computers
 + [Modules](./Advanced/modules.md): Extend PowerShell with additional functionality
-+ Desired State Configuration: Automate the configuration of your environment
++ [Active Directory](./Advanced/ad-ur.md): Stores information about the objects of the network environment
 + [Error Handling](./Advanced/ErrorHandling.md): Handle errors in your scripts
-
-### Configuration management framework
-PowerShell incorporates the PowerShell Desired State Configuration (DSC) management framework. This framework enables you to manage enterprise infrastructure with code to help with:
-
-+ Using declarative configurations and repeatable scripts for repeatable deployments.
-+ Enforcing configurations settings and identifying when configuration drift takes place from standard requirements.
-+ Deploying configuration settings using push or pull models.
-
-Applications and services with PowerShell–based administrative functions are consistent in how they work. This attribute means that you can quickly apply the lessons you learned. Also, when you use automation scripts to administer a software application, you can reuse them among other applications.
 
 ## Conclusion
 

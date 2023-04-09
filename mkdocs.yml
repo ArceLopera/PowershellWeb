@@ -126,6 +126,7 @@ nav:
     - Handling Errors: Advanced\ErrorHandling.md
     - Modules: Advanced\modules.md
     - Credentials: Advanced\Credentials.md
+    - Manage Local: Advanced\local.md
     - Remoting: 
       - Basic: Advanced\remoting.md
       - Security: Advanced\rem_sec.md
@@ -133,4 +134,19 @@ nav:
       - Advanced: Advanced\rem_adv.md
       - Sessions: Advanced\rem_sess.md
       - Using WMI or CIM: Advanced\rem_wmi_cim.md
-    
+    - Active Directory: 
+      - Users: Advanced\ad-ur.md
+      - Groups: Advanced\ad-gr.md
+      - Accounts: Advanced\ad-ac.md
+      - Organizational Units: Advanced\ad-ou.md
+      - Objects: Advanced\ad-obj.md
+    - Network Configuration:
+      - IP addresses: Advanced\net-ipadd.md
+      - IP Routing: Advanced\net-iproute.md
+      - DNS: Advanced\net-dns.md
+      - Firewall: Advanced\net-fire.md
+    - Windows Server:
+      - Group Policy: Advanced\ws-gp.md
+      - Windows Feature: Advanced\ws-wf.md
+      - Hyper-V: Advanced\ws-hv.md
+      - Internet Information Services: Advanced\ws-iis.md 
