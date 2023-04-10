@@ -146,13 +146,26 @@ nav:
       - Accounts: Advanced\ad-ac.md
       - Organizational Units: Advanced\ad-ou.md
       - Objects: Advanced\ad-obj.md
+  - Net:
     - Network Configuration:
-      - IP addresses: Advanced\net-ipadd.md
-      - IP Routing: Advanced\net-iproute.md
-      - DNS: Advanced\net-dns.md
-      - Firewall: Advanced\net-fire.md
+      - IP addresses: Net\net-ipadd.md
+      - IP Routing: Net\net-iproute.md
+      - DNS: Net\net-dns.md
+      - Firewall: Net\net-fire.md
     - Windows Server:
-      - Group Policy: Advanced\ws-gp.md
-      - Windows Feature: Advanced\ws-wf.md
-      - Hyper-V: Advanced\ws-hv.md
-      - Internet Information Services: Advanced\ws-iis.md 
+      - Group Policy: Net\ws-gp.md
+      - Windows Feature: Net\ws-wf.md
+      - Hyper-V: Net\ws-hv.md
+      - Internet Information Services: Net\ws-iis.md
+    - Azure:
+      - Azure Powershell: Net\az-mod.md
+      - Azure Cloud Shell: Net\az-shell.md
+      - Azure Resources: Net\az-res.md
+    - Microsoft 365:
+      - Basic: Net\365-basic.md
+      - Users: Net\365-users.md
+      - Groups: Net\365-groups.md
+      - Roles: Net\365-roles.md
+      - Licenses: Net\365-licenses.md 
+      - Exchange Online: Net\365-eo.md
+      - SharePoint: Net\365-sp.md

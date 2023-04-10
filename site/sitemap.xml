@@ -2,292 +2,342 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/GetStart/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/comparison/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/config_profile/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/enum/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/files_folders/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/filtering/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/get_member/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/getalias/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/gethelp/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/out_format/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/pipeline/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/tables_lists/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/wmi_cim/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/Credentials/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/ErrorHandling/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/ad-ac/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/ad-gr/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/ad-obj/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/ad-ou/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/ad-ur/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/job-back/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/job-sched/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/local/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/modules/</loc>
-         <lastmod>2023-04-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://arcelopera.github.io/PowershellWeb/Advanced/net-dns/</loc>
-         <lastmod>2023-04-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://arcelopera.github.io/PowershellWeb/Advanced/net-fire/</loc>
-         <lastmod>2023-04-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://arcelopera.github.io/PowershellWeb/Advanced/net-ipadd/</loc>
-         <lastmod>2023-04-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://arcelopera.github.io/PowershellWeb/Advanced/net-iproute/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/rem_adv/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/rem_mod/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/rem_sec/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/rem_sess/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/rem_wmi_cim/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/remoting/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/st-drives/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Advanced/st-provide/</loc>
-         <lastmod>2023-04-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://arcelopera.github.io/PowershellWeb/Advanced/ws-gp/</loc>
-         <lastmod>2023-04-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://arcelopera.github.io/PowershellWeb/Advanced/ws-hv/</loc>
-         <lastmod>2023-04-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://arcelopera.github.io/PowershellWeb/Advanced/ws-iis/</loc>
-         <lastmod>2023-04-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://arcelopera.github.io/PowershellWeb/Advanced/ws-wf/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Exercises/Exercises1/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Exercises/Exercises2/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Exercises/Exercises3/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Exercises/Exercises4/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Install/differences/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Install/installation/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Install/recommendations/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/365-basic/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/365-eo/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/365-groups/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/365-licenses/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/365-roles/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/365-sp/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/365-users/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/az-mod/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/az-res/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/az-shell/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/net-dns/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/net-fire/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/net-ipadd/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/net-iproute/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/ws-gp/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/ws-hv/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/ws-iis/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/ws-wf/</loc>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Scripting/ConsoleIO/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Scripting/advanced/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Scripting/basic/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Scripting/break_cont/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Scripting/comments/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Scripting/cond/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Scripting/ds/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Scripting/functions/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Scripting/loops/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Scripting/variables/</loc>
-         <lastmod>2023-04-09</lastmod>
+         <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

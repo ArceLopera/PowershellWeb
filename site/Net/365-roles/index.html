@@ -12,14 +12,14 @@
         <meta name="author" content="ArceLopera">
       
       
-        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Advanced/ws-gp/">
+        <link rel="canonical" href="https://arcelopera.github.io/PowershellWeb/Net/365-roles/">
       
       <link rel="icon" href="../../Images/pwsh_32512.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
     
     
       
-        <title>Group Policy - Powershell Refresher</title>
+        <title>Roles - Powershell Refresher</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creating-a-new-gpo" class="md-skip">
+        <a href="#managing-roles-with-azuread-cmdlets" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Group Policy
+              Roles
             
           </span>
         </div>
@@ -255,6 +255,22 @@
         
   
   
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Advanced/ErrorHandling/" class="md-tabs__link">
+        Advanced
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
     
   
 
@@ -262,11 +278,18 @@
   
   
   
+    
+
+  
+  
+  
     <li class="md-tabs__item">
-      <a href="../ErrorHandling/" class="md-tabs__link md-tabs__link--active">
-        Advanced
+      <a href="../net-ipadd/" class="md-tabs__link md-tabs__link--active">
+        Net
       </a>
     </li>
+  
+
   
 
       
@@ -856,14 +879,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -886,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ErrorHandling/" class="md-nav__link">
+      <a href="../../Advanced/ErrorHandling/" class="md-nav__link">
         Handling Errors
       </a>
     </li>
@@ -900,7 +921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../modules/" class="md-nav__link">
+      <a href="../../Advanced/modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -914,7 +935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Credentials/" class="md-nav__link">
+      <a href="../../Advanced/Credentials/" class="md-nav__link">
         Credentials
       </a>
     </li>
@@ -928,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../local/" class="md-nav__link">
+      <a href="../../Advanced/local/" class="md-nav__link">
         Manage Local
       </a>
     </li>
@@ -968,7 +989,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../st-provide/" class="md-nav__link">
+      <a href="../../Advanced/st-provide/" class="md-nav__link">
         Providers
       </a>
     </li>
@@ -982,7 +1003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../st-drives/" class="md-nav__link">
+      <a href="../../Advanced/st-drives/" class="md-nav__link">
         Drives
       </a>
     </li>
@@ -1029,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../job-back/" class="md-nav__link">
+      <a href="../../Advanced/job-back/" class="md-nav__link">
         Background Jobs
       </a>
     </li>
@@ -1043,7 +1064,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../job-sched/" class="md-nav__link">
+      <a href="../../Advanced/job-sched/" class="md-nav__link">
         Scheduled Jobs
       </a>
     </li>
@@ -1090,7 +1111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../remoting/" class="md-nav__link">
+      <a href="../../Advanced/remoting/" class="md-nav__link">
         Basic
       </a>
     </li>
@@ -1104,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rem_sec/" class="md-nav__link">
+      <a href="../../Advanced/rem_sec/" class="md-nav__link">
         Security
       </a>
     </li>
@@ -1118,7 +1139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rem_mod/" class="md-nav__link">
+      <a href="../../Advanced/rem_mod/" class="md-nav__link">
         Modes
       </a>
     </li>
@@ -1132,7 +1153,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rem_adv/" class="md-nav__link">
+      <a href="../../Advanced/rem_adv/" class="md-nav__link">
         Advanced
       </a>
     </li>
@@ -1146,7 +1167,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rem_sess/" class="md-nav__link">
+      <a href="../../Advanced/rem_sess/" class="md-nav__link">
         Sessions
       </a>
     </li>
@@ -1160,7 +1181,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rem_wmi_cim/" class="md-nav__link">
+      <a href="../../Advanced/rem_wmi_cim/" class="md-nav__link">
         Using WMI or CIM
       </a>
     </li>
@@ -1207,7 +1228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ad-ur/" class="md-nav__link">
+      <a href="../../Advanced/ad-ur/" class="md-nav__link">
         Users
       </a>
     </li>
@@ -1221,7 +1242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ad-gr/" class="md-nav__link">
+      <a href="../../Advanced/ad-gr/" class="md-nav__link">
         Groups
       </a>
     </li>
@@ -1235,7 +1256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ad-ac/" class="md-nav__link">
+      <a href="../../Advanced/ad-ac/" class="md-nav__link">
         Accounts
       </a>
     </li>
@@ -1249,7 +1270,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ad-ou/" class="md-nav__link">
+      <a href="../../Advanced/ad-ou/" class="md-nav__link">
         Organizational Units
       </a>
     </li>
@@ -1263,7 +1284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ad-obj/" class="md-nav__link">
+      <a href="../../Advanced/ad-obj/" class="md-nav__link">
         Objects
       </a>
     </li>
@@ -1278,6 +1299,42 @@
 
             
           
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Net
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Net" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Net
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
             
               
   
@@ -1287,18 +1344,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_9" data-md-state="indeterminate" type="checkbox" id="__nav_5_9" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1" data-md-state="indeterminate" type="checkbox" id="__nav_6_1" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_5_9">
+        <label class="md-nav__link" for="__nav_6_1">
           Network Configuration
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Network Configuration" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_9">
+        <label class="md-nav__title" for="__nav_6_1">
           <span class="md-nav__icon md-icon"></span>
           Network Configuration
         </label>
@@ -1371,25 +1428,23 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_10" type="checkbox" id="__nav_5_10" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_2" data-md-state="indeterminate" type="checkbox" id="__nav_6_2" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_5_10">
+        <label class="md-nav__link" for="__nav_6_2">
           Windows Server
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Windows Server" data-md-level="2">
-        <label class="md-nav__title" for="__nav_5_10">
+        <label class="md-nav__title" for="__nav_6_2">
           <span class="md-nav__icon md-icon"></span>
           Windows Server
         </label>
@@ -1399,48 +1454,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Group Policy
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ws-gp/" class="md-nav__link">
         Group Policy
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#creating-a-new-gpo" class="md-nav__link">
-    Creating a new GPO
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1495,6 +1513,251 @@
 
             
           
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_3" data-md-state="indeterminate" type="checkbox" id="__nav_6_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_3">
+          Azure
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Azure" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Azure
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../az-mod/" class="md-nav__link">
+        Azure Powershell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../az-shell/" class="md-nav__link">
+        Azure Cloud Shell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../az-res/" class="md-nav__link">
+        Azure Resources
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_4" type="checkbox" id="__nav_6_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_4">
+          Microsoft 365
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Microsoft 365" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          Microsoft 365
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../365-basic/" class="md-nav__link">
+        Basic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../365-users/" class="md-nav__link">
+        Users
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../365-groups/" class="md-nav__link">
+        Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Roles
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Roles
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#managing-roles-with-azuread-cmdlets" class="md-nav__link">
+    Managing roles with AzureAD cmdlets
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../365-licenses/" class="md-nav__link">
+        Licenses
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../365-eo/" class="md-nav__link">
+        Exchange Online
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../365-sp/" class="md-nav__link">
+        SharePoint
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1526,8 +1789,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-a-new-gpo" class="md-nav__link">
-    Creating a new GPO
+  <a href="#managing-roles-with-azuread-cmdlets" class="md-nav__link">
+    Managing roles with AzureAD cmdlets
   </a>
   
 </li>
@@ -1546,72 +1809,60 @@
                 
 
 
-  <h1>Group Policy</h1>
+  <h1>Roles</h1>
 
-<p>You can use Windows PowerShell to automate the management of most tasks involving Group Policy Objects (GPOs), including creating, deleting, backing up, reporting, and importing GPOs. You can also associate GPOs with Active Directory Domain Services (AD DS) OUs, including setting GPO inheritance and permissions. Group Policy management cmdlets require Remote Server Administration Tools (RSAT) installed.</p>
-<p>Group Policy management cmdlets are part of the GroupPolicy module for Windows PowerShell. Cmdlet names include the prefix “GP” in the names, and most have “GPO” as the noun.</p>
+<p>In Microsoft 365, roles are used to assign administrative permissions to user accounts. The Global Administrator role gives users permission to manage all aspects of Microsoft 365. Other roles allow users to manage only a subset of Microsoft 365 features. The following table lists some of the Microsoft 365 roles that can be assigned to users.</p>
 <table>
 <thead>
 <tr>
-<th>Cmdlet</th>
+<th>Role</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>New-GPO</td>
-<td>Creates a new GPO</td>
+<td>Global Reader</td>
+<td>Can review settings for all aspects of Microsoft 365.</td>
 </tr>
 <tr>
-<td>Get-GPO</td>
-<td>Retrieves a GPO</td>
+<td>Exchange Administrator</td>
+<td>Can review and manage settings for Exchange Online.</td>
 </tr>
 <tr>
-<td>Set-GPO</td>
-<td>Modifies properties of a GPO</td>
+<td>Helpdesk admin</td>
+<td>Can reset passwords for non-administrative accounts, force non-administrative users to sign out, manage service requests, and monitor service health.</td>
 </tr>
 <tr>
-<td>Remove-GPO</td>
-<td>Deletes a GPO</td>
+<td>Service support admin</td>
+<td>Can open and manage service requests, review and share message center posts, and monitor service health.</td>
 </tr>
 <tr>
-<td>Rename-GPO</td>
-<td>Renames a GPO</td>
+<td>SharePoint Administrator</td>
+<td>Can review and manage settings for SharePoint Online.</td>
 </tr>
 <tr>
-<td>Backup-GPO</td>
-<td>Backs up one or more GPOs in a domain</td>
+<td>Teams Administrator</td>
+<td>Can review and manage settings for Microsoft Teams.</td>
 </tr>
 <tr>
-<td>Copy-GPO</td>
-<td>Copies a GPO from one domain to another domain</td>
-</tr>
-<tr>
-<td>Restore-GPO</td>
-<td>Restores a GPO from backup files</td>
-</tr>
-<tr>
-<td>New-GPLink</td>
-<td>Links a GPO to an AD DS container</td>
-</tr>
-<tr>
-<td>Import-GPO</td>
-<td>Imports GPO settings from a backed-up GPO</td>
-</tr>
-<tr>
-<td>Set-GPRegistryValue</td>
-<td>Configures one or more registry-based policy settings in a GPO</td>
+<td>User Administrator</td>
+<td>Can review and manage user accounts.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="creating-a-new-gpo">Creating a new GPO</h2>
-<p>New-GPO requires only the -Name parameter, which must be unique in the domain in which you create the GPO. By default, the GPO is created in the domain of the user who is running the command. New-GPO also doesn't link the created GPO to an AD DS container. To link a GPO to a container, use the New-GPLink cmdlet.</p>
-<p>The following command creates a new GPO from a starter GPO:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">New-GPO</span> <span class="n">-Name</span> <span class="s2">&quot;IT Team GPO&quot;</span> <span class="n">-StarterGPOName</span> <span class="s2">&quot;IT Starter GPO&quot;</span>
-<span class="c"># links the new GPO to an AD DS organizational unit</span>
-<span class="nb">New-GPLink</span> <span class="n">-Name</span> <span class="s2">&quot;IT Team GPO&quot;</span> <span class="n">-Target</span> <span class="s2">&quot;OU=IT,DC=adatum,DC=com&quot;</span>
+<p>Role names can vary depending on whether you review them in the web-based admin consoles, AzureAD cmdlets, or Msol cmdlets.</p>
+<h2 id="managing-roles-with-azuread-cmdlets">Managing roles with AzureAD cmdlets</h2>
+<p>AzureAD cmdlets require you to identify whether a role is already in use before you can assign it to a user. If no users have been assigned to a role, then it exists only as a template, and you need to enable the role before you can add users to it. You can use the Get-AzureADDirectoryRole cmdlet to review the roles that are enabled. Use the Get-AzureADDirectoryRoleTemplate cmdlet to review the roles that aren't yet enabled.</p>
+<p>The following example depicts how to enable the User Administrator role. When you enable the role, you need to refer to the object ID of the template:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$roleTemplate</span> <span class="p">=</span> <span class="nb">Get-AzureADDirectoryRoleTemplate</span> <span class="p">|</span> <span class="nb">Where </span><span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">displayName</span> <span class="o">-eq</span> <span class="s1">&#39;User Administrator&#39;</span><span class="p">}</span>
+<span class="nb">Enable-AzureADDirectoryRole</span> <span class="n">-RoleTemplateId</span> <span class="nv">$roleTemplate</span><span class="p">.</span><span class="n">ObjectId</span>
 </code></pre></div>
-<p>The Group Policy management cmdlets that are part of the GroupPolicy module can automate the management of most tasks involving Group Policy Objects (GPOs), including creating, deleting, backing up, reporting, and importing GPOs. Their names include the prefix “GP” while most have “GPO” as the noun.</p>
+<p>After you enable the role, you can add a role member to assign administrative permissions by using the Add-AzureADDirectoryRoleMember cmdlet. The following example depicts how to add an account to the User Administrator role. The -ObjectId parameter refers to the ObjectID of the role. The -RefObjectId parameter refers to the ObjectID of the user account:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$user</span> <span class="p">=</span> <span class="nb">Get-AzureADUser</span> <span class="n">-ObjectID</span> <span class="n">AbbieP</span><span class="nv">@adatum</span><span class="p">.</span><span class="n">com</span>
+<span class="nv">$role</span> <span class="p">=</span> <span class="nb">Get-AzureADDirectoryRole</span> <span class="p">|</span> <span class="nb">Where </span><span class="p">{</span><span class="nv">$_</span><span class="p">.</span><span class="n">displayName</span> <span class="o">-eq</span> <span class="s1">&#39;User Administrator&#39;</span><span class="p">}</span>
+<span class="nb">Add-AzureADDirectoryRoleMember</span> <span class="n">-ObjectId</span> <span class="nv">$role</span><span class="p">.</span><span class="n">ObjectId</span> <span class="n">-RefObjectId</span> <span class="nv">$user</span><span class="p">.</span><span class="n">ObjectID</span>
+</code></pre></div>
+<p>To list existing members of a role, use Get-AzureADDirectoryRoleMember. To remove a member from a role, use Remove-AzureADDirectoryRoleMember.</p>
 
               
             </article>
@@ -1625,7 +1876,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../net-fire/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Firewall" rel="prev">
+        <a href="../365-groups/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Groups" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1634,20 +1885,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Firewall
+              Groups
             </div>
           </div>
         </a>
       
       
         
-        <a href="../ws-wf/" class="md-footer__link md-footer__link--next" aria-label="Next: Windows Feature" rel="next">
+        <a href="../365-licenses/" class="md-footer__link md-footer__link--next" aria-label="Next: Licenses" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Windows Feature
+              Licenses
             </div>
           </div>
           <div class="md-footer__button md-icon">
