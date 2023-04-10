@@ -231,6 +231,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://arcelopera.github.io/PowershellWeb/Net/365-teams/</loc>
+         <lastmod>2023-04-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://arcelopera.github.io/PowershellWeb/Net/365-users/</loc>
          <lastmod>2023-04-10</lastmod>
          <changefreq>daily</changefreq>
